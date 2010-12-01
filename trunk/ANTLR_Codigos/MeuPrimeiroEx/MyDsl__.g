@@ -9,8 +9,8 @@ T7 : 'criarSensor' ;
 T8 : 'gps' ;
 T9 : 'bussola' ;
 
-// $ANTLR src "MyDsl.g" 20
+// $ANTLR src "MyDsl.g" 29
 ID: 'a'..'z' + ;
-// $ANTLR src "MyDsl.g" 21
+// $ANTLR src "MyDsl.g" 30
 WS: (' ' |'\n' |'\r' )+ {skip();} ; // ignore whitespace
 
