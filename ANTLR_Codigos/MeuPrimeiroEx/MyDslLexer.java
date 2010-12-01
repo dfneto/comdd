@@ -1,4 +1,4 @@
-// $ANTLR 3.0 MyDsl.g 2010-12-01 11:21:59
+// $ANTLR 3.0 MyDsl.g 2010-12-01 14:03:53
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -100,10 +100,10 @@ public class MyDslLexer extends Lexer {
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // MyDsl.g:20:5: ( ( 'a' .. 'z' )+ )
-            // MyDsl.g:20:5: ( 'a' .. 'z' )+
+            // MyDsl.g:29:5: ( ( 'a' .. 'z' )+ )
+            // MyDsl.g:29:5: ( 'a' .. 'z' )+
             {
-            // MyDsl.g:20:5: ( 'a' .. 'z' )+
+            // MyDsl.g:29:5: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
@@ -117,7 +117,7 @@ public class MyDslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // MyDsl.g:20:5: 'a' .. 'z'
+            	    // MyDsl.g:29:5: 'a' .. 'z'
             	    {
             	    matchRange('a','z'); 
 
@@ -147,10 +147,10 @@ public class MyDslLexer extends Lexer {
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // MyDsl.g:21:5: ( ( ' ' | '\\n' | '\\r' )+ )
-            // MyDsl.g:21:5: ( ' ' | '\\n' | '\\r' )+
+            // MyDsl.g:30:5: ( ( ' ' | '\\n' | '\\r' )+ )
+            // MyDsl.g:30:5: ( ' ' | '\\n' | '\\r' )+
             {
-            // MyDsl.g:21:5: ( ' ' | '\\n' | '\\r' )+
+            // MyDsl.g:30:5: ( ' ' | '\\n' | '\\r' )+
             int cnt2=0;
             loop2:
             do {

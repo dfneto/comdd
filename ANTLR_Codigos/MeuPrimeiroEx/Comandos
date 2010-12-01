@@ -1,4 +1,10 @@
-java org.antlr.Tool MyDsl.g
-javac *.java
-java Test
+	rm -v MyDsl__.g
+	rm -v MyDslParser.java 
+	rm -v MyDslLexer.java  
+	rm -v MyDsl.tokens 
+	rm -v *.class 
+
+	java org.antlr.Tool MyDsl.g
+	javac *.java
+	java Test
 
