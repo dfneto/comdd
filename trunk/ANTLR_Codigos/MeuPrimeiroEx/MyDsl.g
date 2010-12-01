@@ -9,7 +9,7 @@ String s;
 
 prog: stat+;
 
-stat: 'robo' sensor;
+stat: 'robo' nomeRobo=ID sensor {System.out.println ("Robo criado com sucesso!!" +$nomeRobo.text);} ;
 
 sensor:
 	'criarSensor' tipoSensor=('gps' | 'bussola') ;
