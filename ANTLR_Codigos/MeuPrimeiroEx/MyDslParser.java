@@ -1,4 +1,4 @@
-// $ANTLR 3.0 MyDsl.g 2010-12-01 10:41:55
+// $ANTLR 3.0 MyDsl.g 2010-12-01 11:21:59
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -82,17 +82,22 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start stat
-    // MyDsl.g:12:1: stat : 'robo' sensor ;
+    // MyDsl.g:12:1: stat : 'robo' nomeRobo= ID sensor ;
     public final void stat() throws RecognitionException {
+        Token nomeRobo=null;
+
         try {
-            // MyDsl.g:12:7: ( 'robo' sensor )
-            // MyDsl.g:12:7: 'robo' sensor
+            // MyDsl.g:12:7: ( 'robo' nomeRobo= ID sensor )
+            // MyDsl.g:12:7: 'robo' nomeRobo= ID sensor
             {
             match(input,6,FOLLOW_6_in_stat32); 
-            pushFollow(FOLLOW_sensor_in_stat34);
+            nomeRobo=(Token)input.LT(1);
+            match(input,ID,FOLLOW_ID_in_stat36); 
+            pushFollow(FOLLOW_sensor_in_stat38);
             sensor();
             _fsp--;
 
+            System.out.println ("Robo criado com sucesso!!" +nomeRobo.getText());
 
             }
 
@@ -117,7 +122,7 @@ public class MyDslParser extends Parser {
             // MyDsl.g:15:2: ( 'criarSensor' tipoSensor= ( 'gps' | 'bussola' ) )
             // MyDsl.g:15:2: 'criarSensor' tipoSensor= ( 'gps' | 'bussola' )
             {
-            match(input,7,FOLLOW_7_in_sensor42); 
+            match(input,7,FOLLOW_7_in_sensor49); 
             tipoSensor=(Token)input.LT(1);
             if ( (input.LA(1)>=8 && input.LA(1)<=9) ) {
                 input.consume();
@@ -126,7 +131,7 @@ public class MyDslParser extends Parser {
             else {
                 MismatchedSetException mse =
                     new MismatchedSetException(null,input);
-                recoverFromMismatchedSet(input,mse,FOLLOW_set_in_sensor46);    throw mse;
+                recoverFromMismatchedSet(input,mse,FOLLOW_set_in_sensor53);    throw mse;
             }
 
 
@@ -147,9 +152,10 @@ public class MyDslParser extends Parser {
  
 
     public static final BitSet FOLLOW_stat_in_prog24 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_6_in_stat32 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_sensor_in_stat34 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_7_in_sensor42 = new BitSet(new long[]{0x0000000000000300L});
-    public static final BitSet FOLLOW_set_in_sensor46 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_6_in_stat32 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_stat36 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_sensor_in_stat38 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_7_in_sensor49 = new BitSet(new long[]{0x0000000000000300L});
+    public static final BitSet FOLLOW_set_in_sensor53 = new BitSet(new long[]{0x0000000000000002L});
 
 }
