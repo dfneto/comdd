@@ -9,8 +9,14 @@ String s;
 
 prog: stat+;
 
-stat: 'robo' nomeRobo=ID sensor {System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!! ");} ;
+stat: cabecalho* 'robo' nomeRobo=ID sensor {System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!! ");} ;
 
+
+cabecalho:
+	'Adicionar' itensCabecalho=(
+		'defines' {System.out.println("Defines Adicionados!!");}
+	      | 'includes'{System.out.println("Includes Adicionados!!");})
+	;
 sensor:
 	'criarSensor' tipoSensor;
 
