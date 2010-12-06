@@ -9,26 +9,23 @@ String s;
 
 prog: stat+;
 
-stat: 'robo' nomeRobo=ID sensor {System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!! \n ");}; //Valor do $tipoSensor = "+$tipoSensor.text );} ;
+stat: 'robo' nomeRobo=ID sensor {System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!! ");} ;
 
 sensor:
 	'criarSensor' tipoSensor;
 
 
 
-tipoSensor: ('gps' | 'bussola')
-	{if ($tipoSensor.text == "gps")
+tipoSensor returns [String value]: 
+	('gps' {$tipoSensor.value = "gps";
 		System.out.println("GPS criado com sucesso!");
-	else 
+		}
+	| 'bussola' {$tipoSensor.value = "bussola";
 		System.out.println("Compass criado com sucesso!");
-	System.out.println("Valor do $tipoSensor = " +$tipoSensor.text);
-	}
-	;
-
-/*tipoSensor returns [string value]:
-	('gps' | 'bussola');
-*/
-
+		})
+	{System.out.println("Valor do $tipoSensor = " +$tipoSensor.value);
+	};
+	
 
 /*name=ID r;
 r: 'robo' name2=ID {System.out.println("O nome do robo eh: "+$name2.text);};
