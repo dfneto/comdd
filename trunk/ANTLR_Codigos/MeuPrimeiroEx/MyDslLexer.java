@@ -1,4 +1,4 @@
-// $ANTLR 3.0 MyDsl.g 2010-12-01 14:03:53
+// $ANTLR 3.0 MyDsl.g 2010-12-07 14:37:17
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -9,10 +9,13 @@ public class MyDslLexer extends Lexer {
     public static final int WS=5;
     public static final int T6=6;
     public static final int T7=7;
+    public static final int T10=10;
+    public static final int T11=11;
+    public static final int T12=12;
     public static final int T8=8;
     public static final int T9=9;
     public static final int ID=4;
-    public static final int Tokens=10;
+    public static final int Tokens=13;
     public static final int EOF=-1;
     public MyDslLexer() {;} 
     public MyDslLexer(CharStream input) {
@@ -43,10 +46,10 @@ public class MyDslLexer extends Lexer {
     public final void mT7() throws RecognitionException {
         try {
             int _type = T7;
-            // MyDsl.g:8:6: ( 'criarSensor' )
-            // MyDsl.g:8:6: 'criarSensor'
+            // MyDsl.g:8:6: ( 'Adicionar' )
+            // MyDsl.g:8:6: 'Adicionar'
             {
-            match("criarSensor"); 
+            match("Adicionar"); 
 
 
             }
@@ -62,10 +65,10 @@ public class MyDslLexer extends Lexer {
     public final void mT8() throws RecognitionException {
         try {
             int _type = T8;
-            // MyDsl.g:9:6: ( 'gps' )
-            // MyDsl.g:9:6: 'gps'
+            // MyDsl.g:9:6: ( 'defines' )
+            // MyDsl.g:9:6: 'defines'
             {
-            match("gps"); 
+            match("defines"); 
 
 
             }
@@ -81,10 +84,10 @@ public class MyDslLexer extends Lexer {
     public final void mT9() throws RecognitionException {
         try {
             int _type = T9;
-            // MyDsl.g:10:6: ( 'bussola' )
-            // MyDsl.g:10:6: 'bussola'
+            // MyDsl.g:10:6: ( 'includes' )
+            // MyDsl.g:10:6: 'includes'
             {
-            match("bussola"); 
+            match("includes"); 
 
 
             }
@@ -96,14 +99,71 @@ public class MyDslLexer extends Lexer {
     }
     // $ANTLR end T9
 
+    // $ANTLR start T10
+    public final void mT10() throws RecognitionException {
+        try {
+            int _type = T10;
+            // MyDsl.g:11:7: ( 'criarSensor' )
+            // MyDsl.g:11:7: 'criarSensor'
+            {
+            match("criarSensor"); 
+
+
+            }
+
+            this.type = _type;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end T10
+
+    // $ANTLR start T11
+    public final void mT11() throws RecognitionException {
+        try {
+            int _type = T11;
+            // MyDsl.g:12:7: ( 'gps' )
+            // MyDsl.g:12:7: 'gps'
+            {
+            match("gps"); 
+
+
+            }
+
+            this.type = _type;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end T11
+
+    // $ANTLR start T12
+    public final void mT12() throws RecognitionException {
+        try {
+            int _type = T12;
+            // MyDsl.g:13:7: ( 'bussola' )
+            // MyDsl.g:13:7: 'bussola'
+            {
+            match("bussola"); 
+
+
+            }
+
+            this.type = _type;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end T12
+
     // $ANTLR start ID
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // MyDsl.g:29:5: ( ( 'a' .. 'z' )+ )
-            // MyDsl.g:29:5: ( 'a' .. 'z' )+
+            // MyDsl.g:39:5: ( ( 'a' .. 'z' )+ )
+            // MyDsl.g:39:5: ( 'a' .. 'z' )+
             {
-            // MyDsl.g:29:5: ( 'a' .. 'z' )+
+            // MyDsl.g:39:5: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
@@ -117,7 +177,7 @@ public class MyDslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // MyDsl.g:29:5: 'a' .. 'z'
+            	    // MyDsl.g:39:5: 'a' .. 'z'
             	    {
             	    matchRange('a','z'); 
 
@@ -147,10 +207,10 @@ public class MyDslLexer extends Lexer {
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // MyDsl.g:30:5: ( ( ' ' | '\\n' | '\\r' )+ )
-            // MyDsl.g:30:5: ( ' ' | '\\n' | '\\r' )+
+            // MyDsl.g:40:5: ( ( ' ' | '\\n' | '\\r' )+ )
+            // MyDsl.g:40:5: ( ' ' | '\\n' | '\\r' )+
             {
-            // MyDsl.g:30:5: ( ' ' | '\\n' | '\\r' )+
+            // MyDsl.g:40:5: ( ' ' | '\\n' | '\\r' )+
             int cnt2=0;
             loop2:
             do {
@@ -201,149 +261,252 @@ public class MyDslLexer extends Lexer {
     // $ANTLR end WS
 
     public void mTokens() throws RecognitionException {
-        // MyDsl.g:1:10: ( T6 | T7 | T8 | T9 | ID | WS )
-        int alt3=6;
+        // MyDsl.g:1:10: ( T6 | T7 | T8 | T9 | T10 | T11 | T12 | ID | WS )
+        int alt3=9;
         switch ( input.LA(1) ) {
         case 'r':
             {
             int LA3_1 = input.LA(2);
 
             if ( (LA3_1=='o') ) {
-                int LA3_7 = input.LA(3);
+                int LA3_10 = input.LA(3);
 
-                if ( (LA3_7=='b') ) {
-                    int LA3_11 = input.LA(4);
+                if ( (LA3_10=='b') ) {
+                    int LA3_16 = input.LA(4);
 
-                    if ( (LA3_11=='o') ) {
-                        int LA3_15 = input.LA(5);
+                    if ( (LA3_16=='o') ) {
+                        int LA3_22 = input.LA(5);
 
-                        if ( ((LA3_15>='a' && LA3_15<='z')) ) {
-                            alt3=5;
+                        if ( ((LA3_22>='a' && LA3_22<='z')) ) {
+                            alt3=8;
                         }
                         else {
                             alt3=1;}
                     }
                     else {
-                        alt3=5;}
+                        alt3=8;}
                 }
                 else {
-                    alt3=5;}
+                    alt3=8;}
             }
             else {
-                alt3=5;}
+                alt3=8;}
+            }
+            break;
+        case 'A':
+            {
+            alt3=2;
+            }
+            break;
+        case 'd':
+            {
+            int LA3_3 = input.LA(2);
+
+            if ( (LA3_3=='e') ) {
+                int LA3_11 = input.LA(3);
+
+                if ( (LA3_11=='f') ) {
+                    int LA3_17 = input.LA(4);
+
+                    if ( (LA3_17=='i') ) {
+                        int LA3_23 = input.LA(5);
+
+                        if ( (LA3_23=='n') ) {
+                            int LA3_29 = input.LA(6);
+
+                            if ( (LA3_29=='e') ) {
+                                int LA3_33 = input.LA(7);
+
+                                if ( (LA3_33=='s') ) {
+                                    int LA3_37 = input.LA(8);
+
+                                    if ( ((LA3_37>='a' && LA3_37<='z')) ) {
+                                        alt3=8;
+                                    }
+                                    else {
+                                        alt3=3;}
+                                }
+                                else {
+                                    alt3=8;}
+                            }
+                            else {
+                                alt3=8;}
+                        }
+                        else {
+                            alt3=8;}
+                    }
+                    else {
+                        alt3=8;}
+                }
+                else {
+                    alt3=8;}
+            }
+            else {
+                alt3=8;}
+            }
+            break;
+        case 'i':
+            {
+            int LA3_4 = input.LA(2);
+
+            if ( (LA3_4=='n') ) {
+                int LA3_12 = input.LA(3);
+
+                if ( (LA3_12=='c') ) {
+                    int LA3_18 = input.LA(4);
+
+                    if ( (LA3_18=='l') ) {
+                        int LA3_24 = input.LA(5);
+
+                        if ( (LA3_24=='u') ) {
+                            int LA3_30 = input.LA(6);
+
+                            if ( (LA3_30=='d') ) {
+                                int LA3_34 = input.LA(7);
+
+                                if ( (LA3_34=='e') ) {
+                                    int LA3_38 = input.LA(8);
+
+                                    if ( (LA3_38=='s') ) {
+                                        int LA3_41 = input.LA(9);
+
+                                        if ( ((LA3_41>='a' && LA3_41<='z')) ) {
+                                            alt3=8;
+                                        }
+                                        else {
+                                            alt3=4;}
+                                    }
+                                    else {
+                                        alt3=8;}
+                                }
+                                else {
+                                    alt3=8;}
+                            }
+                            else {
+                                alt3=8;}
+                        }
+                        else {
+                            alt3=8;}
+                    }
+                    else {
+                        alt3=8;}
+                }
+                else {
+                    alt3=8;}
+            }
+            else {
+                alt3=8;}
             }
             break;
         case 'c':
             {
-            int LA3_2 = input.LA(2);
+            int LA3_5 = input.LA(2);
 
-            if ( (LA3_2=='r') ) {
-                int LA3_8 = input.LA(3);
+            if ( (LA3_5=='r') ) {
+                int LA3_13 = input.LA(3);
 
-                if ( (LA3_8=='i') ) {
-                    int LA3_12 = input.LA(4);
+                if ( (LA3_13=='i') ) {
+                    int LA3_19 = input.LA(4);
 
-                    if ( (LA3_12=='a') ) {
-                        int LA3_16 = input.LA(5);
+                    if ( (LA3_19=='a') ) {
+                        int LA3_25 = input.LA(5);
 
-                        if ( (LA3_16=='r') ) {
-                            int LA3_20 = input.LA(6);
+                        if ( (LA3_25=='r') ) {
+                            int LA3_31 = input.LA(6);
 
-                            if ( (LA3_20=='S') ) {
-                                alt3=2;
+                            if ( (LA3_31=='S') ) {
+                                alt3=5;
                             }
                             else {
-                                alt3=5;}
+                                alt3=8;}
                         }
                         else {
-                            alt3=5;}
+                            alt3=8;}
                     }
                     else {
-                        alt3=5;}
+                        alt3=8;}
                 }
                 else {
-                    alt3=5;}
+                    alt3=8;}
             }
             else {
-                alt3=5;}
+                alt3=8;}
             }
             break;
         case 'g':
             {
-            int LA3_3 = input.LA(2);
+            int LA3_6 = input.LA(2);
 
-            if ( (LA3_3=='p') ) {
-                int LA3_9 = input.LA(3);
+            if ( (LA3_6=='p') ) {
+                int LA3_14 = input.LA(3);
 
-                if ( (LA3_9=='s') ) {
-                    int LA3_13 = input.LA(4);
+                if ( (LA3_14=='s') ) {
+                    int LA3_20 = input.LA(4);
 
-                    if ( ((LA3_13>='a' && LA3_13<='z')) ) {
-                        alt3=5;
+                    if ( ((LA3_20>='a' && LA3_20<='z')) ) {
+                        alt3=8;
                     }
                     else {
-                        alt3=3;}
+                        alt3=6;}
                 }
                 else {
-                    alt3=5;}
+                    alt3=8;}
             }
             else {
-                alt3=5;}
+                alt3=8;}
             }
             break;
         case 'b':
             {
-            int LA3_4 = input.LA(2);
+            int LA3_7 = input.LA(2);
 
-            if ( (LA3_4=='u') ) {
-                int LA3_10 = input.LA(3);
+            if ( (LA3_7=='u') ) {
+                int LA3_15 = input.LA(3);
 
-                if ( (LA3_10=='s') ) {
-                    int LA3_14 = input.LA(4);
+                if ( (LA3_15=='s') ) {
+                    int LA3_21 = input.LA(4);
 
-                    if ( (LA3_14=='s') ) {
-                        int LA3_18 = input.LA(5);
+                    if ( (LA3_21=='s') ) {
+                        int LA3_27 = input.LA(5);
 
-                        if ( (LA3_18=='o') ) {
-                            int LA3_21 = input.LA(6);
+                        if ( (LA3_27=='o') ) {
+                            int LA3_32 = input.LA(6);
 
-                            if ( (LA3_21=='l') ) {
-                                int LA3_23 = input.LA(7);
+                            if ( (LA3_32=='l') ) {
+                                int LA3_36 = input.LA(7);
 
-                                if ( (LA3_23=='a') ) {
-                                    int LA3_24 = input.LA(8);
+                                if ( (LA3_36=='a') ) {
+                                    int LA3_39 = input.LA(8);
 
-                                    if ( ((LA3_24>='a' && LA3_24<='z')) ) {
-                                        alt3=5;
+                                    if ( ((LA3_39>='a' && LA3_39<='z')) ) {
+                                        alt3=8;
                                     }
                                     else {
-                                        alt3=4;}
+                                        alt3=7;}
                                 }
                                 else {
-                                    alt3=5;}
+                                    alt3=8;}
                             }
                             else {
-                                alt3=5;}
+                                alt3=8;}
                         }
                         else {
-                            alt3=5;}
+                            alt3=8;}
                     }
                     else {
-                        alt3=5;}
+                        alt3=8;}
                 }
                 else {
-                    alt3=5;}
+                    alt3=8;}
             }
             else {
-                alt3=5;}
+                alt3=8;}
             }
             break;
         case 'a':
-        case 'd':
         case 'e':
         case 'f':
         case 'h':
-        case 'i':
         case 'j':
         case 'k':
         case 'l':
@@ -361,19 +524,19 @@ public class MyDslLexer extends Lexer {
         case 'y':
         case 'z':
             {
-            alt3=5;
+            alt3=8;
             }
             break;
         case '\n':
         case '\r':
         case ' ':
             {
-            alt3=6;
+            alt3=9;
             }
             break;
         default:
             NoViableAltException nvae =
-                new NoViableAltException("1:1: Tokens : ( T6 | T7 | T8 | T9 | ID | WS );", 3, 0, input);
+                new NoViableAltException("1:1: Tokens : ( T6 | T7 | T8 | T9 | T10 | T11 | T12 | ID | WS );", 3, 0, input);
 
             throw nvae;
         }
@@ -408,14 +571,35 @@ public class MyDslLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // MyDsl.g:1:22: ID
+                // MyDsl.g:1:22: T10
+                {
+                mT10(); 
+
+                }
+                break;
+            case 6 :
+                // MyDsl.g:1:26: T11
+                {
+                mT11(); 
+
+                }
+                break;
+            case 7 :
+                // MyDsl.g:1:30: T12
+                {
+                mT12(); 
+
+                }
+                break;
+            case 8 :
+                // MyDsl.g:1:34: ID
                 {
                 mID(); 
 
                 }
                 break;
-            case 6 :
-                // MyDsl.g:1:25: WS
+            case 9 :
+                // MyDsl.g:1:37: WS
                 {
                 mWS(); 
 
