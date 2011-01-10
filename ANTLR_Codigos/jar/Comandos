@@ -1,0 +1,11 @@
+	rm -v source/MyDsl__.g
+	rm -v source/MyDslParser.java 
+	rm -v source/MyDslLexer.java  
+	rm -v source/MyDsl.tokens 
+	rm -v classes/*.class 
+
+	java org.antlr.Tool source/MyDsl.g
+	javac -d classes source/*.java
+	cd classes
+	java Test
+
