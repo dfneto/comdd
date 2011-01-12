@@ -8,7 +8,7 @@ Add your content here.
 = Details =
 
 Ao tentar rodar a versão 30, tenho o seguinte erro:
----
+---------------------------------------------------------------------------
 david@linux-touch:~/comdd/ANTLR_Codigos/jar$ java -jar dsl.jarException in thread "main" java.lang.NoClassDefFoundError: org/antlr/runtime/CharStream
 Caused by: java.lang.ClassNotFoundException: org.antlr.runtime.CharStream
 	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
@@ -21,7 +21,7 @@ Could not find the main class: Test. Program will exit.
 
 
 Daí pensei que seria o mesmo erro que teria se rodasse ./Comandos sem o classpath configurado, entretanto percebi que não: 
----
+---------------------------------------------------------------------------
 david@linux-touch:~/comdd/ANTLR_Codigos/jar$ ./Comandos 
 removido `MyDsl__.g'
 removido `MyDslParser.java'
