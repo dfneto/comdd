@@ -1,2 +1,2 @@
 Main-Class: Test
-Class-Path: $PATH . /home/david/ANTLR3.0/antlr-3.0/lib/antlr-3.0.jar /home/david/ANTLR3.0/antlr-3.0/lib/stringtemplate-3.0.jar /home/david/ANTLR3.0/antlr-3.0/lib/antlr-2.7.7.jar
+Class-Path: $PATH . ./antlr-3.0/lib/antlr-3.0.jar ./antlr-3.0/lib/stringtemplate-3.0.jar ./antlr-3.0/lib/antlr-2.7.7.jar
