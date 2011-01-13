@@ -17,3 +17,5 @@ Comecei então a estudar algumas formas de se escrever em arquivo, usando FileWr
 O William deu um toque de usar >. Então percebi que usando 
 
 david@linux-labes:~/comdd/ANTLR_Codigos/jar$ java -jar dsl.jar > teste
+
+A saída do terminal ia toda para teste, de forma que fica do jeito que preciso. Assim, a princípio, essa solução é o suficiente para meu problema. Caso no futuro, quando eu estiver trabalhando com os detalhes da dsl eu perceba que a *Solução Usada* não está me satisfazendo, eu volto ao estudo da *Solução Possível*.
