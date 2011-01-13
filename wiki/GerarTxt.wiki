@@ -7,6 +7,12 @@ Gerar o código num txt ao invés de no terminal
 
 = Details =
 
+== Descrição do Problema ==
 O ideal é que minha dsl gere um txt com o código gerado, já no formato do código alvo. Por ex, que como saída da minha dsl tenha um CodigoGerado.cpp, ao invés de ter CodigoGerado apresentado no terminal.
 
-Comecei então a estudar algumas formas de se escrever em arquivo, usando FileWriter do java. A versão 
+== Solução Possível ==
+Comecei então a estudar algumas formas de se escrever em arquivo, usando FileWriter do java. A versão r42 tem o código do FileWriter dentro do MyDsl.g, e embora esteja compilando e executando, não entra na parte referente ao FileWriter, ou seja, na classe Writer2. Para entender melhor como funciona as formas de se gerar um arquivo eu eu havia comecei a estudar o HeadFirstJava, pg 314.
+
+== Solução Usada ==
+O William deu um toque de usar >. Então percebi que usando 
+david@linux-labes:~/comdd/ANTLR_Codigos/jar$ java -jar dsl.jar > teste
