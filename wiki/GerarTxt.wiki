@@ -15,4 +15,5 @@ Comecei então a estudar algumas formas de se escrever em arquivo, usando FileWr
 
 == Solução Usada ==
 O William deu um toque de usar >. Então percebi que usando 
+
 david@linux-labes:~/comdd/ANTLR_Codigos/jar$ java -jar dsl.jar > teste
