@@ -1,8 +1,7 @@
 grammar MyDsl;
-@header{
-import java.io.*;
+options {
+language=Java;
 }
-
 @members {
 String s;
 }
@@ -15,28 +14,7 @@ stat: 'robo' nomeRobo=ID cabecalho*  sensor* {System.out.println ("Robo " +$nome
 
 cabecalho:
 	'Adicionar' itensCabecalho=(
-		'defines' {
-			System.out.println("Falhou1!!");
-			class Writer2{
-			public void main(String[] args){
-			char[] in = new char[50];
-			int size = 0;
-			System.out.println("Falhou2!!");
-		try{
-			System.out.println("Defines Adicionados!!");
-			File file = new File("file.txt");
-			FileWriter fw = new FileWriter(file);
-			PrintWriter pw = new PrintWriter(fw);
-			pw.println("Ricardo");
-			pw.println("Ramos");
-			pw.println("de");		
-			pw.println("Oliveira");	
-			pw.flush();
-          		pw.close();}
-		catch(IOException ex){
-			System.out.println("Falhouuuuuu!!");
-			ex.printStackTrace();}
-		}}}
+		'defines' {System.out.println("Defines Adicionados!!");}
 	      | 'includes'{System.out.println("Includes Adicionados!!");})
 	;
 sensor:
