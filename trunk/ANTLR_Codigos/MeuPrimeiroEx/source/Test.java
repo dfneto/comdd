@@ -2,7 +2,7 @@ import org.antlr.runtime.*;
 public class Test {
 public static void main(String[] args) throws Exception {
 // create a CharStream that reads from standard input
-ANTLRFileStream input = new ANTLRFileStream("/home/david/comdd/ANTLR_Codigos/MeuPrimeiroEx/source/teste");
+ANTLRInputStream input = new ANTLRInputStream(System.in);
 // create a lexer that feeds off of input CharStream
 MyDslLexer lexer = new MyDslLexer(input);
 // create a buffer of tokens pulled from the lexer
