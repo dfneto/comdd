@@ -1,0 +1,12 @@
+#summary Gerar o código num txt ao invés de no terminal
+
+= Introduction =
+
+Gerar o código num txt ao invés de no terminal
+
+
+= Details =
+
+O ideal é que minha dsl gere um txt com o código gerado, já no formato do código alvo. Por ex, que como saída da minha dsl tenha um CodigoGerado.cpp, ao invés de ter CodigoGerado apresentado no terminal.
+
+Comecei então a estudar algumas formas de se escrever em arquivo, usando FileWriter do java. A versão 
