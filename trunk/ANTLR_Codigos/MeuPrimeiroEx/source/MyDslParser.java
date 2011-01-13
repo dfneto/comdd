@@ -1,4 +1,7 @@
-// $ANTLR 3.0 source/MyDsl.g 2011-01-12 18:03:30
+// $ANTLR 3.0 source/MyDsl.g 2011-01-13 12:00:54
+
+import java.io.*;
+
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -27,13 +30,13 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start prog
-    // source/MyDsl.g:10:1: prog : ( stat )+ ;
+    // source/MyDsl.g:11:1: prog : ( stat )+ ;
     public final void prog() throws RecognitionException {
         try {
-            // source/MyDsl.g:10:7: ( ( stat )+ )
-            // source/MyDsl.g:10:7: ( stat )+
+            // source/MyDsl.g:11:7: ( ( stat )+ )
+            // source/MyDsl.g:11:7: ( stat )+
             {
-            // source/MyDsl.g:10:7: ( stat )+
+            // source/MyDsl.g:11:7: ( stat )+
             int cnt1=0;
             loop1:
             do {
@@ -47,9 +50,9 @@ public class MyDslParser extends Parser {
 
                 switch (alt1) {
             	case 1 :
-            	    // source/MyDsl.g:10:7: stat
+            	    // source/MyDsl.g:11:7: stat
             	    {
-            	    pushFollow(FOLLOW_stat_in_prog24);
+            	    pushFollow(FOLLOW_stat_in_prog20);
             	    stat();
             	    _fsp--;
 
@@ -82,18 +85,18 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start stat
-    // source/MyDsl.g:12:1: stat : 'robo' nomeRobo= ID ( cabecalho )* ( sensor )* ;
+    // source/MyDsl.g:13:1: stat : 'robo' nomeRobo= ID ( cabecalho )* ( sensor )* ;
     public final void stat() throws RecognitionException {
         Token nomeRobo=null;
 
         try {
-            // source/MyDsl.g:12:7: ( 'robo' nomeRobo= ID ( cabecalho )* ( sensor )* )
-            // source/MyDsl.g:12:7: 'robo' nomeRobo= ID ( cabecalho )* ( sensor )*
+            // source/MyDsl.g:13:7: ( 'robo' nomeRobo= ID ( cabecalho )* ( sensor )* )
+            // source/MyDsl.g:13:7: 'robo' nomeRobo= ID ( cabecalho )* ( sensor )*
             {
-            match(input,6,FOLLOW_6_in_stat32); 
+            match(input,6,FOLLOW_6_in_stat28); 
             nomeRobo=(Token)input.LT(1);
-            match(input,ID,FOLLOW_ID_in_stat36); 
-            // source/MyDsl.g:12:26: ( cabecalho )*
+            match(input,ID,FOLLOW_ID_in_stat32); 
+            // source/MyDsl.g:13:26: ( cabecalho )*
             loop2:
             do {
                 int alt2=2;
@@ -106,9 +109,9 @@ public class MyDslParser extends Parser {
 
                 switch (alt2) {
             	case 1 :
-            	    // source/MyDsl.g:12:26: cabecalho
+            	    // source/MyDsl.g:13:26: cabecalho
             	    {
-            	    pushFollow(FOLLOW_cabecalho_in_stat38);
+            	    pushFollow(FOLLOW_cabecalho_in_stat34);
             	    cabecalho();
             	    _fsp--;
 
@@ -121,7 +124,7 @@ public class MyDslParser extends Parser {
                 }
             } while (true);
 
-            // source/MyDsl.g:12:38: ( sensor )*
+            // source/MyDsl.g:13:38: ( sensor )*
             loop3:
             do {
                 int alt3=2;
@@ -134,9 +137,9 @@ public class MyDslParser extends Parser {
 
                 switch (alt3) {
             	case 1 :
-            	    // source/MyDsl.g:12:38: sensor
+            	    // source/MyDsl.g:13:38: sensor
             	    {
-            	    pushFollow(FOLLOW_sensor_in_stat42);
+            	    pushFollow(FOLLOW_sensor_in_stat38);
             	    sensor();
             	    _fsp--;
 
@@ -166,16 +169,16 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start cabecalho
-    // source/MyDsl.g:15:1: cabecalho : 'Adicionar' itensCabecalho= ( 'defines' | 'includes' ) ;
+    // source/MyDsl.g:16:1: cabecalho : 'Adicionar' itensCabecalho= ( 'defines' | 'includes' ) ;
     public final void cabecalho() throws RecognitionException {
         Token itensCabecalho=null;
 
         try {
-            // source/MyDsl.g:16:2: ( 'Adicionar' itensCabecalho= ( 'defines' | 'includes' ) )
-            // source/MyDsl.g:16:2: 'Adicionar' itensCabecalho= ( 'defines' | 'includes' )
+            // source/MyDsl.g:17:2: ( 'Adicionar' itensCabecalho= ( 'defines' | 'includes' ) )
+            // source/MyDsl.g:17:2: 'Adicionar' itensCabecalho= ( 'defines' | 'includes' )
             {
-            match(input,7,FOLLOW_7_in_cabecalho55); 
-            // source/MyDsl.g:16:29: ( 'defines' | 'includes' )
+            match(input,7,FOLLOW_7_in_cabecalho51); 
+            // source/MyDsl.g:17:29: ( 'defines' | 'includes' )
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -187,23 +190,46 @@ public class MyDslParser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("16:29: ( 'defines' | 'includes' )", 4, 0, input);
+                    new NoViableAltException("17:29: ( 'defines' | 'includes' )", 4, 0, input);
 
                 throw nvae;
             }
             switch (alt4) {
                 case 1 :
-                    // source/MyDsl.g:17:3: 'defines'
+                    // source/MyDsl.g:18:3: 'defines'
                     {
-                    match(input,8,FOLLOW_8_in_cabecalho63); 
-                    System.out.println("Defines Adicionados!!");
+                    match(input,8,FOLLOW_8_in_cabecalho59); 
+
+                    			System.out.println("Falhou1!!");
+                    			class Writer2{
+                    			public void main(String[] args){
+                    			char[] in = new char[50];
+                    			int size = 0;
+                    			System.out.println("Falhou2!!");
+                    		try{
+                    			System.out.println("Defines Adicionados!!");
+                    			File file = new File("file.txt");
+                    			FileWriter fw = new FileWriter(file);
+                    			PrintWriter pw = new PrintWriter(fw);
+                    			pw.println("Ricardo");
+                    			pw.println("Ramos");
+                    			pw.println("de");		
+                    			pw.println("Oliveira");	
+                    			pw.flush();
+                              		pw.close();
+                    			}
+                    		catch(IOException ex){
+                    			System.out.println("Falhouuuuuu!!");
+                    			ex.printStackTrace();
+                    		}
+                    		}}
 
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:18:10: 'includes'
+                    // source/MyDsl.g:42:10: 'includes'
                     {
-                    match(input,9,FOLLOW_9_in_cabecalho76); 
+                    match(input,9,FOLLOW_9_in_cabecalho72); 
                     System.out.println("Includes Adicionados!!");
 
                     }
@@ -227,14 +253,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start sensor
-    // source/MyDsl.g:20:1: sensor : 'criarSensor' tipoSensor ;
+    // source/MyDsl.g:44:1: sensor : 'criarSensor' tipoSensor ;
     public final void sensor() throws RecognitionException {
         try {
-            // source/MyDsl.g:21:2: ( 'criarSensor' tipoSensor )
-            // source/MyDsl.g:21:2: 'criarSensor' tipoSensor
+            // source/MyDsl.g:45:2: ( 'criarSensor' tipoSensor )
+            // source/MyDsl.g:45:2: 'criarSensor' tipoSensor
             {
-            match(input,10,FOLLOW_10_in_sensor87); 
-            pushFollow(FOLLOW_tipoSensor_in_sensor89);
+            match(input,10,FOLLOW_10_in_sensor83); 
+            pushFollow(FOLLOW_tipoSensor_in_sensor85);
             tipoSensor();
             _fsp--;
 
@@ -254,15 +280,15 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start tipoSensor
-    // source/MyDsl.g:25:1: tipoSensor returns [String value] : ( 'gps' | 'bussola' ) ;
+    // source/MyDsl.g:49:1: tipoSensor returns [String value] : ( 'gps' | 'bussola' ) ;
     public final String tipoSensor() throws RecognitionException {
         String value = null;
 
         try {
-            // source/MyDsl.g:26:2: ( ( 'gps' | 'bussola' ) )
-            // source/MyDsl.g:26:2: ( 'gps' | 'bussola' )
+            // source/MyDsl.g:50:2: ( ( 'gps' | 'bussola' ) )
+            // source/MyDsl.g:50:2: ( 'gps' | 'bussola' )
             {
-            // source/MyDsl.g:26:2: ( 'gps' | 'bussola' )
+            // source/MyDsl.g:50:2: ( 'gps' | 'bussola' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -274,24 +300,24 @@ public class MyDslParser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("26:2: ( 'gps' | 'bussola' )", 5, 0, input);
+                    new NoViableAltException("50:2: ( 'gps' | 'bussola' )", 5, 0, input);
 
                 throw nvae;
             }
             switch (alt5) {
                 case 1 :
-                    // source/MyDsl.g:26:3: 'gps'
+                    // source/MyDsl.g:50:3: 'gps'
                     {
-                    match(input,11,FOLLOW_11_in_tipoSensor105); 
+                    match(input,11,FOLLOW_11_in_tipoSensor101); 
                     value = "gps";
                     		System.out.println("GPS criado com sucesso!");
 
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:28:4: 'bussola'
+                    // source/MyDsl.g:52:4: 'bussola'
                     {
-                    match(input,12,FOLLOW_12_in_tipoSensor112); 
+                    match(input,12,FOLLOW_12_in_tipoSensor108); 
                     value = "bussola";
                     		System.out.println("Compass criado com sucesso!");
 
@@ -318,17 +344,17 @@ public class MyDslParser extends Parser {
 
  
 
-    public static final BitSet FOLLOW_stat_in_prog24 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_6_in_stat32 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ID_in_stat36 = new BitSet(new long[]{0x0000000000000482L});
-    public static final BitSet FOLLOW_cabecalho_in_stat38 = new BitSet(new long[]{0x0000000000000482L});
-    public static final BitSet FOLLOW_sensor_in_stat42 = new BitSet(new long[]{0x0000000000000402L});
-    public static final BitSet FOLLOW_7_in_cabecalho55 = new BitSet(new long[]{0x0000000000000300L});
-    public static final BitSet FOLLOW_8_in_cabecalho63 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_9_in_cabecalho76 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_10_in_sensor87 = new BitSet(new long[]{0x0000000000001800L});
-    public static final BitSet FOLLOW_tipoSensor_in_sensor89 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_tipoSensor105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_tipoSensor112 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_stat_in_prog20 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_6_in_stat28 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ID_in_stat32 = new BitSet(new long[]{0x0000000000000482L});
+    public static final BitSet FOLLOW_cabecalho_in_stat34 = new BitSet(new long[]{0x0000000000000482L});
+    public static final BitSet FOLLOW_sensor_in_stat38 = new BitSet(new long[]{0x0000000000000402L});
+    public static final BitSet FOLLOW_7_in_cabecalho51 = new BitSet(new long[]{0x0000000000000300L});
+    public static final BitSet FOLLOW_8_in_cabecalho59 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_9_in_cabecalho72 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_10_in_sensor83 = new BitSet(new long[]{0x0000000000001800L});
+    public static final BitSet FOLLOW_tipoSensor_in_sensor85 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_tipoSensor101 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_tipoSensor108 = new BitSet(new long[]{0x0000000000000002L});
 
 }
