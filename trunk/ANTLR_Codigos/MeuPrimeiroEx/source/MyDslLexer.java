@@ -1,4 +1,4 @@
-// $ANTLR 3.0 source/MyDsl.g 2011-01-13 12:00:54
+// $ANTLR 3.0 source/MyDsl.g 2011-01-13 16:20:05
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -27,8 +27,8 @@ public class MyDslLexer extends Lexer {
     public final void mT6() throws RecognitionException {
         try {
             int _type = T6;
-            // source/MyDsl.g:3:6: ( 'robo' )
-            // source/MyDsl.g:3:6: 'robo'
+            // source/MyDsl.g:7:6: ( 'robo' )
+            // source/MyDsl.g:7:6: 'robo'
             {
             match("robo"); 
 
@@ -46,8 +46,8 @@ public class MyDslLexer extends Lexer {
     public final void mT7() throws RecognitionException {
         try {
             int _type = T7;
-            // source/MyDsl.g:4:6: ( 'Adicionar' )
-            // source/MyDsl.g:4:6: 'Adicionar'
+            // source/MyDsl.g:8:6: ( 'Adicionar' )
+            // source/MyDsl.g:8:6: 'Adicionar'
             {
             match("Adicionar"); 
 
@@ -65,8 +65,8 @@ public class MyDslLexer extends Lexer {
     public final void mT8() throws RecognitionException {
         try {
             int _type = T8;
-            // source/MyDsl.g:5:6: ( 'defines' )
-            // source/MyDsl.g:5:6: 'defines'
+            // source/MyDsl.g:9:6: ( 'defines' )
+            // source/MyDsl.g:9:6: 'defines'
             {
             match("defines"); 
 
@@ -84,8 +84,8 @@ public class MyDslLexer extends Lexer {
     public final void mT9() throws RecognitionException {
         try {
             int _type = T9;
-            // source/MyDsl.g:6:6: ( 'includes' )
-            // source/MyDsl.g:6:6: 'includes'
+            // source/MyDsl.g:10:6: ( 'includes' )
+            // source/MyDsl.g:10:6: 'includes'
             {
             match("includes"); 
 
@@ -103,8 +103,8 @@ public class MyDslLexer extends Lexer {
     public final void mT10() throws RecognitionException {
         try {
             int _type = T10;
-            // source/MyDsl.g:7:7: ( 'criarSensor' )
-            // source/MyDsl.g:7:7: 'criarSensor'
+            // source/MyDsl.g:11:7: ( 'criarSensor' )
+            // source/MyDsl.g:11:7: 'criarSensor'
             {
             match("criarSensor"); 
 
@@ -122,8 +122,8 @@ public class MyDslLexer extends Lexer {
     public final void mT11() throws RecognitionException {
         try {
             int _type = T11;
-            // source/MyDsl.g:8:7: ( 'gps' )
-            // source/MyDsl.g:8:7: 'gps'
+            // source/MyDsl.g:12:7: ( 'gps' )
+            // source/MyDsl.g:12:7: 'gps'
             {
             match("gps"); 
 
@@ -141,8 +141,8 @@ public class MyDslLexer extends Lexer {
     public final void mT12() throws RecognitionException {
         try {
             int _type = T12;
-            // source/MyDsl.g:9:7: ( 'bussola' )
-            // source/MyDsl.g:9:7: 'bussola'
+            // source/MyDsl.g:13:7: ( 'bussola' )
+            // source/MyDsl.g:13:7: 'bussola'
             {
             match("bussola"); 
 
@@ -160,10 +160,10 @@ public class MyDslLexer extends Lexer {
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // source/MyDsl.g:61:5: ( ( 'a' .. 'z' )+ )
-            // source/MyDsl.g:61:5: ( 'a' .. 'z' )+
+            // source/MyDsl.g:37:5: ( ( 'a' .. 'z' )+ )
+            // source/MyDsl.g:37:5: ( 'a' .. 'z' )+
             {
-            // source/MyDsl.g:61:5: ( 'a' .. 'z' )+
+            // source/MyDsl.g:37:5: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
@@ -177,7 +177,7 @@ public class MyDslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // source/MyDsl.g:61:5: 'a' .. 'z'
+            	    // source/MyDsl.g:37:5: 'a' .. 'z'
             	    {
             	    matchRange('a','z'); 
 
@@ -207,10 +207,10 @@ public class MyDslLexer extends Lexer {
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // source/MyDsl.g:62:5: ( ( ' ' | '\\n' | '\\r' )+ )
-            // source/MyDsl.g:62:5: ( ' ' | '\\n' | '\\r' )+
+            // source/MyDsl.g:38:5: ( ( ' ' | '\\n' | '\\r' )+ )
+            // source/MyDsl.g:38:5: ( ' ' | '\\n' | '\\r' )+
             {
-            // source/MyDsl.g:62:5: ( ' ' | '\\n' | '\\r' )+
+            // source/MyDsl.g:38:5: ( ' ' | '\\n' | '\\r' )+
             int cnt2=0;
             loop2:
             do {

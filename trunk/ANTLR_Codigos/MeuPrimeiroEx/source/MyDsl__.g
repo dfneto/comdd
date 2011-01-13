@@ -1,4 +1,8 @@
 lexer grammar MyDsl;
+options {
+  language=Java;
+
+}
 
 T6 : 'robo' ;
 T7 : 'Adicionar' ;
@@ -8,8 +12,8 @@ T10 : 'criarSensor' ;
 T11 : 'gps' ;
 T12 : 'bussola' ;
 
-// $ANTLR src "source/MyDsl.g" 61
+// $ANTLR src "source/MyDsl.g" 37
 ID: 'a'..'z' + ;
-// $ANTLR src "source/MyDsl.g" 62
+// $ANTLR src "source/MyDsl.g" 38
 WS: (' ' |'\n' |'\r' )+ {skip();} ; // ignore whitespace
 
