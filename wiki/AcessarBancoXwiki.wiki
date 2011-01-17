@@ -15,8 +15,13 @@ O passo 2 me exigiria um estudo desta api e provavelmente que eu transformasse m
 5- Inserir esse programa na minha dsl.jar
 
 == 1.Encontrar onde a xwiki armazena seus conteúdos criadas na página xwiki ==
-Comecei procurando o conteúdo com comandos em sql, mas tava muito difícil de encontrar, daí instalei o PdAdmin III (tinha tentando o PhpPostgreAdmin, mas precisava do apache então descartei essa opção).
+Comecei procurando o conteúdo com comandos em sql, mas tava muito difícil de encontrar, daí instalei o PgAdmin III (tinha tentando o PhpPostgreAdmin, mas precisava do apache então descartei essa opção).
 
 O William deu a dica de procurar pela estrutura da tabela, aquela que tiver o maior campo.
 
 Consegui encontrar onde a xwiki armazena minhas páginas criadas. É na tabelam *xwikidoc
+
+== 2 Ler e escrever na tabela ==
+Isso consegui facilmente usando o programa PgAdmin III
+
+== 3 Criar um programa com jdbc que acesse um banco qualquer ==
