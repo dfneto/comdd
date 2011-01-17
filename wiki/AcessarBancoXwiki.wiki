@@ -27,6 +27,6 @@ Isso consegui facilmente usando o programa PgAdmin III
 
 == 3 Criar um programa com jdbc que acesse um banco qualquer ==
 *3.1* Criar uma classe que acesse meu banco: <br>
-http://www.mkyong.com/java/how-do-connect-to-postgresql-with-jdbc-driver-java/
+http://www.mkyong.com/java/how-do-connect-to-postgresql-with-jdbc-driver-java/ <br>
 No terminal: <br>
 export CLASSPATH=$CLASSPATH:/home/david/JavaJDBC/postgresql-9.0-801.jdbc4.jar <br>
