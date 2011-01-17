@@ -12,7 +12,8 @@ O passo 2 me exigiria um estudo desta api e provavelmente que eu transformasse m
 2- Ler e escrever na tabela; <br>
 3- Criar um programa com jdbc que acesse um banco qualquer; <br>
 4- Fazer esse programa com jdbc acessar a tabela do banco da xwiki onde armazena os dados que desejo manipular; <br>
-5- Inserir esse programa na minha dsl.jar
+5- Inserir esse programa na minha dsl.jar;
+6- Deixar minha xwiki o mais simples possível.
 
 == 1.Encontrar onde a xwiki armazena seus conteúdos criadas na página xwiki ==
 Comecei procurando o conteúdo com comandos em sql, mas tava muito difícil de encontrar, daí instalei o PgAdmin III (tinha tentando o PhpPostgreAdmin, mas precisava do apache então descartei essa opção).
