@@ -1,13 +1,10 @@
-#summary A dsl.jar deve ler do Banco?
+#summary A dsl.jar deve acessar o banco da xwiki
 
 = Introduction =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Para a dsl.jar acessar (ler e escrever) no banco da xwiki devo:
+1- Encontrar onde a xwiki armazena seus conteúdos criadas na página xwiki;
+2- Ler e escrever na tabela;
+3- Criar um programa com jdbc que acesse um banco qualquer;
+4- Fazer esse programa com jdbc acessar a tabela do banco da xwiki onde armazena os dados que desejo manipular;
+5- Inserir esse programa na minha dsl.jar
