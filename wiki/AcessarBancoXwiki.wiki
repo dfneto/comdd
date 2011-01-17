@@ -2,9 +2,16 @@
 
 = Introduction =
 
-Para a dsl.jar acessar (ler e escrever) no banco da xwiki devo: <br>
+Para a dsl.jar acessar (ler e escrever) no banco da xwiki tenho duas opções: <br>
+1- Acessando o banco diretamente; <br>
+2- Através de uma api da xwiki.
+
+O passo 2 me exigiria um estudo desta api e provavelmente que eu transformasse minha dsl.jar em uma api da xwiki. Então optei pelo passo 1 que parece ser mais rápido. Assim, devo: <br>
 1- Encontrar onde a xwiki armazena seus conteúdos criadas na página xwiki; <br>
 2- Ler e escrever na tabela; <br>
 3- Criar um programa com jdbc que acesse um banco qualquer; <br>
 4- Fazer esse programa com jdbc acessar a tabela do banco da xwiki onde armazena os dados que desejo manipular; <br>
 5- Inserir esse programa na minha dsl.jar
+
+== 1.Encontrar onde a xwiki armazena seus conteúdos criadas na página xwiki ==
+Comecei procurando o conteúdo com comandos em sql, mas tava muito difícil de encontrar, daí instalei o PdAdmin III (tinha tentando o PhpPostgreAdmin, mas precisava do apache então descartei essa opção).
