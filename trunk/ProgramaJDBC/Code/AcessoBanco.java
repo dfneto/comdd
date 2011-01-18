@@ -9,7 +9,8 @@ public class AcessoBanco {
 	//	String escrita = "UPDATE xwikidoc SET xwd_content='Chocolate Feliz' where xwd_name='TesteNome'";
 		String CodigoGeradoPelaDsl = "Quero alterar esse valor agora";
 		String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='TesteNome'";
-		Statement stmt; 		
+		Statement stmtSelect; 			
+		Statement stmtUpdate; 		
 		String url = "jdbc:postgresql://localhost:5432/xwiki";
 
 		System.out.println("-------- PostgreSQL JDBC Connection Testing ------------");
@@ -42,30 +43,32 @@ public class AcessoBanco {
 		try { 
 			connection = DriverManager.getConnection(url,"postgres", "12345"); 			
 			//Leitura (SELECT)
-			stmt = connection.createStatement(); 
-			ResultSet rs = stmt.executeQuery(leitura); 
+			stmtSelect = connection.createStatement(); 
+			ResultSet rsSelect = stmtSelect.executeQuery(leitura); 
 			
-			ResultSetMetaData rsmd = rs.getMetaData(); 
+			ResultSetMetaData rsmd = rsSelect.getMetaData(); 
 			int numberOfColumns = rsmd.getColumnCount(); 
 			int rowCount = 1; 
 			//Imprimindo os resultados no terminal		
 			System.out.println("Modelo (entrada): \n"); 
-			while (rs.next()) { 
+			while (rsSelect.next()) { 
 		
 				for (int i = 1; i <= numberOfColumns; i++) { 
 
 				  // System.out.print("   Campo " + i + ":  "); 
-				   System.out.println(rs.getString(i)); 
+				   System.out.println(rsSelect.getString(i)); 
 			        } 
 
 		       System.out.println(""); 
 		       rowCount++; 
 		       }
 			//Alterando o valor do campo (UPDATE)
-			stmt.executeUpdate(escrita);
+			stmtUpdate = connection.createStatement(); 
+			stmtUpdate.executeUpdate(escrita);
 			System.out.println("O valor foi alterado: \n String usada: "+escrita+ "\n Valor Alterado para: \n" + CodigoGeradoPelaDsl);	 
 
-		   	stmt.close(); 
+		   	stmtSelect.close(); 
+			stmtUpdate.close();
 		   	connection.close(); 
 
        } catch(SQLException ex) { 
