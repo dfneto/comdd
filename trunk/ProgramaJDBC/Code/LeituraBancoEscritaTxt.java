@@ -7,7 +7,7 @@ public class LeituraBancoEscritaTxt {//Leitura e escrita diretamente no Banco:
 		//declarando as variáveis:	 
 		Connection connection = null;
 		String leitura = "select xwd_content from xwikidoc where xwd_name='TesteNome'"; 
-	
+		String ValorLido = null;
 		Statement stmt; 		
 		String url = "jdbc:postgresql://localhost:5432/xwiki";
 
@@ -25,13 +25,15 @@ public class LeituraBancoEscritaTxt {//Leitura e escrita diretamente no Banco:
 			stmt = connection.createStatement(); 
 			ResultSet rs = stmt.executeQuery(leitura); 
 			
+			//ValorLido = rs.getString(1);
+
 			ResultSetMetaData rsmd = rs.getMetaData(); 
 			int numberOfColumns = rsmd.getColumnCount(); 
 			int rowCount = 1; 
 			//Imprimindo os resultados no terminal		
 			System.out.println("Modelo (entrada): \n"); 
 			while (rs.next()) { 
-		
+		ValorLido = rs.getString(1);
 				for (int i = 1; i <= numberOfColumns; i++) { 
 
 				  // System.out.print("   Campo " + i + ":  "); 
@@ -52,7 +54,7 @@ public class LeituraBancoEscritaTxt {//Leitura e escrita diretamente no Banco:
 		
 		try{
 			FileWriter writer = new FileWriter("CodigoGerado.txt");
-			writer.write("Este será o código gerado pela minha dsl!!");
+			writer.write(ValorLido);
 			writer.close(); 
 		}catch(IOException ex) {
 			ex.printStackTrace();
