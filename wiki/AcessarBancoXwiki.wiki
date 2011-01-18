@@ -25,8 +25,11 @@ Consegui encontrar onde a xwiki armazena minhas páginas criadas. É na tabelam 
 == 2 Ler e escrever na tabela ==
 Isso consegui facilmente usando o programa PgAdmin III
 
-== 3 Criar um programa com jdbc que acesse um banco qualquer ==
+== 3 Criar um programa com jdbc que acesse o banco da Xwiki ==
 *3.1* Criar uma classe que acesse meu banco: <br>
 http://www.mkyong.com/java/how-do-connect-to-postgresql-with-jdbc-driver-java/ <br>
-No terminal: <br>
+No terminal tenho que configurar o path: <br>
 export CLASSPATH=$CLASSPATH:/home/david/JavaJDBC/postgresql-9.0-801.jdbc4.jar <br>
+AcessoBanco.java lê (SELECT) e escreve (UPDATE) diretamente no banco exibindo no terminal. <br>
+*3.2* Criar uma classe que leia do banco e escreva num txt: <br>
+
