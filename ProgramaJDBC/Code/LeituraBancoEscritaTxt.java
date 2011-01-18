@@ -2,63 +2,58 @@
 import java.sql.*;
 import java.io.*;
 
-public class LeituraBancoEscritaTxt {//Leitura e escrita diretamente no Banco:
+public class LeituraBancoEscritaTxt {
 	public static void main(String[] argv) {
-		//declarando as variáveis:	 
 		Connection connection = null;
 		String leitura = "select xwd_content from xwikidoc where xwd_name='TesteNome'"; 
 		String ValorLido = null;
 		Statement stmt; 		
 		String url = "jdbc:postgresql://localhost:5432/xwiki";
-
  
 		try {
- 			Class.forName("org.postgresql.Driver"); //Carrega o driver do postgresql
+ 			Class.forName("org.postgresql.Driver"); 
 		} catch (ClassNotFoundException e) {
  			System.out.println("Where is your PostgreSQL JDBC Driver? \n Include in your library path!");
 			e.printStackTrace();
 			return;	}
  			
 		try { 
-			connection = DriverManager.getConnection(url,"postgres", "12345"); 			
+			connection = DriverManager.getConnection(url,"postgres", "12345"); //estabelecendo conexão			
 			//Leitura (SELECT)
 			stmt = connection.createStatement(); 
 			ResultSet rs = stmt.executeQuery(leitura); 
 			
-			//ValorLido = rs.getString(1);
+			rs.next();
+			ValorLido = rs.getString(1);
+			System.out.println(ValorLido);
 
 			ResultSetMetaData rsmd = rs.getMetaData(); 
 			int numberOfColumns = rsmd.getColumnCount(); 
-			int rowCount = 1; 
+						
 			//Imprimindo os resultados no terminal		
 			System.out.println("Modelo (entrada): \n"); 
-			while (rs.next()) { 
-		ValorLido = rs.getString(1);
+			while (rs.next()) {  //rs.next será true enquanto tiver linhas a percorrer
+				ValorLido = rs.getString(1);
 				for (int i = 1; i <= numberOfColumns; i++) { 
-
-				  // System.out.print("   Campo " + i + ":  "); 
-				   System.out.println(rs.getString(i)); 
+					System.out.println(rs.getString(i)); 
+					System.out.println(i); 	
 			        } 
-
-		       System.out.println(""); 
-		       rowCount++; 
-		       }
+		       	}
 			
 		   	stmt.close(); 
 		   	connection.close(); 
 
 			
 	       } catch(SQLException ex) { 
-		   System.err.print("SQLException: "); 
-		   System.err.println(ex.getMessage());} 
-		
+		   	System.err.print("SQLException: "); 
+		   	System.err.println(ex.getMessage());} 
+		//Escrita num txt
 		try{
 			FileWriter writer = new FileWriter("CodigoGerado.txt");
 			writer.write(ValorLido);
 			writer.close(); 
-		}catch(IOException ex) {
-			ex.printStackTrace();
-		}
+		} catch(IOException ex) {
+			ex.printStackTrace();}
 		
 	}
 }
