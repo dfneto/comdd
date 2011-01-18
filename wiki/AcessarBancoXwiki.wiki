@@ -20,7 +20,7 @@ Comecei procurando o conteúdo com comandos em sql, mas tava muito difícil de e
 
 O William deu a dica de procurar pela estrutura da tabela, aquela que tiver o maior campo.
 
-Consegui encontrar onde a xwiki armazena minhas páginas criadas. É na tabelam *xwikidoc
+Consegui encontrar onde a xwiki armazena minhas páginas criadas. É na tabela *xwikidoc*.
 
 == 2 Ler e escrever na tabela ==
 Isso consegui facilmente usando o programa PgAdmin III
@@ -32,4 +32,12 @@ No terminal tenho que configurar o path: <br>
 export CLASSPATH=$CLASSPATH:/home/david/JavaJDBC/postgresql-9.0-801.jdbc4.jar <br>
 AcessoBanco.java lê (SELECT) e escreve (UPDATE) diretamente no banco exibindo no terminal. <br>
 *3.2* Criar uma classe que leia do banco e escreva num txt: <br>
+*3.3* Fazer a classe AcessoBancoEscritaTxt se comunicar com a minha dsl.jar: <br>
+*3.4* AcessoBancoEscritaTxt deve virar: SelectBancoEscritaTxtUpdateBanco: <br>
+Ou seja, preciso que a classe que se comunique com meu banco faça: <br>
+1. Leia do banco (Modelo) -> Atividade da ClasseAuxiliar
+2. Gere um txt com o Modelo lido -> Atividade da ClasseAuxiliar
+3. Esse Modelo servirá de entrada para minha dsl.jar (TEST.java) que irá transformar em códigofonte.cpp -> Atividade da Classe Test (aquela que se comunica com a minha gramática MyDsl.g
+4. CódigoFonte.cpp deve ser inserido em uma tabela ->
 
+Vamos chamar a classe Auxilar que irá ler do banco, gerar um txt e depois escrever no banco. E a classe Test é aquela que se comunica com a minha gramática MyDsl.g
