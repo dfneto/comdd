@@ -18,7 +18,7 @@ public class Principal {
 			System.out.println("@@ Chamando a classe ExecutarDsl..........................\n");
 			System.out.println("======= Código Gerado =========\n");
 			dsl.executeDsl(); 
-			System.out.println("@@ A classe ExecutarDsl foi executada com sucesso .........................\n");
+			//System.out.println("@@ A classe ExecutarDsl foi executada com sucesso .........................\n");
 		} catch (Exception e) {
 			System.out.println("Fodeo");}
 
