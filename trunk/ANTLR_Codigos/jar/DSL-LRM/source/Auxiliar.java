@@ -1,7 +1,7 @@
 //A classe Auxiliar serve para auxiliar a classe TEST (que executa a MyDsl.g) realizando as seguintes atividades:
 //1.Leitura do banco (Modelo),  2.escrita do Modelo num txt. Esse Modelo servirá de entrada para minha dsl.jar (TEST.java) que irá 
 //transformar em códigofonte.cpp (Atividade da Classe TEST)
-//3. Inserir o CódigoFonte.cpp deve ser inserido em uma tabela
+//3. Gerar e 4.Inserir o CódigoFonte.cpp em uma tabela
 
 import java.sql.*;
 import java.io.*;
@@ -13,6 +13,10 @@ public class Auxiliar {
 		String ValorLido = null;
 		Statement stmt; 		
 		String url = "jdbc:postgresql://143.107.231.251:5432/xwiki";
+		String CodigoGeradoPelaDsl = "Substituir isso pelo codigo gerado pela dsl";
+		String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='TesteNome'";
+		Statement stmtSelect; 			
+		Statement stmtUpdate;
  		
 	public void estabelecerConexaoComBanco() {
 		//Carregando o Driver do Postgre
@@ -54,7 +58,7 @@ public class Auxiliar {
 		       	}*/
 			
 		   	stmt.close(); 
-		   	connection.close(); 
+		   	
 
 			
 		} catch(SQLException ex) { 
@@ -71,5 +75,25 @@ public class Auxiliar {
 		} catch(IOException ex) {
 			ex.printStackTrace();}
 	}
+	public void escritaNoBanco() {
+			try{
+				stmtUpdate = connection.createStatement(); 
+				stmtUpdate.executeUpdate(escrita);
+				System.out.println("O valor foi alterado: \n String usada: "+escrita+ "\n Valor Alterado para: \n" + CodigoGeradoPelaDsl);
+				stmtUpdate.close();
+			} catch(SQLException ex) { 
+				System.err.print("SQLException: "); 
+		   		System.err.println(ex.getMessage());} 
+	}
+	public void encerrarConexao() {
+		try{
+			connection.close(); 
+		} catch(SQLException ex) { 
+			System.err.print("SQLException: "); 
+			System.err.println(ex.getMessage());} 
+	/*public void gerarArquivoComCodigoFonteGerado() {
+		
+	}*/
 	
+	}
 }
