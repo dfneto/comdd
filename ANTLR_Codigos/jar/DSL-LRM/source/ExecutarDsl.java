@@ -1,9 +1,11 @@
 import org.antlr.runtime.*;
-//import java.io.*;
+import java.io.*;
 
 public class ExecutarDsl {
 	//public static void main(String[] args) throws Exception {
 	public void executeDsl() throws Exception {
+		System.setOut(new PrintStream(new File("CodigoGerado.cpp"))); //Essa linha joga tudo que sairia na saída padrão (no caso o código gerado) num log
+
 		// create a CharStream that reads from standard input
 		ANTLRFileStream input = new ANTLRFileStream("./Modelo/Modelo");
 		// create a lexer that feeds off of input CharStream
