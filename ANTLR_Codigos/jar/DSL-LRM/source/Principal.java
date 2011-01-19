@@ -10,6 +10,8 @@ public class Principal {
 		aux.estabelecerConexaoComBanco();
 		aux.leituraDoBanco();
 		aux.escritaDoModelo();
+		//aux.escritaNoBanco();
+		aux.encerrarConexao();		
 
 		ExecutarDsl dsl = new ExecutarDsl();
 		try{	
