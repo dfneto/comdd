@@ -1,7 +1,7 @@
 //A classe Auxiliar serve para auxiliar a classe TEST (que executa a MyDsl.g) realizando as seguintes atividades:
-//1.Leitura do banco (Modelo),  2.escrita do Modelo num txt, esse Modelo servirá de entrada para minha dsl.jar (TEST.java) que irá 
-//transformar em códigofonte.cpp -> Atividade da Classe TEST, 
-//3. O CódigoFonte.cpp deve ser inserido em uma tabela
+//1.Leitura do banco (Modelo),  2.escrita do Modelo num txt. Esse Modelo servirá de entrada para minha dsl.jar (TEST.java) que irá 
+//transformar em códigofonte.cpp (Atividade da Classe TEST)
+//3. Inserir o CódigoFonte.cpp deve ser inserido em uma tabela
 
 import java.sql.*;
 import java.io.*;
@@ -13,14 +13,14 @@ public class Auxiliar {
 		String ValorLido = null;
 		Statement stmt; 		
 		String url = "jdbc:postgresql://localhost:5432/xwiki";
- 
+ 		
+		//Carregando o Driver
 		try {
  			Class.forName("org.postgresql.Driver"); 
 		} catch (ClassNotFoundException e) {
  			System.out.println("Where is your PostgreSQL JDBC Driver? \n Include in your library path!");
 			e.printStackTrace();
 			return;	}
- 			
 		try { 
 			connection = DriverManager.getConnection(url,"postgres", "12345"); //estabelecendo conexão			
 			//Leitura (SELECT)
