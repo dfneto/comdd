@@ -7,5 +7,5 @@
 	java org.antlr.Tool MyDsl.g
 	javac -d ../classes *.java
 	cd ../classes
-	java Test
+	java Principal
 

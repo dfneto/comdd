@@ -7,7 +7,8 @@ import java.sql.*;
 import java.io.*;
 
 public class Auxiliar {
-	public static void main(String[] argv) {
+	//public static void main(String[] argv) {
+	public void conexao() {
 		Connection connection = null;
 		String leitura = "select xwd_content from xwikidoc where xwd_name='TesteNome'"; 
 		String ValorLido = null;
@@ -21,8 +22,11 @@ public class Auxiliar {
  			System.out.println("Where is your PostgreSQL JDBC Driver? \n Include in your library path!");
 			e.printStackTrace();
 			return;	}
-		try { 
-			connection = DriverManager.getConnection(url,"postgres", "12345"); //estabelecendo conexão			
+		//try {	 
+			connection = DriverManager.getConnection(url,"postgres", "12345"); //estabelecendo conexão
+	}
+	public void leitura() {
+		try {
 			//Leitura (SELECT)
 			stmt = connection.createStatement(); 
 			ResultSet rs = stmt.executeQuery(leitura); 
@@ -51,7 +55,8 @@ public class Auxiliar {
 		} catch(SQLException ex) { 
 			System.err.print("SQLException: "); 
 		   	System.err.println(ex.getMessage());} 
-		
+	}
+	public void escritaTxt() {
 		//Escrita num txt
 		try{
 			FileWriter writer = new FileWriter("/home/david/comdd/ANTLR_Codigos/jar/DSL-LRM/classes/Modelo/Modelo");
@@ -59,6 +64,6 @@ public class Auxiliar {
 			writer.close(); 
 		} catch(IOException ex) {
 			ex.printStackTrace();}
-		
+	}
 	}
 }
