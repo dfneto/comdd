@@ -12,7 +12,7 @@ public class Auxiliar {
 		String leitura = "select xwd_content from xwikidoc where xwd_name='TesteNome'"; 
 		String ValorLido = null;
 		Statement stmt; 		
-		String url = "jdbc:postgresql://localhost:5432/xwiki";
+		String url = "jdbc:postgresql://143.107.231.251:5432/xwiki";
  		
 		//Carregando o Driver
 		try {
@@ -29,31 +29,32 @@ public class Auxiliar {
 			
 			rs.next();
 			ValorLido = rs.getString(1);
-			System.out.println(ValorLido);
+			System.out.println("Modelo (ValorLido):\n "+ValorLido);
 
-			ResultSetMetaData rsmd = rs.getMetaData(); 
-			int numberOfColumns = rsmd.getColumnCount(); 
+			//ResultSetMetaData rsmd = rs.getMetaData(); 
+			//int numberOfColumns = rsmd.getColumnCount(); 
 						
 			//Imprimindo os resultados no terminal		
-			System.out.println("Modelo (entrada): \n"); 
-			while (rs.next()) {  //rs.next será true enquanto tiver linhas a percorrer
+			//System.out.println("Modelo (entrada): \n"); 
+			/*while (rs.next()) {  //rs.next será true enquanto tiver linhas a percorrer
 				ValorLido = rs.getString(1);
 				for (int i = 1; i <= numberOfColumns; i++) { 
 					System.out.println(rs.getString(i)); 
 					System.out.println(i); 	
 			        } 
-		       	}
+		       	}*/
 			
 		   	stmt.close(); 
 		   	connection.close(); 
 
 			
-	       } catch(SQLException ex) { 
-		   	System.err.print("SQLException: "); 
+		} catch(SQLException ex) { 
+			System.err.print("SQLException: "); 
 		   	System.err.println(ex.getMessage());} 
+		
 		//Escrita num txt
 		try{
-			FileWriter writer = new FileWriter("CodigoGerado.txt");
+			FileWriter writer = new FileWriter("/home/david/comdd/ANTLR_Codigos/jar/DSL-LRM/classes/Modelo/Modelo");
 			writer.write(ValorLido);
 			writer.close(); 
 		} catch(IOException ex) {
