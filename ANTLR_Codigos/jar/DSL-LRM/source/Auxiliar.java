@@ -13,8 +13,8 @@ public class Auxiliar {
 		String ValorLido = null;
 		Statement stmt; 		
 		String url = "jdbc:postgresql://143.107.231.251:5432/xwiki";
-		String CodigoGeradoPelaDsl = "Substituir isso pelo codigo gerado pela dsl";
-		String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='CodigoGerado'";
+		String CodigoGeradoPelaDsl = "";
+		//String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='CodigoGerado'";
 		Statement stmtSelect; 			
 		Statement stmtUpdate;
  		
@@ -76,11 +76,26 @@ public class Auxiliar {
 			ex.printStackTrace();}
 	}
 	
-	public void lerArquivoCodigoGerado() {
-			
+	public void leituraDoArquivoCodigoGerado() {
+		try {
+                        File myFile = new File("CodigoGerado.cpp");
+                        FileReader fileReader = new FileReader(myFile);
+                        BufferedReader reader = new BufferedReader(fileReader);
+                        String line = null;
+                        while ((line = reader.readLine()) != null) {
+                                System.out.println(line);
+                                CodigoGeradoPelaDsl = CodigoGeradoPelaDsl + "\n" + line;
+	                }
+			System.out.println("O codigo foi armazenado com sucesso: \n"+CodigoGeradoPelaDsl);
+                        reader.close();
+                } catch(Exception ex) {
+                        ex.printStackTrace();
+                }
+
 	}
 
 	public void escritaNoBanco() {
+			String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='CodigoGerado'";
 			try{
 				stmtUpdate = connection.createStatement(); 
 				stmtUpdate.executeUpdate(escrita);
