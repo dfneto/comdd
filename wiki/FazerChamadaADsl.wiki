@@ -1,4 +1,4 @@
-= Introduction =
+= Como chamar minha DSl a partir da Xwiki =
 
 == Como o sistema funciona: ==
   # Insiro o modelo na xwiki
@@ -18,13 +18,3 @@
   # Transformando minha dsl.jar em uma aplicação pra xwiki
   # Usando webservices, stubs, triggers ...
 
-
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
--
