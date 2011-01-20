@@ -10,9 +10,7 @@ public class Principal {
 		aux.estabelecerConexaoComBanco();
 		aux.leituraDoBanco();
 		aux.escritaDoModelo();
-		//aux.escritaNoBanco();
-		aux.encerrarConexao();		
-
+		
 		ExecutarDsl dsl = new ExecutarDsl();
 		try{	
 			System.out.println("@@ Chamando a classe ExecutarDsl..........................\n");
@@ -22,7 +20,9 @@ public class Principal {
 			System.out.println("@@ A classe ExecutarDsl foi executada com sucesso .........................\n");
 		} catch (Exception e) {
 			System.out.println("Fodeo");}
-
+		
+		aux.escritaNoBanco();
+		aux.encerrarConexao();
 	}
 }
 		

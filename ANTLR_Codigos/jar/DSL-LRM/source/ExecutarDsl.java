@@ -1,3 +1,5 @@
+//Lê o modelo de entrada passado pela classe Principal, se comunica com a gramática e gerar um arquivo CódigoGerado.cpp
+
 import org.antlr.runtime.*;
 import java.io.*;
 
