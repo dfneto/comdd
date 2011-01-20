@@ -1,4 +1,5 @@
 //Gravando um texto em um txt
+//Código extraído do JavaHeadFirts
 
 import java.io.*;
 

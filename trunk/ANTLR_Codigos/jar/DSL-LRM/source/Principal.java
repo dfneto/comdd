@@ -21,6 +21,7 @@ public class Principal {
 		} catch (Exception e) {
 			System.out.println("Fodeo");}
 		
+		aux.leituraDoArquivoCodigoGerado();		
 		aux.escritaNoBanco();
 		aux.encerrarConexao();
 	}
