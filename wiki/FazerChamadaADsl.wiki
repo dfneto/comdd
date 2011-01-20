@@ -1,7 +1,23 @@
 = Introduction =
 
-Como o sistema funciona:
+== Como o sistema funciona: ==
   # Insiro o modelo na xwiki
+  # Rodo o scrit de execução da dsl
+  # Restarto o servidor com a xwiki
+  # Vou até a página de código gerado
+
+== Como o sistema deve funcionar ==
+  # Insiro o modelo na xwiki
+  # A partir da página que inseri o modelo devo chamar a dsl
+  # O servidor com a xwiki nao deve precisar ser restartado
+  # Há um link para a página com código gerado e outro link pra baixar o código
+
+= Como fazer uma chamada a dsl? ==
+  # Usando servelets
+  # script em php -> solução indesejada
+  # Transformando minha dsl.jar em uma aplicação pra xwiki
+  # Usando webservices, stubs, triggers ...
+
 
 
 
