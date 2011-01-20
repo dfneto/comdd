@@ -3,8 +3,10 @@ import java.io.*;
 
 public class ExecutarDsl {
 	//public static void main(String[] args) throws Exception {
-	public void executeDsl() throws Exception {
-		System.setOut(new PrintStream(new File("CodigoGerado.cpp"))); //Essa linha joga tudo que sairia na saída padrão (no caso o código gerado) num log
+	public static void executeDsl() throws Exception {
+		PrintStream padrao = System.out;
+		PrintStream fileLog = new PrintStream(new File("CodigoGerado.cpp")); 
+		System.setOut(fileLog);//Joga tudo que sairia na saída padrão (no caso o código gerado) num arquivo
 
 		// create a CharStream that reads from standard input
 		ANTLRFileStream input = new ANTLRFileStream("./Modelo/Modelo");
@@ -16,18 +18,10 @@ public class ExecutarDsl {
 		MyDslParser parser = new MyDslParser(tokens);
 		// begin parsing at rule r
 		parser.stat();
+				
+		System.setOut(padrao); //Volta ao normal: joga tudo que sairia no log na saída padrao
 		}	
-	/*public void generateFile() {
-		try{	
-			String CodigoGerado = parser.stat();
-			FileWriter writer = new FileWriter("CodigoGerado.cpp");
-			writer.write(CodigoGerado);
-			writer.close(); 
-			System.out.println("@@ Foi criado um arquivo com o código gerado.................");
-		} catch(IOException ex) {
-				ex.printStackTrace();}
-		}
-	*/
+	
 		
 	}
 

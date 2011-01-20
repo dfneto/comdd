@@ -3,16 +3,10 @@
 	rm -v MyDslLexer.java  
 	rm -v MyDsl.tokens 
 	rm -v ../classes/*.class 
+	rm -v ../classes/CodigoGerado.cpp
 
 	java org.antlr.Tool MyDsl.g
-	javac -d ../classes MyDslLexer.java
-	javac -d ../classes MyDslParser.java
-	javac -d ../classes TLexer.java
-	javac -d ../classes ExecutarDsl.java 
-	javac -d ../classes Auxiliar.java
-	javac -d ../classes Principal.java
-
-
+	javac -d ../classes *.java
 
 	cd ../classes
 	java Principal
