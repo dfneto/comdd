@@ -14,7 +14,7 @@ public class Auxiliar {
 		Statement stmt; 		
 		String url = "jdbc:postgresql://143.107.231.251:5432/xwiki";
 		String CodigoGeradoPelaDsl = "Substituir isso pelo codigo gerado pela dsl";
-		String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='TesteNome'";
+		String escrita = "UPDATE xwikidoc SET xwd_content='" + CodigoGeradoPelaDsl + "' where xwd_name='CodigoGerado'";
 		Statement stmtSelect; 			
 		Statement stmtUpdate;
  		
@@ -75,11 +75,16 @@ public class Auxiliar {
 		} catch(IOException ex) {
 			ex.printStackTrace();}
 	}
+	
+	public void lerArquivoCodigoGerado() {
+			
+	}
+
 	public void escritaNoBanco() {
 			try{
 				stmtUpdate = connection.createStatement(); 
 				stmtUpdate.executeUpdate(escrita);
-				System.out.println("O valor foi alterado: \n String usada: "+escrita+ "\n Valor Alterado para: \n" + CodigoGeradoPelaDsl);
+				System.out.println("Valor Alterado para: \n" + CodigoGeradoPelaDsl);
 				stmtUpdate.close();
 			} catch(SQLException ex) { 
 				System.err.print("SQLException: "); 
