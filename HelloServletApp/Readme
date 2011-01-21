@@ -1,0 +1,5 @@
+Esta página deve ficar em:
+/var/lib/tomcat6/webapps/
+
+Depois é só acessar:
+http://localhost:8080/HelloServletApp/MyServlet.html
