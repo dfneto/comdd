@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<!-- Indica ao Tomcat as Servlets da nossa aplicacao -->
+	
+	<servlet>
+      		<servlet-name>HelloServlet</servlet-name>
+      		<servlet-class>HelloServlet</servlet-class>
+    	</servlet>
+
+	<!-- Define um padrão de url através do qual a HelloServlet será acessada.
+	     No caso qualquer url do tipo 
+	     "http://localhost:8080/HelloServletApp/QualquerCoisa.teste"
+	     faz com que a nossa HelloServlet seja chamada -->
+	
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name> 
+		<url-pattern>*.teste</url-pattern> 
+	</servlet-mapping>
+	
+	<!-- Define outro padrão de url através do qual a HelloServlet será acessada.
+	     No caso, a url "http://localhost:8080/HelloServletApp/HelloServlet"
+	     faz com que a nossa HelloServlet seja chamada -->
+	
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name> 
+		<url-pattern>/HelloServlet</url-pattern> 
+	</servlet-mapping>
+
+    	<session-config>
+      		<session-timeout>30</session-timeout>    <!-- 30 minutes -->
+	</session-config>
+
+</web-app>
+
