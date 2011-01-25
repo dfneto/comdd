@@ -12,9 +12,12 @@
   # O servidor com a xwiki nao deve precisar ser restartado
   # Há um link para a página com código gerado e outro link pra baixar o código
 
-= Como fazer uma chamada a dsl? ==
+== Como fazer uma chamada a dsl? ==
   # Usando servelets
   # script em php -> solução indesejada
   # Transformando minha dsl.jar em uma aplicação pra xwiki
   # Usando webservices, stubs, triggers ...
 
+
+== Andamento ==
+Comecei estudando sobre servlets. Aí to gastando muito tempo estudando servlets e ainda acho que vou gastar mais um tempão criando um webservice. Talvez seja melhor transformar minha aplicação em uma app da xwiki. Porque assim eu nao tenho nem que criar um servlet e nem um webservice.
