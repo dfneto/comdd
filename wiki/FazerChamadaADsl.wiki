@@ -21,3 +21,6 @@
 
 == Andamento ==
 Comecei estudando sobre servlets. Aí to gastando muito tempo estudando servlets e ainda acho que vou gastar mais um tempão criando um webservice. Talvez seja melhor transformar minha aplicação em uma app da xwiki. Porque assim eu nao tenho nem que criar um servlet e nem um webservice.
+
+27/01/11
+Acredito que posso introduzir toda minha aplicação java numa página JSP e com isso nao preciso nem de um servlet e nem de um webservice.
