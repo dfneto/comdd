@@ -1,0 +1,5 @@
+A pasta DSL deve estar em: sftp://david@143.107.231.251/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL
+
+e para acessar a DSL devo entrar no endereço:
+
+http://143.107.231.251:8080/DSL/index.html
