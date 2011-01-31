@@ -24,3 +24,6 @@ Comecei estudando sobre servlets. Aí to gastando muito tempo estudando servlets
 
 27/01/11
 Acredito que posso introduzir toda minha aplicação java numa página JSP e com isso nao preciso nem de um servlet e nem de um webservice.
+
+28/01/01
+Nao estava conseguindo a partir do Servlet conectar ao banco. Daí bastava inserir o driver "postgresql-9.0-801.jdbc4" em: sftp://david@143.107.231.251/home/david/Xwiki/apache-tomcat-6.0.30/lib/
