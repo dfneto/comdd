@@ -1,0 +1,5 @@
+david@linux-touch:~/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source$java org.antlr.Tool MyDsl.g
+david@linux-touch:~/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source$ javac -d ../classes/ Auxiliar.java MyDslLexer.java MyDslParser.java ExecutarDsl.java Principal.java 
+david@linux-touch:~/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source$ javac -d ../classes/ -cp /home/david/Área\ de\ Trabalho/servlet-api.jar:.:/home/david/ANTLR3.0/antlr-3.0/lib/antlr-3.0.jar:/home/david/ANTLR3.0/antlr-3.0/lib/stringtemplate-3.0.jar:/home/david/ANTLR3.0/antlr-3.0/lib/antlr-2.7.7.jar:/home/david/comdd/ProgramaJDBC/postgresql-9.0-801.jdbc4.jar DslServlet.java 
+
+obs: a classe Principal não está sendo usada.
