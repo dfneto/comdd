@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Inserir no banco sem a necessidade de ter que reiniciar o servidor ou o banco
 
 = Introduction =
 
