@@ -27,3 +27,6 @@ Acredito que posso introduzir toda minha aplicação java numa página JSP e com
 
 28/01/01
 Nao estava conseguindo a partir do Servlet conectar ao banco. Daí bastava inserir o driver "postgresql-9.0-801.jdbc4" em: sftp://david@143.107.231.251/home/david/Xwiki/apache-tomcat-6.0.30/lib/
+
+== Solução Aplicada ==
+Usei um servlet simples pra fazer a dsl rodar. Necessário colocar os arquivos jar (driver do postgre e do antlr) na lib do apache. Seguir as instruções presentes na pasta "DSL na Wiki". Versão final:127
