@@ -7,15 +7,15 @@ http://143.107.231.251:8080/DSL/index.html
 ## Trabalhando com o Servlet:
 Devo inicialmente colocar a pasta DSL no servidor (ver ## anterior) e depois tudo que eu alterar lá devo colocar aqui, dentro da pasta comdd que está no svn.
 Compilando:
-david@linux-touch:~/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source$ javac -d ../classes/ Printer.java Auxiliar.java -> e todas as outras classes que eu alterar
-david@linux-touch:~/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source$ javac -d ../classes/ -cp /home/david/Área\ de\ Trabalho/servlet-api.jar:. DslServlet.java 
+ver readme-compile em: sftp://david@143.107.231.251/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/source
 
 Restartar o server:
 david@linux-touch:~/Xwiki$ ./restart 
 
 Assim: 
 -Alterar meu servlet
--Compilar (lembre do path: tem que ser /home/david/comdd/HelloServ../servlet-api.jar:.)
+-Compilar (lembre do path: tem que ser /home/david/comdd/HelloServ../servlet-api.jar:.:...antlr2.7...antlr3...antlr)
+lembrar que os arquivos do antlr devem estar na lib do apache-tomcat 
 -Reiniciar o tomcat
 -Dar um refresh na página
 
