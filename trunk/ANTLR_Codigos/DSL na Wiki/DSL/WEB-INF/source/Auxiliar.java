@@ -16,30 +16,29 @@ public class Auxiliar {
 		//String escrita = "UPDATE xwikidoc SET xwd_content='" + codigoGeradoPelaDsl + "' where xwd_name='CodigoGerado'";
 		Statement stmtSelect; 			
 		Statement stmtUpdate;
-		String resultado; 			
-		String resultado1;
-		String resultado2; 
+		String resultDriverBanco; //do carregamento do driver do banco
+		String resultConexaoBanco; 
+		String resultEscritaModelo;
+		String resultEscritaBanco; 
+	 	String resultFimConexao; //da conexao com o banco
 	
-	public String estabelecerConexaoComBanco() {
-		//Carregando o Driver do Postgre
+	public void estabelecerConexaoComBanco() {
+		//Carregando o Driver do Postgres
 		try {
  			Class.forName("org.postgresql.Driver"); 
-			resultado1 = "ok1";			
+			resultDriverBanco = "Driver Carregado";			
 		} catch (ClassNotFoundException e) {
  			System.out.println("Where is your PostgreSQL JDBC Driver? \n Include in your library path!");
 			e.printStackTrace();
-			resultado1 = "fail1";	}
+			resultDriverBanco = "Driver Não Carregado";	}
 		//estabelecendo conexão com o banco		
 		try {	 
 			connection = DriverManager.getConnection(url,"postgres", "12345"); 
-			resultado2 = "ok2";
+			resultConexaoBanco = "Conexao estabelecida";
 		} catch(SQLException ex) {
 	                System.err.print("SQLException: ");
                         System.err.println(ex.getMessage());
-			resultado2 = "fail2";	}
-
-			resultado = resultado1 + "  " + resultado2;
-			return resultado;
+			resultConexaoBanco = "Conexão Não Estabelecida";	}
         }
 
 	public void leituraDoBanco() {
@@ -51,12 +50,7 @@ public class Auxiliar {
 			rs.next();
 			valorLido = rs.getString(1);
 			//System.out.println("Modelo extraído da Xwiki:\n\n"+valorLido);
-
-			
 		   	stmt.close(); 
-		   	
-
-			
 		} catch(SQLException ex) { 
 			System.err.print("SQLException: "); 
 		   	System.err.println(ex.getMessage());} 
@@ -64,17 +58,18 @@ public class Auxiliar {
 	public void escritaDoModelo() {
 		//Escrever o Modelo lido do banco num arquivo
 		try{
-			FileWriter writer = new FileWriter("/home/david/comdd/ANTLR_Codigos/jar/DSL-LRM/classes/Modelo/Modelo");
+			FileWriter writer = new FileWriter("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/Modelo");
 			writer.write(valorLido);
 			writer.close(); 
-			//System.out.println("@@ Foi criado um arquivo com o modelo extraído da Xwiki.................");
+			resultEscritaModelo= "Modelo Gravado";
 		} catch(IOException ex) {
-			ex.printStackTrace();}
+			ex.printStackTrace();
+			resultEscritaModelo= "Modelo Não Gravado";}
 	}
 	
 	public void leituraDoArquivoCodigoGerado() {
 		try {
-                        File myFile = new File("CodigoGerado.cpp");
+                        File myFile = new File("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/CodigoGerado.cpp");
                         FileReader fileReader = new FileReader(myFile);
                         BufferedReader reader = new BufferedReader(fileReader);
                         String line = null;
@@ -82,11 +77,9 @@ public class Auxiliar {
                                 System.out.println(line);
                                 codigoGeradoPelaDsl = codigoGeradoPelaDsl + "\n" + line;
 	                }
-			System.out.println("O codigo foi armazenado com sucesso: \n"+codigoGeradoPelaDsl);
-                        reader.close();
+			reader.close();
                 } catch(Exception ex) {
-                        ex.printStackTrace();
-                }
+                        ex.printStackTrace(); }
 
 	}
 
@@ -95,18 +88,21 @@ public class Auxiliar {
 			try{
 				stmtUpdate = connection.createStatement(); 
 				stmtUpdate.executeUpdate(escrita);
-				System.out.println("Valor Alterado para: \n" + codigoGeradoPelaDsl);
 				stmtUpdate.close();
+				resultEscritaBanco ="Codigo escrito no banco";
 			} catch(SQLException ex) { 
 				System.err.print("SQLException: "); 
-		   		System.err.println(ex.getMessage());} 
+		   		System.err.println(ex.getMessage());
+				resultEscritaBanco ="Codigo Não escrito no banco";} 
 	}
 	public void encerrarConexao() {
 		try{
 			connection.close(); 
+			resultFimConexao="Conexao com banco encerrada";
 		} catch(SQLException ex) { 
 			System.err.print("SQLException: "); 
-			System.err.println(ex.getMessage());} 
+			System.err.println(ex.getMessage());
+			resultFimConexao="Conexao com banco Nao encerrada";} 
 	/*public void gerarArquivoComCodigoFonteGerado() {
 		
 	}*/

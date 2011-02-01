@@ -16,12 +16,13 @@ public class Principal {
 			System.out.println("@@ Chamando a classe ExecutarDsl..........................\n");
 			System.out.println("======= Código Gerado =========\n");
 			dsl.executeDsl(); 
-			PrintStream padrao = System.out;
+			//PrintStream padrao = System.out;
 			System.out.println("@@ A classe ExecutarDsl foi executada com sucesso .........................\n");
 		} catch (Exception e) {
 			System.out.println("Fodeo");}
 		
-		aux.leituraDoArquivoCodigoGerado();		
+		aux.leituraDoArquivoCodigoGerado();	
+		System.out.println("Codigo gerado: "+aux.codigoGeradoPelaDsl);	
 		aux.escritaNoBanco();
 		aux.encerrarConexao();
 	}

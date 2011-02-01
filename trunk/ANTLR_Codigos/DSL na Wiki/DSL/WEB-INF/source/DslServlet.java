@@ -1,16 +1,16 @@
-//A classe DslServlet é um servlet responsável por chamar os métodos da classe Auxiliar
+//A classe DslServlet é um servlet responsável por chamar os métodos da classe Auxiliar. Substitui a classe Principal que faz a mesma coisa só que localmente
 
 import java.io.*;  
 import javax.servlet.*;  
 import javax.servlet.http.*;  
-import java.sql.*;   
+import java.sql.*;  
 
 
 public class DslServlet extends HttpServlet{  
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 	throws IOException, ServletException {  
 	 	// implementação da Servlet...  
-  		// vamos definir o tipo de conteudo 
+  		// definindo o tipo de conteudo 
 		// que será devolvido pelo response
 		response.setContentType("text/html");
 
@@ -26,27 +26,39 @@ public class DslServlet extends HttpServlet{
 		
 		//Executando a DSL (transformação do modelo em código)
 		ExecutarDsl dsl = new ExecutarDsl();
-		dsl.executeDsl(); 
+		String resultExecucaoDsl; //da execução da dsl	
+		try{	
+			dsl.executeDsl();
+			resultExecucaoDsl = "DSL executada com sucesso"; 
+	
+		} catch (Exception e) {
+			System.out.println("Fodeo");
+			resultExecucaoDsl = "DSL Não executada com sucesso"; }		
 
-		Printer p = new Printer();
+		aux.leituraDoArquivoCodigoGerado();		
+		aux.escritaNoBanco();
+		aux.encerrarConexao();
 		
-	        
-
-		// Agora vamos escrever o conteudo da pagina
+		// Escrevendo o conteudo da pagina
 		out.println("<HTML>");
 		out.println("<BODY>");
 		out.println("<H1>DSL Rodando!</h1>");
-		out.println("String de leitura:"+aux.leitura);	
+		out.println(aux.resultDriverBanco);
+		out.println("<br><br>");
+		out.println(aux.resultConexaoBanco);
 		out.println("<br><br><br>");
-		out.println("Valor lido:"+aux.valorLido);			
-		out.println("<br><br><br>");
-		//método que mostra uma mensagem na página:
-		out.println(aux.estabelecerConexaoComBanco());
-		//out.println(p.imprimaOk());
-		//out.println(aux.leitura);
-		//out.println(aux.imprimirOk());		
-		//método que criar um arquivo 
-		
+		out.println("Valor Lido: "+aux.valorLido);
+		out.println("<br><br>");
+		out.println(aux.resultEscritaModelo);
+		out.println("<br><br>");
+		out.println(resultExecucaoDsl);
+		out.println("<br><br>");
+		out.println("Codigo Gerado: "+aux.codigoGeradoPelaDsl);
+		out.println("<br><br>");
+		out.println(aux.resultEscritaBanco);
+		out.println("<br><br>");
+		out.println(aux.resultFimConexao);
+		out.println("<br><br>");
 		out.println("</body>");
 		out.println("</html>");
 
