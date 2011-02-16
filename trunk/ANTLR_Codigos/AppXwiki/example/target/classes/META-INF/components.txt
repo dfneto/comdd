@@ -1,0 +1,4 @@
+com.acme.internal.DefaultHelloWorld
+com.acme.internal.HelloWorldScriptService
+com.acme.internal.ImplDsl
+com.acme.internal.DSLScriptService
