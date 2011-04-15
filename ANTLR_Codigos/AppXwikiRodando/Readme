@@ -1,0 +1,49 @@
+##Este documento explica todos os passos para a criação da dsl como uma app da xwiki
+
+##Passos
+1. Implementar a linguagem usando o ANTLR
+2. Transformar a linguagem num plugin para Xwiki usando o Maven
+3. Criar uma página que pegue o modelo e mande para o transformador
+
+
+Instalar a Xwiki
+Acrescentar os .jar do class path 
+
+
+
+##Descrição dos Arquivos e Diretórios:
+->example3: Pasta com os arquivos de entrada e de saída do maven. O arquivoGerado.jar deve estar dentro de /home/david/XWIKI/xwiki-enterprise-jetty-hsqldb-2.7.1/webapps/xwiki/WEB-INF/lib
+Os arquivos do cp (antlr2-7-7) devem estar tbm em /home/david/XWIKI/xwiki-enterprise-jetty-hsqldb-2.7.1/webapps/xwiki/WEB-INF/lib
+
+->/home/david/comdd/ANTLR_Codigos/AppXwikiRodando/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo:
+Pasta temporária a qual é enviada os arquivo modelo e o arquivo de código gerado. É nela que o transformador busca pelo modelo de entrada e nela para onde ele manda o código gerado.
+
+
+
+
+##Código da página que interfaceia entre a aplicação e o usuário:
+
+{{velocity}}
+
+#set($modelo=$request.getParameter('modelo'))
+
+#if ($modelo)
+$!modelo
+#set ($saida = $services.dsl.executeDsl2($modelo)) 
+$!saida
+#end
+
+
+
+{{html}}
+<form>
+<textarea name='modelo'>$!modelo</textarea>
+<input type='submit' value='Enviar'/>
+</form>
+
+{{/html}}
+
+
+{{/velocity}}
+
+
