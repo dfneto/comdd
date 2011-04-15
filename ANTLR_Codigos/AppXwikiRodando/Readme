@@ -18,7 +18,7 @@ Os arquivos do cp (antlr2-7-7) devem estar tbm em /home/david/XWIKI/xwiki-enterp
 ->/home/david/comdd/ANTLR_Codigos/AppXwikiRodando/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo:
 Pasta temporária a qual é enviada os arquivo modelo e o arquivo de código gerado. É nela que o transformador busca pelo modelo de entrada e nela para onde ele manda o código gerado.
 
-
+site: http://platform.xwiki.org/xwiki/bin/view/DevGuide/WritingComponents
 
 
 ##Código da página que interfaceia entre a aplicação e o usuário:
