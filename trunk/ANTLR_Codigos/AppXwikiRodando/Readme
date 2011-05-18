@@ -3,7 +3,11 @@
 ##Passos
 1. Implementar a linguagem usando o ANTLR
 2. Transformar a linguagem num plugin para Xwiki usando o Maven
+	Instalar o MAVEN
+	Pegar o arquivo ponto_m2 no meu email e configurar o .bashrc de acordo com meu email tbm
+	Seguir http://platform.xwiki.org/xwiki/bin/view/DevGuide/WritingComponents
 3. Criar uma página que pegue o modelo e mande para o transformador
+	Editar uma página da xwiki com o código de acesso
 
 
 Instalar a Xwiki
@@ -21,6 +25,7 @@ Pasta temporária a qual é enviada os arquivo modelo e o arquivo de código ger
 site: http://platform.xwiki.org/xwiki/bin/view/DevGuide/WritingComponents
 
 
+##código de acesso##
 ##Código da página que interfaceia entre a aplicação e o usuário:
 
 {{velocity}}
