@@ -1,0 +1,2 @@
+ccom.acme.internal.DefaultHelloWorld
+ccom.acme.internal.HelloWorldScriptService
