@@ -1,0 +1,46 @@
+pom.xml									-> Define as dependências
+
+src/main/java/com/acme/HelloWorld.java   				-> Contains the definition of a regular Java interface
+@ComponentRole /* annotation used for declaring the service our component provides */
+public interface HelloWorld
+{
+    String sayHello();
+}
+
+
+src/main/java/com/acme/internal/DefaultHelloWorld.java			-> The implementation of the interface
+@Component /* annotation used for declaring a component implementation */
+public class DefaultHelloWorld implements HelloWorld
+//@Component("database")
+//public class DatabaseHelloWorld implements HelloWorld
+/**
+ * Says hello by returning a greeting to the caller.
+ *
+ * @return A greeting.
+ */
+public String sayHello()
+{
+  return "Hello world!";
+}
+
+
+src/main/java/com/acme/internal/HelloWorldScriptService.java		-> Components can be made accessible to wiki pages by writing a ScriptService implementation. 
+@Component("hello")
+public class HelloWorldScriptService implements ScriptService
+{
+   @Requirement
+   private HelloWorld helloWorld;
+
+   public String greet()
+   {
+       return this.helloWorld.sayHello();
+   }
+}
+
+Ná pagina da xwiki temos:
+	$services.hello.greet()
+Que irá chamar o HelloWorldScriptService
+
+src/main/resources/META-INF/components.txt			-> Nele deve ser declarado o ScriptService e a DefaultHelloWorld
+
+src/test/java/com/acme/HelloWorldTest.java
