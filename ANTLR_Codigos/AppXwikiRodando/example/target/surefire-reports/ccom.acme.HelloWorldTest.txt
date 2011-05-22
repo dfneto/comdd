@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: ccom.acme.HelloWorldTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec <<< FAILURE!
+testSayHello(ccom.acme.HelloWorldTest)  Time elapsed: 0.155 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Hello]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:123)
+	at org.junit.Assert.assertEquals(Assert.java:145)
+	at ccom.acme.HelloWorldTest.testSayHello(HelloWorldTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.internal.runners.TestMethod.invoke(TestMethod.java:66)
+	at org.jmock.integration.junit4.JMock$1.invoke(JMock.java:37)
+	at org.junit.internal.runners.MethodRoadie.runTestMethod(MethodRoadie.java:105)
+	at org.junit.internal.runners.MethodRoadie$2.run(MethodRoadie.java:86)
+	at org.junit.internal.runners.MethodRoadie.runBeforesThenTestThenAfters(MethodRoadie.java:94)
+	at org.junit.internal.runners.MethodRoadie.runTest(MethodRoadie.java:84)
+	at org.junit.internal.runners.MethodRoadie.run(MethodRoadie.java:49)
+	at org.junit.internal.runners.JUnit4ClassRunner.invokeTestMethod(JUnit4ClassRunner.java:96)
+	at org.junit.internal.runners.JUnit4ClassRunner.runMethods(JUnit4ClassRunner.java:59)
+	at org.junit.internal.runners.JUnit4ClassRunner$1.run(JUnit4ClassRunner.java:52)
+	at org.junit.internal.runners.ClassRoadie.runUnprotected(ClassRoadie.java:34)
+	at org.junit.internal.runners.ClassRoadie.runProtected(ClassRoadie.java:44)
+	at org.junit.internal.runners.JUnit4ClassRunner.run(JUnit4ClassRunner.java:50)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:62)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.executeTestSet(AbstractDirectoryTestSuite.java:140)
+	at org.apache.maven.surefire.suite.AbstractDirectoryTestSuite.execute(AbstractDirectoryTestSuite.java:127)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+

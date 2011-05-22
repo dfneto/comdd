@@ -1,42 +1,60 @@
-/*
- * See the NOTICE file distributed with this work for additional
- * information regarding copyright ownership.
- *
- * This is free software; you can redistribute it and/or modify it
- * under the terms of the GNU Lesser General Public License as
- * published by the Free Software Foundation; either version 2.1 of
- * the License, or (at your option) any later version.
- *
- * This software is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this software; if not, write to the Free
- * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
- * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
- */
 package ccom.acme.internal;
 
 import ccom.acme.HelloWorld;
 import org.xwiki.component.annotation.Component;
 
-/**
- * Implementation of a <tt>HelloWorld</tt> component.
- *
- * @version $Id: DefaultHelloWorld.java 33407 2010-12-14 20:42:26Z sdumitriu $
- */
+import org.antlr.runtime.*;
+import java.io.*;
+
 @Component
 public class DefaultHelloWorld implements HelloWorld
 {
-    /**
-     * {@inheritDoc}
-     * @see HelloWorld#sayHello()
-     */
-    public String sayHello()
-    {
-        return "Hello";
-    }
+public String executeDsl(String modelo) {
+     try{//Criando um arquivo a partir da string modelo
+
+                FileWriter writer = new FileWriter("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/Modelo");
+                writer.write(modelo);
+                writer.close();
+
+
+
+        PrintStream padrao = System.out;
+        PrintStream fileLog = new PrintStream(new File("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/CodigoGerado.cpp"));
+        System.setOut(fileLog);//Joga tudo que sairia na saída padrão (no caso o código gerado) num arquivo
+
+        // create a CharStream that reads from standard input
+//      ANTLRFileStream input = new ANTLRFileStream("./Modelo/Modelo"); -> nao funciona :/
+//ANTLRInputStream
+        ANTLRFileStream input = new ANTLRFileStream("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/Modelo");
+        // create a lexer that feeds off of input CharStream
+        MyDslLexer lexer = new MyDslLexer(input);
+        // create a buffer of tokens pulled from the lexer
+        CommonTokenStream tokens = new CommonTokenStream(lexer);
+        // create a parser that feeds off the tokens buffer
+        MyDslParser parser = new MyDslParser(tokens);
+        // begin parsing at rule r
+        parser.stat();
+
+        System.setOut(padrao); //Volta ao normal: joga tudo que sairia no log na saída padrao
+
+        //lendo o codigo gerado e inserindo numa string
+        File myFile = new File("/home/david/Xwiki/apache-tomcat-6.0.30/webapps/DSL/WEB-INF/classes/Modelo/CodigoGerado.cpp");
+        FileReader fileReader = new FileReader(myFile);
+        BufferedReader reader = new BufferedReader(fileReader);
+        String line = null;
+        String CodigoGeradoPelaDsl = "";
+        while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+                CodigoGeradoPelaDsl = CodigoGeradoPelaDsl + "\n" + line;
+        }
+reader.close();
+
+        return CodigoGeradoPelaDsl;
+        }catch(Exception e){ return ""; }
+}
 }
 
+
+
+
+    
