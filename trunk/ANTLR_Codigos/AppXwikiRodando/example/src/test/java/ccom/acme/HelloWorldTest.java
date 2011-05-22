@@ -32,12 +32,15 @@ import org.xwiki.test.annotation.MockingRequirement;
  */
 public class HelloWorldTest extends AbstractMockingComponentTestCase
 {
+
+String modelo;
+
     @MockingRequirement
     private DefaultHelloWorld hw;
 
     @Test
     public void testSayHello()
     {
-        Assert.assertEquals("Hello", hw.sayHello());
+        Assert.assertEquals("Hello", hw.executeDsl(modelo));
     }
 }

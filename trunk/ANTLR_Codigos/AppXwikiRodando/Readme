@@ -6,12 +6,23 @@
 	Instalar o MAVEN
 	Pegar o arquivo ponto_m2 no meu email e configurar o .bashrc de acordo com meu email tbm
 	Seguir http://platform.xwiki.org/xwiki/bin/view/DevGuide/WritingComponents
+	Adicionar no pom.xml
+		<dependency>
+  		    <groupId>org.antlr</groupId>
+		    <artifactId>antlr-runtime</artifactId>
+		    <version>3.0</version>
+	       </dependency>
+	Editar a interface(HelloWorld.java), a implementação (DefaultHelloWorld.java) e o ScriptService(HelloWorldScriptService.java)
+	Copiar o MyDslLexer e o MyDslParser para src/main/java/com/acme/internal/ e não esquecer de alterar o nome do package
+
 3. Criar uma página que pegue o modelo e mande para o transformador
 	Editar uma página da xwiki com o código de acesso
 
 
 Instalar a Xwiki
 Acrescentar os .jar do class path 
+
+
 
 
 

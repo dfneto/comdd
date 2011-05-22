@@ -1,6 +1,9 @@
-pom.xml									-> Define as dependências
+pom.xml									
+-> Define as dependências
 
-src/main/java/com/acme/HelloWorld.java   				-> Contains the definition of a regular Java interface
+src/main/java/com/acme/HelloWorld.java
+-> Contains the definition of a regular Java interface
+
 @ComponentRole /* annotation used for declaring the service our component provides */
 public interface HelloWorld
 {
@@ -8,7 +11,9 @@ public interface HelloWorld
 }
 
 
-src/main/java/com/acme/internal/DefaultHelloWorld.java			-> The implementation of the interface
+src/main/java/com/acme/internal/DefaultHelloWorld.java			
+-> The implementation of the interface
+
 @Component /* annotation used for declaring a component implementation */
 public class DefaultHelloWorld implements HelloWorld
 //@Component("database")
@@ -24,7 +29,9 @@ public String sayHello()
 }
 
 
-src/main/java/com/acme/internal/HelloWorldScriptService.java		-> Components can be made accessible to wiki pages by writing a ScriptService implementation. 
+src/main/java/com/acme/internal/HelloWorldScriptService.java		
+-> Components can be made accessible to wiki pages by writing a ScriptService implementation. 
+
 @Component("hello")
 public class HelloWorldScriptService implements ScriptService
 {
@@ -41,6 +48,7 @@ Ná pagina da xwiki temos:
 	$services.hello.greet()
 Que irá chamar o HelloWorldScriptService
 
-src/main/resources/META-INF/components.txt			-> Nele deve ser declarado o ScriptService e a DefaultHelloWorld
+src/main/resources/META-INF/components.txt			
+-> Nele deve ser declarado o ScriptService e a DefaultHelloWorld
 
 src/test/java/com/acme/HelloWorldTest.java

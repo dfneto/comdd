@@ -1,5 +1,5 @@
 Diretório 'DslCompletaLrmMultiplosDestinos' tem o V0 em antlr da minha dsl
-Dir 'AppXwiki' tem os plugins desenvolvidos para a xwiki, sendo que a versão 3 é a que está sendo utilizada, eu acho hehe
+Dir 'AppXwiki' tem os plugins desenvolvidos para a xwiki, sendo que a versão 3 é a que está sendo utilizada
 Dir 'AppXwikiRodando' é onde estou construindo do zero a app para xwiki
 Dir DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações
 Dir 'jar' onde tem a dsl rodando por linha de comando localmente como um jar
