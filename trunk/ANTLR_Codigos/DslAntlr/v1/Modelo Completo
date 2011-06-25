@@ -1,0 +1,30 @@
+plataforma pioneer
+robo david
+
+adicionar defines
+adicionar includes
+
+criarSensor gps
+criarSensor bussola
+criarSensor camera
+
+int main() {
+andar();
+gps.ligar();
+bussola.ligar();
+camera.ligar();
+while(true) {
+gps.ler();
+gps.carregarListaCoordenadas();
+bussola.ler();
+camera.obterImagem();
+
+processarImagem();
+defineAtirar();
+naoBater();
+seguir();
+andar();
+
+}
+}
+
