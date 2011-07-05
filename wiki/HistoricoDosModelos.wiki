@@ -1,4 +1,4 @@
-#1 - Como guardar o histórico das diferentes versões dos modelos e realizar merge?
+# Como guardar o histórico das diferentes versões dos modelos e realizar merge?
 
 = Introduction =
 
