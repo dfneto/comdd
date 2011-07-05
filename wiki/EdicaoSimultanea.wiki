@@ -1,9 +1,13 @@
 #summary 2 Como permitir a edição simultânea?
 
-= Introduction =
+= Passo 1 =
 
-Add your content here.
+Ver como dois servidores de xwiki inserem num mesmo banco de dados
 
+Links: 
+http://platform.xwiki.org/xwiki/bin/view/AdminGuide/DistributedEventClusterSetup
+http://www.guj.com.br/java/124206-2-instancias-do-servidor-tomcat-na-mesma-maquina
+http://javafree.uol.com.br/topic-2236-Como-utilizar-2-tomcats.html
 
 = Details =
 
