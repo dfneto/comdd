@@ -9,6 +9,12 @@ http://platform.xwiki.org/xwiki/bin/view/AdminGuide/DistributedEventClusterSetup
 http://www.guj.com.br/java/124206-2-instancias-do-servidor-tomcat-na-mesma-maquina
 http://javafree.uol.com.br/topic-2236-Como-utilizar-2-tomcats.html
 
+= Passo 2 =
+Fazer um: autosave e refresh automatico, mas para isso tenho que saber como a xwiki salva uma página
+
+= Passo 3 =
+Na raça: salvar no banco de dados com um servlet e um webservice
+
 = Details =
 Document - Classe
 doc - variável
