@@ -1,0 +1,472 @@
+\begin{thebibliography}{75}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{CVS(2008)}]{CVSM2008}
+\emph{Cvsm '08: Proceedings of the 2008 international workshop on comparison
+  and versioning of software models}, New York, NY, USA: ACM, program
+  Chair-Ebert, J\"{u}rgen and Program Chair-Kelter, Udo and Program
+  Chair-Syst\"{a}, Tarja, 2008.
+\newline Disponível em:
+  \url{http://portal.acm.org/citation.cfm?id=1370152&coll=GUIDE&dl=GUIDE&CFID=%
+72442566&CFTOKEN=68041856#}
+
+\bibitem[{Abeti \bbletal{}(2009)Abeti, Ciancarini e Moretti}]{Abeti2009}
+\textsc{Abeti, L.; Ciancarini, P.; Moretti, R.}\ \ \  Wiki-based requirements
+  management for business process reengineering.\ \ \ \capitalize\bblin{}:
+  \textit{Wikis for Software Engineering, 2009. WIKIS4SE '09. ICSE Workshop
+  on}, 2009, \bblpp{} 14--24.
+
+\bibitem[{Aho \bbletal{}(2009)Aho, Merilinna e Ovaska}]{Aho2009}
+\textsc{Aho, P.; Merilinna, J.; Ovaska, E.}\ \ \  Model-driven open source
+  software development - the open models approach.\ \ \ \capitalize\bblin{}:
+  \textit{4th International Conference on Software Engineering Advances, ICSEA
+  2009}, Porto, Portugal, 2009, \bblpp{} 185--190.
+\newline Disponível em:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-70749149216&partnerI%
+D=40&md5=01413c76e574b96a0cc8d16043574d64}
+
+\bibitem[{Almeida \bbletal{}(2005)Almeida, Alvaro, Lucrédio, Garcia e
+  Meira}]{Almeida:caise:2005}
+\textsc{Almeida, E. S.~d.; Alvaro, A.; Lucrédio, D.; Garcia, V.~C.; Meira, S.
+  R. d.~L.}\ \ \  {Towards an Effective Software Reuse Process}.\ \ \
+  \capitalize\bblin{}: \textit{The 17th Conference on Advanced Information
+  Systems Engineering (CAiSE'05)}, Porto, Portugal: Springer-Verlag LNCS, 2005.
+
+\bibitem[{Bartelt(2008)}]{Bartelt2008}
+\textsc{Bartelt, C.}\ \ \  Consistence preserving model merge in collaborative
+  development processes.\ \ \ \capitalize\bblin{}: \textit{CVSM '08:
+  Proceedings of the 2008 international workshop on Comparison and versioning
+  of software models}, New York, NY, USA: ACM, 2008, \bblpp{} 13--18.
+
+\bibitem[{Bendix e Emanuelsson(2008)}]{Bendix2008}
+\textsc{Bendix, L.; Emanuelsson, P.}\ \ \  Diff and merge support for model
+  based development.\ \ \ \capitalize\bblin{}: \textit{CVSM '08: Proceedings of
+  the 2008 international workshop on Comparison and versioning of software
+  models}, New York, NY, USA: ACM, 2008, \bblpp{} 31--34.
+
+\bibitem[{Bendix e Emanuelsson(2009)}]{Bendix2009}
+\textsc{Bendix, L.; Emanuelsson, P.}\ \ \  Collaborative work with software
+  models - industrial experience and requirements.\ \ \ \capitalize\bblin{}:
+  \textit{Model-Based Systems Engineering, 2009. MBSE '09. International
+  Conference on}, 2009, \bblpp{} 60--68.
+
+\bibitem[{Blois \bbletal{}(2005)Blois, Werner e Becker}]{Blois2005}
+\textsc{Blois, A.~P.; Werner, C. M.~L.; Becker, K.}\ \ \  Towards a components
+  grouping technique within a domain engineering process.\ \ \
+  \capitalize\bblin{}: \textit{31st IEEE EUROMICRO Conference on Software
+  Engineering and Advanced Applications (EUROMICRO-SEAA), Component-Based
+  Software Engineering Track}, Porto, Portugal, 2005, \bblpp{} 18--27.
+
+\bibitem[{Booch e Brown(2003)}]{Booch2003}
+\textsc{Booch, G.; Brown, A.~W.}\ \ \  Collaborative development environments.\
+  \ \ \textit{Advances in Computers}, \bblvol{}~59, \bblpp{}~2--29, 2003.
+
+\bibitem[{Bozzon \bbletal{}(2006)Bozzon, Comai, Fraternali e Carughi}]{Bozzon}
+\textsc{Bozzon, A.; Comai, S.; Fraternali, P.; Carughi, G.~T.}\ \ \  Conceptual
+  modeling and code generation for rich internet applications.\ \ \
+  \capitalize\bblin{}: \textit{ICWE '06: Proceedings of the 6th international
+  conference on Web engineering}, New York, NY, USA: ACM, 2006, \bblpp{}
+  353--360.
+
+\bibitem[{Broekman e Notenboom(2002)}]{Broekman2002}
+\textsc{Broekman, B.; Notenboom, E.}\ \ \  \emph{Testing embedded software}.\ \
+  \ Addison-Wesley Professional, 2002.
+\newline Disponível em: \url{http://amazon.com/o/ASIN/0321159861/}
+
+\bibitem[{Conmy e Paige(2007)}]{Conmy2007}
+\textsc{Conmy, P.; Paige, R.~F.}\ \ \  Challenges when using model driven
+  architecture in the development of safety critical software.\ \ \
+  \capitalize\bblin{}: \textit{Model-Based Methodologies for Pervasive and
+  Embedded Software, 2007. MOMPES '07. Fourth International Workshop on}, 2007,
+  \bblpp{} 127--136.
+
+\bibitem[{van Deursen \bbletal{}(2000)van Deursen, Klint e
+  Visser}]{Deursen2000}
+\textsc{Deursen, A.; Klint, P.; Visser, J.}\ \ \  Domain-specific languages: an
+  annotated bibliography.\ \ \ \textit{SIGPLAN Not.}, \bblvol{}~35, \bblno{}~6,
+  \bblpp{}~26--36, 2000.
+
+\bibitem[{Drupal(2009)}]{DrupalArquitetura}
+\textsc{Drupal}\ \ \  The drupal overview - the drupal flow.\ \ \ Último
+  acesso em 19/02/2010, 2009.
+\newline Disponível em: \url{http://drupal.org/getting-started/before/overview}
+
+\bibitem[{Eclipse(2009)}]{emfFaq}
+\textsc{Eclipse}\ \ \  Emf/faq - what is emf?\ \ \ Último acesso em
+  17/02/2010, 2009.
+\newline Disponível em:
+  \url{http://wiki.eclipse.org/index.php/EMF/FAQ#What_is_EMF.3F}
+
+\bibitem[{Eclipse(2010{\natexlab{a}})}]{Eclipse}
+\textsc{Eclipse}\ \ \  About the eclipse foundation - what is eclipse and the
+  eclipse foundation?\ \ \ Último acesso em 17/02/2010, 2010{\natexlab{a}}.
+\newline Disponível em: \url{http://www.eclipse.org/org/}
+
+\bibitem[{Eclipse(2010{\natexlab{b}})}]{gmf}
+\textsc{Eclipse}\ \ \  The eclipse graphical modeling framework (gmf).\ \ \
+  Último acesso em 17/02/2010, 2010{\natexlab{b}}.
+\newline Disponível em: \url{http://www.eclipse.org/modeling/gmf/}
+
+\bibitem[{Eclipse(2010{\natexlab{c}})}]{EclipseModeling}
+\textsc{Eclipse}\ \ \  Eclipse modeling project.\ \ \ Último acesso em
+  17/02/2010, 2010{\natexlab{c}}.
+\newline Disponível em: \url{http://www.eclipse.org/modeling/}
+
+\bibitem[{Eclipse(2010{\natexlab{d}})}]{helpEMF}
+\textsc{Eclipse}\ \ \  Emf developer guide.\ \ \ Último acesso em:
+  19/02/2010, 2010{\natexlab{d}}.
+\newline Disponível em: \url{http://help.eclipse.org/galileo/index.jsp}
+
+\bibitem[{Eclipse(2010{\natexlab{e}})}]{jet}
+\textsc{Eclipse}\ \ \  Model to text (m2t) - jet.\ \ \ Último acesso em
+  17/02/2010, 2010{\natexlab{e}}.
+\newline Disponível em:
+  \url{http://www.eclipse.org/modeling/m2t/?project=jet#jet}
+
+\bibitem[{Ellis \bbletal{}(1991)Ellis, Gibbs e Rein}]{Ellis1991}
+\textsc{Ellis, C.~A.; Gibbs, S.~J.; Rein, G.}\ \ \  Groupware: some issues and
+  experiences.\ \ \ \textit{Commun. ACM}, \bblvol{}~34, \bblno{}~1,
+  \bblpp{}~39--58, 1991.
+
+\bibitem[{Elrufaie e Turner(2005)}]{Elrufaie2005}
+\textsc{Elrufaie, E.; Turner, D.~A.}\ \ \  A wiki paradigm for use in it
+  courses.\ \ \ \textit{Information Technology: Coding and Computing,
+  International Conference on}, \bblvol{}~2, \bblpp{}~770--771, 2005.
+
+\bibitem[{France \bbletal{}(2007)France, Bieman e Cheng}]{France2007}
+\textsc{France, R.; Bieman, J.; Cheng, B. H.~C.}\ \ \  Repository for model
+  driven development {(ReMoDD}).\ \ \ \capitalize\bblin{}: \textit{Models in
+  Software Engineering}, Springer Berlin / Heidelberg, 2007, \bblpp{} 311--317
+  (\textit{Lecture Notes in Computer Science}, \bblvol{}4364).
+\newline Disponível em:
+  \url{http://www.springerlink.com/content/84662v5730261t35/}
+
+\bibitem[{France e Rumpe(2007)}]{France:2007:fose}
+\textsc{France, R.; Rumpe, B.}\ \ \  Model-driven development of complex
+  software: A research roadmap.\ \ \ \capitalize\bblin{}: \textit{29th
+  International Conference on Software Engineering 2007 - Future of Software
+  Engineering}, Minneapolis, MN, USA: IEEE Computer Society, 2007, \bblpp{}
+  37--54.
+
+\bibitem[{Gruber \bbletal{}(1991)Gruber, Gruber, Russell e
+  Russell}]{Gruber1991}
+\textsc{Gruber, T.~R.; Gruber, T.~R.; Russell, D.~M.; Russell, D.~M.}\ \ \
+  \emph{Design knowledge and design rationale: A framework for representation,
+  capture, and use}.\ \ \ \bbltechrep{}, Laboratory, Stanford University, 1991.
+
+\bibitem[{Grudin(1994)}]{Grudin1994}
+\textsc{Grudin, J.}\ \ \  Computer-supported cooperative work: history and
+  focus.\ \ \ \textit{Computer}, \bblvol{}~27, \bblno{}~5, \bblpp{}~19 --26,
+  1994.
+\newline Disponível em:
+  \url{http://research.microsoft.com/en-us/um/people/jgrudin/past/Papers/IEEE9%
+4/IEEEComplastsub.html}
+
+\bibitem[{Hailpern e Tarr(2006)}]{Hailpern2006}
+\textsc{Hailpern, B.; Tarr, P.}\ \ \  Model-driven development: the good, the
+  bad, and the ugly.\ \ \ \textit{IBM Syst. J.}, \bblvol{}~45, \bblno{}~3,
+  \bblpp{}~451--461, 2006.
+
+\bibitem[{Heering(2007)}]{Heering2008}
+\textsc{Heering, J.}\ \ \  Developments in domain-specific languages.\ \ \
+  2007.
+\newline Disponível em:
+  \url{http://homepages.cwi.nl/~jan/Developments_in_DSLs.pdf}
+
+\bibitem[{Jang e Green(2006)}]{Jang2006}
+\textsc{Jang, S.; Green, T.~M.}\ \ \  Best practices on delivering a wiki
+  collaborative solution for enterprise applications.\ \ \ \capitalize\bblin{}:
+  \textit{Collaborative Computing: Networking, Applications and Worksharing,
+  2006. CollaborateCom 2006. International Conference on}, 2006, \bblpp{} 1--9.
+
+\bibitem[{Jing e Fan(2008)}]{Jing2008}
+\textsc{Jing, H.; Fan, Y.}\ \ \  Usability of wiki for knowledge management of
+  knowledge-based enterprises.\ \ \ \textit{Knowledge Acquisition and Modeling,
+  International Symposium on}, \bblvol{}~0, \bblpp{}~201--205, 2008.
+
+\bibitem[{Joomla!(2010)}]{JoomlaArquitetura}
+\textsc{Joomla!}\ \ \  Documentation - framework.\ \ \ Último acesso em:
+  19/02/2010, 2010.
+\newline Disponível em: \url{http://docs.joomla.org/Framework}
+
+\bibitem[{Kelter \bbletal{}(2005)Kelter, Wehren e Niere}]{Kelter2005}
+\textsc{Kelter, U.; Wehren, J.; Niere, J.}\ \ \  A generic difference algorithm
+  for uml models.\ \ \ \capitalize\bblin{}:  \cite{Selonen2007}, 2005, \bblpp{}
+  105--116.
+\newline Disponível em:
+  \url{http://dblp.uni-trier.de/db/conf/se/se2005.html#KellerWN05}
+
+\bibitem[{Kleppe \bbletal{}(2003)Kleppe, Warmer e Bast}]{Kleppe2003}
+\textsc{Kleppe, A.~G.; Warmer, J.; Bast, W.}\ \ \  \emph{Mda explained: The
+  model driven architecture: Practice and promise}.\ \ \ Boston, MA, USA:
+  Addison-Wesley Longman Publishing Co., Inc., 2003.
+\newline Disponível em:
+  \url{http://proquest.safaribooksonline.com/0-321-19442-X/ch01lev1sec1#X2ludG%
+VybmFsX0ZsYXNoUmVhZGVy/-P3htbGlkPTAtMzIxLTE5NDQyLVgvdmlpJmltYWdlcGFnZT12aWk=}
+
+\bibitem[{Komi-Sirviö e Tihinen(2005)}]{Komi-Sirvioe2005}
+\textsc{Komi-Sirviö, S.; Tihinen, M.}\ \ \  Lessons learned by participants of
+  distributed software development.\ \ \ \capitalize\bblin{}: \textit{Knowledge
+  and Process Management}, 2005.
+
+\bibitem[{Lanubile(2009)}]{Lanubile2009}
+\textsc{Lanubile, F.}\ \ \  Collaboration in distributed software development.\
+  \ \ \capitalize\bblin{}: \textit{Software Engineering, International Summer
+  Schools, ISSSE}, Berlin, Heidelberg: Springer-Verlag, 2009, \bblpp{}
+  174--193.
+
+\bibitem[{de~Lara(2005)}]{Lara2005}
+\textsc{Lara, S. M.~A.}\ \ \  \emph{Um suporte a captura informal de design
+  rationale}.\ \ \ \bblmthesis{}, Universidade de São Paulo, 2005.
+
+\bibitem[{Levytskyy \bbletal{}(2009)Levytskyy, Vangheluwe, Rothkrantz e
+  Koppelaar}]{Levytskyy2009}
+\textsc{Levytskyy, A.; Vangheluwe, H.; Rothkrantz, L.~J.; Koppelaar, H.}\ \ \
+  Mde and customization of modeling and simulation web applications.\ \ \
+  \textit{Simulation Modelling Practice and Theory}, \bblvol{}~17, \bblno{}~2,
+  \bblpp{}~408 -- 429, 2009.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/B6X3C-4TTMJVD-3/2/70980d0f%
+e1e9feb5c42f0bf528422390}
+
+\bibitem[{Liggesmeyer e Trapp(2009)}]{Liggesmeyer2009}
+\textsc{Liggesmeyer, P.; Trapp, M.}\ \ \  Trends in embedded software
+  engineering.\ \ \ \textit{IEEE Software}, \bblvol{}~26, \bblpp{}~19--25,
+  2009.
+
+\bibitem[{Louridas(2006)}]{Louridas2006}
+\textsc{Louridas, P.}\ \ \  Using wikis in software development.\ \ \
+  \textit{Software, IEEE}, \bblvol{}~23, \bblno{}~2, \bblpp{}~88--91, 2006.
+
+\bibitem[{Lucrédio(2009)}]{Lucredio2009}
+\textsc{Lucrédio, D.}\ \ \  \emph{Uma abordagem orientada a modelos para
+  reutilizaÃ§Ã£o de software}.\ \ \ \bblphdthesis{}, Universidade de São
+  Paulo, Instituto de Ciências Matemáticas e de Computação, 2009.
+
+\bibitem[{Lucrédio \bbletal{}(2006)Lucrédio, Fortes, Almeida e
+  Meira}]{Lucredio:2006:wdbc}
+\textsc{Lucrédio, D.; Fortes, R. P. d.~M.; Almeida, E. S.~d.; Meira, S. R.
+  d.~L.}\ \ \  {The Draco Approach Revisited: Model-Driven Software Reuse}.\ \
+  \ \capitalize\bblin{}: \textit{VI WDBC - Workshop de Desenvolvimento Baseado
+  em Componentes}, Recife - PE - Brazil, 2006.
+
+\bibitem[{Lucrédio \bbletal{}(2008)Lucrédio, R.P.M. e Whittle}]{Lucredio2008}
+\textsc{Lucrédio, D.; R.P.M., F.; Whittle, J.}\ \ \  Moogle: A model search
+  engine.\ \ \ \textit{Lecture Notes in Computer Science}, \bblvol{}~5301 LNCS,
+  \bblpp{}~296--310, 2008.
+\newline Disponível em:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-56649094213&partnerI%
+D=40&md5=a12d1043d6a999037a7269eaa2682bea}
+
+\bibitem[{Majchrzak \bbletal{}(2006)Majchrzak, Wagner e Yates}]{Majchrzak2006}
+\textsc{Majchrzak, A.; Wagner, C.; Yates, D.}\ \ \  Corporate wiki users:
+  results of a survey.\ \ \ \capitalize\bblin{}: \textit{WikiSym '06:
+  Proceedings of the 2006 international symposium on Wikis}, New York, NY, USA:
+  ACM, 2006, \bblpp{} 99--104.
+
+\bibitem[{Mart\'{\i}nez \bbletal{}(2009)Mart\'{\i}nez, Merino, Salmer\'{o}n e
+  Malpartida}]{Martinez2009}
+\textsc{Mart\'{\i}nez, J.; Merino, P.; Salmer\'{o}n, A.; Malpartida, F.}\ \ \
+  Uml-based model-driven development for hsdpa design.\ \ \ \textit{IEEE
+  Softw.}, \bblvol{}~26, \bblno{}~3, \bblpp{}~26--33, 2009.
+
+\bibitem[{McQuay(2004)}]{McQuay2004}
+\textsc{McQuay, W.}\ \ \  Distributed collaborative environments for systems
+  engineering.\ \ \ \capitalize\bblin{}: \textit{Digital Avionics Systems
+  Conference, 2004. DASC 04. The 23rd}, 2004, \bblpp{} 9.D.3--91--10 Vol.2.
+
+\bibitem[{Mehta(2009)}]{Mehta2009}
+\textsc{Mehta, N.}\ \ \  \emph{Choosing an open source cms: Beginner's guide}.\
+  \ \ Packt Publishing, 2009.
+\newline Disponível em: \url{http://amazon.com/o/ASIN/1847196225/}
+
+\bibitem[{Meijler(2005)}]{Meijler2005}
+\textsc{Meijler, T.}\ \ \  Requirements for an integrated domain specific
+  modeling, modeling language development, and execution environment.\ \ \
+  \capitalize\bblin{}: \textit{in Proceedings of NWUML'2005: The 3rd Nordic
+  Workshop on UML and Software Modeling}, 2005.
+
+\bibitem[{Mellor \bbletal{}(2003)Mellor, Clark e Futagami}]{Mellor2003}
+\textsc{Mellor, S.~J.; Clark, A.~N.; Futagami, T.}\ \ \  Guest editors'
+  introduction: Model-driven development.\ \ \ \textit{IEEE Software},
+  \bblvol{}~20, \bblpp{}~14--18, 2003.
+
+\bibitem[{Muthig e Atkinson(2002)}]{Muthig2002}
+\textsc{Muthig, D.; Atkinson, C.}\ \ \  Model-driven product line
+  architectures.\ \ \ \capitalize\bblin{}: \textit{Software Product Lines},
+  Springer Berlin / Heidelberg, 2002, \bblpp{} 79--90 (\textit{Lecture Notes in
+  Computer Science}, \bblvol{}2379).
+\newline Disponível em:
+  \url{http://www.springerlink.com/content/410le2p9wwcjpt43/}
+
+\bibitem[{do~Nascimento \bbletal{}(2007)do~Nascimento, Oliveira e
+  Wagner}]{Nascimento2007}
+\textsc{Nascimento, F. A.~M.; Oliveira, M. F.~S.; Wagner, F.~R.}\ \ \  Modes:
+  Embedded systems design methodology and tools based on mde.\ \ \
+  \capitalize\bblin{}: \textit{Model-Based Methodologies for Pervasive and
+  Embedded Software, 2007. MOMPES '07. Fourth International Workshop on}, 2007,
+  \bblpp{} 67--76.
+
+\bibitem[{Neighbors(1980)}]{Neighbors:thesis:1980}
+\textsc{Neighbors, J.~M.}\ \ \  \emph{{Software Construction Using
+  Components}}.\ \ \ Ph.d. thesis, University of California at Irvine, 1980.
+
+\bibitem[{Ohst \bbletal{}(2003)Ohst, Welle e Kelter}]{Ohst2003}
+\textsc{Ohst, D.; Welle, M.; Kelter, U.}\ \ \  Differences between versions of
+  uml diagrams.\ \ \ \capitalize\bblin{}:  \cite{Selonen2007}, \bblpp{}
+  227--236, \bblpp{}~227--236, 2003.
+
+\bibitem[{OMG(2001)}]{OMG2001}
+\textsc{OMG}\ \ \  \emph{Model driven architecture (mda)}.\ \ \ OMG, document
+  number ormsc/2001-07-01, 2001.
+
+\bibitem[{OMG(2003)}]{OMG2003}
+\textsc{OMG}\ \ \  \emph{Mda guide version 1.0.1}.\ \ \ Object Management Group
+  (OMG), document Number: omg/2003-06-01, 2003.
+
+\bibitem[{OMG(2009)}]{xmi1}
+\textsc{OMG}\ \ \  Mda specifications - xml metadata interchange (xmi).\ \
+  \ Último acesso: 17/02/2010, 2009.
+\newline Disponível em: \url{http://www.omg.org/mda/specs.htm#XMI}
+
+\bibitem[{OMG(2010)}]{xmi2}
+\textsc{OMG}\ \ \  Catalog of omg modeling and metadata specifications - xml
+  metadata interchange.\ \ \ Último acesso: 17/02/2010, 2010.
+\newline Disponível em:
+  \url{http://www.omg.org/technology/documents/modeling_spec_catalog.htm#XMI}
+
+\bibitem[{Rama e Bishop(2006)}]{Rama2006}
+\textsc{Rama, J.; Bishop, J.}\ \ \  A survey and comparison of cscw groupware
+  applications.\ \ \ \capitalize\bblin{}: \textit{SAICSIT '06: Proceedings of
+  the 2006 annual research conference of the South African institute of
+  computer scientists and information technologists on IT research in
+  developing countries}, , Republic of South Africa: South African Institute
+  for Computer Scientists and Information Technologists, 2006, \bblpp{}
+  198--205.
+
+\bibitem[{Schmidt(2006)}]{Schmidt:2006:ieeecomputer}
+\textsc{Schmidt, D.~C.}\ \ \  Guest editor's introduction: Model-driven
+  engineering.\ \ \ \textit{IEEE Computer}, \bblvol{}~39, \bblno{}~2,
+  \bblpp{}~25--31, 2006.
+
+\bibitem[{Selic(2003)}]{Selic2003}
+\textsc{Selic, B.}\ \ \  The pragmatics of model-driven development.\ \ \
+  \textit{IEEE Softw.}, \bblvol{}~20, \bblno{}~5, \bblpp{}~19--25, 2003.
+
+\bibitem[{Selonen(2007)}]{Selonen2007}
+\textsc{Selonen, P.}\ \ \  A review of uml model comparison approaches.\ \ \
+  \capitalize\bblin{}:  \cite{Bendix2009}, 2007, \bblpp{} 37--51.
+
+\bibitem[{Selonen e Kettunen(2007)}]{Selonen2007a}
+\textsc{Selonen, P.; Kettunen, M.}\ \ \  Metamodel-based inference of
+  inter-model correspondence.\ \ \ \capitalize\bblin{}:  \cite{Selonen2007},
+  2007, \bblpp{} 71--80.
+
+\bibitem[{Sherif \bbletal{}(2006)Sherif, Appan e Lin}]{Sherif:2006:ijim}
+\textsc{Sherif, K.; Appan, R.; Lin, Z.}\ \ \  {Resources and incentives for the
+  adoption of systematic software reuse}.\ \ \ \textit{International Journal of
+  Information Management}, \bblvol{}~26, \bblno{}~1, \bblpp{}~70--80, 2006.
+
+\bibitem[{Souza \bbletal{}(1999)Souza, Santos, Wainer e Dias}]{Souza1999}
+\textsc{Souza, C.; Santos, D.; Wainer, J.; Dias, K.}\ \ \  A model and tool for
+  semi-automatic recording of design rationale in software diagrams.\ \ \
+  \capitalize\bblin{}: \textit{String Processing and Information Retrieval
+  Symposium, 1999 and International Workshop on Groupware}, 1999, \bblpp{}
+  306--313.
+
+\bibitem[{Sriplakich \bbletal{}(2006)Sriplakich, Blanc e
+  Gervais}]{Sriplakich2006}
+\textsc{Sriplakich, P.; Blanc, X.; Gervais, M.-P.}\ \ \  Supporting
+  collaborative development in an open mda environment.\ \ \
+  \capitalize\bblin{}: \textit{Software Maintenance, 2006. ICSM '06. 22nd IEEE
+  International Conference on}, 2006, \bblpp{} 244--253.
+
+\bibitem[{Stahl \bbletal{}(2006)Stahl, Voelter e Czarnecki}]{Stahl2006}
+\textsc{Stahl, T.; Voelter, M.; Czarnecki, K.}\ \ \  \emph{Model-driven
+  software development: Technology, engineering, management}.\ \ \ John Wiley
+  \& Sons, 2006.
+
+\bibitem[{Sánchez \bbletal{}(2009)Sánchez, Moreira, Fuentes, Araújo e
+  Magno}]{Sanchez2009}
+\textsc{Sánchez, P.; Moreira, A.; Fuentes, L.; AraÃºjo, J.; Magno, J.}\ \ \
+  Model-driven development for early aspects.\ \ \ \textit{Information and
+  Software Technology}, \bblvol{}~In Press, Corrected Proof, \bblpp{}~--, 2009.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/B6V0B-4XMD5H4-1/2/6ea38b8d%
+fd8b3a555a3eacba8e25f226}
+
+\bibitem[{Teppola \bbletal{}(2009)Teppola, Parviainen e Takalo}]{Teppola2009}
+\textsc{Teppola, S.; Parviainen, P.; Takalo, J.}\ \ \  Challenges in the
+  deployment of model driven development.\ \ \ \capitalize\bblin{}: \textit{4th
+  International Conference on Software Engineering Advances, ICSEA 2009},
+  Porto, cited By (since 1996) 0; Conference of 4th International Conference on
+  Software Engineering Advances, ICSEA 2009, Includes SEDES 2009: Simposio para
+  Estudantes de Doutoramento em Engenharia de Software; Conference Date: 20
+  September 2009 through 25 September 2009; Conference Code: 78651, 2009,
+  \bblpp{} 15--20.
+\newline Disponível em:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-70749142163&partnerI%
+D=40&md5=f5eaa00c628066e43c6ef182e23fdd87}
+
+\bibitem[{Tetard \bbletal{}(2009)Tetard, Patokorpi e Packalen}]{Tetard2009}
+\textsc{Tetard, F.; Patokorpi, E.; Packalen, K.}\ \ \  Using wikis to support
+  constructivist learning: A case study in university education settings.\ \ \
+  \capitalize\bblin{}: \textit{HICSS '09: Proceedings of the 42nd Hawaii
+  International Conference on System Sciences}, Washington, DC, USA: IEEE
+  Computer Society, 2009, \bblpp{} 1--10.
+
+\bibitem[{Tichy(1982)}]{Tichy1982}
+\textsc{Tichy, W.~F.}\ \ \  Design, implementation, and evaluation of a
+  revision control system.\ \ \ \capitalize\bblin{}: \textit{ICSE '82:
+  Proceedings of the 6th international conference on Software engineering}, Los
+  Alamitos, CA, USA: IEEE Computer Society Press, 1982, \bblpp{} 58--67.
+\newline Disponível em: \url{http://portal.acm.org/citation.cfm?id=807748#}
+
+\bibitem[{Walz \bbletal{}(1993)Walz, Elam e Curtis}]{Walz1993}
+\textsc{Walz, D.~B.; Elam, J.~J.; Curtis, B.}\ \ \  Inside a software design
+  team: Knowledge acquisition, sharing, and integration.\ \ \ \textit{Commun.
+  ACM}, \bblvol{}~36, \bblno{}~10, \bblpp{}~63--77, 1993.
+\newline Disponível em: \url{http://dx.doi.org/10.1145/163430.163447}
+
+\bibitem[{Warmer(2007)}]{Warmer2007}
+\textsc{Warmer, J.}\ \ \  A model driven software factory using domain specific
+  languages.\ \ \ \textit{Lecture Notes in Computer Science (including
+  subseries Lecture Notes in Artificial Intelligence and Lecture Notes in
+  Bioinformatics)}, \bblvol{}~4530 LNCS, \bblpp{}~194--203, cited By (since
+  1996) 1; Conference of 3rd European Conference on Model-Driven Architecture -
+  Foundations and Applications, ECMDA-FA 2007; Conference Date: 11 June 2007
+  through 15 June 2007; Conference Code: 70752, 2007.
+\newline Disponível em:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-37149003724&partnerI%
+D=40&md5=9f3792b3ac1fa84bd4889ab6406d051e}
+
+\bibitem[{Wenzel(2008)}]{Wenzel2008}
+\textsc{Wenzel, S.}\ \ \  Scalable visualization of model differences.\ \ \
+  \capitalize\bblin{}: \textit{CVSM '08: Proceedings of the 2008 international
+  workshop on Comparison and versioning of software models}, New York, NY, USA:
+  ACM, 2008, \bblpp{} 41--46.
+
+\bibitem[{Whitehead(2007)}]{Whitehead2007}
+\textsc{Whitehead, J.}\ \ \  Collaboration in software engineering: A roadmap.\
+  \ \ \capitalize\bblin{}:  \cite{Lanubile2009}, 2007, \bblpp{} 214--225.
+
+\bibitem[{Xing e Stroulia(2005)}]{Xing2005}
+\textsc{Xing, Z.; Stroulia, E.}\ \ \  Umldiff: an algorithm for object-oriented
+  design differencing.\ \ \ \capitalize\bblin{}: \textit{ASE '05: Proceedings
+  of the 20th IEEE/ACM international Conference on Automated software
+  engineering}, New York, NY, USA: ACM, 2005, \bblpp{} 54--65.
+\newline Disponível em: \url{http://dx.doi.org/10.1145/1101908.1101919}
+
+\bibitem[{Zimmerly(2009)}]{Zimmerly2009}
+\textsc{Zimmerly, B.}\ \ \  Entendendo o software wiki.\ \ \ 2009.
+\newline Disponível em:
+  \url{http://www.ibm.com/developerworks/br/library/os-social-mediawiki/index.%
+html}
+
+\end{thebibliography}

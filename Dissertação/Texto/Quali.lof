@@ -1,0 +1,21 @@
+\select@language {brazil}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Processo convencional de desenvolvimento de software \citep {Lucredio2009}}}{6}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Processo de desenvolvimento de software orientado a modelos \citep {Lucredio2009}}}{7}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Principais elementos do MDD \citep {Lucredio2009}.}}{8}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ciclo de vida da MDA}}{11}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Transforma\c c\~ao de Modelos \citep {OMG2003}}}{12}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces M\'ultiplos PSMs a partir de um \'unico PIM}}{12}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Arquitetura da Metamodelagem}}{13}{figure.2.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Quadrantes da Colabora\c c\~ao \citep {Rama2006}}}{21}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do CMS Joomla! (\citeauthor {JoomlaArquitetura})}}{24}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitetura do CMS Drupal (\citeauthor {DrupalArquitetura})}}{24}{figure.3.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema Gen\'erico da Arquitetura de um Sistema Embarcado \citep {Broekman2002}}}{33}{figure.4.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Suporte \`a metamodelagem em uma Wiki}}{38}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Suporte \`a gera\c c\~ao de c\'odigo}}{40}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Estudo de caso do dom\IeC {\'\i }nio de TI}}{45}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Exemplo do DTE para o Estudo de caso do dom\IeC {\'\i }nio de Sistemas Embarcados}}{46}{figure.5.4}
