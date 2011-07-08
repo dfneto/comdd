@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Quali.aux
+A level-1 auxiliary file: tex/referencias.aux
+The style file: modelo/icmc2.bst
+Database file #1: bib/referencias_quali.bib
+Warning--entry type for "Heering2008" isn't style-file defined
+--line 1380 of file bib/referencias_quali.bib
+Warning--entry type for "Zimmerly2009" isn't style-file defined
+--line 3359 of file bib/referencias_quali.bib
+Warning--you've nested cross references--entry "Kelter2005"
+refers to entry "Selonen2007", which also refers to something
+Warning--you've nested cross references--entry "Ohst2003"
+refers to entry "Selonen2007", which also refers to something
+Warning--you've nested cross references--entry "Selonen2007a"
+refers to entry "Selonen2007", which also refers to something
+Warning--to sort, need editor or key in CVSM2008
+Warning--Last access date missing in CVSM2008
+Warning--Last access date missing in Aho2009
+Warning--Last access date missing in Broekman2002
+Warning--Last access date missing in DrupalArquitetura
+Warning--Last access date missing in emfFaq
+Warning--Last access date missing in Eclipse
+Warning--Last access date missing in gmf
+Warning--Last access date missing in EclipseModeling
+Warning--Last access date missing in helpEMF
+Warning--Last access date missing in jet
+Warning--Last access date missing in France2007
+Warning--Last access date missing in Grudin1994
+Warning--Last access date missing in Heering2008
+Warning--Last access date missing in JoomlaArquitetura
+Warning--Last access date missing in Kelter2005
+Warning--Last access date missing in Kleppe2003
+Warning--Last access date missing in Levytskyy2009
+Warning--Last access date missing in Lucredio2008
+Warning--Last access date missing in Mehta2009
+Warning--Last access date missing in Muthig2002
+Warning--Last access date missing in xmi1
+Warning--Last access date missing in xmi2
+Warning--can't use both author and editor fields in Stahl2006
+Warning--Last access date missing in Sanchez2009
+Warning--Last access date missing in Teppola2009
+Warning--Last access date missing in Tichy1982
+Warning--Last access date missing in Walz1993
+Warning--Last access date missing in Warmer2007
+Warning--Last access date missing in Xing2005
+Warning--Last access date missing in Zimmerly2009
+You've used 75 entries,
+            2716 wiz_defined-function locations,
+            1117 strings with 20208 characters,
+and the built_in function-call counts, 37978 in all, are:
+= -- 3675
+> -- 1380
+< -- 89
++ -- 559
+- -- 462
+* -- 3267
+:= -- 6253
+add.period$ -- 149
+call.type$ -- 75
+change.case$ -- 546
+chr.to.int$ -- 71
+cite$ -- 108
+duplicate$ -- 1951
+empty$ -- 2983
+format.name$ -- 654
+if$ -- 7987
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 92
+newline$ -- 264
+num.names$ -- 296
+pop$ -- 547
+preamble$ -- 1
+purify$ -- 454
+quote$ -- 0
+skip$ -- 1445
+stack$ -- 0
+substring$ -- 2123
+swap$ -- 596
+text.length$ -- 42
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 663
+warning$ -- 31
+while$ -- 345
+width$ -- 0
+write$ -- 864
+(There were 36 warnings)

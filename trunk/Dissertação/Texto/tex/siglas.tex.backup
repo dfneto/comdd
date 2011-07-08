@@ -1,0 +1,77 @@
+\addcontentsline{toc}{chapter}{Lista de Abreviaturas e Siglas} 
+ 
+ \chapter*{Lista de Abreviaturas e Siglas} 
+ 
+ \begin{tabular}{ll} 
+
+API & \textit{Application Programming Interface} \\
+
+CDE & \textit{Collaborative Development Environment } \\
+
+CIM & \textit{Computation Independent Model} \\
+
+CMS & \textit{Content Management System } \\
+
+CoMDD & \textit{Colaborative Model-Driven Development} \\
+
+CSCW & \textit{Computer Supported Cooperative Work} \\
+
+DDS & Desenvolvimento Distribuído de Software \\
+
+DR & \textit{Design rationale} \\
+
+DSL & \textit{Domain Specific Language} \\
+
+DTE & Diagrama de Transição de Estados \\
+
+EMF & \textit{Eclipse Modeling Framework} \\
+
+ER & Entidade Relacionamento \\
+
+GMF & \textit{Graphical Modeling Framework } \\
+
+IDE & \textit{Integrated Development Environmen} \\
+
+I/O & \textit{Input/Output} \\
+
+JET & \textit{Java Emitter Templates} \\
+
+MDA & \textit{Model-Driven Architecture} \\
+
+MDD & \textit{Model-Driven Development} \\
+
+MDE & \textit{Model-Driven Engineering } \\
+
+MDSD & \textit{Model-Driven Software Development} \\
+
+MOF & \textit{Meta-Object Facility} \\
+
+OMG &\textit {Object Management Group} \\
+
+PIM & \textit{Plataform Independent Model} \\
+
+PSM & \textit{Plataform Specif Model } \\
+
+RMA & Robô Móvel Autônomo \\
+
+SE & \textit{Sistemas Embarcados} \\
+
+tMDD & \textit{traditional Model-Driven Development} \\
+
+TI & Tecnologia da Informação \\ 
+
+UML & \textit{Unified Modeling Language} \\
+
+XMI & \textit{XML Metadata Interchange} \\
+
+XML & \textit{eXtensible Markup Language} \\
+
+%BPR & \textit{} \\
+
+%SCM & \textit{} \\
+
+%BP & \textit{} \\
+
+%BPMN & \textit{Extensible Markup Language} \\
+
+\end{tabular} 

@@ -1,0 +1,255 @@
+\newpage
+
+
+\chapter{Colaboração} 
+\label{colaboracao}
+
+
+\lettrine[lines=3]{N}\ este trabalho pretende-se utilizar os benefícios da colaboração no desenvolvimento orientado a modelos, a fim de alcançar melhores resultados quanto a produtividade, troca de experiências, entre outros. Para isso é importante entender a complexidade dos sistemas colaborativos e como usá-los para atingir os objetivos do trabalho. Assim, este capítulo apresenta  definições relacionadas ao tema de colaboração em sistemas computacionais, como: CSCW, \textit{group\-wa\-re} e CDEs. São também apresentados os requisitos que um ambiente colaborativo deve ter. Por fim, é realizado um levantamento dos tipos de sistemas gerenciadores de conteúdo (\textit{Content Management System} - CMS) que este trabalho deverá usar para projetar e desenvolver a proposta da abordagem do CoMDD.
+
+
+\section{CSCW, Groupware, CDEs}
+\label{csc_gro_cde}
+
+Colaboração significa duas ou mais pessoas trabalhando juntas para compartilhar e trocar dados, informações, conhecimento, entre outros \cite{McQuay2004}. A colaboração é uma atividade que tem sido evidenciada cada vez mais com o aumento da complexidade do desenvolvimento de sistemas, pois para se desenvolver um sistema robusto e complexo, uma só pessoa dificilmente é o suficiente. Assim o desenvolvimento e a manutenção de softwares complexos requerem a colaboração de diversos desenvolvedores \cite{Sriplakich2006}. 
+
+O termo colaboração é muito amplo e é estudado por especialistas de diversas áreas distintas, como: comunicação, psicologia, computação e outras. Surge então o termo \textit{Computer Supported Cooperative Work}. CSCW estuda como as pessoas usam a tecnologia, em relação ao hardware e ao software, em tempo e espaço compartilhados \apud{Rama2006}{Grudin1994}. Segundo \emph{Garrido}, CSCW estuda e analisa os mecanismos para a comunicação e colaboração efetivas entre as pessoas e os sistemas que os apóiam.
+
+Ao longo dos anos, vários sistemas foram concebidos para ajudar as pessoas a trabalharem de forma colaborativa e conjunta em um mesmo projeto. Estes sistemas são co\-nhe\-ci\-dos como \emph{groupware}, ou softwares colaborativos, e podem ser definidos como softwares que auxiliam %(na comunicação, colaboração e coordenação de atividades)  
+grupos de pessoas envolvidas em uma tarefa (ou objetivo) em comum e que fornecem uma interface de um ambiente com\-par\-ti\-lha\-do \cite{Ellis1991}. São exemplos de \emph{groupware} o e-mail, programas de \textit{chat}, as Wikis, blogs, entre outros.
+
+Portanto, o termo CSCW é usado para definir a área da pesquisa; foca no estudo de ferramentas e técnicas para \textit{grouware}, bem como os seus impactos sociais, organizacionais e psicológicos. \textit{Groupware}, é considerado a tecnologia de apoio, seja software, serviços e/ou técnicas, as quais possibilitam as pessoas trabalharem em grupos, simultaneamente no mesmo projeto ou não \cite{Rama2006}.
+
+Considerando que um sistema de usuário único (``single user system'') foca no trabalho individual, o \textit{groupware} foca no grupo. Mas quais as vantagens que um \textit{groupware} propicia em comparação com um \textit{``single user system''} e que motivariam seu uso? Quando se trabalha em um projeto no qual a comunicação é essencial entre os colaboradores, o \textit{groupware} facilita a comunicação mais rápida e clara, permitindo a comunicação onde ela não seria possível. Ele visa possibilitar múltiplas perspectivas, especialidades e assistências na solução de problemas pelo grupo. Sua intenção é economizar tempo e custo coordenando o trabalho do grupo. Por outro lado, o \textit{groupware} é mais complexo de se desenvolver e manter do que um sistema de usuário único \cite{Rama2006}.
+
+Um outro conjunto de ferramentas que permitem o trabalho em grupo são os chamados \textit{Collaborative Development Environment} (CDE). 
+
+Um CDE é um espaço visual onde todos os \textit{stakeholders} do projeto, mesmo distribuídos em tempo e/ou espaço, podem negociar, fazer \textit{brainstorm}, discutir, compartilhar conhecimento e trabalharem em conjunto para realizar alguma tarefas. Comparando os CDEs com as IDEs (\textit{Integrated Development Environmen}), as IDEs são essenciamente centradas no desenvolvedor, enquanto que as CDEs são essencialmente centrados na equipe e nas necessidades dela \cite{Booch2003}. 
+
+O CDE fornece um espaço de trabalho associado a um conjunto de ferramentas padronizadas para serem usadas pelo time de desenvolvimento. Interoperabilidade e interface são fortes motivações para integrar soluções específicas e \textit{groupware} genéricos dentro dos CDEs \cite{Lanubile2009}. 
+
+Antigamente, CDEs foram desenvolvidos dentro de projetos \textit{open source}, porque estes projetos eram desenvolvidos por indivíduos distribuídos geograficamente. Hoje, um número de CDEs estão disponíveis como produtos comerciais, iniciativas \textit{open source} e protótipos de pesquisa que permitem o desenvolvimento distribuído \cite{Lanubile2009}.
+
+Embora seja difícil definir CSCW e \textit{groupware}, e não existir uma definição unânime, neste trabalho refere-se CSCW a área de pesquisa que estuda softwares colaborativos, ou seja, \textit{groupware}. \textit{Groupware} é então a ferramenta que permite o trabalho colaborativo. Os CDEs, pelas definições apresentadas, são um subconjunto dos \textit{groupware} e fazem parte do estudo do Desenvolvimento Distribuído de Software (DDS) (\textit{Global Software Development} - GSD).
+
+
+\section{Requisitos de CDEs}
+\label{requisitos}
+
+Na Seção anterior, foi mencionado que embora o desenvolvimento colaborativo traga benefícios, ele é mais complexo do que o desenvolvimento \textit{stand alone} e consequentemente uma ferramenta que auxilie o trabalho em equipe (CDE) é mais complexa de se desenvolver e manter do que uma IDE. Assim, \cite{Bendix2009} indentificam uma série de problemas, provenientes da complexidade que CDEs possuem, e apresentam requisitos que um ambiente colaborativo deve atender para eliminar ou reduzir esses problemas. A seguir são apresentados esses requisitos:
+
+\begin{itemize}
+  \item Submeter o projeto a um controle de versão: os artefatos importantes para o sistema são identificados e é estabelecido uma estrutura para organizá-los em um repositório;
+  \item Permitir o trabalho isolado: é importante em alguns casos certificar-se de que apenas uma pessoa está desenvolvendo (fazendo alterações);
+  \item Integrar o trabalho: após alguma alteração local, seja realizada de maneira isolada, seja em paralelo; ela precisa ser integrada com a versão atual do repositório, o que é chamado de \textit{merge} (intercalar, mesclar), ou seja, as mudanças realizadas devem ser atualizadas. Na maioria dos casos uma ferramenta pode realizar o \textit{merge}, mas em caso de conflito, é necessária intervenção humana;
+  \item Verificar e validar o resultado do \textit{merge}: as ferramentas de \textit{merge} automático não são completamente confiáveis, uma vez que elas não levam em consideração nem a sintaxe e a semântica da linguagem de programação, nem a lógica do sistema;
+  \item Investigar o histórico: é uma grande ajuda poder visualizar como o código foi desenvolvido ao longo do tempo para entendê-lo. %\textcolor{red}{(gancho para DR)}.
+  Normalmente o histórico mostra a diferença entre duas versões do mesmo componente;
+  \item Manter o desenvolvedor informado: pode ser interessante ao desenvolvedor saber quem está trabalhando em que, quais alterações foram realizadas e quais as consequencias de uma integração na versão corrente do sistema. Para isso, os desenvolvedores precisam ter uma separação individual no repositório. Seria necessário mostrar as diferenças não somente entre o \textit{workspace} e o repositório, mas entre dois \textit{workspaces}, por exemplo.
+  \item Manter a versão anterior
+\end{itemize}
+
+\cite{Bendix2009} também apresentam requisitos de ambientes colaborativos mais específicos de MDD, como:
+
+\begin{itemize}
+
+  \item Desenvolvimento do modelo da arquitetura (apenas gráfico, sem a necessidade da ação do código): a partir dos requisitos do sistema, um modelo de arquitetura deve ser desenvolvido. O modelo da arquitetura fornece o contexto do sistema para os participantes do projeto, além de descrever as interfaces do sistema;
+  \item Desenvolvimento do modelo de \textit{design}: fornece o detalhamento do sistema que pode ser usado para gerar o código completo;
+  \item Atualização de modelo sem \textit{merge}: ao se criar uma versão nova, a ferramenta de controle de versão verifica pelo \textit{timestamp} do arquivo que não existe outra versão anterior no repositório, não havendo \textit{merge} entre os modelos apenas a inserção desse modelo no repositorio;
+  \item Atualização de modelo com \textit{merge}: para criar uma nova versão de alguns itens do modelo, a ferramenta de controle de versão analisa se há atualizações dos itens. A ferramenta de \textit{merge} compara os itens alterados com os itens do modelo do repositório e faz então o \textit{merge} entre eles, gerando um modelo mais atual, desde que todos os conflitos tenham sido resolvidos;
+  \item Atualização do modelo com \textit{merge} complexo: semelhante ao caso anterior; contudo, a ferramenta de \textit{merge} compara os itens, mas não consegue fazer o \textit{merge} automático entre eles. Dessa forma o usuário é questionado sobre como combinar os resultados de dois modelos conflitantes.
+
+\end{itemize}
+
+Alguns desses requisitos serão mais detalhados na proposta deste trabalho.
+
+\section{Os Quadrantes de Colaboração}
+\label{quadrantes}
+
+A colaboração tem duas dimensões: tempo e espaço \cite{Rama2006}. O tempo pode ser síncrono ou assíncrono. O espaço pode ser distribuído ou compartilhado. A Figura \ref{fig:quadrantes} ilustra os quadrantes que a colaboração pode assumir.
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/quadrantes.jpeg}
+	\caption{Quadrantes da Colaboração \cite{Rama2006}}%\footnote{Essa figura foi retirada de } }
+	\label{fig:quadrantes}
+\end{figure}
+
+Uma reunião é exemplo de colaboração do \emph{primeiro quadrante}, pois as pessoas estão compartilhando o mesmo tempo e espaço. Duas pessoas que trabalham no mesmo código-fonte e no mesmo computador (logo, na mesma sala), só que em turnos diferentes, é um tipo de colaboração se enquadra no \emph{segundo quadrante}, pois elas estão compartilhando o mesmo espaço (computador, sala, código-fonte) em horários diferentes. Uma ligação ou vídeo conferência são exemplos de colaboração de \emph{terceiro quadrante}, pois estão compartilhando o mesmo tempo em locais distintos. Um e-mail, blog ou fax são exemplos de colaboração de \emph{quarto quadrante}, uma vez que estão em tempo e locais diferentes.
+
+É importante salientar as quatro facetas da colaboração para que a proposta deste trabalho seja melhor elucidada.
+
+
+\section{Sistemas Gerenciadores de Conteúdo}
+\label{sis_ger_cont}
+
+Pesquisadores fazem a distinção de Wiki e \emph{Content Management System} - CMS \cite{Abeti2009,Zimmerly2009} e outros consideram a Wiki como um CMS, pelo fato dela também gerenciar conteúdo. \cite{Mehta2009} considera a Wiki como um tipo de CMS; e considera os CMSs Joomla!\footnote{http://www.joomla.org/}, Drupal\footnote{http://www.drupal.org/} e Plone\footnote{http://plone.org/}, entre outros, como CMSs de propósitos gerais. Nesta Seção é apresentado um estudo (levantamento) dos tipos de CMSs que este trabalho pode vir a usar, considerando as características de cada um. Portanto, serão descritos três tipos de CMSs: as Wikis, os CMSs de propósito geral (ou simplesmente aqui referenciados por CMS) e os intraCMS\footnote{IntraCMS é um termo criado neste trabalho para simplificar a referência dos CMSs Intranets, os quais serão definidos na Seção \ref{intraCMS}.}.
+
+\subsection{Wikis}
+\label{wikis}
+
+As Wikis são consideradas sistemas de computador que tornam fácil a edição de páginas web por qualquer pessoa. Elas também são consideradas uma filosofia em relação à forma que os usuários devem editar páginas \cite{Louridas2006}. Em sua essência, a Wiki é uma página web, ou um conjunto de páginas web, editável. Ela permite que qualquer pessoa possa, facilmente, adicionar ou revisar o conteúdo por meio de, praticamente, qualquer navegador web \cite{Jang2006}.
+
+As Wikis têm ganhado muita aceitação pelos usuários \cite{Tetard2009} e sido muito utilizadas no meio acadêmico. Atualmente, têm se mostrado uma excelente opção no mundo das ferramentas colaborativas \cite{Jang2006} e têm ganhado espaço no setor privado, se tornando uma tecnologia reveladora para apoiar a colaboração dentro e entre empresas \cite{Majchrzak2006}.
+
+A colaboração que a Wiki oferece tem permitido muitos trabalhos científicos em um leque amplo de áreas, como pode-se notar em trabalhos que usam a Wiki para gerenciar conhecimento \cite{Jing2008} e requisitos \cite{Abeti2009}, auxiliar o ensino e aprendizado \cite{Elrufaie2005, Tetard2009}, compartilhar informações \footnote{http://en.Wikipedia.org/Wiki/Main\_Page}, entre outros.
+
+O suporte à edição colaborativa do conteúdo é, portanto, uma das principais funcionalidades da Wiki \cite{Tetard2009}. As Wikis são colaborativas por natureza e a qualidade do conteúdo melhora à medida que as pessoas contribuem \cite{Mehta2009}. Todos usuários habilitados podem editar uma Wiki e revisar seu conteúdo \cite{Abeti2009}, de maneira irrestrita e democrática \cite{Tetard2009}. A Wiki enfatiza velocidade e flexibilidade ao invés de controle restrito \cite{Abeti2009} e o fato da Wiki ser fácil de implementar e de entender é, provavelmente, a chave para sua popularidade \cite{Tetard2009}. 
+
+Além da colaboração, simplicidade e facilidade, as Wikis são as plataformas eleitas pela engenharia de requisitos, uma vez que permitem que diversos \emph{stakeholders} distribuídos,  compartilhem com a definição do sistema; além do que as Wikis têm controle de versão de páginas (\emph{pages versions}), gerenciamento de alterações de conteúdo, comunicação entre usuários por meio de fóruns e \textit{chats} \cite{Abeti2009}. Por permitirem a edição em tempo real do conteúdo, o conteúdo de uma Wiki está sempre atualizado \cite{Zimmerly2009}.
+
+O que as torna tão especiais, não é apenas a facilidade de contribuição, mas também seus principais recursos \cite{Mehta2009}: 
+\begin{itemize}
+
+ \item Simples sintaxe de marcação;
+ \item Criação de links simples ou automáticos, mesmo quando a página de destino ainda é inexistente;
+ \item Controle de acesso total de usuários e páginas;
+ \item Histórico completo das revisões, com possibilidade de reverter a qualquer momento; 
+ \item Muitas Wikis não precisam de banco de dados, o que as deixa portáveis;
+ \item Categorizar páginas para melhor organização;
+ \item Criação automática de uma tabela de conteúdo (índice);
+ \item Amplos recursos de pesquisa;
+ \item Customizáveis.
+
+\end{itemize}
+
+Atualmente, existem centenas de Wikis desenvolvidas, mas  exemplos que se destacam são as seguintes  Wikis: MediaWiki\footnote{http://www.mediawiki.org/wiki/MediaWiki}, DokuWiki\footnote{http://www.dokuwiki.org/dokuwiki}, Xwiki\footnote{http://www.xwiki.org/xwiki/bin/view/Main/WebHome}, entre outras. Em especial, uma boa opção de Wiki para este trabalho é a Xwiki, por ser implementada em Java. A MediaWiki e a DokuWiki também são boas opções, por já serem utilizadas em outros trabalhos desenvolvidos pelo grupo.
+
+\subsection{CMSs}
+\label{cms}
+
+CMS - \textit{Content Management System} é um sistema que permite criar, organizar e publicar conteúdo em um conjunto de formatos, como os sites, por exemplo \cite{Abeti2009}. Além de serem uma ferramenta para desenvolver sites, os CMSs permitem criar uma hierarquia de permissões, na qual se pode ter um administrador geral, editores de seções, editores de páginas e etc. Seus principais recursos segundo \cite{Mehta2009}, são:
+
+\begin{itemize}
+ \item Criar e gerenciar conteúdo de seções de maneira hierárquica;
+ \item Facilidade de criar e editar páginas;
+ \item Reorganizar ou editar um conteúdo já publicado a qualquer momento;
+ \item \emph{Linkagem} automática;
+ \item Permitir que múltiplos usuários possam administrar ou gerenciar o conteúdo.
+\end{itemize}
+
+CMSs baseados na web têm uma arquitetura simples de 3 camadas, assim como outra qualquer aplicação web: \textit{browser}, \textit{web server} e \textit{database server}. Entretanto, internamente, diferentes CMS podem ter diferentes arquiteturas \cite{Mehta2009}. A Figura \ref{fig:arqJoomla} apresenta a arquitetura do Joomla! e a Figura \ref{fig:arqDrupal} apresenta a arquitetura do Drupal, entretanto, não serão detalhadas as respectivas arquiteturas, pois, conforme dito, o objetivo é apenas fazer um levantamento comparativo entre alguns tipos de CMSs que podem contribuir para o trabalho.
+
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.6\textwidth]{imagens/arquiteturaJoomla.png}
+	\caption{Arquitetura do CMS Joomla! (\citeauthor{JoomlaArquitetura})}
+	\label{fig:arqJoomla}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.6\textwidth]{imagens/arquiteturaDrupal.png}
+	\caption{Arquitetura do CMS Drupal  (\citeauthor{DrupalArquitetura})}
+	\label{fig:arqDrupal}
+\end{figure}
+
+O Drupal é uma boa opção por sua arquitetura ser facilmente expansível, como se pode notar na Figura \ref{fig:arqDrupal}, na qual as camadas são mais independentes do que na arquitetura do Joomla! (Figura \ref{fig:arqJoomla}.
+
+\subsection{IntraCMSs}
+\label{intraCMS}
+
+CMS coorporativos ou CMSs Intranets (intraCMSs), são geralmente desenvolvidos para usuários internos de uma organização. Eles podem reduzir a quantidade de e-mail e a sobrecarga de comunicação, acelerando processos. Eles ajudam a manter a maioria das informações em um único lugar \cite{Mehta2009}. Seus principais recursos são \cite{Mehta2009}:
+
+\begin{itemize}
+ \item Gerenciamento de usuário;
+ \item Gerenciamento de documentos/registros, revisões e comentários;
+ \item \textit{Workflow} e aprovação de processos;
+ \item Grupos e espaços para organizar o trabalho;
+ \item Blog, fórum, Wiki e outros, para auxiliar a colaboração;
+ \item Acesso ao desktop, APIs e padrões de compilação para permitir a integração com outros sistemas;
+ \item Características específicas de sistema: gerenciamento de contatos, base de conhecimento, gestão de projeto e etc.
+\end{itemize}
+
+Como possibilidades de uso dos intraCMSs, tem-se:
+
+\begin{itemize}
+ \item Manter todas as normas, políticas, formulários e documentos em um único lugar;
+ \item Usar \textit{workflows} para gerenciar o design ou aprovações de documentações;
+ \item Gerenciar alterações nos documentos por meio do controle de revisão;
+ \item Integrar partes terceirizadas e ligar a uma folha de pagamento ou à um sistema de gerenciamento de projeto;
+ \item Gerenciar campanhas de \textit{marketing} centralizando todas as informações, documentos, relatórios e outros;
+ \item Configurar uma base de conhecimento usando uma Wiki ou um gerenciador de documentos.
+\end{itemize}
+
+São exemplos de CMS coorporativos ou intranet CMS: Alfresco\footnote{http://www.alfresco.com/}, Nuxeo\footnote{http://www.nuxeo.com/} e Jahia\footnote{http://www.jahia.com/}.
+
+\subsection{Comparação entre os CMSs}
+\label{comparacao}
+
+Vários tipos de CMS estão disponíveis e possuem funcionalidades e propósitos específicos, porém eles têm características em comum, como:
+
+\begin{itemize}
+ \item Essencialmente permitem adicionar e gerenciar algum tipo de conteúdo - texto, imagem, arquivos;
+ \item Possuem editor WYSIWYG: um editor \textit{ What You See Is What You Get} permite o usuário inserir um texto e formatá-lo de maneira mais amigável. Alguns outros editores ainda permitem inserir imagens ou outros tipos de mídia;
+ \item Categorias e hierarquia de conteúdo: seções, categorias ou níveis para organizar o conteúdo são muito comuns;
+ \item Ferramentas de pesquisa otimizadas: URLs e \textit{meta tags} são suportadas por ferramentas de procura;
+ \item Marcação: criar marcações com palavras-chave e depois exibir em uma lista;
+ \item Diferentes níveis de usuários: a maioria dos CMSs permitem múltiplos usuários par gerenciar conteúdo. Muitos ainda tem funções e níveis de acessos para controlar o que cada usuário pode fazer;
+ \item Suporte a \textit{Plug-ins}: estender os recursos do núcleo (recursos base) do CMS adicionando \textit{plug-ins} ou extensões;
+ \item Temas e \textit{skins}: personalizar a aparencia com temas.
+
+\end{itemize}
+
+
+Comparando Wikis com CMSs, pode-se dizer que criar e editar conteúdos em CMSs é, geralmente, mais restrito do que em Wikis. As Wikis são mais abertas e têm menos rigor no controle de permissão, onde mudanças podem ocorrer sem que ninguém tenha conhecimento, diferentemente dos CMSs, em que cada usuário tem permissões específicas de acesso para determinadas páginas e permissões de ações. Enquanto o controle de permissão em CMSs é muito mais completo, as Wikis são projetadas para fácil e rápida edição. As Wikis também são mais fáceis de \textit{linkar} páginas pelos usuários finais, além de permitirem que usuários não técnicos gerenciem e acessem o conteúdo de maneira mais fácil do que nos CMSs \cite{Zimmerly2009}. 
+
+\cite{Abeti2009} também comparam as Wikis com os CMS. Eles afirmam que as Wikis são mais fáceis de aprender pelos \textit{stakeholders}, pois basta saber editar uma página; enquanto que nos CMSs deve-se conhecer a base do CMS. Nas Wikis, as páginas não têm estrutura e são o conceito central para gerenciamento de conteúdo; enquanto que nos CMSs as páginas são estruturadas e possuem uma hierarquia de páginas, seções, itens e etc, além da estrutura do site de um CMS ser gerenciada por um administrador. Um outro ponto é que nas Wikis, as revisões são mantidas em cada edição e nos CMSs o versionamento é mais abrangente do que nas Wikis, o que de certa forma requer o conhecimento de sua arquitetura.
+
+Como mencionado, as Wikis podem ser consideradas um tipo de CMS. A questão é que as Wikis focam na velocidade, flexibilidade, colaboração e compartilhamento de conteúdo; ao invés do controle restrito de acesso e edição \cite{Abeti2009}.
+
+
+\section{Trabalhos Relacionados de colaboração em MDD }
+\label{trabalhosRelacionado}
+
+Há uma literatura relativamente vasta sobre o tema de pesquisa deste trabalho, o que ressalta sua importância de estudo. Nesta Seção será apresentado um levantamento de alguns trabalhos relacionados. 
+
+O trabalho de \cite{Levytskyy2009}, está focado em aplicações M\&S (\emph{Modeling \& Simulation})  desenvolvidas na web. Os autores atentam para o fato de que a modelagem de artefatos requer o envolvimento de várias pessoas e que por isso o desenvolvimento tradicional da forma individual, usando ferramentas M\&S, deverá ser substituído ou complementado com ferramentas mais poderosas que suportem a prática colaborativa dos usuários.
+
+Como a complexidade dos sistemas continua a crescer, é esperado que o uso de M\&S no desenvolvimento de aplicações e a demanda por ambientes M\&S colaborativos e mais poderosos aumentem. Além do que, separar modelos de seus simuladores possibilita aos usuários a liberdade de executar seus modelos nos simuladores de sua escolha \cite{Levytskyy2009}. A partir desse cenário e das expectativas futuras, o trabalho propõe um ambiente colaborativo baseado na web, que seja capaz de se adaptar facilmente às necessidades de modelagem e simulação de um número de domínios de aplicações M\&S arbitrário. Para isto, os autores sugerem um \emph {framework collaborative Modeling and online Simulation} (cMoS) como suporte para aplicações M\&S desenvolvidas em plataforma web.
+
+Para a construção do ambiente, os autores apresentam uma abordagem orientada a modelos. O intuito de usar MDD para construção do ambiente é reduzir a complexidade e aumentar a eficiência da implementação de modelos cMoS.
+
+O cMoS proporciona uma base geral para a família de aplicações M\&S desenvolvidas em plataforma web, tendo como algumas funcionalidades : modelagem, compartilhamento colaborativo de modelos conceituais, simulação online e gerenciamento dos recursos de simulação. A colaboração, portanto, fornece o suporte necessário ao \emph{framework}.
+
+%O diferencial do CoMDD em relação ao cMoS é que o CoMDD se propõe a ser um auxílio colaborativo para MDD, enquanto que o cMoS tem sido desenvolvido adotando MDD para apoiar o processo colaborativo de Modelagem e Simulação.
+
+Outro trabalho que relativo a colaboração em modelagens, é o trabalho de \cite{Abeti2009}. Eles desenvolvem seu trabalho sob uma plataforma Wiki dentro do contexto de gerenciamento de requisitos para \emph{Business Process Reengineering} (BPR). Eles propõem um \emph{framework} BPR que formalize o conhecimento empresarial por meio de um conjunto de modelos conectados com os requisitos do software e que também possibilite uma automação parcial da implementação do sistema. Esse \emph{framework} provê uma Wiki, denominada de \emph{Wiki for Requirements (WikiReq)}, baseada na plataforma \emph{Semantic MediaWiki}. % (SMW).
+
+Para representação do conhecimento, os autores combinam os benefícios de três notações: Si*, diagramas de Casos de Uso em UML e \emph{Business Process Management Notation} (BPMN). Através da notação Si*, os \emph{stakeholders} podem definir seus conhecimentos sobre \emph{Business Process} (BP) e sobre os requisitos do negócio dentro da WikiReq; os diagramas de casos de uso são intuitivos e são os diagramas mais usados por \emph{stakeholders} e a notação BPMN é uma notação de BP fácil de compreender por todas as empresas interessadas \cite{Abeti2009}.
+
+Para a automação da implementação parcial do sistema, a WikiReq ``exporta para IDE Eclipse um conjunto de modelos que são conectados a BMPN e modelos de caso de uso em UML, por meio de um conjunto de plugins \cite{Abeti2009}.
+
+A partir do início do levantamento de requisitos e dos BPs da empresa adquiridos pelos \emph{stakeholders}, combinar as funcionalidades da Wiki com a modelagem MDA é uma tarefa fundamental para manter a rastreabilidade entre artefatos de sistemas e requisitos. As funcionalidades do MDA automatizam parcialmente o gerenciamento do conhecimento por meio das transformações de modelos \cite{Abeti2009}. 
+
+
+
+Um trabalho que contribuiu para o CoMDD foi o trabalho de \cite{Bendix2009} identifica um problema quanto às limitações dos desenvolvedores em MDD, principalmente relacionadas a carência de ambientes que auxiliem o desenvolvimento orientado a modelos de maneira colaborativa. Assim, por meio de casos de uso, os autores realizam um levantamento dos requisitos que um ambiente colaborativo, em particular orientado a modelos, precisa satisfazer, de tal forma que possibilite um time de desenvolvedores trabalhar eficientemente neste ambiente. 
+
+Existem na literatura trabalhos que propõem técnicas de \textit{merge} e de comparação entre modelos, como: \cite{Sriplakich2006, Wenzel2008, Kelter2005}, entre outros. Tais trabalhos são importantes para o CoMDD, uma vez que foi identificado a importância das técnias de \textit{merge} e de comparação entre modelos, para o desenvolvimento colaborativo orientado a modelos. Existe também \textit{workshops} sobre comparação e versionamento de modelos \cite{CVSM2008} mostrando a importância da área.
+
+Em nenhum dos trabalhos de \cite{Levytskyy2009} e de \cite{Abeti2009} é mencionado a importância do \textit{design rationale}. E no trabalho de \cite{Abeti2009}, a 
+a WikiReq é dependente da IDE Eclipse como parte do processo. No CoMDD, a idéia é que todo o processo possa ser realizado pela web, sem a necessidade de programas instalados no computador. O trabalho de \cite{Bendix2009} contribui para este trabalho, uma vez que parte dos requisitos do CoMDD foram fundamentados com base no estudo da proposta de \cite{Bendix2009}.
+
+Nenhum dos trabalhos desta Seção foi discutido o desenvolvimento colaborativo orientado a modelagos no domínio de sistemas embarcados, como é proposto no estudo de caso II (seções \ref{col_sis_emb} e \ref{estudoDeCasoII}).
+
+
+% Falar de MDD, colaboração e pq isso é bom para reuso, produtividade e principalemnte para SE.
+% 
+% justificativa: mdd é bom. colaboração é bom. entao mdd+co é melhor ainda. Será?
+
+\section{Considerações Finais}
+
+Durante este trabalho serão analisados com mais detalhe os CMSs apresentados e selecionado aquele que se encaixe melhor nos requisitos a serem definidos no capítulo \ref{proposta}. Se for selecionada a Wiki, tem-se as seguintes opções: a xWiki, a MediaWiki ou a DokuWiki. Estas duas últimas, o grupo já vem estudando e contribuindo em seus projetos OSS - \textit{Open Source Software}.
+
+Quanto aos CMS, o Drupal é uma boa opção por ser expansível, apresentar muitas funcionalidades (através de módulos) e pelo grupo já trabalhar com ele. 
+
+Em relação aos intraCMSs, o grupo tem poucos estudos sobre eles até então, cabendo um levantamento de quais intraCMSs seria a melhor opção.
+
+
+
+%\color{red} Por que usar a Wiki para colaboração e nao o email ou outro sistema de gerencia ou o eclipse?? Justificar pq a Wiki resolve esses problemas de colaboração e outras aplicações n são mais eficientes \normalcolor
+
+
+
