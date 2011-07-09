@@ -1,0 +1,39 @@
+#Descrição: voce escreve um modelo e clica em visualizar codigo. 
+#Prós: merge, histórico
+#Contras: mando todo o conteúdo da página pro componente, logo vai também tudo que está dentro de {{velocity}}
+
+Este código vai na página do Comdd:
+--------------
+plataforma golfe
+robo omega
+
+{{velocity}}
+
+#set($modelo=$doc.getContent())
+
+#set ($saida = $services.dsl.executeDsl2($modelo)) 
+
+
+{{html}}
+  <form action=CodigoGerado>
+
+    <input type="hidden" name='codigoGerado' value="$!saida" />
+    <input type="submit" value="Ver codigo gerado" /> <br/>
+    
+  </form>
+{{/html}}
+
+
+{{/velocity}}
+
+
+Este código vai ná pagina CodigoGerado:
+--------------
+
+{{velocity}}
+
+#set ($codigoGerado = $request.getParameter('codigoGerado') )
+
+$!codigoGerado
+
+{{/velocity}}
