@@ -20,7 +20,7 @@ public class JDBCExample {
 			e.printStackTrace();
 			return;	}
  		
-		System.out.println("PostgreSQL JDBC Driver Registered! \n Valendo !!);
+		System.out.println("PostgreSQL JDBC Driver Registered! \n Valendo !!");
  
 		//Connection connection = null;
  
