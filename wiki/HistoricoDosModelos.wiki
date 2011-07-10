@@ -1,13 +1,47 @@
 #summary 1 Como guardar o histórico das diferentes versões dos modelos e realizar merge?
 
-= Introduction =
+Criei duas páginas. Uma com o comdd que chama o plugin da dsl e que o usuário entra com o modelo. A outra para visualizar o codigo gerado pela dsl.
 
-Add your content here.
+#Descrição: voce escreve um modelo e clica em visualizar codigo. 
+#Prós: merge, histórico
+#Contras: mando todo o conteúdo da página pro componente, logo vai também tudo que está dentro de {{velocity}}
+
+Este código vai na página do Comdd:
+--------------
+plataforma golfe
+robo omega
+
+{{velocity}}
+
+#set($modelo=$doc.getContent())
+
+#set ($saida = $services.dsl.executeDsl2($modelo)) 
 
 
-= Details =
+{{html}}
+  <form action=CodigoGerado>
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+    <input type="hidden" name='codigoGerado' value="$!saida" />
+    <input type="submit" value="Ver codigo gerado" /> <br/>
+    
+  </form>
+{{/html}}
+
+
+{{/velocity}}
+
+
+Este código vai ná pagina CodigoGerado:
+--------------
+
+{{velocity}}
+
+#set ($codigoGerado = $request.getParameter('codigoGerado') )
+
+$!codigoGerado
+
+{{/velocity}}
+
+
+
+Com isso temos histórico e merge de modelos
