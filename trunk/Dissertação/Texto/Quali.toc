@@ -6,12 +6,12 @@
 \contentsline {section}{\numberline {2.1}Defini\c c\~ao e Vantagens do MDD}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Fundamentos do MDD}{7}{section.2.2}
 \contentsline {subsubsection}{Principais elementos do MDD}{8}{section.2.2}
-\contentsline {subsubsection}{Metamodelagem}{9}{figure.2.3}
-\contentsline {subsubsection}{DSL e DSML}{9}{figure.2.3}
+\contentsline {subsubsection}{Metamodelagem}{9}{figure.caption.8}
+\contentsline {subsubsection}{DSL e DSML}{9}{figure.caption.8}
 \contentsline {section}{\numberline {2.3}Principais Abordagens de MDD}{10}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MDA}{10}{subsection.2.3.1}
 \contentsline {subsubsection}{Os tr\^es modelos: CIM, PIM e PSM}{10}{subsection.2.3.1}
-\contentsline {subsubsection}{Especifica\c c\~oes usadas na MDA}{12}{figure.2.6}
+\contentsline {subsubsection}{Especifica\c c\~oes usadas na MDA}{11}{figure.caption.11}
 \contentsline {subsection}{\numberline {2.3.2}Abordagem Eclipse}{13}{subsection.2.3.2}
 \contentsline {subsubsection}{EMF}{14}{subsection.2.3.2}
 \contentsline {subsubsection}{JET}{14}{subsection.2.3.2}
@@ -24,7 +24,7 @@
 \contentsline {section}{\numberline {3.4}Sistemas Gerenciadores de Conte\'udo}{21}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Wikis}{21}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}CMSs}{23}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}IntraCMSs}{23}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.3}IntraCMSs}{24}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Compara\c c\~ao entre os CMSs}{25}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Trabalhos Relacionados de colabora\c c\~ao em MDD }{26}{section.3.5}
 \contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{28}{section.3.6}
@@ -32,9 +32,9 @@
 \contentsline {section}{\numberline {4.1}Problema de Pesquisa}{29}{section.4.1}
 \contentsline {section}{\numberline {4.2}Objetivo e Hip\'otese}{30}{section.4.2}
 \contentsline {section}{\numberline {4.3}Estudo de Caso: CoMDD para Sistemas Embarcados}{32}{section.4.3}
-\contentsline {subsubsection}{Especificidades dos Sistemas Embarcados}{33}{figure.4.1}
-\contentsline {subsubsection}{Abordagem MDD em Sistemas Embarcados}{34}{figure.4.1}
-\contentsline {subsubsection}{Colabora\c c\~ao em MDD para Sistemas Embarcados}{35}{figure.4.1}
+\contentsline {subsubsection}{Especificidades dos Sistemas Embarcados}{33}{figure.caption.16}
+\contentsline {subsubsection}{Abordagem MDD em Sistemas Embarcados}{34}{figure.caption.16}
+\contentsline {subsubsection}{Colabora\c c\~ao em MDD para Sistemas Embarcados}{35}{figure.caption.16}
 \contentsline {section}{\numberline {4.4}Objetivos Espec\IeC {\'\i }ficos}{35}{section.4.4}
 \contentsline {section}{\numberline {4.5}Considera\c c\~oes Finais}{36}{section.4.5}
 \contentsline {chapter}{\numberline {5}M\'etodo}{37}{chapter.5}
@@ -49,4 +49,3 @@
 \contentsline {subsection}{\numberline {5.1.8}Execu\c c\~ao de Estudo de Caso II - Dom\IeC {\'\i }nio de SE}{42}{subsection.5.1.8}
 \contentsline {section}{\numberline {5.2}Cronograma}{43}{section.5.2}
 \contentsline {section}{\numberline {5.3}Considera\c c\~oes Finais}{44}{section.5.3}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{47}{section.5.3}
