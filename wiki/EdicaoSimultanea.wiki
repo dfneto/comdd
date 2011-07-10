@@ -23,6 +23,24 @@ A página está salvando
 
 *Como fazer um refresh da pagina automatico num tempo pequeno?*
 
+Escrevi um componente que salva no banco e um codigo que chama esse componente:
+
+{{velocity}}
+
+##$doc.setContent("sucessssssssssoo")
+
+
+##$doc.save()
+
+
+#set($modelo=$doc.getContent())  #--> pega todo o conteudo da pagina
+
+#set ($saida = $services.save.save2($modelo) )  #--> esse componente salva na pagina TesteEdicaoSimultanea
+
+
+
+{{/velocity}}
+
 = Passo 3 =
 Na raça: salvar no banco de dados com um servlet e um webservice
 
