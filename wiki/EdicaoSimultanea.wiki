@@ -33,9 +33,9 @@ Escrevi um componente que salva no banco e um codigo que chama esse componente:
 ##$doc.save()
 
 
-#set($modelo=$doc.getContent())  #--> pega todo o conteudo da pagina
+#set($modelo=$doc.getContent())  ##--> pega todo o conteudo da pagina
 
-#set ($saida = $services.save.save2($modelo) )  #--> esse componente salva na pagina TesteEdicaoSimultanea
+#set ($saida = $services.save.save2($modelo) )  ##--> esse componente salva na pagina TesteEdicaoSimultanea
 
 
 
