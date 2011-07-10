@@ -1,0 +1,2 @@
+david@linux-labes:~/Área de Trabalho/Teste Escrita no Banco Manual$ javac -cp . *.java
+david@linux-labes:~/Área de Trabalho/Teste Escrita no Banco Manual$ java -cp .:postgresql-9.0-801.jdbc4.jar Principal
