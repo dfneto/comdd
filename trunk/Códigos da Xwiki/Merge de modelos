@@ -13,6 +13,8 @@ robo omega
 
 #set ($saida = $services.dsl.executeDsl2($modelo)) 
 
+##$doc.setContent($modelo)
+##$doc.save()
 
 {{html}}
   <form action=CodigoGerado>

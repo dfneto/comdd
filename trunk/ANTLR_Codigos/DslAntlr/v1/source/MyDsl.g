@@ -13,8 +13,9 @@ options {
 
 prog: stat+;
 
-stat:	plataforma
+stat:	plataforma 
 	'robo' nomeRobo=ID 
+	link
 	cabecalho* 
 	sensor* 
 	main 
@@ -82,14 +83,16 @@ tipoSensor:
 //*****************************************/
 
 main:
-	'int main()' '{' {System.out.println("int main() {");} loop 		'}' {System.out.println("}");} 
+	'int main()' '{' {System.out.println("int main() {");} loop '}' {System.out.println("}");} 
 	;
 
 loop:
 	(comportamento | acoes)*	
-	'while' '(true)' '{' {System.out.println("\twhile(true) {");} 
+//	'while' '(true)' '{' {System.out.println("\twhile(true) {");}
+	'while' '(true)' '{' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(true) {");}  
 	(comportamento | acoes)*
-	'}' {System.out.println("\t}");} 
+//	'}' {System.out.println("\t}");} 
+	'}' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}");} 
 	;
 
 //*******************************************/
@@ -113,23 +116,28 @@ acaoSensor:
 	;
 
 ligar:
-	'ligar();' {System.out.println("\t\tO sensor " +sensorCriado+ " foi ligado");}
+//	'ligar();' {System.out.println("\t\tO sensor " +sensorCriado+ " foi ligado");}
+	'ligar();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " foi ligado");}
 	;
 
 ler:
-	'ler();' {System.out.println("\t\tO sensor " +sensorCriado+ " está lendo");}
+//	'ler();' {System.out.println("\t\tO sensor " +sensorCriado+ " está lendo");}
+	'ler();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " está lendo");}
 	;
 
 carregarListaCoordenadas:
-	'carregarListaCoordenadas();' {System.out.println("\t\tCódigo da lista de coordenadas vem aqui");}
+//	'carregarListaCoordenadas();' {System.out.println("\t\tCódigo da lista de coordenadas vem aqui");}
+	'carregarListaCoordenadas();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código da lista de coordenadas vem aqui");}
 	;
 
 recebeCoordenada:
-	'recebeCoordenada();' {System.out.println("\t\tCódigo para receber uma coordenada apenas vem aqui");}
+//	'recebeCoordenada();' {System.out.println("\t\tCódigo para receber uma coordenada apenas vem aqui");}
+	'recebeCoordenada();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código para receber uma coordenada apenas vem aqui");}
 	;
 
 obterImagem:
-	'obterImagem();' {System.out.println("\t\tCódigo de obter imagem vem aqui");}
+//	'obterImagem();' {System.out.println("\t\tCódigo de obter imagem vem aqui");}
+	'obterImagem();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código de obter imagem vem aqui");}
 	;
 
 //*******************************************/
@@ -141,20 +149,25 @@ acoes:
 	;
 
 processarImagem:
-	'processarImagem();' {System.out.println("\t\tO robo está processando a imagem......");}
+//	'processarImagem();' {System.out.println("\t\tO robo está processando a imagem......");}
+	'processarImagem();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está processando a imagem......");}
 	;
 
 defineAtirar:
-	'defineAtirar();' {System.out.println("\t\tO robo está atirando......");}
+//	'defineAtirar();' {System.out.println("\t\tO robo está atirando......");}
+	'defineAtirar();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está atirando......");}
 	;
 
 atuar:
+//	'andar();' {System.out.println("\t\tO robo está andando......");}
 	'andar();' {System.out.println("\t\tO robo está andando......");}
 	;
 
 regra:
-	'naoBater();' {System.out.println("\t\tO robo nao pode bater......");} |
-	'seguir();' {System.out.println("\t\tO robo deve seguir......");}
+//	'naoBater();' {System.out.println("\t\tO robo nao pode bater......");} |
+//	'seguir();' {System.out.println("\t\tO robo deve seguir......");}
+	'naoBater();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo nao pode bater......");} |
+	'seguir();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo deve seguir......");}
 	;
 
 

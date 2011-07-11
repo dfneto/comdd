@@ -1,4 +1,4 @@
-// $ANTLR 3.0 source/MyDsl.g 2011-06-25 16:54:15
+// $ANTLR 3.0 source/MyDsl.g 2011-07-11 14:39:33
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -473,7 +473,7 @@ public class MyDslParser extends Parser {
             loop();
             _fsp--;
 
-            match(input,20,FOLLOW_20_in_main232); 
+            match(input,20,FOLLOW_20_in_main230); 
             System.out.println("}");
 
             }
@@ -515,7 +515,7 @@ public class MyDslParser extends Parser {
             	case 1 :
             	    // source/MyDsl.g:89:3: comportamento
             	    {
-            	    pushFollow(FOLLOW_comportamento_in_loop246);
+            	    pushFollow(FOLLOW_comportamento_in_loop244);
             	    comportamento();
             	    _fsp--;
 
@@ -525,7 +525,7 @@ public class MyDslParser extends Parser {
             	case 2 :
             	    // source/MyDsl.g:89:19: acoes
             	    {
-            	    pushFollow(FOLLOW_acoes_in_loop250);
+            	    pushFollow(FOLLOW_acoes_in_loop248);
             	    acoes();
             	    _fsp--;
 
@@ -538,11 +538,11 @@ public class MyDslParser extends Parser {
                 }
             } while (true);
 
-            match(input,21,FOLLOW_21_in_loop256); 
-            match(input,22,FOLLOW_22_in_loop258); 
-            match(input,19,FOLLOW_19_in_loop260); 
-            System.out.println("\twhile(true) {");
-            // source/MyDsl.g:91:2: ( comportamento | acoes )*
+            match(input,21,FOLLOW_21_in_loop255); 
+            match(input,22,FOLLOW_22_in_loop257); 
+            match(input,19,FOLLOW_19_in_loop259); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(true) {");
+            // source/MyDsl.g:92:2: ( comportamento | acoes )*
             loop8:
             do {
                 int alt8=3;
@@ -558,7 +558,7 @@ public class MyDslParser extends Parser {
 
                 switch (alt8) {
             	case 1 :
-            	    // source/MyDsl.g:91:3: comportamento
+            	    // source/MyDsl.g:92:3: comportamento
             	    {
             	    pushFollow(FOLLOW_comportamento_in_loop267);
             	    comportamento();
@@ -568,7 +568,7 @@ public class MyDslParser extends Parser {
             	    }
             	    break;
             	case 2 :
-            	    // source/MyDsl.g:91:19: acoes
+            	    // source/MyDsl.g:92:19: acoes
             	    {
             	    pushFollow(FOLLOW_acoes_in_loop271);
             	    acoes();
@@ -583,8 +583,8 @@ public class MyDslParser extends Parser {
                 }
             } while (true);
 
-            match(input,20,FOLLOW_20_in_loop276); 
-            System.out.println("\t}");
+            match(input,20,FOLLOW_20_in_loop277); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}");
 
             }
 
@@ -601,18 +601,18 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start comportamento
-    // source/MyDsl.g:99:1: comportamento : sensorCriado '.' acaoSensor ;
+    // source/MyDsl.g:101:1: comportamento : sensorCriado '.' acaoSensor ;
     public final void comportamento() throws RecognitionException {
         try {
-            // source/MyDsl.g:100:2: ( sensorCriado '.' acaoSensor )
-            // source/MyDsl.g:100:2: sensorCriado '.' acaoSensor
+            // source/MyDsl.g:102:2: ( sensorCriado '.' acaoSensor )
+            // source/MyDsl.g:102:2: sensorCriado '.' acaoSensor
             {
-            pushFollow(FOLLOW_sensorCriado_in_comportamento293);
+            pushFollow(FOLLOW_sensorCriado_in_comportamento294);
             sensorCriado();
             _fsp--;
 
-            match(input,23,FOLLOW_23_in_comportamento295); 
-            pushFollow(FOLLOW_acaoSensor_in_comportamento299);
+            match(input,23,FOLLOW_23_in_comportamento296); 
+            pushFollow(FOLLOW_acaoSensor_in_comportamento300);
             acaoSensor();
             _fsp--;
 
@@ -632,10 +632,10 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start sensorCriado
-    // source/MyDsl.g:104:1: sensorCriado : ( 'gps' | 'bussola' | 'camera' );
+    // source/MyDsl.g:106:1: sensorCriado : ( 'gps' | 'bussola' | 'camera' );
     public final void sensorCriado() throws RecognitionException {
         try {
-            // source/MyDsl.g:105:3: ( 'gps' | 'bussola' | 'camera' )
+            // source/MyDsl.g:107:3: ( 'gps' | 'bussola' | 'camera' )
             int alt9=3;
             switch ( input.LA(1) ) {
             case 15:
@@ -655,32 +655,32 @@ public class MyDslParser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("104:1: sensorCriado : ( 'gps' | 'bussola' | 'camera' );", 9, 0, input);
+                    new NoViableAltException("106:1: sensorCriado : ( 'gps' | 'bussola' | 'camera' );", 9, 0, input);
 
                 throw nvae;
             }
 
             switch (alt9) {
                 case 1 :
-                    // source/MyDsl.g:105:3: 'gps'
+                    // source/MyDsl.g:107:3: 'gps'
                     {
-                    match(input,15,FOLLOW_15_in_sensorCriado310); 
+                    match(input,15,FOLLOW_15_in_sensorCriado311); 
                     sensorCriado = "gps";
 
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:106:3: 'bussola'
+                    // source/MyDsl.g:108:3: 'bussola'
                     {
-                    match(input,16,FOLLOW_16_in_sensorCriado318); 
+                    match(input,16,FOLLOW_16_in_sensorCriado319); 
                     sensorCriado = "bussola";
 
                     }
                     break;
                 case 3 :
-                    // source/MyDsl.g:107:3: 'camera'
+                    // source/MyDsl.g:109:3: 'camera'
                     {
-                    match(input,17,FOLLOW_17_in_sensorCriado326); 
+                    match(input,17,FOLLOW_17_in_sensorCriado327); 
                     sensorCriado = "camera";
 
                     }
@@ -700,10 +700,10 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start acaoSensor
-    // source/MyDsl.g:111:1: acaoSensor : ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem );
+    // source/MyDsl.g:113:1: acaoSensor : ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem );
     public final void acaoSensor() throws RecognitionException {
         try {
-            // source/MyDsl.g:112:2: ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem )
+            // source/MyDsl.g:114:2: ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem )
             int alt10=5;
             switch ( input.LA(1) ) {
             case 24:
@@ -733,16 +733,16 @@ public class MyDslParser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("111:1: acaoSensor : ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem );", 10, 0, input);
+                    new NoViableAltException("113:1: acaoSensor : ( ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem );", 10, 0, input);
 
                 throw nvae;
             }
 
             switch (alt10) {
                 case 1 :
-                    // source/MyDsl.g:112:2: ligar
+                    // source/MyDsl.g:114:2: ligar
                     {
-                    pushFollow(FOLLOW_ligar_in_acaoSensor340);
+                    pushFollow(FOLLOW_ligar_in_acaoSensor341);
                     ligar();
                     _fsp--;
 
@@ -750,9 +750,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:112:10: ler
+                    // source/MyDsl.g:114:10: ler
                     {
-                    pushFollow(FOLLOW_ler_in_acaoSensor344);
+                    pushFollow(FOLLOW_ler_in_acaoSensor345);
                     ler();
                     _fsp--;
 
@@ -760,9 +760,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // source/MyDsl.g:112:16: carregarListaCoordenadas
+                    // source/MyDsl.g:114:16: carregarListaCoordenadas
                     {
-                    pushFollow(FOLLOW_carregarListaCoordenadas_in_acaoSensor348);
+                    pushFollow(FOLLOW_carregarListaCoordenadas_in_acaoSensor349);
                     carregarListaCoordenadas();
                     _fsp--;
 
@@ -770,9 +770,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // source/MyDsl.g:112:43: recebeCoordenada
+                    // source/MyDsl.g:114:43: recebeCoordenada
                     {
-                    pushFollow(FOLLOW_recebeCoordenada_in_acaoSensor352);
+                    pushFollow(FOLLOW_recebeCoordenada_in_acaoSensor353);
                     recebeCoordenada();
                     _fsp--;
 
@@ -780,9 +780,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 5 :
-                    // source/MyDsl.g:112:62: obterImagem
+                    // source/MyDsl.g:114:62: obterImagem
                     {
-                    pushFollow(FOLLOW_obterImagem_in_acaoSensor356);
+                    pushFollow(FOLLOW_obterImagem_in_acaoSensor357);
                     obterImagem();
                     _fsp--;
 
@@ -804,14 +804,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start ligar
-    // source/MyDsl.g:115:1: ligar : 'ligar();' ;
+    // source/MyDsl.g:117:1: ligar : 'ligar();' ;
     public final void ligar() throws RecognitionException {
         try {
-            // source/MyDsl.g:116:2: ( 'ligar();' )
-            // source/MyDsl.g:116:2: 'ligar();'
+            // source/MyDsl.g:119:2: ( 'ligar();' )
+            // source/MyDsl.g:119:2: 'ligar();'
             {
-            match(input,24,FOLLOW_24_in_ligar367); 
-            System.out.println("\t\tO sensor " +sensorCriado+ " foi ligado");
+            match(input,24,FOLLOW_24_in_ligar369); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " foi ligado");
 
             }
 
@@ -828,14 +828,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start ler
-    // source/MyDsl.g:119:1: ler : 'ler();' ;
+    // source/MyDsl.g:122:1: ler : 'ler();' ;
     public final void ler() throws RecognitionException {
         try {
-            // source/MyDsl.g:120:2: ( 'ler();' )
-            // source/MyDsl.g:120:2: 'ler();'
+            // source/MyDsl.g:124:2: ( 'ler();' )
+            // source/MyDsl.g:124:2: 'ler();'
             {
-            match(input,25,FOLLOW_25_in_ler379); 
-            System.out.println("\t\tO sensor " +sensorCriado+ " está lendo");
+            match(input,25,FOLLOW_25_in_ler382); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " está lendo");
 
             }
 
@@ -852,14 +852,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start carregarListaCoordenadas
-    // source/MyDsl.g:123:1: carregarListaCoordenadas : 'carregarListaCoordenadas();' ;
+    // source/MyDsl.g:127:1: carregarListaCoordenadas : 'carregarListaCoordenadas();' ;
     public final void carregarListaCoordenadas() throws RecognitionException {
         try {
-            // source/MyDsl.g:124:2: ( 'carregarListaCoordenadas();' )
-            // source/MyDsl.g:124:2: 'carregarListaCoordenadas();'
+            // source/MyDsl.g:129:2: ( 'carregarListaCoordenadas();' )
+            // source/MyDsl.g:129:2: 'carregarListaCoordenadas();'
             {
-            match(input,26,FOLLOW_26_in_carregarListaCoordenadas391); 
-            System.out.println("\t\tCódigo da lista de coordenadas vem aqui");
+            match(input,26,FOLLOW_26_in_carregarListaCoordenadas395); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código da lista de coordenadas vem aqui");
 
             }
 
@@ -876,14 +876,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start recebeCoordenada
-    // source/MyDsl.g:127:1: recebeCoordenada : 'recebeCoordenada();' ;
+    // source/MyDsl.g:132:1: recebeCoordenada : 'recebeCoordenada();' ;
     public final void recebeCoordenada() throws RecognitionException {
         try {
-            // source/MyDsl.g:128:2: ( 'recebeCoordenada();' )
-            // source/MyDsl.g:128:2: 'recebeCoordenada();'
+            // source/MyDsl.g:134:2: ( 'recebeCoordenada();' )
+            // source/MyDsl.g:134:2: 'recebeCoordenada();'
             {
-            match(input,27,FOLLOW_27_in_recebeCoordenada403); 
-            System.out.println("\t\tCódigo para receber uma coordenada apenas vem aqui");
+            match(input,27,FOLLOW_27_in_recebeCoordenada408); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código para receber uma coordenada apenas vem aqui");
 
             }
 
@@ -900,14 +900,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start obterImagem
-    // source/MyDsl.g:131:1: obterImagem : 'obterImagem();' ;
+    // source/MyDsl.g:137:1: obterImagem : 'obterImagem();' ;
     public final void obterImagem() throws RecognitionException {
         try {
-            // source/MyDsl.g:132:2: ( 'obterImagem();' )
-            // source/MyDsl.g:132:2: 'obterImagem();'
+            // source/MyDsl.g:139:2: ( 'obterImagem();' )
+            // source/MyDsl.g:139:2: 'obterImagem();'
             {
-            match(input,28,FOLLOW_28_in_obterImagem415); 
-            System.out.println("\t\tCódigo de obter imagem vem aqui");
+            match(input,28,FOLLOW_28_in_obterImagem421); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código de obter imagem vem aqui");
 
             }
 
@@ -924,10 +924,10 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start acoes
-    // source/MyDsl.g:139:1: acoes : ( processarImagem | defineAtirar | atuar | regra );
+    // source/MyDsl.g:146:1: acoes : ( processarImagem | defineAtirar | atuar | regra );
     public final void acoes() throws RecognitionException {
         try {
-            // source/MyDsl.g:140:2: ( processarImagem | defineAtirar | atuar | regra )
+            // source/MyDsl.g:147:2: ( processarImagem | defineAtirar | atuar | regra )
             int alt11=4;
             switch ( input.LA(1) ) {
             case 29:
@@ -953,16 +953,16 @@ public class MyDslParser extends Parser {
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("139:1: acoes : ( processarImagem | defineAtirar | atuar | regra );", 11, 0, input);
+                    new NoViableAltException("146:1: acoes : ( processarImagem | defineAtirar | atuar | regra );", 11, 0, input);
 
                 throw nvae;
             }
 
             switch (alt11) {
                 case 1 :
-                    // source/MyDsl.g:140:2: processarImagem
+                    // source/MyDsl.g:147:2: processarImagem
                     {
-                    pushFollow(FOLLOW_processarImagem_in_acoes432);
+                    pushFollow(FOLLOW_processarImagem_in_acoes438);
                     processarImagem();
                     _fsp--;
 
@@ -970,9 +970,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:140:20: defineAtirar
+                    // source/MyDsl.g:147:20: defineAtirar
                     {
-                    pushFollow(FOLLOW_defineAtirar_in_acoes436);
+                    pushFollow(FOLLOW_defineAtirar_in_acoes442);
                     defineAtirar();
                     _fsp--;
 
@@ -980,9 +980,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 3 :
-                    // source/MyDsl.g:140:35: atuar
+                    // source/MyDsl.g:147:35: atuar
                     {
-                    pushFollow(FOLLOW_atuar_in_acoes440);
+                    pushFollow(FOLLOW_atuar_in_acoes446);
                     atuar();
                     _fsp--;
 
@@ -990,9 +990,9 @@ public class MyDslParser extends Parser {
                     }
                     break;
                 case 4 :
-                    // source/MyDsl.g:140:43: regra
+                    // source/MyDsl.g:147:43: regra
                     {
-                    pushFollow(FOLLOW_regra_in_acoes444);
+                    pushFollow(FOLLOW_regra_in_acoes450);
                     regra();
                     _fsp--;
 
@@ -1014,14 +1014,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start processarImagem
-    // source/MyDsl.g:143:1: processarImagem : 'processarImagem();' ;
+    // source/MyDsl.g:150:1: processarImagem : 'processarImagem();' ;
     public final void processarImagem() throws RecognitionException {
         try {
-            // source/MyDsl.g:144:2: ( 'processarImagem();' )
-            // source/MyDsl.g:144:2: 'processarImagem();'
+            // source/MyDsl.g:152:2: ( 'processarImagem();' )
+            // source/MyDsl.g:152:2: 'processarImagem();'
             {
-            match(input,29,FOLLOW_29_in_processarImagem454); 
-            System.out.println("\t\tO robo está processando a imagem......");
+            match(input,29,FOLLOW_29_in_processarImagem461); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está processando a imagem......");
 
             }
 
@@ -1038,14 +1038,14 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start defineAtirar
-    // source/MyDsl.g:147:1: defineAtirar : 'defineAtirar();' ;
+    // source/MyDsl.g:155:1: defineAtirar : 'defineAtirar();' ;
     public final void defineAtirar() throws RecognitionException {
         try {
-            // source/MyDsl.g:148:2: ( 'defineAtirar();' )
-            // source/MyDsl.g:148:2: 'defineAtirar();'
+            // source/MyDsl.g:157:2: ( 'defineAtirar();' )
+            // source/MyDsl.g:157:2: 'defineAtirar();'
             {
-            match(input,30,FOLLOW_30_in_defineAtirar466); 
-            System.out.println("\t\tO robo está atirando......");
+            match(input,30,FOLLOW_30_in_defineAtirar474); 
+            System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está atirando......");
 
             }
 
@@ -1062,13 +1062,13 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start atuar
-    // source/MyDsl.g:151:1: atuar : 'andar();' ;
+    // source/MyDsl.g:160:1: atuar : 'andar();' ;
     public final void atuar() throws RecognitionException {
         try {
-            // source/MyDsl.g:152:2: ( 'andar();' )
-            // source/MyDsl.g:152:2: 'andar();'
+            // source/MyDsl.g:162:2: ( 'andar();' )
+            // source/MyDsl.g:162:2: 'andar();'
             {
-            match(input,31,FOLLOW_31_in_atuar478); 
+            match(input,31,FOLLOW_31_in_atuar487); 
             System.out.println("\t\tO robo está andando......");
 
             }
@@ -1086,10 +1086,10 @@ public class MyDslParser extends Parser {
 
 
     // $ANTLR start regra
-    // source/MyDsl.g:155:1: regra : ( 'naoBater();' | 'seguir();' );
+    // source/MyDsl.g:165:1: regra : ( 'naoBater();' | 'seguir();' );
     public final void regra() throws RecognitionException {
         try {
-            // source/MyDsl.g:156:2: ( 'naoBater();' | 'seguir();' )
+            // source/MyDsl.g:168:2: ( 'naoBater();' | 'seguir();' )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -1101,24 +1101,24 @@ public class MyDslParser extends Parser {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("155:1: regra : ( 'naoBater();' | 'seguir();' );", 12, 0, input);
+                    new NoViableAltException("165:1: regra : ( 'naoBater();' | 'seguir();' );", 12, 0, input);
 
                 throw nvae;
             }
             switch (alt12) {
                 case 1 :
-                    // source/MyDsl.g:156:2: 'naoBater();'
+                    // source/MyDsl.g:168:2: 'naoBater();'
                     {
-                    match(input,32,FOLLOW_32_in_regra490); 
-                    System.out.println("\t\tO robo nao pode bater......");
+                    match(input,32,FOLLOW_32_in_regra501); 
+                    System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo nao pode bater......");
 
                     }
                     break;
                 case 2 :
-                    // source/MyDsl.g:157:2: 'seguir();'
+                    // source/MyDsl.g:169:2: 'seguir();'
                     {
-                    match(input,33,FOLLOW_33_in_regra497); 
-                    System.out.println("\t\tO robo deve seguir......");
+                    match(input,33,FOLLOW_33_in_regra508); 
+                    System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo deve seguir......");
 
                     }
                     break;
@@ -1161,39 +1161,39 @@ public class MyDslParser extends Parser {
     public static final BitSet FOLLOW_18_in_main222 = new BitSet(new long[]{0x0000000000080000L});
     public static final BitSet FOLLOW_19_in_main224 = new BitSet(new long[]{0x00000003E0238000L});
     public static final BitSet FOLLOW_loop_in_main228 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_main232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_comportamento_in_loop246 = new BitSet(new long[]{0x00000003E0238000L});
-    public static final BitSet FOLLOW_acoes_in_loop250 = new BitSet(new long[]{0x00000003E0238000L});
-    public static final BitSet FOLLOW_21_in_loop256 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_loop258 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_loop260 = new BitSet(new long[]{0x00000003E0138000L});
+    public static final BitSet FOLLOW_20_in_main230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_comportamento_in_loop244 = new BitSet(new long[]{0x00000003E0238000L});
+    public static final BitSet FOLLOW_acoes_in_loop248 = new BitSet(new long[]{0x00000003E0238000L});
+    public static final BitSet FOLLOW_21_in_loop255 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_loop257 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_loop259 = new BitSet(new long[]{0x00000003E0138000L});
     public static final BitSet FOLLOW_comportamento_in_loop267 = new BitSet(new long[]{0x00000003E0138000L});
     public static final BitSet FOLLOW_acoes_in_loop271 = new BitSet(new long[]{0x00000003E0138000L});
-    public static final BitSet FOLLOW_20_in_loop276 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_sensorCriado_in_comportamento293 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_comportamento295 = new BitSet(new long[]{0x000000001F000000L});
-    public static final BitSet FOLLOW_acaoSensor_in_comportamento299 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_sensorCriado310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_sensorCriado318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_sensorCriado326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ligar_in_acaoSensor340 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ler_in_acaoSensor344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_carregarListaCoordenadas_in_acaoSensor348 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_recebeCoordenada_in_acaoSensor352 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_obterImagem_in_acaoSensor356 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ligar367 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ler379 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_carregarListaCoordenadas391 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_recebeCoordenada403 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_obterImagem415 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_processarImagem_in_acoes432 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_defineAtirar_in_acoes436 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_atuar_in_acoes440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_regra_in_acoes444 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_processarImagem454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_defineAtirar466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_atuar478 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_regra490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_regra497 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_loop277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_sensorCriado_in_comportamento294 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_comportamento296 = new BitSet(new long[]{0x000000001F000000L});
+    public static final BitSet FOLLOW_acaoSensor_in_comportamento300 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_sensorCriado311 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_sensorCriado319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_sensorCriado327 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ligar_in_acaoSensor341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ler_in_acaoSensor345 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_carregarListaCoordenadas_in_acaoSensor349 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_recebeCoordenada_in_acaoSensor353 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_obterImagem_in_acaoSensor357 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ligar369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_ler382 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_carregarListaCoordenadas395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_recebeCoordenada408 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_obterImagem421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_processarImagem_in_acoes438 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_defineAtirar_in_acoes442 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_atuar_in_acoes446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_regra_in_acoes450 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_processarImagem461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_defineAtirar474 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_atuar487 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_regra501 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_regra508 = new BitSet(new long[]{0x0000000000000002L});
 
 }
