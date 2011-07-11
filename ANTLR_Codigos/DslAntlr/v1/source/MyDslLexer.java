@@ -1,4 +1,4 @@
-// $ANTLR 3.0 source/MyDsl.g 2011-06-25 16:54:16
+// $ANTLR 3.0 source/MyDsl.g 2011-07-11 14:39:33
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -577,10 +577,10 @@ public class MyDslLexer extends Lexer {
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
-            // source/MyDsl.g:164:5: ( ( 'a' .. 'z' )+ )
-            // source/MyDsl.g:164:5: ( 'a' .. 'z' )+
+            // source/MyDsl.g:176:5: ( ( 'a' .. 'z' )+ )
+            // source/MyDsl.g:176:5: ( 'a' .. 'z' )+
             {
-            // source/MyDsl.g:164:5: ( 'a' .. 'z' )+
+            // source/MyDsl.g:176:5: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
@@ -594,7 +594,7 @@ public class MyDslLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // source/MyDsl.g:164:5: 'a' .. 'z'
+            	    // source/MyDsl.g:176:5: 'a' .. 'z'
             	    {
             	    matchRange('a','z'); 
 
@@ -624,10 +624,10 @@ public class MyDslLexer extends Lexer {
     public final void mWS() throws RecognitionException {
         try {
             int _type = WS;
-            // source/MyDsl.g:165:5: ( ( ' ' | '\\n' | '\\r' )+ )
-            // source/MyDsl.g:165:5: ( ' ' | '\\n' | '\\r' )+
+            // source/MyDsl.g:177:5: ( ( ' ' | '\\n' | '\\r' )+ )
+            // source/MyDsl.g:177:5: ( ' ' | '\\n' | '\\r' )+
             {
-            // source/MyDsl.g:165:5: ( ' ' | '\\n' | '\\r' )+
+            // source/MyDsl.g:177:5: ( ' ' | '\\n' | '\\r' )+
             int cnt2=0;
             loop2:
             do {

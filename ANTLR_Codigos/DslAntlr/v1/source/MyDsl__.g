@@ -33,9 +33,9 @@ T31 : 'andar();' ;
 T32 : 'naoBater();' ;
 T33 : 'seguir();' ;
 
-// $ANTLR src "source/MyDsl.g" 164
+// $ANTLR src "source/MyDsl.g" 176
 ID: 'a'..'z' + ;
-// $ANTLR src "source/MyDsl.g" 165
+// $ANTLR src "source/MyDsl.g" 177
 WS: (' ' |'\n' |'\r' )+ {skip();} ; // ignore whitespace
 
 
