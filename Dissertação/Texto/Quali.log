@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.28)  10 JUL 2011 19:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.3.28)  11 JUL 2011 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,7 +530,7 @@ Package hyperref Info: Option `debug' set `false' on input line 66.
 LaTeX Warning: Unused global option(s):
     [abnt].
 
-No file Quali.aux.
+(./Quali.aux (./tex/referencias.aux))
 \openout1 = `Quali.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -547,6 +547,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
+
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -636,6 +637,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 LaTeX Info: Redefining \ref on input line 71.
 LaTeX Info: Redefining \pageref on input line 71.
+ (./Quali.out)
+(./Quali.out)
 \@outlinefile=\write4
 \openout4 = `Quali.out'.
 
@@ -681,22 +684,46 @@ emia,
 ] [2
 
 
-]
+] (./Quali.toc [3])
 \tf@toc=\write5
 \openout5 = `Quali.toc'.
 
- [3] [4
+ [4] (./Quali.lof
 
-]
+Package natbib Warning: Citation `Lucredio2009' on page v undefined on input li
+ne 4.
+
+
+Package natbib Warning: Citation `Lucredio2009' on page v undefined on input li
+ne 5.
+
+
+Package natbib Warning: Citation `Lucredio2009' on page v undefined on input li
+ne 6.
+
+
+Package natbib Warning: Citation `OMG2003' on page v undefined on input line 8.
+
+
+
+Package natbib Warning: Citation `Rama2006' on page v undefined on input line 1
+2.
+
+
+Package natbib Warning: Citation `Broekman2002' on page v undefined on input li
+ne 16.
+
+)
 \tf@lof=\write6
 \openout6 = `Quali.lof'.
 
  [5
 
 
+
 ] [6
 
-]
+] (./Quali.lot)
 \tf@lot=\write7
 \openout7 = `Quali.lot'.
 
@@ -714,77 +741,74 @@ emia,
 ] (./tex/introducao.tex
 Cap\'{\i }tulo 1.
 
-Package natbib Warning: Citation `Neighbors:thesis:1980' on page 1 undefined on
- input line 6.
-
-
-Package natbib Warning: Citation `Lucredio:2006:wdbc' on page 1 undefined on in
-put line 6.
+Package natbib Warning: Citation `Teppola2009' on page 1 undefined on input lin
+e 6.
 
 
 Package natbib Warning: Citation `France:2007:fose' on page 1 undefined on inpu
 t line 6.
 
 
-Package natbib Warning: Citation `Schmidt:2006:ieeecomputer' on page 1 undefine
-d on input line 8.
-
-
 Package natbib Warning: Citation `Sherif:2006:ijim' on page 1 undefined on inpu
-t line 8.
+t line 10.
 
 
 Package natbib Warning: Citation `Almeida:caise:2005' on page 1 undefined on in
 put line 12.
 
+
+Package natbib Warning: Citation `Lanubile2009' on page 1 undefined on input li
+ne 18.
+
+
+Package natbib Warning: Citation `Liggesmeyer2009' on page 1 undefined on input
+ line 20.
+
+
+Package natbib Warning: Citation `Aho2009' on page 1 undefined on input line 20
+.
+
+
+Package natbib Warning: Citation `Bendix2009' on page 1 undefined on input line
+ 20.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \item P
-            rocessual: investigação e definição de atividades e tarefas cola...
-[1
+l.21 
+      [1
 
 
 
 
 ]
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 2 undefined on input
- line 25.
+Package natbib Warning: Citation `Bendix2009' on page 2 undefined on input line
+ 22.
+
+
+Package natbib Warning: Citation `Lanubile2009' on page 2 undefined on input li
+ne 22.
 
 
 Package natbib Warning: Citation `Liggesmeyer2009' on page 2 undefined on input
- line 27.
+ line 24.
 
 
-Package natbib Warning: Citation `Bozzon' on page 2 undefined on input line 29.
-
+Package natbib Warning: Citation `Liggesmeyer2009' on page 2 undefined on input
+ line 26.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 
+l.37 
       [2]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 43.
-
-
-LaTeX Warning: Reference `mdd' on page 3 undefined on input line 46.
-
-
-LaTeX Warning: Reference `colaboracao' on page 3 undefined on input line 46.
-
-
-LaTeX Warning: Reference `proposta' on page 3 undefined on input line 46.
-
-
-LaTeX Warning: Reference `capitulo_metodo' on page 3 undefined on input line 46
-.
-
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 40.
 ) (./tex/mdd.texpdfTeX warning (ext4): destination with the same identifier (na
 me{page.3}) has been already used, duplicate ignored
 <to be read again> 
@@ -802,76 +826,65 @@ l.4 \chapter
 Cap\'{\i }tulo 2.
 
 Package natbib Warning: Citation `Hailpern2006' on page 5 undefined on input li
-ne 12.
+ne 13.
 
 
 Package natbib Warning: Citation `Mellor2003' on page 5 undefined on input line
- 12.
+ 13.
 
 
 Package natbib Warning: Citation `Sanchez2009' on page 5 undefined on input lin
-e 14.
+e 15.
 
 
 Package natbib Warning: Citation `Meijler2005' on page 5 undefined on input lin
-e 16.
+e 17.
 
 [5]
 
 Package natbib Warning: Citation `Selic2003' on page 6 undefined on input line 
-18.
+19.
 
 
 Package natbib Warning: Citation `Sriplakich2006' on page 6 undefined on input 
-line 18.
+line 19.
 
-
-LaTeX Warning: Reference `fig:desTrad' on page 6 undefined on input line 20.
-
-
-LaTeX Warning: Reference `fig:desMDD' on page 6 undefined on input line 20.
-
-
-LaTeX Warning: Reference `fig:desTrad' on page 6 undefined on input line 20.
-
-
-LaTeX Warning: Reference `fig:desMDD' on page 6 undefined on input line 20.
-
-<imagens/desTrad.jpg, id=99, 465.4188pt x 195.129pt>
+<imagens/desTrad.jpg, id=320, 465.4188pt x 195.129pt>
 File: imagens/desTrad.jpg Graphic file (type jpg)
- <use imagens/desTrad.jpg>
+
+<use imagens/desTrad.jpg>
 
 Package natbib Warning: Citation `Lucredio2009' on page 6 undefined on input li
-ne 25.
+ne 26.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 6 undefined on input li
-ne 25.
+ne 26.
 
-<imagens/desMDD.jpg, id=100, 466.1415pt x 152.4897pt>
+<imagens/desMDD.jpg, id=321, 466.1415pt x 152.4897pt>
 File: imagens/desMDD.jpg Graphic file (type jpg)
  <use imagens/desMDD.jpg>
 
 Package natbib Warning: Citation `Lucredio2009' on page 6 undefined on input li
-ne 32.
+ne 33.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 6 undefined on input li
-ne 32.
+ne 33.
 
 
 Package natbib Warning: Citation `Kleppe2003' on page 6 undefined on input line
- 36.
+ 37.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 6 undefined on input li
-ne 36.
+ne 37.
 
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 40.
 (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (1.128pt too wide) in paragraph at lines 40--41
+Overfull \hbox (1.128pt too wide) in paragraph at lines 41--42
 []\T1/ptm/m/n/12 Portabilidade e In-ter-op-er-abil-i-dade: como o mod-elo é in-
 de-pen-dente de plataforma, um mesmo
  []
@@ -879,164 +892,136 @@ de-pen-dente de plataforma, um mesmo
 [6 <./imagens/desTrad.jpg>]
 
 Package natbib Warning: Citation `Lucredio2009' on page 7 undefined on input li
-ne 54.
+ne 57.
 
 [7 <./imagens/desMDD.jpg>]
-<imagens/principais_elementos.jpg, id=113, 652.68843pt x 298.11375pt>
+<imagens/principais_elementos.jpg, id=331, 652.68843pt x 298.11375pt>
 File: imagens/principais_elementos.jpg Graphic file (type jpg)
 
 <use imagens/principais_elementos.jpg>
 
 Package natbib Warning: Citation `Lucredio2009' on page 8 undefined on input li
-ne 65.
+ne 68.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 8 undefined on input li
-ne 65.
-
-
-LaTeX Warning: Reference `fig:principais_elementos' on page 8 undefined on inpu
-t line 69.
+ne 68.
 
 
 Package natbib Warning: Citation `Stahl2006' on page 8 undefined on input line 
-73.
+76.
 
 [8 <./imagens/principais_elementos.jpg>]
 
 Package natbib Warning: Citation `Stahl2006' on page 9 undefined on input line 
-75.
-
-
-LaTeX Warning: Reference `mda' on page 9 undefined on input line 77.
+78.
 
 
 Package natbib Warning: Citation `Deursen2000' on page 9 undefined on input lin
-e 81.
-
-
-Package natbib Warning: Citation `Heering2008' on page 9 undefined on input lin
-e 83.
+e 84.
 
 
 Package natbib Warning: Citation `Meijler2005' on page 9 undefined on input lin
-e 85.
-
-
-Package natbib Warning: Citation `Liggesmeyer2009' on page 9 undefined on input
- line 87.
+e 88.
 
 [9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 93.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 96.
 
 
 Package natbib Warning: Citation `OMG2003' on page 10 undefined on input line 9
-6.
+9.
 
 
 Package natbib Warning: Citation `OMG2003' on page 10 undefined on input line 1
-00.
+03.
 
-
-LaTeX Warning: Reference `fig:ciclodevidaMDA' on page 10 undefined on input lin
-e 108.
-
-[10] <imagens/ciclodevidaMDA.png, id=136, 431.6125pt x 445.665pt>
+<imagens/ciclodevidaMDA.png, id=347, 431.6125pt x 445.665pt>
 File: imagens/ciclodevidaMDA.png Graphic file (type png)
 
 <use imagens/ciclodevidaMDA.png>
 
-LaTeX Warning: Reference `fig:pimpsm' on page 11 undefined on input line 118.
+Package natbib Warning: Citation `OMG2003' on page 10 undefined on input line 1
+21.
 
-
-Package natbib Warning: Citation `OMG2003' on page 11 undefined on input line 1
-18.
-
-<imagens/pimpsm.png, id=137, 329.23pt x 321.2pt>
+[10] <imagens/pimpsm.png, id=354, 329.23pt x 321.2pt>
 File: imagens/pimpsm.png Graphic file (type png)
  <use imagens/pimpsm.png>
 
 Package natbib Warning: Citation `OMG2003' on page 11 undefined on input line 1
-23.
+26.
 
 
 Package natbib Warning: Citation `OMG2003' on page 11 undefined on input line 1
-23.
+26.
 
-
-LaTeX Warning: Reference `fig:pimpsm2' on page 11 undefined on input line 127.
-
-<imagens/pimpsm2.png, id=138, 329.23pt x 283.0575pt>
+<imagens/pimpsm2.png, id=356, 329.23pt x 283.0575pt>
 File: imagens/pimpsm2.png Graphic file (type png)
  <use imagens/pimpsm2.png>
-
-Package natbib Warning: Citation `OMG2001' on page 11 undefined on input line 1
-38.
-
-[11 <./imagens/ciclodevidaMDA.png (PNG copy)>]
+[11 <./imagens/ciclodevidaMDA.png (PNG copy)> <./imagens/pimpsm.png (PNG copy)>
+]
 
 Package natbib Warning: Citation `OMG2001' on page 12 undefined on input line 1
-40.
+41.
 
 
-LaTeX Warning: Reference `fig:metamodelagem' on page 12 undefined on input line
- 142.
+Package natbib Warning: Citation `OMG2001' on page 12 undefined on input line 1
+43.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 12 undefined on input l
-ine 142.
+ine 145.
 
-[12 <./imagens/pimpsm.png (PNG copy)> <./imagens/pimpsm2.png>]
-<imagens/metamodelagem.png, id=153, 340.27126pt x 342.27875pt>
+<imagens/metamodelagem.png, id=364, 340.27126pt x 342.27875pt>
 File: imagens/metamodelagem.png Graphic file (type png)
 
 <use imagens/metamodelagem.png>
 
-Package natbib Warning: Citation `xmi1' on page 13 undefined on input line 151.
+Package natbib Warning: Citation `xmi1' on page 12 undefined on input line 154.
 
 
 
-Package natbib Warning: Citation `xmi2' on page 13 undefined on input line 151.
+Package natbib Warning: Citation `xmi2' on page 12 undefined on input line 154.
 
 
+[12 <./imagens/pimpsm2.png>]
 
 Package natbib Warning: Citation `Eclipse' on page 13 undefined on input line 1
-55.
+58.
 
 
 Package natbib Warning: Citation `EclipseModeling' on page 13 undefined on inpu
-t line 155.
+t line 158.
 
 
-Package natbib Warning: Citation `emfFaq' on page 13 undefined on input line 15
-9.
+Package natbib Warning: Citation `emfFaq' on page 13 undefined on input line 16
+2.
 
 
 Package natbib Warning: Citation `helpEMF' on page 13 undefined on input line 1
-59.
+62.
 
 [13 <./imagens/metamodelagem.png (PNG copy)>]
 
 Package natbib Warning: Citation `emfFaq' on page 14 undefined on input line 16
-1.
+4.
 
 
 Package natbib Warning: Citation `helpEMF' on page 14 undefined on input line 1
-61.
+64.
 
 
-Package natbib Warning: Citation `jet' on page 14 undefined on input line 170.
+Package natbib Warning: Citation `jet' on page 14 undefined on input line 173.
 
 
-Package natbib Warning: Citation `jet' on page 14 undefined on input line 172.
+Package natbib Warning: Citation `jet' on page 14 undefined on input line 175.
 
 
 Package natbib Warning: Citation `Lucredio2009' on page 14 undefined on input l
-ine 174.
+ine 177.
 
 
-Package natbib Warning: Citation `gmf' on page 14 undefined on input line 179.
+Package natbib Warning: Citation `gmf' on page 14 undefined on input line 182.
 
 [14]) (./tex/colaboracao.tex [15] [16
 
@@ -1084,6 +1069,12 @@ ine 29.
 Package natbib Warning: Citation `Lanubile2009' on page 18 undefined on input l
 ine 31.
 
+
+Overfull \hbox (0.63747pt too wide) in paragraph at lines 31--32
+\T1/ptm/m/n/12 volvi-dos por in-di-ví-duos dis-tribuí-dos ge-ografi-ca-mente. H
+oje, um número de CDEs es-tão disponíveis
+ []
+
 [18]
 
 Package natbib Warning: Citation `Bendix2009' on page 19 undefined on input lin
@@ -1098,11 +1089,7 @@ e 52.
 Package natbib Warning: Citation `Rama2006' on page 20 undefined on input line 
 69.
 
-
-LaTeX Warning: Reference `fig:quadrantes' on page 20 undefined on input line 69
-.
-
-<imagens/quadrantes.jpeg, id=201, 887.315pt x 544.0325pt>
+<imagens/quadrantes.jpeg, id=412, 887.315pt x 544.0325pt>
 File: imagens/quadrantes.jpeg Graphic file (type jpg)
 
 <use imagens/quadrantes.jpeg>
@@ -1115,440 +1102,307 @@ Package natbib Warning: Citation `Rama2006' on page 20 undefined on input line
 74.
 
 
-Package natbib Warning: Citation `Abeti2009' on page 20 undefined on input line
- 86.
-
-
-Package natbib Warning: Citation `Zimmerly2009' on page 20 undefined on input l
+Package natbib Warning: Citation `Louridas2006' on page 20 undefined on input l
 ine 86.
 
 
-Package natbib Warning: Citation `Mehta2009' on page 20 undefined on input line
- 86.
-
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 86.
-
-LaTeX Warning: Reference `intraCMS' on page 20 undefined on input line 86.
+Package natbib Warning: Citation `Jang2006' on page 20 undefined on input line 
+86.
 
 [20]
 
-Package natbib Warning: Citation `Louridas2006' on page 21 undefined on input l
-ine 91.
-
-
-Package natbib Warning: Citation `Jang2006' on page 21 undefined on input line 
-91.
-
-
 Package natbib Warning: Citation `Tetard2009' on page 21 undefined on input lin
-e 93.
+e 88.
 
 
 Package natbib Warning: Citation `Jang2006' on page 21 undefined on input line 
-93.
+88.
 
 
 Package natbib Warning: Citation `Majchrzak2006' on page 21 undefined on input 
-line 93.
+line 88.
+
+
+Package natbib Warning: Citation `Jing2008' on page 21 undefined on input line 
+90.
+
+
+Package natbib Warning: Citation `Abeti2009' on page 21 undefined on input line
+ 90.
+
+
+Package natbib Warning: Citation `Elrufaie2005' on page 21 undefined on input l
+ine 90.
+
+
+Package natbib Warning: Citation `Tetard2009' on page 21 undefined on input lin
+e 90.
+
+
+Package natbib Warning: Citation `Tetard2009' on page 21 undefined on input lin
+e 92.
+
+
+Package natbib Warning: Citation `Mehta2009' on page 21 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Abeti2009' on page 21 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Tetard2009' on page 21 undefined on input lin
+e 92.
+
+
+Package natbib Warning: Citation `Abeti2009' on page 21 undefined on input line
+ 92.
+
+
+Package natbib Warning: Citation `Tetard2009' on page 21 undefined on input lin
+e 92.
+
+
+Package natbib Warning: Citation `Abeti2009' on page 21 undefined on input line
+ 94.
+
+
+Package natbib Warning: Citation `Zimmerly2009' on page 21 undefined on input l
+ine 94.
 
 [21 <./imagens/quadrantes.jpeg>]
 
-Package natbib Warning: Citation `Jing2008' on page 22 undefined on input line 
-95.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 22 undefined on input line
- 95.
-
-
-Package natbib Warning: Citation `Elrufaie2005' on page 22 undefined on input l
-ine 95.
-
-
-Package natbib Warning: Citation `Tetard2009' on page 22 undefined on input lin
-e 95.
-
-
-Package natbib Warning: Citation `Tetard2009' on page 22 undefined on input lin
-e 97.
-
-
 Package natbib Warning: Citation `Mehta2009' on page 22 undefined on input line
- 97.
+ 96.
 
 
 Package natbib Warning: Citation `Abeti2009' on page 22 undefined on input line
- 97.
+ 113.
 
-
-Package natbib Warning: Citation `Tetard2009' on page 22 undefined on input lin
-e 97.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 22 undefined on input line
- 97.
-
-
-Package natbib Warning: Citation `Tetard2009' on page 22 undefined on input lin
-e 97.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 22 undefined on input line
- 99.
-
-
-Package natbib Warning: Citation `Zimmerly2009' on page 22 undefined on input l
-ine 99.
-
-
-Package natbib Warning: Citation `Mehta2009' on page 22 undefined on input line
- 101.
-
-[22]
-
-Package natbib Warning: Citation `Abeti2009' on page 23 undefined on input line
- 121.
-
-
-Package natbib Warning: Citation `Mehta2009' on page 23 undefined on input line
- 121.
-
-
-Package natbib Warning: Citation `Mehta2009' on page 23 undefined on input line
- 131.
-
-
-LaTeX Warning: Reference `fig:arqJoomla' on page 23 undefined on input line 131
-.
-
-
-LaTeX Warning: Reference `fig:arqDrupal' on page 23 undefined on input line 131
-.
-
-<imagens/arquiteturaJoomla.png, id=231, 620.3175pt x 298.86656pt>
-File: imagens/arquiteturaJoomla.png Graphic file (type png)
-
-<use imagens/arquiteturaJoomla.png>
-
-Package natbib Warning: Citation `JoomlaArquitetura' on page 23 undefined on in
-put line 137.
-
-
-Package natbib Warning: Citation `JoomlaArquitetura' on page 23 undefined on in
-put line 137.
-
-<imagens/arquiteturaDrupal.png, id=232, 529.98pt x 564.1075pt>
-File: imagens/arquiteturaDrupal.png Graphic file (type png)
-
-<use imagens/arquiteturaDrupal.png>
-
-Package natbib Warning: Citation `DrupalArquitetura' on page 23 undefined on in
-put line 144.
-
-
-Package natbib Warning: Citation `DrupalArquitetura' on page 23 undefined on in
-put line 144.
-
-
-LaTeX Warning: Reference `fig:arqDrupal' on page 23 undefined on input line 148
-.
-
-
-LaTeX Warning: Reference `fig:arqJoomla' on page 23 undefined on input line 148
-.
-
-[23 <./imagens/arquiteturaJoomla.png>]
-
-Package natbib Warning: Citation `Mehta2009' on page 24 undefined on input line
- 153.
-
-
-Package natbib Warning: Citation `Mehta2009' on page 24 undefined on input line
- 153.
-
-
-Overfull \hbox (6.78911pt too wide) in paragraph at lines 153--154
-[]\T1/ptm/m/n/12 CMS coor-po-ra-tivos ou CMSs In-tranets (in-traCMSs), são gera
-l-mente de-sen-volvi-dos para usuários
- []
-
-[24 <./imagens/arquiteturaDrupal.png (PNG copy)>] [25]
-
-Package natbib Warning: Citation `Zimmerly2009' on page 26 undefined on input l
-ine 196.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 26 undefined on input line
- 198.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 26 undefined on input line
- 200.
-
-
-Package natbib Warning: Citation `Levytskyy2009' on page 26 undefined on input 
-line 208.
-
-
-Package natbib Warning: Citation `Levytskyy2009' on page 26 undefined on input 
-line 210.
-
-[26]
-
-Package natbib Warning: Citation `Abeti2009' on page 27 undefined on input line
- 218.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 27 undefined on input line
- 220.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 27 undefined on input line
- 222.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 27 undefined on input line
- 224.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 27 undefined on input lin
-e 228.
-
-[27]
-
-Package natbib Warning: Citation `Sriplakich2006' on page 28 undefined on input
- line 230.
-
-
-Package natbib Warning: Citation `Wenzel2008' on page 28 undefined on input lin
-e 230.
-
-
-Package natbib Warning: Citation `Kelter2005' on page 28 undefined on input lin
-e 230.
-
-
-Package natbib Warning: Citation `CVSM2008' on page 28 undefined on input line 
-230.
-
-
-Package natbib Warning: Citation `Levytskyy2009' on page 28 undefined on input 
-line 232.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 28 undefined on input line
- 232.
-
-
-Package natbib Warning: Citation `Abeti2009' on page 28 undefined on input line
- 232.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 28 undefined on input lin
-e 233.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 28 undefined on input lin
-e 233.
-
-
-LaTeX Warning: Reference `col_sis_emb' on page 28 undefined on input line 235.
-
-
-LaTeX Warning: Reference `estudoDeCasoII' on page 28 undefined on input line 23
-5.
-
-
-LaTeX Warning: Reference `proposta' on page 28 undefined on input line 244.
-
-) (./tex/proposta.tex [28]
+) (./tex/trabalhosRelacionados.tex [22]
 Cap\'{\i }tulo 4.
 
-Package natbib Warning: Citation `Teppola2009' on page 29 undefined on input li
-ne 14.
+Package natbib Warning: Citation `Levytskyy2009' on page 23 undefined on input 
+line 20.
 
-
-Package natbib Warning: Citation `Liggesmeyer2009' on page 29 undefined on inpu
-t line 14.
-
-
-Package natbib Warning: Citation `Aho2009' on page 29 undefined on input line 1
-4.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 29 undefined on input lin
-e 16.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 29 undefined on input lin
-e 18.
-
-
-Package natbib Warning: Citation `Lanubile2009' on page 29 undefined on input l
-ine 18.
-
-
-Package natbib Warning: Citation `Whitehead2007' on page 29 undefined on input 
-line 18.
-
-
-Package natbib Warning: Citation `Hailpern2006' on page 29 undefined on input l
-ine 20.
-
-
-Package natbib Warning: Citation `Warmer2007' on page 29 undefined on input lin
-e 20.
-
-
-Package natbib Warning: Citation `France2007' on page 29 undefined on input lin
-e 21.
-
-
-Package natbib Warning: Citation `Lucredio2008' on page 29 undefined on input l
-ine 21.
-
-
-LaTeX Warning: Reference `fig:quadrantes' on page 29 undefined on input line 21
-.
-
-
-LaTeX Warning: Reference `fig:quadrantes' on page 29 undefined on input line 21
-.
-
-[29
+[23
 
 
 ]
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 30 undefined on inpu
-t line 25.
+Package natbib Warning: Citation `Abeti2009' on page 24 undefined on input line
+ 30.
 
 
-Package natbib Warning: Citation `Aho2009' on page 30 undefined on input line 2
-5.
+Package natbib Warning: Citation `Abeti2009' on page 24 undefined on input line
+ 32.
 
 
-Package natbib Warning: Citation `Lanubile2009' on page 30 undefined on input l
-ine 25.
+Package natbib Warning: Citation `Abeti2009' on page 24 undefined on input line
+ 34.
 
 
-Package natbib Warning: Citation `Walz1993' on page 30 undefined on input line 
-25.
+Package natbib Warning: Citation `Sriplakich2006' on page 24 undefined on input
+ line 38.
 
 
-Package natbib Warning: Citation `France2007' on page 30 undefined on input lin
-e 27.
+Package natbib Warning: Citation `Wenzel2008' on page 24 undefined on input lin
+e 38.
 
 
-Package natbib Warning: Citation `Abeti2009' on page 30 undefined on input line
- 27.
+Package natbib Warning: Citation `Kelter2005' on page 24 undefined on input lin
+e 38.
 
 
-Package natbib Warning: Citation `Bendix2008' on page 30 undefined on input lin
-e 27.
+Package natbib Warning: Citation `CVSM2008' on page 24 undefined on input line 
+38.
+
+[24]
+Overfull \hbox (18.62381pt too wide) in paragraph at lines 65--66
+[]\T1/ptm/m/n/12 http://www.infopar.com/br/produtos/mdd-mdsd-ferramenta-desenvo
+lvimento-software-gerador-
+ []
 
 
-Package natbib Warning: Citation `Levytskyy2009' on page 30 undefined on input 
-line 27.
+Overfull \hbox (1.99098pt too wide) in paragraph at lines 70--71
+[]\T1/ptm/b/n/12 Ferramentas que aux-il-iam o tra-balho co-lab-o-ra-tivo e comp
+ará-las com o comdd mostrando
+ []
+
+) (./tex/desenvolvimento.tex [25] [26
 
 
-LaTeX Warning: Reference `fig:quadrantes' on page 30 undefined on input line 44
-.
+]
+Cap\'{\i }tulo 5.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 13.
+
+[27]
+Overfull \hbox (2.08725pt too wide) in paragraph at lines 23--24
+[]\T1/ptm/b/n/12 Artefatos difer-entes e mesma fun-cional-i-dade \T1/ptm/m/n/12
+ Essa ativi-dade é evi-tada pelo CoMDD porque
+ []
+
+[28]) (./tex/proposta.tex [29] [30
 
 
-LaTeX Warning: Reference `csc_gro_cde' on page 30 undefined on input line 47.
+]
+Cap\'{\i }tulo 6.
 
-[30]
-
-LaTeX Warning: Reference `requisitos' on page 31 undefined on input line 50.
-
-
-Package natbib Warning: Citation `Selonen2007' on page 31 undefined on input li
-ne 52.
+Package natbib Warning: Citation `Teppola2009' on page 31 undefined on input li
+ne 14.
 
 
-Package natbib Warning: Citation `Kelter2005' on page 31 undefined on input lin
-e 54.
+Package natbib Warning: Citation `Liggesmeyer2009' on page 31 undefined on inpu
+t line 14.
 
 
-Package natbib Warning: Citation `Ohst2003' on page 31 undefined on input line 
-54.
-
-
-Package natbib Warning: Citation `Selonen2007a' on page 31 undefined on input l
-ine 54.
-
-
-Package natbib Warning: Citation `Xing2005' on page 31 undefined on input line 
-54.
-
-
-Package natbib Warning: Citation `Bartelt2008' on page 31 undefined on input li
-ne 54.
-
-
-Package natbib Warning: Citation `Bendix2008' on page 31 undefined on input lin
-e 54.
-
-
-LaTeX Warning: Reference `obj_esp' on page 31 undefined on input line 54.
-
-
-Package natbib Warning: Citation `Bendix2009' on page 31 undefined on input lin
-e 56.
-
-
-Package natbib Warning: Citation `Souza1999' on page 31 undefined on input line
- 58.
-
-
-Package natbib Warning: Citation `Komi-Sirvioe2005' on page 31 undefined on inp
-ut line 60.
+Package natbib Warning: Citation `Aho2009' on page 31 undefined on input line 1
+4.
 
 
 Package natbib Warning: Citation `Bendix2009' on page 31 undefined on input lin
-e 60.
+e 16.
 
 
-LaTeX Warning: Reference `metodo' on page 31 undefined on input line 60.
+Package natbib Warning: Citation `Bendix2009' on page 31 undefined on input lin
+e 18.
+
+
+Package natbib Warning: Citation `Lanubile2009' on page 31 undefined on input l
+ine 18.
+
+
+Package natbib Warning: Citation `Whitehead2007' on page 31 undefined on input 
+line 18.
+
+
+Package natbib Warning: Citation `Hailpern2006' on page 31 undefined on input l
+ine 20.
+
+
+Package natbib Warning: Citation `Warmer2007' on page 31 undefined on input lin
+e 20.
+
+
+Package natbib Warning: Citation `France2007' on page 31 undefined on input lin
+e 21.
+
+
+Package natbib Warning: Citation `Lucredio2008' on page 31 undefined on input l
+ine 21.
 
 [31]
 
-Package natbib Warning: Citation `Broekman2002' on page 32 undefined on input l
+Package natbib Warning: Citation `Liggesmeyer2009' on page 32 undefined on inpu
+t line 25.
+
+
+Package natbib Warning: Citation `Aho2009' on page 32 undefined on input line 2
+5.
+
+
+Package natbib Warning: Citation `Lanubile2009' on page 32 undefined on input l
+ine 25.
+
+
+Package natbib Warning: Citation `Walz1993' on page 32 undefined on input line 
+25.
+
+
+Package natbib Warning: Citation `France2007' on page 32 undefined on input lin
+e 27.
+
+
+Package natbib Warning: Citation `Abeti2009' on page 32 undefined on input line
+ 27.
+
+
+Package natbib Warning: Citation `Bendix2008' on page 32 undefined on input lin
+e 27.
+
+
+Package natbib Warning: Citation `Levytskyy2009' on page 32 undefined on input 
+line 27.
+
+[32]
+
+Package natbib Warning: Citation `Selonen2007' on page 33 undefined on input li
+ne 52.
+
+
+Package natbib Warning: Citation `Kelter2005' on page 33 undefined on input lin
+e 54.
+
+
+Package natbib Warning: Citation `Ohst2003' on page 33 undefined on input line 
+54.
+
+
+Package natbib Warning: Citation `Selonen2007a' on page 33 undefined on input l
+ine 54.
+
+
+Package natbib Warning: Citation `Xing2005' on page 33 undefined on input line 
+54.
+
+
+Package natbib Warning: Citation `Bartelt2008' on page 33 undefined on input li
+ne 54.
+
+
+Package natbib Warning: Citation `Bendix2008' on page 33 undefined on input lin
+e 54.
+
+
+Package natbib Warning: Citation `Bendix2009' on page 33 undefined on input lin
+e 56.
+
+
+Package natbib Warning: Citation `Souza1999' on page 33 undefined on input line
+ 58.
+
+
+Package natbib Warning: Citation `Komi-Sirvioe2005' on page 33 undefined on inp
+ut line 60.
+
+
+Package natbib Warning: Citation `Bendix2009' on page 33 undefined on input lin
+e 60.
+
+[33]
+
+Package natbib Warning: Citation `Broekman2002' on page 34 undefined on input l
 ine 96.
 
-
-LaTeX Warning: Reference `fig:esq_gen_sis_emb' on page 32 undefined on input li
-ne 96.
-
-<imagens/esq_gen_sis_emb.jpeg, id=297, 596.98032pt x 422.32782pt>
+<imagens/esq_gen_sis_emb.jpeg, id=497, 596.98032pt x 422.32782pt>
 File: imagens/esq_gen_sis_emb.jpeg Graphic file (type jpg)
 
 <use imagens/esq_gen_sis_emb.jpeg>
 
-Package natbib Warning: Citation `Broekman2002' on page 32 undefined on input l
+Package natbib Warning: Citation `Broekman2002' on page 34 undefined on input l
 ine 101.
 
 
-Package natbib Warning: Citation `Broekman2002' on page 32 undefined on input l
+Package natbib Warning: Citation `Broekman2002' on page 34 undefined on input l
 ine 101.
 
 
-Package natbib Warning: Citation `Broekman2002' on page 32 undefined on input l
+Package natbib Warning: Citation `Broekman2002' on page 34 undefined on input l
 ine 105.
 
 
-Package natbib Warning: Citation `Broekman2002' on page 32 undefined on input l
+Package natbib Warning: Citation `Broekman2002' on page 34 undefined on input l
 ine 107.
 
-[32]
+[34]
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 33 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 35 undefined on inpu
 t line 112.
 
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 33 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 35 undefined on inpu
 t line 114.
 
 
@@ -1557,157 +1411,100 @@ Overfull \hbox (9.57326pt too wide) in paragraph at lines 114--115
 tafor-mas de de-sen-volvi-mento maduras
  []
 
-[33 <./imagens/esq_gen_sis_emb.jpeg>]
+[35 <./imagens/esq_gen_sis_emb.jpeg>]
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 34 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 36 undefined on inpu
 t line 116.
 
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 34 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 36 undefined on inpu
 t line 118.
 
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 34 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 36 undefined on inpu
 t line 122.
 
 
-Package natbib Warning: Citation `Nascimento2007' on page 34 undefined on input
+Package natbib Warning: Citation `Nascimento2007' on page 36 undefined on input
  line 126.
 
 
-Package natbib Warning: Citation `Martinez2009' on page 34 undefined on input l
+Package natbib Warning: Citation `Martinez2009' on page 36 undefined on input l
 ine 127.
 
 
-Package natbib Warning: Citation `Conmy2007' on page 34 undefined on input line
+Package natbib Warning: Citation `Conmy2007' on page 36 undefined on input line
  129.
 
-[34]
+[36]
 
-Package natbib Warning: Citation `Booch2003' on page 35 undefined on input line
+Package natbib Warning: Citation `Booch2003' on page 37 undefined on input line
  135.
 
 
-Package natbib Warning: Citation `Liggesmeyer2009' on page 35 undefined on inpu
+Package natbib Warning: Citation `Liggesmeyer2009' on page 37 undefined on inpu
 t line 135.
 
-) (./tex/metodo.tex [35] [36]
-Cap\'{\i }tulo 5.
+) (./tex/metodo.tex [37] [38]
+Cap\'{\i }tulo 7.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 20.
 
-LaTeX Warning: Reference `sis_ger_cont' on page 37 undefined on input line 20.
+LaTeX Warning: Reference `sis_ger_cont' on page 39 undefined on input line 20.
 
-[37
+[39
 
 
 ]
 
-Package natbib Warning: Citation `Muthig2002' on page 38 undefined on input lin
+Package natbib Warning: Citation `Muthig2002' on page 40 undefined on input lin
 e 29.
 
 
-Package natbib Warning: Citation `Blois2005' on page 38 undefined on input line
+Package natbib Warning: Citation `Blois2005' on page 40 undefined on input line
  29.
 
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-
-LaTeX Warning: Reference `fig:suporteMetamodelo' on page 38 undefined on input 
-line 34.
-
-<imagens/suporteMetamodelo.png, id=338, 548.0475pt x 520.94624pt>
+<imagens/suporteMetamodelo.png, id=532, 548.0475pt x 520.94624pt>
 File: imagens/suporteMetamodelo.png Graphic file (type png)
 
-<use imagens/suporteMetamodelo.png> [38 <./imagens/suporteMetamodelo.png (PNG c
-opy)>]
-
-LaTeX Warning: Reference `fig:suporteMetamodelo' on page 39 undefined on input 
-line 49.
-
-<imagens/transformacoes.png, id=345, 613.54219pt x 437.38406pt>
+<use imagens/suporteMetamodelo.png> [40 <./imagens/suporteMetamodelo.png (PNG c
+opy)>] <imagens/transformacoes.png, id=539, 613.54219pt x 437.38406pt>
 File: imagens/transformacoes.png Graphic file (type png)
 
-<use imagens/transformacoes.png>
+<use imagens/transformacoes.png> [41]
 
-LaTeX Warning: Reference `fig:transformacoes' on page 39 undefined on input lin
-e 71.
-
-[39]
-
-Package natbib Warning: Citation `Tichy1982' on page 40 undefined on input line
+Package natbib Warning: Citation `Tichy1982' on page 42 undefined on input line
  91.
 
+[42 <./imagens/transformacoes.png (PNG copy)>]
 
-LaTeX Warning: Reference `requisitos' on page 40 undefined on input line 93.
-
-[40 <./imagens/transformacoes.png (PNG copy)>]
-
-Package natbib Warning: Citation `Gruber1991' on page 41 undefined on input lin
+Package natbib Warning: Citation `Gruber1991' on page 43 undefined on input lin
 e 111.
 
 
-Package natbib Warning: Citation `Souza1999' on page 41 undefined on input line
+Package natbib Warning: Citation `Souza1999' on page 43 undefined on input line
  113.
 
 
-Package natbib Warning: Citation `Souza1999' on page 41 undefined on input line
+Package natbib Warning: Citation `Souza1999' on page 43 undefined on input line
  113.
 
 
-Package natbib Warning: Citation `Lara2005' on page 41 undefined on input line 
+Package natbib Warning: Citation `Lara2005' on page 43 undefined on input line 
 115.
 
-[41]
-
-LaTeX Warning: Reference `fig:estudoCaso' on page 42 undefined on input line 12
-4.
-
-<imagens/estudoCaso.png, id=369, 548.80031pt x 615.0478pt>
+[43] <imagens/estudoCaso.png, id=560, 548.80031pt x 615.0478pt>
 File: imagens/estudoCaso.png Graphic file (type png)
 
-<use imagens/estudoCaso.png>
-
-LaTeX Warning: Reference `suporteMetamodelagem' on page 42 undefined on input l
-ine 139.
-
-
-LaTeX Warning: Reference `suporteGeracaoDeCodigo' on page 42 undefined on input
- line 139.
-
-
-LaTeX Warning: Reference `extensaoInterface' on page 42 undefined on input line
- 139.
-
-
-LaTeX Warning: Reference `controleDePermissao' on page 42 undefined on input li
-ne 139.
-
-
-LaTeX Warning: Reference `estudoDeCasoI' on page 42 undefined on input line 139
-.
-
-
-LaTeX Warning: Reference `suporteDR' on page 42 undefined on input line 139.
-
-
-LaTeX Warning: Reference `controleDeVersao' on page 42 undefined on input line 
-139.
-
-[42]
-
-LaTeX Warning: Reference `fig:estudoDeCasoII' on page 43 undefined on input lin
-e 151.
-
-<imagens/estudoDeCasoII.jpg, id=376, 1120.185pt x 831.105pt>
+<use imagens/estudoCaso.png> [44]
+<imagens/estudoDeCasoII.jpg, id=573, 1120.185pt x 831.105pt>
 File: imagens/estudoDeCasoII.jpg Graphic file (type jpg)
 
 <use imagens/estudoDeCasoII.jpg>
-
-LaTeX Warning: Reference `tab:cronograma' on page 43 undefined on input line 16
-3.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
@@ -1716,13 +1513,8 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 193.
-[43]
-
-LaTeX Warning: Reference `tab:cronograma' on page 44 undefined on input line 26
-2.
-
-) [44] [45 <./imagens/estudoCaso.png (PNG copy)>] [46 <./imagens/estudoDeCasoII
-.jpg>]
+[45]) [46] [47 <./imagens/estudoCaso.png (PNG copy)>] [48 <./imagens/estudoDeCa
+soII.jpg>]
 \openout2 = `tex/referencias.aux'.
 
  (./tex/referencias.tex
@@ -1735,22 +1527,19 @@ Package natbib Warning: There were undefined citations.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 96 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10297 strings out of 495061
- 146251 string characters out of 1182621
+ 10332 strings out of 495061
+ 146581 string characters out of 1182621
  250456 words of memory out of 3000000
- 13037 multiletter control sequences out of 15000+50000
+ 13061 multiletter control sequences out of 15000+50000
  100930 words of font info for 105 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
- 43i,12n,49p,1098b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,49p,1098b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-te
 xlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/
@@ -1760,9 +1549,9 @@ re/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/
 utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Quali.pdf (60 pages, 1092785 bytes).
+Output written on Quali.pdf (62 pages, 1079863 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 155 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

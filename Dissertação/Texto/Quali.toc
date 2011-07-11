@@ -8,44 +8,45 @@
 \contentsline {subsubsection}{Principais elementos do MDD}{8}{section.2.2}
 \contentsline {subsubsection}{Metamodelagem}{9}{figure.caption.8}
 \contentsline {subsubsection}{DSL e DSML}{9}{figure.caption.8}
-\contentsline {section}{\numberline {2.3}Principais Abordagens de MDD}{10}{section.2.3}
+\contentsline {section}{\numberline {2.3}Principais Abordagens de MDD}{9}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}MDA}{10}{subsection.2.3.1}
 \contentsline {subsubsection}{Os tr\^es modelos: CIM, PIM e PSM}{10}{subsection.2.3.1}
-\contentsline {subsubsection}{Especifica\c c\~oes usadas na MDA}{11}{figure.caption.11}
+\contentsline {subsubsection}{Especifica\c c\~oes usadas na MDA}{12}{figure.caption.11}
 \contentsline {subsection}{\numberline {2.3.2}Abordagem Eclipse}{13}{subsection.2.3.2}
-\contentsline {subsubsection}{EMF}{14}{subsection.2.3.2}
+\contentsline {subsubsection}{Eclipse Modeling Framework}{13}{subsection.2.3.2}
 \contentsline {subsubsection}{JET}{14}{subsection.2.3.2}
-\contentsline {subsubsection}{GMF}{15}{subsection.2.3.2}
+\contentsline {subsubsection}{GMF}{14}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Considera\c c\~oes Finais}{15}{section.2.4}
 \contentsline {chapter}{\numberline {3}Colabora\c c\~ao}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}CSCW, Groupware, CDEs}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Requisitos de CDEs}{19}{section.3.2}
 \contentsline {section}{\numberline {3.3}Os Quadrantes de Colabora\c c\~ao}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Sistemas Gerenciadores de Conte\'udo}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Wikis}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}CMSs}{23}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}IntraCMSs}{24}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Compara\c c\~ao entre os CMSs}{25}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Trabalhos Relacionados de colabora\c c\~ao em MDD }{26}{section.3.5}
-\contentsline {section}{\numberline {3.6}Considera\c c\~oes Finais}{28}{section.3.6}
-\contentsline {chapter}{\numberline {4}Proposta}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Problema de Pesquisa}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Objetivo e Hip\'otese}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Estudo de Caso: CoMDD para Sistemas Embarcados}{32}{section.4.3}
-\contentsline {subsubsection}{Especificidades dos Sistemas Embarcados}{33}{figure.caption.16}
-\contentsline {subsubsection}{Abordagem MDD em Sistemas Embarcados}{34}{figure.caption.16}
-\contentsline {subsubsection}{Colabora\c c\~ao em MDD para Sistemas Embarcados}{35}{figure.caption.16}
-\contentsline {section}{\numberline {4.4}Objetivos Espec\IeC {\'\i }ficos}{35}{section.4.4}
-\contentsline {section}{\numberline {4.5}Considera\c c\~oes Finais}{36}{section.4.5}
-\contentsline {chapter}{\numberline {5}M\'etodo}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}M\'etodo}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Inclus\~ao de Suporte \`a Metamodelagem}{37}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Suporte \`a Gera\c c\~ao de C\'odigo}{39}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Extens\~ao da Interface}{39}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Controle de Vers\~ao}{40}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Controle de Permiss\~ao de Acesso}{41}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Suporte ao Conhecimento das Decis\~oes}{41}{subsection.5.1.6}
-\contentsline {subsection}{\numberline {5.1.7}Execu\c c\~ao de Estudo de Caso I - Dom\IeC {\'\i }nio de TI}{42}{subsection.5.1.7}
-\contentsline {subsection}{\numberline {5.1.8}Execu\c c\~ao de Estudo de Caso II - Dom\IeC {\'\i }nio de SE}{42}{subsection.5.1.8}
-\contentsline {section}{\numberline {5.2}Cronograma}{43}{section.5.2}
-\contentsline {section}{\numberline {5.3}Considera\c c\~oes Finais}{44}{section.5.3}
+\contentsline {section}{\numberline {3.4}Wikis}{21}{section.3.4}
+\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{23}{chapter.4}
+\contentsline {chapter}{\numberline {5}CoMDD}{27}{chapter.5}
+\contentsline {subsection}{\numberline {5.0.1}Edi\c c\~ao simult\^anea, Merge e Divis\~ao de Tarefas}{27}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.2}Transforma\c c\~oes e Valida\c c\~oes}{28}{subsection.5.0.2}
+\contentsline {subsection}{\numberline {5.0.3}Comunica\c c\~ao}{28}{subsection.5.0.3}
+\contentsline {subsection}{\numberline {5.0.4}Benef\IeC {\'\i }cios}{29}{subsection.5.0.4}
+\contentsline {section}{\numberline {5.1}Conclus\~ao}{29}{section.5.1}
+\contentsline {chapter}{\numberline {6}Proposta}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Problema de Pesquisa}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}Objetivo e Hip\'otese}{32}{section.6.2}
+\contentsline {section}{\numberline {6.3}Estudo de Caso: CoMDD para Sistemas Embarcados}{34}{section.6.3}
+\contentsline {subsubsection}{Especificidades dos Sistemas Embarcados}{35}{figure.caption.14}
+\contentsline {subsubsection}{Abordagem MDD em Sistemas Embarcados}{36}{figure.caption.14}
+\contentsline {subsubsection}{Colabora\c c\~ao em MDD para Sistemas Embarcados}{37}{figure.caption.14}
+\contentsline {section}{\numberline {6.4}Objetivos Espec\IeC {\'\i }ficos}{37}{section.6.4}
+\contentsline {section}{\numberline {6.5}Considera\c c\~oes Finais}{38}{section.6.5}
+\contentsline {chapter}{\numberline {7}M\'etodo}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}M\'etodo}{39}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Inclus\~ao de Suporte \`a Metamodelagem}{39}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Suporte \`a Gera\c c\~ao de C\'odigo}{41}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Extens\~ao da Interface}{41}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Controle de Vers\~ao}{42}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Controle de Permiss\~ao de Acesso}{43}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Suporte ao Conhecimento das Decis\~oes}{43}{subsection.7.1.6}
+\contentsline {subsection}{\numberline {7.1.7}Execu\c c\~ao de Estudo de Caso I - Dom\IeC {\'\i }nio de TI}{44}{subsection.7.1.7}
+\contentsline {subsection}{\numberline {7.1.8}Execu\c c\~ao de Estudo de Caso II - Dom\IeC {\'\i }nio de SE}{44}{subsection.7.1.8}
+\contentsline {section}{\numberline {7.2}Cronograma}{45}{section.7.2}
+\contentsline {section}{\numberline {7.3}Considera\c c\~oes Finais}{46}{section.7.3}

@@ -3,13 +3,14 @@
 
 \chapter{MDD} 
 \label{mdd}
+Re, veja se este capítulo está bom ou se precisamos colocar mais coisas ou até mesmo tirar, já que não estamos usando o Eclipse. Será que não seria melhor se falássemos apenas do conceito de DSLs? Ou compensa falar de outras abordagens de MDD como a MDA e o Eclipse?
 
 \lettrine[lines=3]{O}\ Desenvolvimento Orientado a Modelos é uma abordagem que tem amadurecido e apresentada ser uma boa opção para elevar o nível de produtividade, interoperabilidade, portabilidade, reúso, comunicação, entre outros, de um projeto de software. Neste capítulo será apresentada a definição de \textit{Model-Driven Development}, seus principais benefícios e elementos, o conceito de metamodelagem e as duas das mais importantes abordagens usadas na indústria e academia: a abordagem do \textit{Object Management Group} (OMG) e a abordagem da IBM.
 
 \section{Definição e Vantagens do MDD}
 \label{defMDD}
 
-O Desenvolvimento Orientado a Modelos (\textit{Model-Driven Development} - MDD) é uma abordagem da Engenharia de Software que consiste na aplicação de modelos para elevar o nível de abstração, no qual os desenvolvedores criam e evoluem o software. Sua intenção é tanto simplificar (tornar mais fácil) quanto formalizar (padronizando, de forma que a automação seja possível) as várias atividades e tarefas que formam o ciclo de vida do software \cite{Hailpern2006}; ou numa definição mais singela: o MDD é a simples noção de construir um modelo de um sistema e depois transformá-lo em algo real \cite{Mellor2003}.
+O Desenvolvimento Orientado a Modelos (\textit{Model-Driven Development} - MDD) é uma abordagem da Engenharia de Software que consiste na aplicação de modelos para elevar o nível de abstração, na qual os desenvolvedores criam e evoluem o software. Sua intenção é tanto simplificar (tornar mais fácil) quanto formalizar (padronizando, de forma que a automação seja possível) as várias atividades e tarefas que formam o ciclo de vida do software \cite{Hailpern2006}; ou numa definição mais singela: o MDD é a simples noção de construir um modelo de um sistema e depois transformá-lo em algo real \cite{Mellor2003}.
 
 Uma outra definição semelhante é a de que o MDD é uma abordagem de desenvolvimento, integração e interoperabilidade de sistemas de tecnologia da informação. Ela se refere ao uso sistemático de modelos e de transformações de modelos como artefatos primários, durante todo o ciclo de vida do software. O MDD eleva o nível de abstração em que os desenvolvedores produzem softwares, simplificando e formalizando as diversas atividades e tarefas que compõem o processo de desenvolvimento de software \cite{Sanchez2009}, 
 %MDD eleva o nível de abstração do desenvolvimento de software 
@@ -17,7 +18,7 @@ expressando o que um computador deve fazer por meio de modelos, que escondem det
 
 O que caracteriza o MDD são os modelos como foco primário do desenvolvimento de software, ao invés das linguagens de programação. Os modelos são usados para descrever vários aspectos do software e para automatizar a geração de código. A principal vantagem disto é poder expressar modelos usando conceitos menos vinculados a detalhes de implementação, além do fato de modelos serem mais próximos do domínio do problema. Isto torna os modelos mais fáceis de se especificar, entender e manter, do que abordagens que não usam modelos. E em alguns casos, ainda é possível os especialistas do domínio produzirem os sistemas ao invés dos especialistas da tecnologia de implementação \cite{Selic2003, Sriplakich2006}
 
-Portanto, o modelo no MDD é um artefato primordial para o desenvolvimento e dessa forma se contrapõe ao desenvolvimento convencional de software, no qual os modelos são utilizados para representar o problema e servem \emph{apenas} para auxiliar o desenvolvimento de código pelo programador, ou seja, os modelos são usados \emph{somente} como apoio para o desenvolvimento do código. No MDD, a idéia é que esses modelos possam gerar o código (e outros artefatos) e não fiquem limitados apenas como um auxílio ao desenvolvedor, conforme ilustram as Figuras \ref{fig:desTrad} e \ref{fig:desMDD} em que o desenvolvedor usa modelos como auxílio, na Figura \ref{fig:desTrad}, em detrimento a Figura \ref{fig:desMDD}, em que os modelos são os responsáveis por gerar o código.
+Portanto, o modelo no MDD é um artefato primordial para o desenvolvimento e dessa forma se contrapõe ao desenvolvimento convencional de software, no qual os modelos são utilizados para representar o problema e servem \emph{apenas} para auxiliar o desenvolvimento de código pelo programador. No MDD, a idéia é que esses modelos possam gerar o código (e outros artefatos) e não fiquem limitados apenas como um auxílio ao desenvolvedor. A Figura \ref{fig:desTrad} ilustra os modelos como auxílio e a Figura \ref{fig:desMDD} ilustra os modelos como responsáveis por gerar o código.
 
 \begin{figure}
 	\centering
@@ -39,10 +40,12 @@ Segundo \cite{Kleppe2003,Lucredio2009} o MDD apresenta grandes benefícios como:
 \item Produtividade: fatores como redução de atividades repetitivas e manuais e o aumento da possibilidade de reúso, podem contribuir para o aumento da produtividade no processo de desenvolvimento;
 \item Portabilidade e Interoperabilidade: como o modelo é independente de plataforma, um mesmo modelo pode ser transformado em código para diferentes plataformas;
 \item Corretude: o MDD evita que os desenvolvedores exerçam atividades repetitivas e manuais para gerar código; dessa maneira, evita-se também alguns erros como: geradores de código não introduzem erros acidentais, como o de digitação, por exemplo;
-\item Manutenção: alterações no código respectivas à manutenção podem requerer o mesmo esforço produzido durante o desenvolvimento;
+\item Manutenção: alterações no código relativas à manutenção podem requerer o mesmo esforço produzido durante o desenvolvimento;
 \item Documentação: modelos são o artefato principal do processo de desenvolvimento e por isso não se desatualizam, pois o código é gerado a partir deles e com isso a documentação se mantém também sempre atualizada;
 \item Comunicação: modelos são mais fáceis de entender do que código-fonte, assim isso facilita a comunicação entre os desenvolvedores, os \textit{stakeholders} e demais envolvidos.%-> procurar aonde eu li isso.
 \end{itemize}
+
+Falar das desvantagens do MDD.
 
 Analisando tais definições de MDD e suas vantagens apresentadas, pode-se concluir que MDD é um conceito bem definido, pois diferentes autores apresentam as mesmas idéias de que MDD é uma elevação no nível de abstração do desenvolvimento de software, no qual o modelo passa de um artefato auxiliar para uma peça fundamental no processo de desenvolvimento. Em virtude dessa elevação na abstração, muitos problemas relativos a portabilidade, interoperabilidade, corretude, manutenção e documentação, são reduzidos nesta abordagem. Contudo, é fato que mesmo o MDD com tantos benefícios, inclusive o aumento de produtividade, ele ainda está longe de ser a solução para todos os problemas relativos ao desenvolvimento de software.
 
@@ -72,7 +75,7 @@ A Figura \ref{fig:principais_elementos} ilustra um engenheiro de software\footno
 
 A metamodelagem é um dos principais aspectos do MDD. É necessário criar um metamodelo do conhecimento para o MDD lidar com alguns desafios, como: a construção de uma DSL; validar modelos; realizar transformações de modelo; gerar código e integrar ferramentas de modelagem a um domínio \cite{Stahl2006}.
 
-Um metamodelo descreve uma estrutura de um modelo. De maneira abstrata, o metamodelo define os construtores de uma linguagem de modelagem e seus relacionamentos, bem como as constantes e regras de modelagem; contudo ele não descreve a sintaxe concreta da linguagem. Metamodelos e modelos têm um relacionamento de classe e instância, ou seja, cada modelo é uma instância de um metamodelo. A relação \emph{meta} deve ser vista em relação a um modelo. Embora a definição absoluta de metamodelagem possa não fazer sentido na teoria, na prática ela é bastante útil \cite{Stahl2006}.
+Um metamodelo descreve a estrutura de um modelo. De maneira abstrata, o metamodelo define os construtores de uma linguagem de modelagem e seus relacionamentos, bem como as constantes e regras de modelagem; contudo ele não descreve a sintaxe concreta da linguagem. Metamodelos e modelos têm um relacionamento de classe e instância, ou seja, cada modelo é uma instância de um metamodelo. A relação \emph{meta} deve ser vista em relação a um modelo. Embora a definição absoluta de metamodelagem possa não fazer sentido na teoria, na prática ela é bastante útil \cite{Stahl2006}.
 
 Mais detalhes sobre metamodelagem serão explicados na Seção \ref{mda}.
 
@@ -80,11 +83,11 @@ Mais detalhes sobre metamodelagem serão explicados na Seção \ref{mda}.
 
 Uma DSL (\textit{Domain-Specific Language}) é uma linguagem de programação ou uma linguagem de especificação executável, que oferece, através de notações e abstrações, poder expressivo focado em um problema de um domínio particular, e geralmente restrito a este domínio. Embora seja uma linguagem específica e não forneça uma solução geral para muitas áreas, ela provê uma solução muito melhor para um domínio particular \cite{Deursen2000} quando comparada com uma linguagem de propósito geral, como a UML, por exemplo. 
 
-O termo DSML (\textit{Domain-Specific Modeling Language}) pode ser considerado como um sinônimo de DSL e para \cite{Heering2008} DSML é uma DSL no contexto de MDD; com uma sintaxe gráfica, geralmente.
+O termo DSML (\textit{Domain-Specific Modeling Language}) pode ser considerado como um sinônimo de DSL e para Heering (2007/8) DSML é uma DSL no contexto de MDD; com uma sintaxe gráfica, geralmente.
 
 Aplicando uma DSML no lugar de uma linguagem de modelagem genérica, como a UML, permite trazer o especialista para mais perto do problema. DSMLs podem tornar o desenvolvimento de software, em domínios específicos, mais eficiente; uma vez que as DSMLs reduzem o \textit{gap} entre os especialistas e a implementação do software \cite{Meijler2005}. 
 
-As DSMLs permitem os desenvolvedores usarem conceitos específicos do domínio, por isso fornecem uma linguagem de modelagem ainda mais intuitiva e integram  ainda mais o \textit{know-how} dos desenvolvedores de software e as otimizações específicas de aplicações dentro dos geradores de código. Por exemplo: um desenho, de um especialista de domínio, no Visio\footnote{http://office.microsoft.com/en-us/visio/default.aspx} é um modelo; com sintaxe e semântica clara, que permite a geração de código baseadas na especificação do modelos \cite{Liggesmeyer2009}.
+As DSMLs permitem aos desenvolvedores usarem conceitos específicos do domínio, por isso fornecem uma linguagem de modelagem ainda mais intuitiva e integram  ainda mais o \textit{know-how} dos desenvolvedores de software e as otimizações específicas de aplicações dentro dos geradores de código. 
 
 \section{Principais Abordagens de MDD}
 
@@ -115,7 +118,7 @@ A Figura \ref{fig:ciclodevidaMDA} apresenta o ciclo de vida de software adotando
 	\label{fig:ciclodevidaMDA}
 \end{figure}
 
-As transformações entre modelos são utilizadas para converter um modelo em outro, sucessivamente, até código-fonte. A transformação entre CIM e PIM é menos passível de automação, pois envolve mais decisões e maiores possibilidades de interpretação dos requisitos. Já transformação entre PIM e PSM é realizada a partir da combinação entre o PIM e outra informação (Figura \ref{fig:pimpsm}). Quanto menos informação for preciso, mais automatizado é o processo. Já a transformação entre PSM e código-fonte é mais passível de automação, uma vez que o PSM está intimamente ligado com a plataforma de implementação \cite{OMG2003}.
+As transformações entre modelos são utilizadas para converter um modelo em outro, sucessivamente, até o código-fonte. A transformação entre CIM e PIM é menos passível de automação, pois envolve mais decisões e maiores possibilidades de interpretação dos requisitos. Já transformação entre PIM e PSM é realizada a partir da combinação entre o PIM e outra informação (Figura \ref{fig:pimpsm}). Quanto menos informação for preciso, mais automatizado é o processo. Já a transformação entre PSM e código-fonte é mais passível de automação, uma vez que o PSM está intimamente ligado com a plataforma de implementação \cite{OMG2003}.
 
 \begin{figure}[!ht]
 	\centering
@@ -152,15 +155,15 @@ O XMI (\textit{XML Metadata Interchange}) é uma especificação do OMG\footnote{O 
 
 
 \subsection{Abordagem Eclipse}
-O projeto Eclipse foi originalmente criado em novembro de 2001 pela IBM (\textit{International Business Machines}) \cite{Eclipse} e comporta diversos subprojetos. Um deles é o \textit{Eclipse Modeling Project}, cujo o foco é a evolução e promoção de tecnologias baseadas em modelos, fornecendo um conjunto unificado de \textit{frameworks} de modelagem, ferramentas e implementações de normas \cite{EclipseModeling}.
+O projeto Eclipse foi originalmente criado em novembro de 2001 pela IBM (\textit{International Business Machines}) \cite{Eclipse} e comporta diversos subprojetos. Um deles é o \textit{Eclipse Modeling Project}, cujo foco é a evolução e promoção de tecnologias baseadas em modelos, fornecendo um conjunto unificado de \textit{frameworks} de modelagem, ferramentas e implementações de normas \cite{EclipseModeling}.
  
-\subsubsection{EMF}
+\subsubsection{Eclipse Modeling Framework}
 
-O EMF é um framework Java/XML de modelagem para geração de código, ferramentas e outras aplicações baseadas em modelos. O EMF ajuda o desenvolvedor a transformar modelos rapidamente em eficientes, corretos e facilmente customizáveis códigos Java. O EMF destina-se a proporcionar os benefícios da modelagem formal, mas com um custo de entrada baixo. Os modelos podem ser criados usando anotações Java, documentos XML ou através de ferramentas de modelagem como o \emph{Rational Rose}\footnote{http://www.developers.net/ibmshowcase/view/1423}, e então importados para o EMF \cite{emfFaq,helpEMF}.
+O Eclipse Modeling Framework (EMF) é um framework Java/XML de modelagem para geração de código, ferramentas e outras aplicações baseadas em modelos. O EMF ajuda o desenvolvedor a transformar modelos rapidamente em eficientes, corretos e facilmente customizáveis códigos Java. O EMF destina-se a proporcionar os benefícios da modelagem formal, mas com um custo de entrada baixo. Os modelos podem ser criados usando anotações Java, documentos XML ou através de ferramentas de modelagem como o \emph{Rational Rose}\footnote{http://www.developers.net/ibmshowcase/view/1423}, e então importados para o EMF \cite{emfFaq,helpEMF}.
 
 Assim, a partir de uma especificação de um modelo em XMI, o EMF fornece ferramentas e suporte em tempo de execução, para produzir um conjunto de classes Java para o modelo. Uma vez especificado um modelo EMF, o gerador EMF pode criar um conjunto de classes Java correspondentes ao modelo e caso haja mudanças no código Java, elas podem ser usadas para atualizar o modelo. Além da geração de código o EMF fornece a habilidade de salvar objetos em documentos XML para o intercâmbio com outras ferramentas e aplicações \cite{emfFaq,helpEMF}.
 
-Fazendo um paralelo entre as duas abordagens, na abordagem Eclipse, a linguagem de modelagem é o EMF, enquanto que na MDA é a UML. A linguagem de meta-metamodelagem na abordagem Eclipse é o \emph{Ecore} e na MDA é o MOF. A Eclipse também usa a especificação XMI, da OMG, para fazer o intercâmbio de modelos.
+Fazendo um paralelo entre as duas abordagens, na abordagem Eclipse, a linguagem de modelagem é o EMF, enquanto que na MDA é a UML. A linguagem de meta-metamodelagem na abordagem Eclipse é o \emph{Ecore} e na MDA é o MOF. A abordagem Eclipse também usa a especificação XMI, da OMG, para fazer o intercâmbio de modelos.
 
 
 \subsubsection{JET} 
@@ -180,7 +183,7 @@ O \textit{Graphical Modeling Framework} (GMF) é mais um projeto do Eclipse que p
 
 \section{Considerações Finais}
 
-Neste capítulo foram apresentados os conceitos relativos a MDD e duas de suas principais abordagens, ressaltando que existem outras, como a abordagem da Sun Microsystems\footnote{http://java.sun.com/products/jmi/} \footnote{http://mdr.netbeans.org/}, a da \emph{Vanderbilt University}\footnote{http://www.isis.vanderbilt.edu/projects/gme/} e a da Microsoft\footnote{http://msdn.microsoft.com/en-us/library/aa480032.aspx}, entre outraas.
+Neste capítulo foram apresentados os conceitos relativos a MDD e duas de suas principais abordagens, ressaltando que existem outras, como a abordagem da Sun Microsystems\footnote{http://java.sun.com/products/jmi/} \footnote{http://mdr.netbeans.org/}, a da \emph{Vanderbilt University}\footnote{http://www.isis.vanderbilt.edu/projects/gme/} e a da Microsoft\footnote{http://msdn.microsoft.com/en-us/library/aa480032.aspx}, entre outras.
 
 Neste projeto de mestrado  as duas abordagens apresentadas: a Eclipse e a MDA serão os referenciais para os estudos necessários  para que o ambiente CoMDD seja desenvolvido.
 

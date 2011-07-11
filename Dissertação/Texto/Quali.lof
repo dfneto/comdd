@@ -5,17 +5,17 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Processo de desenvolvimento de software orientado a modelos \citep {Lucredio2009}\relax }}{7}{figure.caption.7}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Principais elementos do MDD \citep {Lucredio2009}.\relax }}{8}{figure.caption.8}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Ciclo de vida da MDA\relax }}{11}{figure.caption.9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Transforma\c c\~ao de Modelos \citep {OMG2003}\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Transforma\c c\~ao de Modelos \citep {OMG2003}\relax }}{11}{figure.caption.10}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces M\'ultiplos PSMs a partir de um \'unico PIM\relax }}{12}{figure.caption.11}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Arquitetura da Metamodelagem\relax }}{13}{figure.caption.12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Quadrantes da Colabora\c c\~ao \citep {Rama2006}\relax }}{21}{figure.caption.13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do CMS Joomla! (\citeauthor {JoomlaArquitetura})\relax }}{23}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitetura do CMS Drupal (\citeauthor {DrupalArquitetura})\relax }}{24}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema Gen\'erico da Arquitetura de um Sistema Embarcado \citep {Broekman2002}\relax }}{33}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Suporte \`a metamodelagem em uma Wiki\relax }}{38}{figure.caption.17}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Suporte \`a gera\c c\~ao de c\'odigo\relax }}{40}{figure.caption.18}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Estudo de caso do dom\IeC {\'\i }nio de TI\relax }}{45}{figure.caption.19}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Exemplo do DTE para o Estudo de caso do dom\IeC {\'\i }nio de Sistemas Embarcados\relax }}{46}{figure.caption.20}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema Gen\'erico da Arquitetura de um Sistema Embarcado \citep {Broekman2002}\relax }}{35}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Suporte \`a metamodelagem em uma Wiki\relax }}{40}{figure.caption.15}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Suporte \`a gera\c c\~ao de c\'odigo\relax }}{42}{figure.caption.16}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Estudo de caso do dom\IeC {\'\i }nio de TI\relax }}{47}{figure.caption.17}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Exemplo do DTE para o Estudo de caso do dom\IeC {\'\i }nio de Sistemas Embarcados\relax }}{48}{figure.caption.18}

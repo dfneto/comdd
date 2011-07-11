@@ -1,0 +1,28 @@
+Aonde vimos que o MDD não pode ser aplicado ou não é aplicado de maneira distribuída ou colaborativa como no desenvolvimento tradicional?
+
+O que entendo por colaboração? E por dds?
+
+Quais as vantagens dos modelos sob o código-fonte? Isso justifica o uso de MDD e não de desenvolvimento tradicional na nossa abordagem. Pois apesar da nossa abordagem focar em MDD ela pode ser aplicada no desenvolvimento tradiconal. -> Será mesmo? Acho que estou mais pegando coisas do DT e aplicando ao MDD, assim acho que ja existe isso pro DT. Estou fazendo isso porque não conheço algo paracido com o CoMDD. Além do que nunca ouvi falar de uma IDE como serviço.
+-> Vantagens: modelos são mais fáceis de entender e geram mais comunicação/colaboração.
+
+Qual a diferença de usar dsls (MDD) como o desenvolvimento tradicional? Acho que a contribuição está no desenvolvimento de software e nao de mdd. Usamos mdd só porque modelos sao mais fáceis de entender/fazer do que código-fonte. Nossa abordagem pode ser usada em desenvolvimento normal, mas a tendencia é mdd por aumentar produtividade e reuso, além dos vários outros benefícios.
+
+O que é uma abordagem?
+
+Qual a minha hipótese? O que temos que mostrar?
+
+Como vou definir o CoMDD?
+-> Definir o que deve ter (pontos importantes em uma abordagem colaborativa), como deve ser e o porquê.
+-> Avaliação realizada com os usuários.
+
+Será que rola falar de LPS?
+
+
+Justificar:
+	Pq MDD?
+	Pq Colaboração associada a MDD é bom?
+
+Eu acho que temos que falar sim da edição simultanea e DR (p ex) embora nao tenhamos implementado. Daí, no final, dizemos que implementamos parte do comdd e essa parte foi testada. Mas o todo o resto (ed simultanea, DR...) foi justificado, ou seja, foi evidenciado sua importância.
+
+
+Nossa implementação já permite a colaboração. Pq? Pq ela estando numa wiki já permite que um modelo seja construído em colaboração com outras pessoas. Mas qual a diferença de termos um editor na web não simultaneo alterando um mesmo arquivo, para termos o eclipse e um svn?
