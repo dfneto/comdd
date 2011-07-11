@@ -15,12 +15,18 @@ prog: stat+;
 
 stat:	plataforma 
 	'robo' nomeRobo=ID 
-	link
+	link*
 	cabecalho* 
 	sensor* 
 	main 
 	{System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!!");}
 	;
+
+link:
+	'<' nomeLink=ID '>'
+	{System.out.println("[["+$nomeLink.text+"]]");}
+	;
+
 
 //*******************************************/
 //***DEFININDO A PLATAFORMA*****************/
