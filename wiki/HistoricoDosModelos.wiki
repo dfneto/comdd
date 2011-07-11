@@ -1,5 +1,7 @@
 #summary 1 Como guardar o histórico das diferentes versões dos modelos e realizar merge?
 
+*O Problema é que o comando doc.getContent retorna todo o conteúdo da página inclusive o que tiver dentro de {{velocity}} {{/velocity}}. Se não tiver na api algo que retorne tudo menos o velocity, posso criar um componente que faz um parser e remove tudo de velocity *
+
 Criei duas páginas. Uma com o comdd que chama o plugin da dsl e que o usuário entra com o modelo. A outra para visualizar o codigo gerado pela dsl.
 
 #Descrição: voce escreve um modelo e clica em visualizar codigo. 
