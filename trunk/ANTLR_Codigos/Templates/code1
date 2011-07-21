@@ -1,0 +1,15 @@
+{{velocity}} 
+#if ($hasAdmin) 
+## This link will only be visible to users that have admin rights on this document 
+[[Do some admin action>>Some.Document]] 
+#end 
+
+
+
+#set($query = "where doc.parent is null or doc.parent='' order by doc.name asc")
+
+#foreach($item in $xwiki.searchDocuments($query))
+#set($lostdoc = $xwiki.getDocument($item))
+* [[${lostdoc.web}.${lostdoc.name}>>${lostdoc.web}.${lostdoc.name}]]
+#end
+

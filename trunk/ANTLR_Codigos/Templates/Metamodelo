@@ -1,0 +1,19 @@
+Esse metamodelo deve seguir a estrutura da gramatica
+
+class Programa {
+	String plataforma;
+	String nomeRobo;
+	List<Link> links;
+	List<Cabecalho> cabecalhos;
+	List<Sensor> sensor;
+	void adicionarCabecalho(Cabecalho c) {
+		cabecalhos.add(c);
+	}
+}
+
+enum TipoCabecalho { DEFINES, INCLUDES };
+class Cabecalho {
+	TipoCabecalho tipo;
+}
+
+
