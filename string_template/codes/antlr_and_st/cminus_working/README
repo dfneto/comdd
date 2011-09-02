@@ -1,0 +1,62 @@
+02-set-2011, Munich - Germany
+How to run the CMinus (http://www.antlr.org/wiki/display/ST/Language+Translation+Using+ANTLR+and+StringTemplate), by David Fernandes Neto.
+
+##Set the libraries in the path, like:
+export JAVA_HOME=/usr/local/jdk
+export PATH=$PATH:$JAVA_HOME/bin/:/home/david/mps/mps.sh:/home/david/fortiss_work/tools/NuSMV-2.5.3-x86_64-redhat-linux-gnu/bin
+export CLASSPATH=$PATH:.:$JAVA_HOME/lib/:/usr/local/lib/antlr-3.4-complete.jar:/usr/local/lib/stringtemplate-2.1.jar:$CLASSPATH
+
+And you need these libraries:
+antlr-3.4-complete.jar
+stringtemplate-2.1.jar
+
+In the respectives places:
+
+/usr/loca/lib
+
+
+##Files necessaries:
+CMinus.g
+input
+Java.stg
+Main.java 
+
+##Compiling:
+java org.antlr.Tool CMinus.g 
+javac *.java
+
+
+##Runing:
+java Main input
+
+##Output expected:
+class Wrapper {
+    char c;
+    int x;
+    int foo(int y, char d) {
+        int i;
+        for (i = 0; i < 3; i = i + 1;) {
+            x = 3;
+            y = 5;
+        }
+    }
+}
+
+
+##Terminal output:
+david@david-hp:~/string_template/codes/antlr_and_st/cminus_working$ java org.antlr.Tool CMinus.g 
+david@david-hp:~/string_template/codes/antlr_and_st/cminus_working$ javac *.java
+david@david-hp:~/string_template/codes/antlr_and_st/cminus_working$ java Main input 
+class Wrapper {
+    char c;
+    int x;
+    int foo(int y, char d) {
+        int i;
+        for (i = 0; i < 3; i = i + 1;) {
+            x = 3;
+            y = 5;
+        }
+    }
+}
+david@david-hp:~/string_template/codes/antlr_and_st/cminus_working$ 
+
