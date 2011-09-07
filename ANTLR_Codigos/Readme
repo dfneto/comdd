@@ -4,3 +4,11 @@ Dir 'AppXwikiRodando' é onde estou construindo do zero a app para xwiki
 Dir DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações
 Dir 'jar' onde tem a dsl rodando por linha de comando localmente como um jar
 Dir 'MeuPrimeiroEx' algo parecido com o DslCompletaLrmMultiplosDestinos mas mais desorganizado
+
+
+
+app_antlr: 
+
+app_xwiki:
+	inicial_tests: tem os plugins desenvolvidos para a xwiki, sendo que a versão 3 é a que estava sendo utilizada
+	
