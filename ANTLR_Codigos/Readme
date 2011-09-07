@@ -1,8 +1,7 @@
-Dir 'MeuPrimeiroEx' algo parecido com o DslCompletaLrmMultiplosDestinos mas mais desorganizado
-
-
-
+CONTENT
 app_antlr: 
+	dsl_local: ('MeuPrimeiroEx') algo parecido com o DslCompletaLrmMultiplosDestinos mas mais desorganizado
+	first_versions:	('DslCompletaLrmMultiplosDestinos') tem o V0 em antlr da minha dsl -> Algum dia eu devo ter modificado o nome desta pasta. Eu acho que é a pasta first_versions
 
 app_xwiki:
 	inicial_tests: ('AppXwiki') tem os plugins desenvolvidos para a xwiki, sendo que a versão 3 é a que estava sendo utilizada
@@ -13,4 +12,5 @@ others:
 	dsl_wiki_com_servlets: (DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações)
 
 
-Diretório 'DslCompletaLrmMultiplosDestinos' tem o V0 em antlr da minha dsl -> Algum dia eu devo ter modificado o nome desta pasta. Eu acho que é a pasta DslAntlr
+
+
