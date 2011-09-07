@@ -1,7 +1,5 @@
 Diretório 'DslCompletaLrmMultiplosDestinos' tem o V0 em antlr da minha dsl
-
 Dir DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações
-Dir 'jar' onde tem a dsl rodando por linha de comando localmente como um jar
 Dir 'MeuPrimeiroEx' algo parecido com o DslCompletaLrmMultiplosDestinos mas mais desorganizado
 
 
@@ -13,4 +11,4 @@ app_xwiki:
 	in_production: ('AppXwikiRodando') é onde estou construindo do zero a app para xwiki
 	
 others:
-
+	testes com jar e a dsl ('jar' onde tem a dsl rodando por linha de comando localmente como um jar)
