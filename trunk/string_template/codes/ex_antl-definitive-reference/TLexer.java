@@ -1,4 +1,4 @@
-// $ANTLR 3.4 SimpleCalc.g 2011-09-05 17:46:24
+// $ANTLR 3.4 T.g 2011-09-07 16:32:22
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -6,15 +6,13 @@ import java.util.List;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked"})
-public class SimpleCalcLexer extends Lexer {
+public class TLexer extends Lexer {
     public static final int EOF=-1;
-    public static final int DIGIT=4;
-    public static final int DIV=5;
-    public static final int MINUS=6;
-    public static final int MULT=7;
-    public static final int NUMBER=8;
-    public static final int PLUS=9;
-    public static final int WHITESPACE=10;
+    public static final int T__7=7;
+    public static final int T__8=8;
+    public static final int ID=4;
+    public static final int INT=5;
+    public static final int WS=6;
 
     // delegates
     // delegators
@@ -22,24 +20,24 @@ public class SimpleCalcLexer extends Lexer {
         return new Lexer[] {};
     }
 
-    public SimpleCalcLexer() {} 
-    public SimpleCalcLexer(CharStream input) {
+    public TLexer() {} 
+    public TLexer(CharStream input) {
         this(input, new RecognizerSharedState());
     }
-    public SimpleCalcLexer(CharStream input, RecognizerSharedState state) {
+    public TLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "SimpleCalc.g"; }
+    public String getGrammarFileName() { return "T.g"; }
 
-    // $ANTLR start "DIV"
-    public final void mDIV() throws RecognitionException {
+    // $ANTLR start "T__7"
+    public final void mT__7() throws RecognitionException {
         try {
-            int _type = DIV;
+            int _type = T__7;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:2:5: ( '/' )
-            // SimpleCalc.g:2:7: '/'
+            // T.g:2:6: ( ';' )
+            // T.g:2:8: ';'
             {
-            match('/'); 
+            match(';'); 
 
             }
 
@@ -50,17 +48,17 @@ public class SimpleCalcLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "DIV"
+    // $ANTLR end "T__7"
 
-    // $ANTLR start "MINUS"
-    public final void mMINUS() throws RecognitionException {
+    // $ANTLR start "T__8"
+    public final void mT__8() throws RecognitionException {
         try {
-            int _type = MINUS;
+            int _type = T__8;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:3:7: ( '-' )
-            // SimpleCalc.g:3:9: '-'
+            // T.g:3:6: ( '=' )
+            // T.g:3:8: '='
             {
-            match('-'); 
+            match('='); 
 
             }
 
@@ -71,75 +69,33 @@ public class SimpleCalcLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "MINUS"
+    // $ANTLR end "T__8"
 
-    // $ANTLR start "MULT"
-    public final void mMULT() throws RecognitionException {
+    // $ANTLR start "ID"
+    public final void mID() throws RecognitionException {
         try {
-            int _type = MULT;
+            int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:4:6: ( '*' )
-            // SimpleCalc.g:4:8: '*'
+            // T.g:4:3: ( ( 'a' .. 'z' )+ )
+            // T.g:4:5: ( 'a' .. 'z' )+
             {
-            match('*'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "MULT"
-
-    // $ANTLR start "PLUS"
-    public final void mPLUS() throws RecognitionException {
-        try {
-            int _type = PLUS;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:5:6: ( '+' )
-            // SimpleCalc.g:5:8: '+'
-            {
-            match('+'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "PLUS"
-
-    // $ANTLR start "NUMBER"
-    public final void mNUMBER() throws RecognitionException {
-        try {
-            int _type = NUMBER;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:48:8: ( ( DIGIT )+ )
-            // SimpleCalc.g:48:10: ( DIGIT )+
-            {
-            // SimpleCalc.g:48:10: ( DIGIT )+
+            // T.g:4:5: ( 'a' .. 'z' )+
             int cnt1=0;
             loop1:
             do {
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( ((LA1_0 >= '0' && LA1_0 <= '9')) ) {
+                if ( ((LA1_0 >= 'a' && LA1_0 <= 'z')) ) {
                     alt1=1;
                 }
 
 
                 switch (alt1) {
             	case 1 :
-            	    // SimpleCalc.g:
+            	    // T.g:
             	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
+            	    if ( (input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
             	    }
             	    else {
@@ -171,33 +127,33 @@ public class SimpleCalcLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "NUMBER"
+    // $ANTLR end "ID"
 
-    // $ANTLR start "WHITESPACE"
-    public final void mWHITESPACE() throws RecognitionException {
+    // $ANTLR start "INT"
+    public final void mINT() throws RecognitionException {
         try {
-            int _type = WHITESPACE;
+            int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // SimpleCalc.g:50:12: ( ( '\\t' | ' ' | '\\r' | '\\n' | '\\u000C' )+ )
-            // SimpleCalc.g:50:14: ( '\\t' | ' ' | '\\r' | '\\n' | '\\u000C' )+
+            // T.g:5:4: ( ( '0' .. '9' )+ )
+            // T.g:5:5: ( '0' .. '9' )+
             {
-            // SimpleCalc.g:50:14: ( '\\t' | ' ' | '\\r' | '\\n' | '\\u000C' )+
+            // T.g:5:5: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( ((LA2_0 >= '\t' && LA2_0 <= '\n')||(LA2_0 >= '\f' && LA2_0 <= '\r')||LA2_0==' ') ) {
+                if ( ((LA2_0 >= '0' && LA2_0 <= '9')) ) {
                     alt2=1;
                 }
 
 
                 switch (alt2) {
             	case 1 :
-            	    // SimpleCalc.g:
+            	    // T.g:
             	    {
-            	    if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||(input.LA(1) >= '\f' && input.LA(1) <= '\r')||input.LA(1)==' ' ) {
+            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
             	    }
             	    else {
@@ -220,7 +176,36 @@ public class SimpleCalcLexer extends Lexer {
             } while (true);
 
 
-             _channel = HIDDEN; 
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "INT"
+
+    // $ANTLR start "WS"
+    public final void mWS() throws RecognitionException {
+        try {
+            int _type = WS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // T.g:6:4: ( ( ' ' | '\\t' | '\\n' | '\\r' ) )
+            // T.g:6:5: ( ' ' | '\\t' | '\\n' | '\\r' )
+            {
+            if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
+                input.consume();
+            }
+            else {
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                recover(mse);
+                throw mse;
+            }
+
+
+            skip();
 
             }
 
@@ -231,56 +216,50 @@ public class SimpleCalcLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "WHITESPACE"
-
-    // $ANTLR start "DIGIT"
-    public final void mDIGIT() throws RecognitionException {
-        try {
-            // SimpleCalc.g:52:16: ( '0' .. '9' )
-            // SimpleCalc.g:
-            {
-            if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
-                input.consume();
-            }
-            else {
-                MismatchedSetException mse = new MismatchedSetException(null,input);
-                recover(mse);
-                throw mse;
-            }
-
-
-            }
-
-
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "DIGIT"
+    // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // SimpleCalc.g:1:8: ( DIV | MINUS | MULT | PLUS | NUMBER | WHITESPACE )
-        int alt3=6;
+        // T.g:1:8: ( T__7 | T__8 | ID | INT | WS )
+        int alt3=5;
         switch ( input.LA(1) ) {
-        case '/':
+        case ';':
             {
             alt3=1;
             }
             break;
-        case '-':
+        case '=':
             {
             alt3=2;
             }
             break;
-        case '*':
+        case 'a':
+        case 'b':
+        case 'c':
+        case 'd':
+        case 'e':
+        case 'f':
+        case 'g':
+        case 'h':
+        case 'i':
+        case 'j':
+        case 'k':
+        case 'l':
+        case 'm':
+        case 'n':
+        case 'o':
+        case 'p':
+        case 'q':
+        case 'r':
+        case 's':
+        case 't':
+        case 'u':
+        case 'v':
+        case 'w':
+        case 'x':
+        case 'y':
+        case 'z':
             {
             alt3=3;
-            }
-            break;
-        case '+':
-            {
-            alt3=4;
             }
             break;
         case '0':
@@ -294,16 +273,15 @@ public class SimpleCalcLexer extends Lexer {
         case '8':
         case '9':
             {
-            alt3=5;
+            alt3=4;
             }
             break;
         case '\t':
         case '\n':
-        case '\f':
         case '\r':
         case ' ':
             {
-            alt3=6;
+            alt3=5;
             }
             break;
         default:
@@ -316,49 +294,41 @@ public class SimpleCalcLexer extends Lexer {
 
         switch (alt3) {
             case 1 :
-                // SimpleCalc.g:1:10: DIV
+                // T.g:1:10: T__7
                 {
-                mDIV(); 
+                mT__7(); 
 
 
                 }
                 break;
             case 2 :
-                // SimpleCalc.g:1:14: MINUS
+                // T.g:1:15: T__8
                 {
-                mMINUS(); 
+                mT__8(); 
 
 
                 }
                 break;
             case 3 :
-                // SimpleCalc.g:1:20: MULT
+                // T.g:1:20: ID
                 {
-                mMULT(); 
+                mID(); 
 
 
                 }
                 break;
             case 4 :
-                // SimpleCalc.g:1:25: PLUS
+                // T.g:1:23: INT
                 {
-                mPLUS(); 
+                mINT(); 
 
 
                 }
                 break;
             case 5 :
-                // SimpleCalc.g:1:30: NUMBER
+                // T.g:1:27: WS
                 {
-                mNUMBER(); 
-
-
-                }
-                break;
-            case 6 :
-                // SimpleCalc.g:1:37: WHITESPACE
-                {
-                mWHITESPACE(); 
+                mWS(); 
 
 
                 }
