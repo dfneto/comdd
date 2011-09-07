@@ -1,5 +1,3 @@
-Diretório 'DslCompletaLrmMultiplosDestinos' tem o V0 em antlr da minha dsl
-Dir DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações
 Dir 'MeuPrimeiroEx' algo parecido com o DslCompletaLrmMultiplosDestinos mas mais desorganizado
 
 
@@ -12,3 +10,7 @@ app_xwiki:
 	
 others:
 	testes com jar e a dsl ('jar' onde tem a dsl rodando por linha de comando localmente como um jar)
+	dsl_wiki_com_servlets: (DSL na Wiki tem a DSL rodando como um servlet mas que precisa ser reiniciado o tomcat para que aplique as modificações)
+
+
+Diretório 'DslCompletaLrmMultiplosDestinos' tem o V0 em antlr da minha dsl -> Algum dia eu devo ter modificado o nome desta pasta. Eu acho que é a pasta DslAntlr
