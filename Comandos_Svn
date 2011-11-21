@@ -2,24 +2,38 @@
 $ svn commit CAMINHO_DO_PROJETO NOME_DO_PROJETO
 ou
 $ svn co CAMINHO_DO_PROJETO NOME_DO_PROJETO
+
+
 # Para ver status:
 $ svn status
 ou
 $ svn stat
+
+
 # Para importar um arquivo:
 $ svn import NOME_COMPLETO_DO_ARQUIVO CAMINHO_DE_DESTINO/NOME_COMPLETO_DO_ARQUIVO -m "COMENTARIO"
+
+
 # Para adicionar um arquivo:
 $ svn add NOME_COMPLETO_DO_ARQUIVO
+
+
 # Para remover um arquivo:
 $ svn rm --force NOME_COMPLETO_DO_ARQUIVO
+
+
 # Para dar commit do que foi alterado:
 $ svn commit -m "COMENTARIO" NOME_COMPLETO_DO_ARQUIVO
 ou
 $ svn ci -m "COMENTARIO" NOME_COMPLETO_DO_ARQUIVO
+
+
 # Para mover um arquivo:
 $ svn move CAMINHO_DE_ORIGEM/NOME_COMPLETO_DO_ARQUIVO CAMINHO_DE_DESTINO/NOME_COMPLETO_DO_ARQUIVO -m "COMENTARIO"
 ou
 $ svn mv CAMINHO_DE_ORIGEM/NOME_COMPLETO_DO_ARQUIVO CAMINHO_DE_DESTINO/NOME_COMPLETO_DO_ARQUIVO -m "COMENTARIO"
+
+
 # Para fazer update no servidor:
 $ svn update
 ou
