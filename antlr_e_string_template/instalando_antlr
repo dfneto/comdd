@@ -1,0 +1,14 @@
+Instalar o antlr eh basicamente configurar path. Eis o que precisamos:
+
+1-Baixar o arquivo: antlr-3.4-complete.jar que pode ser encontrado em http://www.antlr.org/download.html: Complete ANTLR 3.4 Java binaries jar (complete ANTLR 3.4 tool, Java runtime, ST 3.2.1, ANTLR v2, and ST 4.0.4; for use when you use output=template) 
+
+2- Baixar o java se jdk (nele ja tem o jre) e desinstalar o java que vem no ubuntu (arrggg)
+
+3- Feito isso e baixado o string-template, configurar da seguinte forma o path:
+
+export JAVA_HOME=/usr/local/jdk/
+
+export PATH=$PATH:$JAVA_HOME/bin/
+
+export CLASSPATH=$PATH:.:$JAVA_HOME/lib/:/home/david/comdd/antlr_e_string_template/antlr_library/antlr-3.4-complete.jar:/home/david/comdd/antlr_e_string_template/string_template/library/stringtemplate-2.1.jar:~/mysql-connector-java-5.1.18-bin.jar:$CLASSPATH
+
