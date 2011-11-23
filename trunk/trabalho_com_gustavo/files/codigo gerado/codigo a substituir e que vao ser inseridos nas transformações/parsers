@@ -1,0 +1,104 @@
+
+/* *****************************************************************************
+ * parser mensagem da bussola
+ */
+
+void quebraCompass(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+        if (pos==0) { compass.dHeading = atof (tok); }
+        if (pos==1) { strcpy(compass.sHeadingStatus,tok); }
+        if (pos==2) { compass.dPitch = atof (tok); }
+        if (pos==3) { strcpy(compass.sPitchStatus,tok); }
+        if (pos==4) { compass.dRoll = atof (tok); }
+        if (pos==5) { strcpy(compass.sRollStatus,tok); }
+
+        pos++;
+    }
+}
+
+
+/* *****************************************************************************
+ * parser mensagem GPS GPVTG
+ */
+
+void quebraGPVTG(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+
+        if (pos==0) { gps.dTrueCourse = atof (tok); }
+        if (pos==2) { gps.dMagneticCourse = atof (tok); }
+        if (pos==6) { gps.dSpeedKMH = atof (tok); }
+
+        pos++;
+    }
+}
+
+/* *****************************************************************************
+ * parser mensagem GPS PGRME
+ */
+
+void quebraPGRME(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+        
+        if (pos==0) { gps.dHPE = atof (tok); }
+        //if (pos==2) { gps.dVPE = atof (tok); }
+        //if (pos==4) { gps.dEPE = atof (tok); }
+        
+        pos++;
+    }
+}
+
+/* *****************************************************************************
+ * parser mensagem GPS GPGGA
+ */
+
+void quebraGPGGA(char frase[])
+{
+    char *tok;
+
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+
+        if (pos==0) { gps.dUTC = atof (tok); }
+	if (pos==1)
+        {
+            strcpy(gps.sLatitudeY,tok);
+            gps.dLatitudeY = atof (tok);
+        }
+	if (pos==3)
+        {
+            strcpy(gps.sLongitudeX,tok);
+            gps.dLongitudeX = atof (tok);
+        }
+        if (pos==6) { gps.iNumSat = atoi (tok); }
+	//if (pos==8) { gps.dAltitude = atof (tok); }
+	if (pos==7) { gps.dDOP = atof (tok); }
+        
+        pos++;
+    }
+}
+

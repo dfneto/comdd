@@ -1,0 +1,263 @@
+/* *****************************************************************************
+ * classe ("struct") do gps
+ */
+
+class GPS
+{
+    public:
+
+        // $GPGGA
+        double  dUTC;
+        double  dLatitudeY;
+        char    sLatitudeY[20];
+        double  dLongitudeX;
+        char    sLongitudeX[20];
+        int     iNumSat;
+        //double  dAltitude;
+        double  dDOP; // dilution of precision
+
+        // $GPVTG
+        double  dTrueCourse; // base no norte verdadeiro (bussola corrigida)
+        double  dMagneticCourse; // base no norte magnetico (bussola normal)
+        double  dSpeedKMH;
+
+        // $PGRME
+        double dHPE; // erro estimado horizontal (x,y)
+        //double dVPE; // erro estimado vertical (h)
+        //double dEPE; // estimed position error (x,y,h)
+};
+
+/* *****************************************************************************
+ * abre porta do GPS
+ */
+
+void abreportaGPS()
+{
+    struct termios oldtio_gp,newtio_gp;
+
+    iPortaGPS = open(PORTA_GPS, O_RDWR | O_SYNC | O_NONBLOCK, S_IRUSR | S_IWUSR );
+    // iPortaGPS = open(PORTA_GPS, O_RDWR | O_NOCTTY );
+    if (iPortaGPS < 0) { printf("\nErro na porta %s\n\n", PORTA_GPS); exit(0); }
+    tcgetattr(iPortaGPS,&oldtio_gp); // save current serial port settings
+    bzero(&newtio_gp, sizeof(newtio_gp)); // clear struct for new port settings
+    newtio_gp.c_cflag = BAUDRATE_GPS | CRTSCTS | CS8 | CLOCAL | CREAD;
+    newtio_gp.c_iflag = IGNPAR | ICRNL;
+    newtio_gp.c_oflag = 0;
+    newtio_gp.c_lflag = ICANON;
+    newtio_gp.c_cc[VINTR]    = 0;    
+    newtio_gp.c_cc[VQUIT]    = 0;     
+    newtio_gp.c_cc[VERASE]   = 0;   
+    newtio_gp.c_cc[VKILL]    = 0;   
+    newtio_gp.c_cc[VEOF]     = 4;    
+    newtio_gp.c_cc[VTIME]    = 0;    
+    newtio_gp.c_cc[VMIN]     = 1;     
+    newtio_gp.c_cc[VSWTC]    = 0;    
+    newtio_gp.c_cc[VSTART]   = 0;    
+    newtio_gp.c_cc[VSTOP]    = 0;    
+    newtio_gp.c_cc[VSUSP]    = 0;    
+    newtio_gp.c_cc[VEOL]     = 0;    
+    newtio_gp.c_cc[VREPRINT] = 0;    
+    newtio_gp.c_cc[VDISCARD] = 0;    
+    newtio_gp.c_cc[VWERASE]  = 0;    
+    newtio_gp.c_cc[VLNEXT]   = 0;     
+    newtio_gp.c_cc[VEOL2]    = 0;    
+    tcflush(iPortaGPS, TCIFLUSH);
+    tcsetattr(iPortaGPS,TCSANOW,&newtio_gp);
+}
+
+/* *****************************************************************************
+ * parser mensagem GPS GPVTG
+ */
+
+void quebraGPVTG(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+
+        if (pos==0) { gps.dTrueCourse = atof (tok); }
+        if (pos==2) { gps.dMagneticCourse = atof (tok); }
+        if (pos==6) { gps.dSpeedKMH = atof (tok); }
+
+        pos++;
+    }
+}
+
+/* *****************************************************************************
+ * parser mensagem GPS PGRME
+ */
+
+void quebraPGRME(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+        
+        if (pos==0) { gps.dHPE = atof (tok); }
+        //if (pos==2) { gps.dVPE = atof (tok); }
+        //if (pos==4) { gps.dEPE = atof (tok); }
+        
+        pos++;
+    }
+}
+
+/* *****************************************************************************
+ * parser mensagem GPS GPGGA
+ */
+
+void quebraGPGGA(char frase[])
+{
+    char *tok;
+
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+
+        if (pos==0) { gps.dUTC = atof (tok); }
+	if (pos==1)
+        {
+            strcpy(gps.sLatitudeY,tok);
+            gps.dLatitudeY = atof (tok);
+        }
+	if (pos==3)
+        {
+            strcpy(gps.sLongitudeX,tok);
+            gps.dLongitudeX = atof (tok);
+        }
+        if (pos==6) { gps.iNumSat = atoi (tok); }
+	//if (pos==8) { gps.dAltitude = atof (tok); }
+	if (pos==7) { gps.dDOP = atof (tok); }
+        
+        pos++;
+    }
+}
+
+
+/* *****************************************************************************
+ * Utility functions to convert geodetic to UTM position (original do player stage)
+ */
+ 
+int UTM(double lat, double lon)
+{
+     // constants
+     const static double m0 = (1 - UTM_E2/4 - 3*UTM_E4/64 - 5*UTM_E6/256);
+     const static double m1 = -(3*UTM_E2/8 + 3*UTM_E4/32 + 45*UTM_E6/1024);
+     const static double m2 = (15*UTM_E4/256 + 45*UTM_E6/1024);
+     const static double m3 = -(35*UTM_E6/3072);
+
+     // compute the central meridian
+     int cm = (lon >= 0.0) ? ((int)lon - ((int)lon)%6 + 3) : ((int)lon - ((int)lon)%6 - 3);
+      
+     // convert degrees into radians
+     double rlat = lat * M_PI/180;
+     double rlon = lon * M_PI/180;
+     double rlon0 = cm * M_PI/180;
+
+     // compute trigonometric functions
+     double slat = sin(rlat);
+     double clat = cos(rlat);
+     double tlat = tan(rlat);
+
+     // decide the flase northing at origin
+     double fn = (lat > 0) ? UTM_FN_N : UTM_FN_S;
+
+     double T = tlat * tlat;
+     double C = UTM_EP2 * clat * clat;
+     double A = (rlon - rlon0) * clat;
+     double M = WGS84_A * (m0*rlat + m1*sin(2*rlat) + m2*sin(4*rlat) + m3*sin(6*rlat));
+     double V = WGS84_A / sqrt(1 - UTM_E2*slat*slat);
+
+     // compute the easting-northing coordinates
+     dUTM_E_X = UTM_FE + UTM_K0 * V * (A + (1-T+C)*pow(A,3)/6 + (5-18*T+T*T+72*C-58*UTM_EP2)*pow(A,5)/120);
+     dUTM_N_Y = fn + UTM_K0 * (M + V * tlat * (A*A/2 + (5-T+9*C+4*C*C)*pow(A,4)/24 + (61-58*T+T*T+600*C-330*UTM_EP2)*pow(A,6)/720));
+     
+     return 0;
+}
+
+/* *****************************************************************************
+ * Parse the GPGGA sentence, which has lat/lon. (assassino!!!!!!!!!)
+ * (fuçado do player stage)
+ * $GPGGA,190059.8,2200.29878,S,04753.81201,W,1,10,0.9,827.9,M,-6.9,M,,*42
+ */
+
+int getUTM() 
+{
+    char field[32];
+    char tmp[8];
+    double degrees, minutes, arcseconds;
+    double lat, lon;
+    
+    // latitude
+    strcpy(field,gps.sLatitudeY); 
+   
+    strncpy(tmp,field,2);
+    tmp[2]='\0';
+    degrees = atoi(tmp);
+
+    // next is minutes
+    minutes = atof(field+2);
+    arcseconds = ((degrees * 60.0) + minutes) * 60.0;
+    
+    strcpy(field,sHemisferioLatitude);
+    
+    if(field[0] == 'S') arcseconds *= -1;
+    
+    lat = arcseconds / 3600.0;
+    
+    strcpy(field,gps.sLongitudeX); 
+    
+    strncpy(tmp,field,3);
+    tmp[3]='\0';
+    degrees = atoi(tmp);
+    
+    // next is minutes
+    minutes = atof(field+3);
+    arcseconds = ((degrees * 60.0) + minutes) * 60.0;
+    strcpy(field,sHemisferioLongitude);
+   
+    if(field[0] == 'W') arcseconds *= -1;
+    
+    lon = arcseconds / 3600.0;
+    
+    UTM(lat, lon);
+    
+    return 0;
+}
+ // *********************************************************************
+        // read gps: tenho que definir isso num método, que chamo
+        // no código principal de ler gps *********************************************************************
+
+        for (int i=0;i<3;i++) // 9
+        {
+            respostaGPS = read(iPortaGPS,buf_gps,255);
+            buf_gps[respostaGPS-1]='\0';
+
+            strcpy(messageNMEAsemSifrao,buf_gps+1);
+
+            r = check_message(messageNMEAsemSifrao);
+            if (r==1)
+            {
+                if (PRINT_NMEA_ORIGINAL==1) printf("\nBUFF GPS: [%s]", buf_gps);
+
+                achouSubStringGPS = strstr(buf_gps, "GPVTG");
+                if (achouSubStringGPS!=NULL) quebraGPVTG(buf_gps);
+                
+                achouSubStringGPS = strstr(buf_gps, "PGRME");
+                if (achouSubStringGPS!=NULL) quebraPGRME(buf_gps);
+
+                achouSubStringGPS = strstr(buf_gps, "GPGGA");
+                if (achouSubStringGPS!=NULL) { quebraGPGGA(buf_gps); getUTM();}
+            }
+        }
+

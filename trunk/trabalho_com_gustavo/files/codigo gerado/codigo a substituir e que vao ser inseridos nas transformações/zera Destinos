@@ -1,0 +1,16 @@
+
+
+/* *****************************************************************************
+ * zera a lista de destinos, colocando -1 em todos os campos
+ */
+
+void zera_destinos()
+{
+    for (int i=0;i<QTD_MAX_DESTINOS;i++)
+    {
+        destino[i].UTM_X_Leste_Oeste = -1.0;
+        destino[i].UTM_Y_Norte_Sul = -1.0;
+        destino[i].id_lido = -1;
+    }
+}
+

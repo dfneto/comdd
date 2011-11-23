@@ -1,0 +1,15 @@
+
+
+	/* *****************************************************************************
+	 * Imprime vetor (lido do arquivo de destinos)
+	 */
+
+	void imprime_destinos()
+	{
+	    for (int i=0;i<QTD_MAX_DESTINOS;i++)
+	    {
+		printf("I:%i \t X:%lf ",i, destino[i].UTM_X_Leste_Oeste);
+		printf("\tY:%lf ",destino[i].UTM_Y_Norte_Sul);
+		printf("\tID:%d\n",destino[i].id_lido);
+	    }
+	}

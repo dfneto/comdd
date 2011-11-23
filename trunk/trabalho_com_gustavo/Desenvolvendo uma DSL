@@ -1,0 +1,18 @@
+1- Partir do código gerado
+2- Definir uma estrutura para o código gerado, por exemplo: um aquivo só com todas as classes ou uma classe para cada sensor?
+3- Definir como quero que seja meu modelo. O nível de abstração.
+
+Lembrando que posso ter um modelo do tipo mais simples, como: "gerar robô seguidor de coordenadas <path com a lista de coordenadas>" até algo mais completo onde definimos o número de sensores, a velocidade ... 
+
+Quanto mais simples o modelo, menos possibilidades de se alterar a aplicação teremos e quanto mais complexo o modelo (e mais completo também), mas vai se aproximar de uma linguagem tipo C ou java, tanto em termos de possibilidades quanto de complexidade. A questão é: como alcançar o meio termo? O que deve ser priorizado? -> Flexibilidade vs Facilidade
+
+
+4- Misturar as aplicações já existentes
+5- O que há de comum entre elas?
+6- O que é "comportamental" e o que é "configuração"?
+7- Qual a finalidade da aplicação?
+
+
+8- Qual o ponto ótimo? Em que analisamos um número X de códigos criados e definimos uma gramática que atenda vários casos e que seja facilmente modifciada para evoluir a abrangir outros casos, mas sem ficar complexa a nível de C++, por exemplo.
+
+9- Como tornar a gramática expansível para que outras pessoas possam contribuir na sua evolução?

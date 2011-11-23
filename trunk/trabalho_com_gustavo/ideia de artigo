@@ -1,0 +1,23 @@
+Contexto: mundo caótico. No LRM são 5 tipos de robôs diferentes, ou seja, com hardwares (sensores e atuadores) diferentes e com bibliotecas específicas para cada um.
+Para esses robos existe uma serie de aplicações, que vao desde o uso didático em escolas para o aprendizado de programação e de disciplinas de graduaçao/pos que focam em aplicações de robos até aplicações reais. Por exemplo: as aplicações .... (citar papers do LRM ja publicados) -> Mundo heterogeneo.
+
+nem todos robos tem bibliotecas.
+
+Um mesmo algoritmo deve ser implementado mais de uma vez quando for usado por outro robo. o que gera um gasto de tempo que poderia serr usado para o desenvoolvimento de novos algoritmos (ver as vantagens do mdd, linhas de produto, dsls...). 
+
+
+
+Por fim, propomos o uso de dsls como uma abordagem para desenvolver código para robos.
+
+O uso de dsls, mdd ja esta consolidado, mas no mundo dos robos nao. Temos que levantar as razoes para o uso real de dsls neste mundo, ou seja, quais motivações nos levam a usarmos dsls, de modo que sem o uso de dsls possamos mostrar de que é ruim, ou seja, um desperdício de tempo.
+
+O objetivo é que este paper torne-se referencia para: se vamos desenvolver para robos moveis, temos que usar dsls porque é melhor.
+
+
+
+
+-------
+
+Depois de construida uma dsl robusta temos que testa-la para ver se ela de fato atende os casos e avaliarmos se o custo benefício de se fazer dsls compensa.
+
+Ainda temos que permitir que essa dsl seja expansivel para que outros alunos possam contribuir com ela.

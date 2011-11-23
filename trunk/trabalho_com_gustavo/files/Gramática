@@ -1,0 +1,56 @@
+grammar org.xtext.lrm.Multiplosdestinos with org.eclipse.xtext.common.Terminals
+
+generate multiplosdestinos "http://www.xtext.org/lrm/Multiplosdestinos"
+
+
+ModeloRobo:
+	(cabecalho+=Cabecalho)* 
+	'robo' name=ID 
+	(variaveis += Variavel)*
+	(sensores += Sensor)*
+	(funcoes += Funcao)*;
+
+Cabecalho : 'Adicionar' itensCabecalho=ItensCabecalho 
+			('CarregarArquivoCoordenadas' caminhoArquivo=STRING 
+			'(quantidadeMaximaDeDestinos=' valor=INT ')')?;
+ItensCabecalho : name=('defines' | 'includes'); 
+
+Variavel : 'Var' name=ID ('='valor=STRING)? ':' tipo=Tipo ;
+enum Tipo : INT='inteiro' | DOUBLE='double' | CHAR='char';
+
+Sensor : 'criarSensor' tipoSensor=('gps' | 'bussola') ;
+
+Funcao : Main | LoopInfinito | ComandoSimples | Leitura | Destinos |
+		 VerificarFinal | Imprimir | Calculo | EnviarComandoPlayer;
+
+Main: 
+	'main' '{' 
+	(comandos+=Funcao)*
+	'}';
+
+Leitura:  'Ler'leitura=('Gps' | 'Bussola'); //seria bom tirar o espaço entre Ler e o sensor	
+
+Imprimir:
+	'Imprimir' '('variavel=[Variavel]')';
+
+LoopInfinito:
+	'Loop' '{' 
+		(comandos+=Funcao)*
+	'}';
+	
+VerificarFinal:
+	'ChegouFinal' ' {seSim:' torqueAndar=[Variavel] '=' valorTorqueAndar=INT ';'
+					 'seNao:'torqueParar=[Variavel] '=' valorTorqueParar=INT '}';
+
+Destinos: destino=('LerDestinos' | 'ZerarDestinos' | 'ImprimirDestinos');
+
+ComandoSimples: tipoComando=('AbrePortaGps' | 'AbrePortaBussola' | 'InicializarPlayer');
+				
+Calculo : 'Calculo' codigo=AREACODIGO;
+terminal AREACODIGO : '//{--' .* '//--}';
+
+EnviarComandoPlayer : 'EnviarComandoPlayer' '{'
+		'posicao' '=' posicao=[Variavel]
+		'torque' '=' torque=[Variavel]
+		'giro' '=' giro=[Variavel]
+	'}';
