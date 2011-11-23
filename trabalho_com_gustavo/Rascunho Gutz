@@ -1,0 +1,21 @@
+Desenvolvimento de software na área da robótica móvel é uma tarefa
+árdua. Diferentes tipos de robôs possuem diferentes capacidades
+sensoriais e motoras, o que torna a atuação de cada robô mais ou menos
+propícia para tarefas especificas. Diversas bibliotecas tem propiciado
+a criação de interfaces amigáveis no que tange o uso de sensores e
+atuadores, entretanto, a área de controle dos robôs ainda é carente de
+soluções que otimizem a operação.
+Os códigos de controle desenvolvidos, em geral, são muito específicos
+e pouco reaproveitados.
+---
+Aplicações desenvolvidas pelo laboratório:
+1 - Navegação baseada em GPS  e bussola (mapa?)
+2 - Robô seguindo pessoa – usando camera termica ou câmera normal;
+3 - Robô de segurança vagando pelo ambiente (com laser).
+4 - Robo tele-operado
+5 - Navegação em ambiente urbano usando camera
+---
+Comportamentos inteligentes
+Aplicações 1 e 5 podem ter (i) RNAs; (ii) regras; (iii) ADs; ou outras
+técnicas de aprendizado de máquina.
+Aplicaçoes 2, 3 e 4  podem ser trocadas com comando externo.

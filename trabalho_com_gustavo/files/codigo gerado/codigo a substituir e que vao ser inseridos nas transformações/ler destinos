@@ -1,0 +1,78 @@
+
+/* *****************************************************************************
+ * leitura do arquivo de destinos
+ */
+
+void read_file_destinos()
+{
+    arquivoDeCoordenadas = fopen(NOME_ARQUIVO_LISTA_COORDENADAS,"rt");
+    if (arquivoDeCoordenadas == NULL)
+    {
+        printf("\nNao achei arquivo %s\n", NOME_ARQUIVO_LISTA_COORDENADAS);
+        exit(0);
+    }
+
+    int i=0;
+
+    while(!feof(arquivoDeCoordenadas))
+    {
+        fscanf(arquivoDeCoordenadas,"%lf",&destino[i].UTM_X_Leste_Oeste);
+        fscanf(arquivoDeCoordenadas,"%lf",&destino[i].UTM_Y_Norte_Sul);
+        fscanf(arquivoDeCoordenadas,"%d",&destino[i].id_lido);
+        i++;
+
+        if (i >= QTD_MAX_DESTINOS)
+        {
+            printf("\nTamanho maximo atingido, aumente tamanho do vetor de destinos\n");
+            exit (0);
+        }
+    }
+}
+
+
+  
+    printf("\nFollow the yellow brick road to reach the Emerald City!\n");
+    getchar();
+    
+    // pra onde eu vou? (o primeiro destino é a posicao [0])
+    double dDestinoX = destino[0].UTM_X_Leste_Oeste;
+    double dDestinoY = destino[0].UTM_Y_Norte_Sul;
+
+    // é a chave da troca dos destinos
+    int contadorPontoDestino = 1; // comeca com um pq
+
+    // compass
+    char *achouSubStringCompass; // se achou substring...
+    int respostaCompass;
+    char buf_compass[255];
+    char lixo[255];
+    
+    // gps
+    char *achouSubStringGPS; // se achou substring...
+    int respostaGPS;
+    char buf_gps[255];
+
+
+    // na inicializacao, faz umas leituras para descartar...
+    // em geral, as primeiras leituras vem quebradas...
+    for (int i=0;i<5;i++) read(iPortaCompass,lixo,255);
+    for (int i=0;i<5;i++) read(iPortaGPS,lixo,255);
+    
+    char messageNMEAsemSifrao[255];
+    int r; // resposta from check
+    
+        // *********************************************************************
+        // padawan, you can use the vars
+        // *********************************************************************
+
+        if (PRINT_LEITURA_SENSOR==1)
+        {
+            long int clock = time(NULL);
+            
+            printf("\nutc:%.1lf %ld ns %d dop %.1lf",gps.dUTC, clock, gps.iNumSat, gps.dDOP);
+            printf(" utmNy %lf utmEx %lf",dUTM_N_Y, dUTM_E_X);
+            printf(" tc %.1lf mc %.1lf",gps.dTrueCourse, gps.dMagneticCourse);
+            printf(" rme %.2lf",gps.dHPE);
+            printf(" head %.2lf ",compass.dHeading);
+        }
+

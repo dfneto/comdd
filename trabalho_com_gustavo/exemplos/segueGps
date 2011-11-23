@@ -1,0 +1,17 @@
+int main()
+{
+// QUANDO NASCE
+liga_GPS();
+liga_BUSSOLA();
+PEGA_LISTA();
+
+
+// ENQUANTO VIVO
+while (true)     
+	{
+		LE_SENSOR() ;     // RETORNA X E Y DO GPS E ANGULO DA BUSSOLA
+		processa_iNFO();
+		define_REGRA();
+		atua(); // manda andar
+	}
+}

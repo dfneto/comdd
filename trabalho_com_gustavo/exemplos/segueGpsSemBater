@@ -1,0 +1,19 @@
+int main()
+{
+// QUANDO NASCE
+liga_GPS();
+liga_BUSSOLA();
+//   PEGA_LISTA();   <== NO COMBOIO REMOVE ISSO DAQUI E COLOCA NO CORPO 
+LIGA_LASER();
+
+// ENQUANTO VIVO
+while (true)     
+	{
+		RECEBE_COORDENADA_TIPO1()     // PODE ESPECIFICAR VELOCIDADES / TEMPO 
+		LE_SENSOR() ;     // RETORNA X E Y DO GPS E ANGULO DA BUSSOLA
+		processa_iNFO();
+		define_REGRA_SEGUIR();
+		define_REGRA_NAO_BATER();
+		atua(); // manda andar
+	}
+}

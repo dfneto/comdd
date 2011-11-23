@@ -1,0 +1,171 @@
+«IMPORT multiplosdestinos»
+
+
+«DEFINE principal FOR ModeloRobo-»
+«FILE "player.cpp"»
+player
+«ENDFILE»
+«FILE this.name + ".cpp"-»
+
+//Texto Padrão:
+// Este código foi gerado automaticamente
+// Para o robo «name»!
+// ***************************
+
+//Cabecalho
+«FOREACH cabecalho AS cab-»
+	«IF cab.itensCabecalho.name == 'includes'-»
+includes...
+	«ELSE-»
+defines...
+	«ENDIF-»
+	«IF cab.caminhoArquivo != null-»
+#define NOME_ARQUIVO_LISTA_COORDENADAS "«cab.caminhoArquivo».txt"
+#define QTD_MAX_DESTINOS «cab.valor»
+
+	«FILE "destino.cpp"-»
+ClasseDestino
+	«ENDFILE»
+	«ENDIF»	
+«ENDFOREACH»
+
+//Variáveis Globais?
+// my stuff to conversao de lat-long para utm (organizar na proxima versao)
+double dUTM_E_X=0.0;
+double dUTM_N_Y=0.0;
+char sHemisferioLatitude[5] = "S";
+char sHemisferioLongitude[5] = "W";
+
+/**********************************
+ * Variaveis globais
+ */
+int iPortaGPS; 	   // descritor da porta do GPS
+int iPortaCompass; // descritor da porta do Compass
+
+double dGiro = 0.0; //o dGiro é usado apenas para saber a direção que o robo gira. Assim só é usado num cálculo
+
+«FOREACH sensores AS sen-»
+«IF sen.tipoSensor == 'gps'-» 
+GPS gps;
+«FILE 'gps.cpp'-»
+ClasseGps
+«ENDFILE»
+
+«ELSE» 
+Compass compass;
+		«FILE 'compass.cpp'-»
+ClasseCompass
+		«ENDFILE»
+	«ENDIF»
+«ENDFOREACH»
+
+«IF cabecalho.caminhoArquivo != 0»
+Destino destino[QTD_MAX_DESTINOS];
+«ENDIF»
+
+«FOREACH variaveis AS var-»
+«var.tipo» «var.name» = «var.valor» ; //falta colocar aqui o necessário para imprimir o leste_oeste...
+«ENDFOREACH-»
+
+playerc_client_t *client; //Essas variáveis eu não vi serem usadas
+playerc_position2d_t *position2d;
+	
+// funcoes
+«EXPAND areaComandos FOREACH this.funcoes-»
+
+«ENDFILE»
+«ENDDEFINE»
+
+
+«DEFINE areaComandos FOR Funcao-»
+«IF metaType == Destinos»
+Destinos--> aonde colocar esse carfa para aparecer so uma vez?
+«IF destino == 'LerDestinos'»
+read_file_destinos();
+«ELSEIF destino == 'ZerarDestinos'»
+zera_destinos();
+«ELSEIF destino == 'ImprimirDestinos'»
+imprime_destinos();
+«ENDIF»
+«ELSEIF metaType == ComandoSimples»
+«IF tipoComando == 'AbrePortaGps'»
+// na inicializacao, faz umas leituras para descartar...
+// em geral, as primeiras leituras vem quebradas...
+abreportaGPS();
+for (int i=0;i<5;i++) read(iPortaGPS,lixo,255);
+«ELSEIF tipoComando == 'AbrePortaBussola'»
+// na inicializacao, faz umas leituras para descartar...
+// em geral, as primeiras leituras vem quebradas...
+abreportaCompass();
+for (int i=0;i<5;i++) read(iPortaCompass,lixo,255);
+«ELSEIF tipoComando == 'InicializarPlayer'»
+inicializaPlayer();
+«ENDIF»
+
+«ELSEIF this.metaType == Leitura»
+«IF leitura == 'Gps'»
+// variáveis para gps
+    char *achouSubStringGPS; // se achou substring...
+    int respostaGPS;
+    char buf_gps[255];
+//método de leitura da ClasseGps
+	getInfoGps();
+«ELSEIF leitura == 'Bussola'»
+// variáveis para  compass
+    char *achouSubStringCompass; // se achou substring...
+    int respostaCompass;
+    char buf_compass[255];
+    char lixo[255];
+//método de leitura da ClasseBussola
+	getInfoBussolas();
+«ENDIF»
+
+    
+	«ELSEIF this.metaType == Main-»
+		/* *****************************************************************************
+		 * bloco main
+		 */
+		int main(int argc, const char **argv){
+		«EXPAND areaComandos FOREACH ((Main)this).comandos»
+		}	
+		«ELSEIF this.metaType == LoopInfinito-»
+		while(true) {
+		«EXPAND areaComandos FOREACH ((LoopInfinito)this).comandos-»
+		}
+	«ELSEIF metaType == VerificarFinal-»
+		 Chegou ao Final?
+		 //verifica se chegou no Fim. 
+		 {Se sim «torqueAndar.name» = «valorTorqueAndar»
+		 Se não «torqueParar.name» = «valorTorqueParar»
+		 }
+	«ELSEIF metaType == Imprimir-»
+		 printf ("«variavel.name»: %.2lf",«variavel.name»);
+	«ELSEIF metaType == Calculo-»
+		«((Calculo)this).codigo»
+	«ELSEIF metaType == EnviarComandoPlayer»
+		     
+        // *********************************************************************
+        // brain... that's all folks!
+        // now, send the player commands
+        // *********************************************************************
+
+        playerc_position2d_set_cmd_vel («posicao.name», «torque.name», 0, «giro.name», 1);
+        
+    } // fim do while
+
+    // *************************************************************************
+    // end player
+    // *************************************************************************
+    playerc_position2d_unsubscribe(«posicao.name»);
+    playerc_position2d_destroy(«posicao.name»);
+    playerc_client_disconnect(client);
+    playerc_client_destroy(client);
+
+    return 0;
+	«ELSE-»
+		Outro comando ainda nao analisado
+	«ENDIF-»
+	«ENDDEFINE»
+
+
+

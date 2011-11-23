@@ -1,0 +1,31 @@
+/* *****************************************************************************
+ * inicializa player
+ */
+
+void inicializaPlayer()
+{
+    // Conecta ao servidor
+    client = playerc_client_create(NULL, "localhost", 6665);
+    if (playerc_client_connect(client) != 0) exit (0);
+    
+    // Conecta ao position (comando e odometria)
+    position2d = playerc_position2d_create(client, 0);
+    if (playerc_position2d_subscribe(position2d, PLAYERC_OPEN_MODE) != 0) exit (0);
+    
+    // Configura parametros
+    if (playerc_client_datamode (client, PLAYERC_DATAMODE_PULL) != 0)
+    {
+        printf("Error: %s\n", playerc_error_str());
+        exit (0);
+    }
+    
+    // Configura parametros
+    if (playerc_client_set_replace_rule (client, -1, -1, PLAYER_MSGTYPE_DATA, -1, 1) != 0)
+    {
+        printf("Error: %s\n", playerc_error_str());
+        exit (0);
+    }
+
+    // Ativa os motores do robo
+    playerc_position2d_enable(position2d, 1);
+}

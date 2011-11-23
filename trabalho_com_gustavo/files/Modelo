@@ -1,0 +1,30 @@
+Adicionar defines
+Adicionar includes 
+CarregarArquivoCoordenadas "c://home" (quantidadeMaximaDeDestinos=50)
+
+
+robo Zionner
+
+Var dTorque = "0.0":double
+Var dGiro = "0.0" : double
+
+Var MEU_UTMY = "0.0" : UTM_Y
+Var MEU_UTMX = "0.0" : UTM_X 
+
+criarSensor gps
+criarSensor bussola
+
+ImprimirDestinos
+LerDestinos
+ZerarDestinos
+
+
+ 
+
+main{
+	Loop{
+		Ler Bussola
+		Ler Gps
+		ChegouFinal {seSim:dTorque=2;seNao: dTorque=0}
+	}
+}

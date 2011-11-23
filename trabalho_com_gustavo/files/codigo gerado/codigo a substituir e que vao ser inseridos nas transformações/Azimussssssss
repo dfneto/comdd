@@ -1,0 +1,32 @@
+/* *****************************************************************************
+ * azimute é o angulo para o alvo (considera angulo de bussola)
+ *
+ * exemplo de uso:
+ * double origemX = 475000.00; double origemY = 220000.00;
+ * double destinoX = 475010.00; double destinoY = 220010.00;
+ * double res =  getAzimute(origemX, origemY, destinoX, destinoY);
+ * std::cout << "Res.: " << res;
+ */
+
+
+double getAzimute(double destinoX, double destinoY, double origemX, double origemY)
+{
+    if (origemY==destinoY) destinoY += 0.0001;
+    if (origemX==destinoX) destinoX += 0.0001;
+
+    double AngR = atan((origemY-destinoY)/(origemX-destinoX));
+    double AngG = (AngR/(2.0*M_PI))*360.0;
+
+    /*
+     * Isso é uma bússola de "verdade", 0 == norte [y]
+     * e angulos aumentam em sentido horário
+     */
+
+    if ((destinoX<origemX) && (destinoY<origemY)) return (double) 360.0 - (90.0  + AngG);
+    if ((destinoX>origemX) && (destinoY>origemY)) return (double) 360.0 - (270.0 + AngG);
+    if ((destinoX>origemX) && (destinoY<origemY)) return (double) 360.0 - (270.0 + AngG);
+    if ((destinoX<origemX) && (destinoY>origemY)) return (double) 360.0 - (90.0  + AngG);
+
+    /* nunca entra aqui, mas... ;-) */
+    return 0;
+}

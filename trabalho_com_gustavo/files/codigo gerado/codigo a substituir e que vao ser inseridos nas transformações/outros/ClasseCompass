@@ -1,0 +1,96 @@
+/* *****************************************************************************
+ * classe ("struct") da bussola
+ */
+
+class Compass
+{
+    public:
+
+        double dHeading;
+        char   sHeadingStatus[5];
+        double dPitch;
+        char   sPitchStatus[5];
+        double dRoll;
+        char   sRollStatus[5];
+};
+
+/* *****************************************************************************
+ * parser mensagem da bussola
+ */
+
+void quebraCompass(char frase[])
+{
+    char *tok;
+    tok = strtok (frase,",");
+
+    int pos=0;
+    while (tok != NULL)
+    {
+        tok = strtok (NULL, ",");
+        if (pos==0) { compass.dHeading = atof (tok); }
+        if (pos==1) { strcpy(compass.sHeadingStatus,tok); }
+        if (pos==2) { compass.dPitch = atof (tok); }
+        if (pos==3) { strcpy(compass.sPitchStatus,tok); }
+        if (pos==4) { compass.dRoll = atof (tok); }
+        if (pos==5) { strcpy(compass.sRollStatus,tok); }
+
+        pos++;
+    }
+}
+
+/* *****************************************************************************
+ * abre porta Compass
+ */
+  
+void abreportaCompass()
+{
+    struct termios oldtio_cp,newtio_cp;
+    
+    iPortaCompass = open(PORTA_COMPASS, O_RDWR | O_SYNC | O_NONBLOCK, S_IRUSR | S_IWUSR );
+    // iPortaCompass = open(PORTA_COMPASS, O_RDWR | O_NOCTTY );
+    if (iPortaCompass < 0) { printf("\nErro na porta %s\n\n",PORTA_COMPASS); exit(0); }
+    tcgetattr(iPortaCompass,&oldtio_cp); // save current serial port settings
+    bzero(&newtio_cp, sizeof(newtio_cp)); // clear struct for new port settings
+    newtio_cp.c_cflag = BAUDRATE_COMPASS | CRTSCTS | CS8 | CLOCAL | CREAD;
+    newtio_cp.c_iflag = IGNPAR | ICRNL;
+    newtio_cp.c_oflag = 0;
+    newtio_cp.c_lflag = ICANON;
+    newtio_cp.c_cc[VINTR]    = 0;     
+    newtio_cp.c_cc[VQUIT]    = 0;     
+    newtio_cp.c_cc[VERASE]   = 0;     
+    newtio_cp.c_cc[VKILL]    = 0;    
+    newtio_cp.c_cc[VEOF]     = 4;   
+    newtio_cp.c_cc[VTIME]    = 0;     
+    newtio_cp.c_cc[VMIN]     = 1;    
+    newtio_cp.c_cc[VSWTC]    = 0;     
+    newtio_cp.c_cc[VSTART]   = 0;    
+    newtio_cp.c_cc[VSTOP]    = 0;    
+    newtio_cp.c_cc[VSUSP]    = 0;    
+    newtio_cp.c_cc[VEOL]     = 0;    
+    newtio_cp.c_cc[VREPRINT] = 0;    
+    newtio_cp.c_cc[VDISCARD] = 0;    
+    newtio_cp.c_cc[VWERASE]  = 0;    
+    newtio_cp.c_cc[VLNEXT]   = 0;     
+    newtio_cp.c_cc[VEOL2]    = 0;     
+    tcflush(iPortaCompass, TCIFLUSH);
+    tcsetattr(iPortaCompass,TCSANOW,&newtio_cp);
+}
+
+
+// *********************************************************************
+        // read compass: para colocar esse código aqui tenho que definí-lo 		// num método, como o getInfo, que chamo no código de ler bussola
+        // *********************************************************************
+        for(int i=0;i<1;i++) // 6
+        {
+            respostaCompass = read(iPortaCompass,buf_compass,255);
+            buf_compass[respostaCompass-1]='\0';
+        }
+
+        achouSubStringCompass = strstr(buf_compass, "PTNTHTM");
+        if (achouSubStringCompass!=NULL)
+        {
+            if (PRINT_NMEA_ORIGINAL==1) printf("\nBUFF COMPASS: [%s]",buf_compass);
+            strcpy(messageNMEAsemSifrao,buf_compass+1);
+            r = check_message(messageNMEAsemSifrao);
+            if (r==1) quebraCompass(buf_compass);
+        }

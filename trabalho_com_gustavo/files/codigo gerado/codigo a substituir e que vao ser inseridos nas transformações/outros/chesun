@@ -1,0 +1,51 @@
+/* *****************************************************************************
+ * testa checksun (copiado/adaptado do garminnmea.cc)
+ * 
+ * return 1 se deu ok
+ * return -1 se deu pau
+ */
+
+int check_message(char mess[255])
+{
+    char* ptr2;
+    char tmp[8];
+    int chksum;
+    int oursum;
+
+    // verify the checksum, if present.  two hex digits are the XOR of all the
+    // characters between the $ and *.
+
+    if((ptr2 = strchr(mess,'*')) && (strlen(ptr2) == 3))
+
+    //if((ptr2 = strchr((const char*)mess,'*')) && (strlen(ptr2) == 3))
+    {
+        strncpy(tmp,ptr2+1,2);
+        tmp[2]='\0';
+        chksum = strtol(tmp,NULL,16);
+        
+        oursum=0;
+        for(int i=0;i<(int)(strlen(mess)-strlen(ptr2));i++)
+            oursum ^= mess[i];
+
+        if(oursum != chksum)
+        {
+            if (PRINT_INFO_CHECKSUM==1) printf("\nCHECKSUM MISMATCH (0x%2x != 0x%2x); DISCARDING: [%s]",oursum, chksum, mess);
+            mess = NULL;
+            return -1;
+        }
+        else
+        {
+            *ptr2='\0';
+        }
+    }
+    else
+    {
+        if (PRINT_INFO_CHECKSUM==1) printf("\nNO CHECKSUM: [%s]", mess);
+        mess = NULL;
+        return -1;
+    }
+    
+    if (PRINT_INFO_CHECKSUM==1) printf("\nCHECKSUM OK (0x%2x == 0x%2x) [%s]", oursum, chksum, mess);
+
+    return 1;
+}

@@ -1,0 +1,15 @@
+int main()
+{
+// QUANDO NASCE
+liga_camera_normal();
+
+
+// ENQUANTO VIVO
+while (true)     
+	{
+		obtem_imagem();
+		processa_imagem();
+		define_atirar();
+		atua(); // manda andar
+	}
+}
