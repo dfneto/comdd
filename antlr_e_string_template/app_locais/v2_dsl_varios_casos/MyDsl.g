@@ -1,30 +1,34 @@
-//Comportamento é referente aos sensores, ou seja, que comportamento os sensores têm
-//Ação é referente ao robo, ou seja, o que o robô pode fazer: processar, andar ...
 grammar MyDsl;
-options {
-	language=Java;
-}
+options {output=template;}
+@header {import org.antlr.stringtemplate.*;}
 @members {
-	String plataforma;
+	String plat;
 	String sensor;
 	String sensorCriado;
 }
 
-
-prog: stat+;
+robo
+scope {
+	List cabList;
+	List senList;
+	List mainList;
+	List pacList;
+}
+@init{
+	$robo::cabList = new ArrayList();
+	$robo::pacList = new ArrayList();
+	$robo::senList = new ArrayList();
+	$robo::mainList = new ArrayList();
+}	
+	: stat+ -> classe(cab={$robo::cabList}, pacote={$robo::pacList}, sen={$robo::senList}, main={$robo::mainList})
+	;
 
 stat:	plataforma 
 	'robo' nomeRobo=ID 
-	link*
 	cabecalho* 
+	pacote*
 	sensor* 
-	main 
-	{System.out.println ("Robo " +$nomeRobo.text+ " criado com sucesso!!");}
-	;
-
-link:
-	'<' nomeLink=ID '>'
-	{System.out.println("[["+$nomeLink.text+"]]");}
+	main  
 	;
 
 
@@ -34,154 +38,120 @@ link:
 plataforma : 
 	'plataforma' nomeDaPlataforma ;
 
-nomeDaPlataforma:
-	(
-	 'pioneer' {plataforma = "pioneer";} |
-	 'srv' {plataforma = "srv";} |
-	 'golfe' {plataforma = "golfe";} 
-	)
-	{System.out.println ("Plataforma escolhida: " +plataforma);}
+nomeDaPlataforma
+//scope{ String name; }
+:	 plat=( 'pioneer'  
+	      | 'srv'  
+	      | 'golfe' )
+//	{$nomeDaPlataforma::name=$ID.text;}
 	;
 
 //*******************************************/
-//***DEFINES E INCLUDES*********************/
+//***DEFINES, INCLUDES E PACOTES************/
 //*****************************************/
 cabecalho:
 	'adicionar' itensCabecalho=(
-		'defines' {
-				if (plataforma == "pioneer")
-				System.out.println("Defines Adicionados para plataforma Pioneer......................");
-				if (plataforma == "srv")
-				System.out.println("Defines Adicionados para plataforma SRV......................");
-				if (plataforma == "golfe")
-				System.out.println("Defines Adicionados para plataforma Carro de golfe......................");
-				
-		} | 
-		'includes'{
-				if (plataforma == "pioneer")
-					System.out.println("Includes Adicionados para plataforma Pioneer......................");
-				if (plataforma == "srv")
-					System.out.println("Includes Adicionados para plataforma SRV......................");
-				if (plataforma == "golfe")
-					System.out.println("Includes Adicionados para plataforma Carro de golfe......................");
-		} 
-	)
+		'defines' -> define() 
+		| 'includes' -> include() )
+//	'adicionar defines' ({$nomeDaPlataforma::name == null}? -> definePionner())
+//			    -> defineSrv() )
+		{$robo::cabList.add($cabecalho.st);}	
 	;
 
+pacote	:	
+	'importar pacote' ( 'player;' -> pacotePlayer()
+			  | 'localizacao;' -> pacoteLocalizacao() )
+			  {$robo::pacList.add($pacote.st);}	
+	;
 //*******************************************/
 //***DEFININDO SENSORES*********************/
 //*****************************************/
-
 sensor:
-	'criarSensor' tipoSensor;
+	'criarSensor' tipoSensor {$robo::senList.add($tipoSensor.st);};
 
-tipoSensor: 
-	s=(
-	 'gps' {sensor = "gps";} |
-	 'bussola' {sensor = "bussola";} |
-	 'camera' {sensor = "camera";} 
-	 )
-	{System.out.println("Código para inicializar o/a " +sensor+ " vem aqui");}
+tipoSensor 
+	:	'gps' -> gps()
+	| 	'bussola'-> bussola() 
+	| 	'camera'-> camera() 
 	;
 	
 //*******************************************/
 //***MAIN***********************************/
 //*****************************************/
-
 main:
-	'int main()' '{' {System.out.println("int main() {");} loop '}' {System.out.println("}");} 
+	('int main()' '{' -> mainTemplate()) {$robo::mainList.add($main.st);}  loop '}'
 	;
+
 
 loop:
-	(comportamento | acoes)*	
-//	'while' '(true)' '{' {System.out.println("\twhile(true) {");}
-	'while' '(true)' '{' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(true) {");}  
-	(comportamento | acoes)*
-//	'}' {System.out.println("\t}");} 
-	'}' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}");} 
+	(inicializacaoSensor)*	
+	( 'while' '(true)' '{'  -> while() )  {$robo::mainList.add($loop.st);}
+	(entrada | processamento | comportamento | acao)*
+	'}' 
 	;
+
+//*******************************************/
+//***MAIN->INICIALIZAÇÃO********************/
+//*****************************************/
+inicializacaoSensor : 
+			(WS)*
+			( 'gps.ligar();' 		-> gpsLigar() 
+			| 'bussola.ligar();' 		-> bussolaLigar()
+			| 'camera.ligar();'		-> cameraLigar()
+			| 'carregarListaCoordenadas();' -> carregarListaCoordenadas() 
+			| 'inicializarPlayer();'   	-> inicializarPlayer() )
+			{$robo::mainList.add($inicializacaoSensor.st);}
+			;
+
+
+//*******************************************/
+//***MAIN->ENTRADA**************************/
+//*****************************************/
+entrada:
+		( 'gps.ler();' -> gpsLer() 
+		| 'bussola.ler();' -> bussolaLer()
+		| 'camera.ler();' -> cameraLer()
+		| 'receberCoordenada();' -> receberCoordenada()
+		| 'carregarListaCoordenadas();' -> carregarListaCoordenadas() )
+		{$robo::mainList.add($entrada.st);}
+		;
+
+
+//*******************************************/
+//***MAIN->PROCESSAMENTO********************/
+//*****************************************/
+processamento :	
+		( 'processaInfo();' -> processaInfo()
+		| 'processaImagem();' -> processaImagem() )	
+		{$robo::mainList.add($processamento.st);}
+	;
+
 
 //*******************************************/
 //***MAIN->COMPORTAMENTO********************/
 //*****************************************/
 
-comportamento:
-	sensorCriado '.' //o tipoSensor tem que ser um sensor ja criado 
-	acaoSensor
+acao:
+	andar
 	;
-
-sensorCriado:
-	 'gps' {sensorCriado = "gps";} |
-	 'bussola' {sensorCriado = "bussola";} |
-	 'camera' {sensorCriado = "camera";}
-	 ;
-
-
-acaoSensor:
-	ligar | ler | carregarListaCoordenadas | recebeCoordenada | obterImagem 
+comportamento :	
+		( 'defineRegra();' -> defineRegra()
+		| 'defineRegraSeguir();' -> defineRegraSeguir()
+		| 'defineRegraNaoBater();' -> defineRegraNaoBater() 
+		| 'defineRegraSeguirMultiplasCoordenadas();' -> defineRegraSeguirMultiplasCoordenadas() )
+		{$robo::mainList.add($comportamento.st);}
 	;
-
-ligar:
-//	'ligar();' {System.out.println("\t\tO sensor " +sensorCriado+ " foi ligado");}
-	'ligar();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " foi ligado");}
-	;
-
-ler:
-//	'ler();' {System.out.println("\t\tO sensor " +sensorCriado+ " está lendo");}
-	'ler();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O sensor " +sensorCriado+ " está lendo");}
-	;
-
-carregarListaCoordenadas:
-//	'carregarListaCoordenadas();' {System.out.println("\t\tCódigo da lista de coordenadas vem aqui");}
-	'carregarListaCoordenadas();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código da lista de coordenadas vem aqui");}
-	;
-
-recebeCoordenada:
-//	'recebeCoordenada();' {System.out.println("\t\tCódigo para receber uma coordenada apenas vem aqui");}
-	'recebeCoordenada();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código para receber uma coordenada apenas vem aqui");}
-	;
-
-obterImagem:
-//	'obterImagem();' {System.out.println("\t\tCódigo de obter imagem vem aqui");}
-	'obterImagem();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Código de obter imagem vem aqui");}
-	;
-
-//*******************************************/
-//***MAIN->ACOES****************************/
-//*****************************************/
 	
-acoes:
-	processarImagem | defineAtirar | atuar | regra
+	
+//*******************************************/
+//***MAIN->ACAO*****************************/
+//*****************************************/
+
+andar	:	('andar();' -> andar()) {$robo::mainList.add($andar.st);}
 	;
 
-processarImagem:
-//	'processarImagem();' {System.out.println("\t\tO robo está processando a imagem......");}
-	'processarImagem();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está processando a imagem......");}
-	;
-
-defineAtirar:
-//	'defineAtirar();' {System.out.println("\t\tO robo está atirando......");}
-	'defineAtirar();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo está atirando......");}
-	;
-
-atuar:
-//	'andar();' {System.out.println("\t\tO robo está andando......");}
-	'andar();' {System.out.println("\t\tO robo está andando......");}
-	;
-
-regra:
-//	'naoBater();' {System.out.println("\t\tO robo nao pode bater......");} |
-//	'seguir();' {System.out.println("\t\tO robo deve seguir......");}
-	'naoBater();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo nao pode bater......");} |
-	'seguir();' {System.out.println("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O robo deve seguir......");}
-	;
-
-
-/*name=ID r;
-r: 'robo' name2=ID {System.out.println("O nome do robo eh: "+$name2.text);};
-*/
 ID: 'a'..'z' + ;
-WS: (' ' |'\n' |'\r' )+ {skip();} ; // ignore whitespace
+WS: (' ' |'\n' |'\r' | '\t' )+ {skip();} ; // ignore whitespace
 
 
 
