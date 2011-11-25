@@ -28,7 +28,7 @@ void abreportaCompass()
     
     iPortaCompass = open(PORTA_COMPASS, O_RDWR | O_SYNC | O_NONBLOCK, S_IRUSR | S_IWUSR );
     // iPortaCompass = open(PORTA_COMPASS, O_RDWR | O_NOCTTY );
-    if (iPortaCompass < 0) { printf("\nErro na porta %s\n\n",PORTA_COMPASS); exit(0); }
+    if (iPortaCompass \< 0) { printf("\nErro na porta %s\n\n",PORTA_COMPASS); exit(0); }
     tcgetattr(iPortaCompass,&oldtio_cp); // save current serial port settings
     bzero(&newtio_cp, sizeof(newtio_cp)); // clear struct for new port settings
     newtio_cp.c_cflag = BAUDRATE_COMPASS | CRTSCTS | CS8 | CLOCAL | CREAD;

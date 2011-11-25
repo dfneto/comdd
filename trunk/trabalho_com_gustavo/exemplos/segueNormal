@@ -7,7 +7,7 @@ liga_camera_normal();
 // ENQUANTO VIVO
 while (true)     
 	{
-		obtem_imagem();
+		obtem_imagem();		//pra mim é o mesmo que le_sensor (que tem nos outros dois algoritmos)
 		processa_imagem();
 		define_atirar();
 		atua(); // manda andar
