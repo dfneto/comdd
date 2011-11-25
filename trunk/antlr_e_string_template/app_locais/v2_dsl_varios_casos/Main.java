@@ -15,9 +15,9 @@ public class Main {
 	//CharStream input = new ANTLRFileStream(args[a]);
 	//o usuario edita na hora
         ANTLRInputStream input = new ANTLRInputStream(System.in);
-	MyDskLexer lexer = new MyDskLexer(input);
+	MyDslLexer lexer = new MyDslLexer(input);
 	CommonTokenStream tokens = new CommonTokenStream(lexer);
-	MyDskParser parser = new MyDskParser(tokens);
+	MyDslParser parser = new MyDslParser(tokens);
 	parser.setTemplateLib(templates);
 	RuleReturnScope r = parser.robo();
 	System.out.println(r.getTemplate().toString());
