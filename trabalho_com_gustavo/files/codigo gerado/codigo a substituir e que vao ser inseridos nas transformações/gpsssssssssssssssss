@@ -39,7 +39,7 @@ void abreportaGPS()
 
     iPortaGPS = open(PORTA_GPS, O_RDWR | O_SYNC | O_NONBLOCK, S_IRUSR | S_IWUSR );
     // iPortaGPS = open(PORTA_GPS, O_RDWR | O_NOCTTY );
-    if (iPortaGPS < 0) { printf("\nErro na porta %s\n\n", PORTA_GPS); exit(0); }
+    if (iPortaGPS \< 0) { printf("\nErro na porta %s\n\n", PORTA_GPS); exit(0); }
     tcgetattr(iPortaGPS,&oldtio_gp); // save current serial port settings
     bzero(&newtio_gp, sizeof(newtio_gp)); // clear struct for new port settings
     newtio_gp.c_cflag = BAUDRATE_GPS | CRTSCTS | CS8 | CLOCAL | CREAD;

@@ -1,0 +1,36 @@
+//declaracao da plataforma, cabecalhos e sensores
+
+int main()
+{
+
+//liga_sensores
+liga_GPS();
+liga_BUSSOLA();
+LIGA_LASER();
+liga_camera_normal();
+PEGA_LISTA();  
+
+
+// ENQUANTO VIVO
+while (true)     
+	{
+		//Entrada
+		PEGA_LISTA();  
+		RECEBE_COORDENADA_TIPO1()     
+		LE_SENSOR() ;   //obtemImagem  
+		
+		//Processamento
+		processa_iNFO();
+		processa_imagem();
+
+		//Define comportamento
+		define_REGRA();
+		define_REGRA_SEGUIR();
+		define_REGRA_NAO_BATER();
+
+		// manda andar
+		atua();
+
+}
+
+
