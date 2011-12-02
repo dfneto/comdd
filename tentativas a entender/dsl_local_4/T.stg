@@ -1,0 +1,28 @@
+group T;
+
+robo2(type, name) ::= <<
+
+nao imprimir nada
+
+>>
+
+
+robo3(angulo, direcao) ::= <<
+
+SO ALEGRIA
+<angulo; separator="\n">
+<direcao>
+
+>>
+
+type_int() ::= "int"
+
+type_char() ::= "char"
+
+/*
+print(angulo, sentido) ::= <<
+
+<angulo, separator="\n"> -----FELICIDADEEEEEEEE
+<sentido, separator="\n"
+
+>>*/
