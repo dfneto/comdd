@@ -1,0 +1,42 @@
+group T;
+
+
+cabecalho(entrada, entrada1) ::= <<
+
+Aqui vem o cabecalho
+
+<entrada>
+
+<entrada1>
+
+>>
+robo2(direcao, velocidadez) ::= <<
+
+O robo anda a <velocidade; separator="\n"> km/h
+e na direcao  <direcao; separator="\n">.
+
+>>
+
+
+robo3(angulo, direcao) ::= <<
+
+SO ALEGRIA
+<angulo; separator="\n">
+<direcao>
+
+>>
+
+robo4() ::= <<
+
+SO ALEGRIA
+
+>> 	
+
+
+/*
+print(angulo, sentido) ::= <<
+
+<angulo, separator="\n"> -----FELICIDADEEEEEEEE
+<sentido, separator="\n"
+
+>>*/
