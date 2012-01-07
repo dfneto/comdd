@@ -1,0 +1,12 @@
+group T;
+
+assign(lhs,rhs) ::= "<lhs> = <rhs>;"
+equals(left,right) ::= "<left> == <right>"
+
+lessThan(left,right) ::= "<left> \< <right>"
+
+add(left,right) ::= "<left> + <right>"
+
+refVar(id) ::= "<id>"
+
+iconst(value) ::= "<value>"

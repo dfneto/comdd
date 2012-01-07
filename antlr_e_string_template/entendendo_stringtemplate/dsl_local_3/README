@@ -1,0 +1,17 @@
+#Esta versao recebe dois valores: um inteiro (velocidade) e uma string (direcao) que passa para o template e gera exatamente o que queremos
+#Mas agora to tentando chamar dentro do template outra função e nao ta dando certo
+
+#TERMINAL
+david@david-laptop:~/Desktop/tentativas a entender/dsl_local_3$ java org.antlr.Tool T.g
+david@david-laptop:~/Desktop/tentativas a entender/dsl_local_3$ javac *.java
+david@david-laptop:~/Desktop/tentativas a entender/dsl_local_3$ java Test 
+frente=30;			-->ENTRADA
+
+O robo anda a 30 km/h		-->SAÍDA
+e na direcao  frente.
+
+
+#Voce pode executar com o runner tambem:
+./runner.sh
+
+
