@@ -1,52 +1,8 @@
-Teste
-
 O trabalho é mais um trabalho de evidências (evidenciar) com base na literatura e na avaliação qualitativa com o usuário desenvolvedor do que de provas/testes.
 
-Temos que definir o que entra e o que sai da quali.
+quais as formas de colaboração existentes? quais a wiki oferece?
+quais as funcionalidas mais usadas numa ide? e num svn/git/microsoft? e num bugtrack? a ideia do uso de dsls é simplificar o desenvolvimento, por isso
 
-INTRODUÇÃO
-	Definição de MDD
-	Citar a importância do MDD (vantagem e como tem sido usada)
-	Benefício: reuso
-	Reuso é colaborativo 
-	Modelos são colaborativos
-	Mas não temos um MDD colaborativo, geralmente ele é stand alone
-	Proposta: SAAS
-	PROPOSTA
-	
-REVISÃO BIBLIOGRÁFICA
-	Trabalhos Relacionados
-		Artigos
-		Editores simultâneos (talvez não entre, só se eu conseguir implementar)
-		Ferramentas de MDD
-		Ferramentas que auxiliam o trabalho colaborativo e compará-las com o comdd, ex: sharepoint...
-	Fundamentação Teórica
-		MDD
-			Pq MDD?
-			Vantagens do uso de Modelos
-		Wikis
-		Robótica Móvel Autônoma
-		SAAS
-DESENVOLVIMENTO
-	Definição do CoMDD
-		Ferramenta de Modelagem Simultânea
-		Transformações
-		Suporte a Design Rational: pode ser os comments das páginas?
-		Suporte a Comunicação
-		Suporte a Controle de Versões
-		Suporte a Merge de Modelos
-		Controle de Acesso
-		Ser um serviço
-	Falar de como é feito o desenvolvimento tradicional colaborativo -> Arquitetura do desenvolvimento tradicional e comparar com a nossa abordagem
-	Arquitetura do CoMDD 
-	Vantagens do CoMDD
-		DDS
-		Reuso
-		Comunicação
-		Pair Programming
-	Avaliação: desenvolveu-se um serviço com modelagem, transformações, controle de versões, de acesso e merge de modelos associado a uma ferramenta de conferencia por voz.
-	O que tenho que comparar é MDD com CoMDD.
-CONCLUSAO
 APÊNDICES
 	Antlr: conceitos e explicação da nossa gramática
 	Eclipse: xtext/xpand
