@@ -1,0 +1,38 @@
+plataforma pioneer
+robo david
+
+adicionar includes
+adicionar defines
+
+importar pacote player;
+importar pacote localizacao;
+
+criarSensor gps
+criarSensor bussola
+criarSensor camera
+
+int main() {
+	gps.ligar();
+	bussola.ligar();
+	camera.ligar();
+	carregarListaCoordenadas();
+	inicializarPlayer();
+	while(true) {
+		gps.ler();
+		bussola.ler();
+		camera.ler();
+		carregarListaCoordenadas();
+		receberCoordenada();
+
+		processaImagem();
+		processaInfo();
+
+		defineRegra();
+		defineRegraSeguir();
+		defineRegraNaoBater();
+		defineRegraSeguirMultiplasCoordenadas();
+
+		andar();
+	}
+}
+
