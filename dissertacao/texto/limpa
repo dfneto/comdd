@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rm tex/*.backup tex/*~ *.backup *~ tex/*.aux *.toc *.blg *.log *.aux *.bbl *.lof *.lot *.dvi *.ps *.out
