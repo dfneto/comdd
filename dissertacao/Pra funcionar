@@ -1,0 +1,9 @@
+O template tem que estar no servidor
+
+mvn install:install-file -Dfile=/home/david/antlrcomplete-3.4.jar -DgroupId=org.antlr -DartifactId=antlrcomplete -Dversion=3.4 -Dpackaging=jar
+
+scp -P 2208 target/example3-1.0-SNAPSHOT.jar 143.107.183.158:~/XWIKI/xwiki-enterprise-jetty-hsqldb-2.7.1/webapps/xwiki/WEB-INF/lib 
+
+
+
+
