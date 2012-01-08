@@ -1,0 +1,62 @@
+- Hipotese:
+1- Código-fonte é mais complicado de ser desenvolvido por mais de uma pessoa, logo é também menos reutilizável. Só o especialista consegue fazer e nao o cara do dominio.
+2- Modelos são mais colaborativos e reusáveis (nao falar em reuso pra nao criar uma expectativa errada pro leitor)
+3- Artefatos online (wikis, gdocs) são mais colaborativos que controles de versao, bug tracks, ou outras ferramentas de gestao de configuração por terem interfaces mais amigáveis -> Assim a Web aumenta ainda mais colaboração (cooperação)
+4- LOGO: MDD na Wiki traz mais colaboração, cooperação e produtividade, no desenvolvimento de software -> isso que tenho q avaliar , do que traria com eclipse e svn (ideal de avaliar)
+
+
+hipótese 2:
+Para desenvolver um sistema colaborativamente usando uma DSL seria possível usar uma ao invés do processo tradicional de desenvolvimento (IDE+svn)?
+
+modelos sao mais colaborativos que códigos fonte: um nao especialista entende mais facilmente um modelo do que um código fonte
+wikis sao as ferramentas que mais promovem colaboração atualmente
+no desenvolvimento de sistemas complexos, uma pessoa nao é o suficiente: colaboração para complexidade
+mdd é bom para sistemas complexos: mdd para complexidade
+
+queremos promover o uso de mdd colaborativo, algo que a princípio nao se conhece seu uso, entao entre os objetivos deste trabalho está em promover mdd colaborativo e a partir de uma abordagem simples de seu uso.
+
+quais os problemas do desenvolvimento tradicional (sem o mdd) e como usando uma wiki pode ser melhor? -> quais os benefícios do mdd e da wiki
+
+ainda se pensando no desenvolvimento sem o uso de mdd e do uso de dsls temos um grande ganho
+
+as pessoas colaboram mais e interagem mais e permite que os stakeholders possam densenvolver ou pelo menos entender melhor o que está-se desenvolvendo (usando a dsl)
+
+levantar todas as vantagens da wiki e as desvantagens do svn/git ...
+como as pessoas colaboram na wiki? 
+
+modelos sao mais faceis de entender e geram mais comunicacao e colaboracao
+
+falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]. por exemplo, acho que outras wikis sustentam melhor o merge, ver a wikipedia
+
+vejam, as wikis nunca foram pensadas para esse fim e por isso podem melhorar para este propósito. usar uma wiki para densenvolvimento que nao seja mdd talvez nao seja tao interessante.
+
+que beneficios o comdd traz quando comparado ao eclipse e svn?
+
+- Falar: MDD aumenta o nivel de abstracao permitindo que o especialista possa programar e nao somento o desenvolvedor. Uma criança pode programar usando uma wiki mas nao usando eclipse e svn, mesmo que no eclipse seja modelos. A crianca é do dominio e o desenvolvedor o especialista
+
+- Revisão: Falar de DSLs, Wikis, MDD, Templates
+- Pesquisa bibliografica:
+	MDD, Wiki, geração de código fonte
+	Colaboracao e MDD: SVN
+	Colaboração na wiki
+- nivel da solução: java, c .... nivel do problema: UML, p ex
+
+
+implementações futuras:
+	Edição das transformações e da gramática
+	Retorno de erros (validação do modelo)
+	Edição de subartefatos e que compoem um artefato que ira gerar o codigo
+	Ed em tempo real 
+	Como testar o código gerado ou o modelo?
+
+O CoMDD é uma abordagem que prega mdd colaboartivamente. No caso foi usado uma wiki, mais especificamente a xwiki, mas poderia ser qualquer outra wiki ou plataforma web de simples uso e que promovesse velocidade. Com as atuais tecnologias a wiki é que melhor se encaixa nesse perfil. Em relação ao domínio também, espera-se que para qualquer domínio o CoMDD possa servir, entao no caso a dsl foi para robos autonomos moveis, mas também poderia ser para qualquer outro domínio.
+
+Este trabalho está longe de criar um ambiente de desenvolvimento tão robusto e avançado quanto hoje são as ides, bug trackers, svns... até porque essas ferramentas já tem anos de maturidade. Este trabalho objetiva sim mostrar que o alinhamente de duas tecnologias aparentemente nao interligáveis é capaz de desempenhar papel semelhante e motivar novos estudos nesse caminho. O ideal seria transformar a wiki numa ide de fato, criar um merge de modelos, permitir o desenvolvimento simultaneo e a edição em tempo real que hoje tem o google. Mas a ideia de que quando voce edita um arquivo esta editando diretamente no servidor e portanto a cópia final agiliza o trabalho evitando conflitos.
+
+Validação de modelos?
+Hightlight, auto sugestão e linkagem das palavras -> questoes tecnologicas de implementação
+Definir a gramática e as transformações-> selado!
+Retorno de erro-> aparentemente nao é complicado
+
+
+o que é colaboração e quais seus benefícios?
