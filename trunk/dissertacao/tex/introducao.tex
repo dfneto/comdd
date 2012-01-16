@@ -1,70 +1,87 @@
-Premissa I: o MDD implica em benefícios de produtividade para o desenvolvimento, possibilita maior interação/comunicação dos não especialistas ...
-Premissa II: a wiki é excelente para comunicação, troca de conhecimento, rápida e dinâmica.
-Conclusão: um mdd na wiki traria beneficios associado ao uso de MDD com ao uso de uma wiki no desenvolvimento de sistemas
-
-
-
 \newpage
 
 \chapter{Introdução}
 \label{introducao}
 
-\lettrine[lines=3]{O}\ 
+\lettrine[lines=3]{E}ste capítulo descreve a área na qual o trabalho está inserido, apresenta o problema de pesquisa e a justificativa para sua escolha, define a hipótese e o objetivo do trabalho. O método, resultados esperados e limitações também são apresentadas aqui.
 
-introdução: reescrita da proposta
+\section{Tema - descrição geral da área, o Problema/Justificativa}
+\label{}
 
-tempo do verbo: presente
+%O desenvolvimento orientados a modelos é ... 
+O desenvolvimento orientado a modelos (\textit{Model Driven Development} - MDD) é um método de desenvolvimento de software que foca na criação de modelos, ou de abstrações, como principais artefatos de desenvolvimento de software e nas transformações desses modelos para gerar código-fonte. Seu objetivo é reduzir a distância semântica que existe entre o domínio do problema e o domínio da implementação/solução, utilizando modelos mais abstratos que protegem os desenvolvedores de software das complexidades inerentes à plataforma de implementação \cite{Teppola2009, France2007}. %tepoola:ok, france:NOTok
 
-Tema (descrição geral da área): como as pessoas desenvolvem software: basicamente uma ide orientada a codigo e um svn da vida. // Geralmente temos no desenvolvimento de software um conjunto de ferramentas necessárias para que ele seja colaborativo. São ides, svns, bugtracks, emails, instant messangers, video/voice conference e por ai vai.
+% e é bom por causa ...
+A principal vantagem do MDD é poder expressar modelos usando conceitos menos vinculados a detalhes de implementação, além do fato de modelos serem mais próximos do domínio do problema. Isto torna os modelos mais fáceis de se especificar, entender e manter. E, em alguns casos, ainda é possível os especialistas do domínio produzirem os sistemas ao invés dos especialistas da tecnologia de implementação \cite{Selic2003, Sriplakich2006}
 
-problema: falar dos problemas do desenvolvimento orientado a código e dos svns da vida (merge por ex) // problemas do MDD local: programas necessarios instalados, processo de check-in, check-out muito demorado, ainda gera muitos conflitos-> falar mal dos svns, gits...
-ainda sao ferramentas que requerem uma curva de aprendizado grande no inicio, principalmente porque são varios os tipos e cada um tem uma abordagem diferente de uso, por exemplo, o svn é diferente do git que é diferente do da microsoft, ainda tudo isso para alguem que nao é desenvolvedora e que trabalha com programação é complicado de acompanhar o projeto. O ideal é deixar o especialista do dominio o mais proximo possível do especialista da solução para evitar problemas de especificao e etc // convergencia para web, videos, musicas, armazenamento de arquivos ... e menos coisas armazenadas localmente //levantar todas as vantagens da wiki e as desvantagens do svn/git ... como as pessoas colaboram na wiki?  // qual meu problema: na realidade o problema 1 é: ter que instalar softwares localmente, tendencia de tudo estar na web. // falar dos problemas de desenvolvimento de codigo... e propor mdd como solução
-daí falar dos problemas de mdd como é feito e propor colaboração
-aí falar dos problemas de mdd colaborativo (do svn, do git) e propor uma wiki // Quais os problemas de se fazer merge? Atraza em quanto tempo o projeto? // Posso começar a destacar os problemas de reuso, ou de desenvolvimento, de uma maneira geral, problemas do svn/git, problemas do desenvolvimento de codigo ...
+E ainda são vários os benefícios que o MDD possui, como: produtividade, interoperabilidade, reuso, ... cite{???}. São diversos trabalhos (cite{???}) que propõe e que usam o MDD como abordagem para desenvolvimento de software. Ainda, a indústria de sistemas embarcados usa o MDD antes do surgimento da UML ou da MDA\footnote{A MDA (Model Driven Architecture) é um pradão da OMG como abordagem do MDA, com uso da UML para a modelagem} (Model Driven Architecture), entre outras áreas da indústria que também usam o MDD.
 
+Entretanto, em relação à modelos textuais\footnote{Ver capítulo de DSLs}, como equipes de desenvolvimento de software trabalham juntas?
 
+Apesar de alguns trabalhos cite{???} dizerem que as ferramentas para MDD são quase inexistentes, quando trabalha-se com modelos textuais, as ferramentas para MDD são as mesmas que existem para as abordagens tradicionais como por exemplo Java, C, C++ e etc. Ou seja, assim como pode-se usar o Eclipse\footnote{http://eclipse.org/} como IDE de desenvolvimento e o Subversion\footnote{???} para compartilhamento de código, pode-se usar ambas ferramentas no MDD. Os modelos textuais são textos da mesma forma que um código-fonte Java é texto, assim não há razão técnica para não usar-se o uma IDE que suporte MDD e um sistema de controle de versão qualquer.
 
+%Contudo, (aqui vem todos os problemas): Problemas dos svns da vida (merge por ex)
+Assim, uma possibilidade para trabalhar colaborativamente com o MDD é o uso de uma ide associada à um sistema de controle de versão\footnote{Este trabalho está focando somente no uso de versionadores, pois o estudo de sistemas de gerenciamente de configuração tornaria este trabalho muito extenso.}, entretanto, os sistemas de controle de versão podem causar conflitos quando dois ou mais usuários modificam o mesmo documento e submetem ao servidor\footnote{Isso no caso de uma política de versionamento \textit{otimistic}, a qual permite o desenvolvimento concorrente.}. 
 
-justificativa: assim, com o uso de mdd resolvemos vários problemas como ... e com o uso de wikis resolvemos outros problemas como ..., por isso o objetivo deste trabalho é ... //A importancia do MDD, Vantagens do mdd: por que usa-lo?! -> justifica o uso de mdd // Definição do MDD // Modelos sao colaborativos // Mas como o MDD é usado: stand alone e para compartilhamento de código as pessoas podem usar um svn. Daí vem os problemas dos svns e a justificativa das wikis. // wikis sao as ferramentas que mais promovem colaboração atualmente // no desenvolvimento de sistemas complexos, uma pessoa nao é o suficiente: colaboração para complexidade, mas nao podemos dizer que wiki atende o desenvolvimento de sistemas complexos
-mdd é bom para sistemas complexos: mdd para complexidade // as pessoas colaboram mais e interagem mais e permite que os stakeholders possam densenvolver ou pelo menos entender melhor o que está-se desenvolvendo (usando a dsl // modelos sao mais faceis de entender e geram mais comunicacao e colaboracao // - Falar: MDD aumenta o nivel de abstracao permitindo que o especialista possa programar e nao somento o desenvolvedor. Uma criança pode programar usando uma wiki mas nao usando eclipse e svn, mesmo que no eclipse seja modelos. A crianca é do dominio e o desenvolvedor o especialista// nivel da solução: java, c .... nivel do problema: UML, p ex
-
-
-
-
-
-problema do desenvolvimento tradicional -> justifica mdd
-
-uso de mdd com svn -> problema dos svns -> justifica wikis
-
-objetivo: incentivar o uso de mdd e de wikis para desenvolvimento de código e tentar evidenciar que o uso de modelos em uma wiki é possível de ser usado para gerar codigo entre duas pessoas, da mesma forma que uma ide com um svn o faz. Assim, a hipotese deste trabalho é ... // queremos promover o uso de mdd colaborativo, algo que a princípio nao se conhece seu uso, entao entre os objetivos deste trabalho está em promover mdd colaborativo e a partir de uma abordagem simples de seu uso. // nosso objetivo: promover o uso de mdd e de wikis a partir de evidencias de que elas juntas podem trazer produtividade e integração ao inves do modelo tradicional de desenvolvimento // incentivar tbm o uso de mdd //Meu objetivo é incentivar o uso de MDD e de ferramentas colaborativas mais simples, como é a wiki e por isso acredito que teríamos mais produtividade e a aproximação maior de todos os envolvidos no processo, e com isso softwares mais próximos dos que o cliente precisa.
+Neste momento, desenvolvedores terão que dedicar certo tempo para resolver os conflitos, e às vezes esses conflitos só podem ser resolvidos manualmente. Além disso, para os desenvolvedores saberem como resolver o conflito corretamente eles precisam estar em contato entre si e para eles decidirem como realizar o merge eles ainda precisam estar disponíveis no momento \cite{Prudencio2012}. 
 
 
-- Hipotese:
-1- Código-fonte é mais complicado de ser desenvolvido por mais de uma pessoa, logo é também menos reutilizável. Só o especialista consegue fazer e nao o cara do dominio. -> falar mal do desenvolvimento tradicional
+%programas necessarios instalados,
+Ainda há um outro ponto ao se usar as IDEs e os SCV: a necessidade de instalação desses software, ou seja, para as equipes usarem uma IDE e um sistema de controle de versão é preciso que cada desenvolvedor tenha instalado esses softwares em seus computadores \footnote{Será discutido no Capítulo XXX ferramentas que podem ser usadas na web, entretanto a maioria dessas ferramentas são incipientes e não são usadas nas empresas/academia.}. O que significa dizer que se um \textit{stakeholder} estiver interessado em acompanhar o desenvolvimento de um software ele irá precisar instalar em seu computador essas ferramentas \footnote{No experimento deste trabalho (descrito no capítulo XXX, dois profissionais experimentes levaram cerca de quarenta minutos para instalar e configurar o Eclipse e o plugin do svn}, o que pode-se dizer ser uma tarefa difícil e trabalhosa. Isso sem contar que o \textit{stakeholder} deverá saber como funciona essas ferramentas. Se ele quiser participar da edição dos modelos\footnote{Este trabalho parte do uso de MDD como abordagem de desenvolvimento e por isso está-se falando de MDD} deverá ainda conhecer como funciona a geração de códigos da IDE, como fazer check-in (), check-out (), update () e etc. De forma que, embora para um usuário não desenvolvedor trabalhar com modelos seja mais fácil que código-fonte cite{??} essa vantagem é perdida quando há a necessidade do uso dessas ferramentas por parte deste. 
 
-2- Modelos são mais colaborativos, simples, genéricos e reusáveis (nao falar em reuso pra nao criar uma expectativa errada pro leitor) e permitem que não especialistas possam desenvolver/acompanhar; alem de poder-se checar por conformidade os modelos
+%processo de check-in, check-out, instalação muito demorado
+Além do que, todo esse processo de instalação e de check-in, check-out, update e etc, é relativamente demorado, de forma que é uma outra desvantagem além da necessidade de instalação e conhecimento desses conceitos. Isto fica claro no trabalho de Jones \cite{Jones2011} quando ele afirma que cientistas raramente usam controle de versão devido ao alto custo inicial para configuração desses sistemas. %talvez seja melhor colocar esse referencia em outro lugar.
 
-3- Artefatos online (wikis, gdocs) são mais colaborativos que controles de versao, bug tracks, ou outras ferramentas de gestao de configuração por terem interfaces mais amigáveis -> Assim a Web aumenta ainda mais colaboração
+%ainda sao ferramentas que requerem uma curva de aprendizado grande no inicio, principalmente porque são varios os tipos e cada um tem uma abordagem diferente de uso, por exemplo, o svn é diferente do git que é diferente do da microsoft, ainda tudo isso para alguem que nao é desenvolvedora e que trabalha com programação é complicado de acompanhar o projeto.
+Mesmo que o usuário ainda receba um treinamento, cada ferramenta é diferente da outra, por exemplo, o svn é diferente do git que é diferente do da microsoft, sendo não só necessário o conhecimento da instalação, uso, como também da lógica de funcionamento dessas ferramentos, pois elas tem diferente abordagens, principalmente o git que possui o paradigma mais diferente desses.
 
-4- LOGO: MDD na Wiki traz mais colaboração, cooperação e produtividade (porque o comdd é mto mais acessível e pela sua simplicidade as pessoas podem colaborar mais facilmente), no desenvolvimento de software -> isso que tenho q avaliar , do que traria com eclipse e svn (ideal de avaliar)
+%wiki como solução: os recursos como histórico de versões, comentários e compartilhamento de código podem ser alcançados através de uma wiki
+Por outro lado, as wikis são ferramentas conhecidas por serem simples de usar e ágeis para colaboração cite{??}. De forma que dependendo do problema o uso de uma wiki ao invés de uma IDE e de um SVN, no MDD, pode resolver todos os problemas descritos até aqui, pois elas funcionam em um navegador, possuem um controle de versões com histórico, possibilidade para comentários e, no caso da Xwiki\footnote{xwiki site ...} não tem problemas de conflito pois podem travar a edição de um mesmo documento para um segundo usuário, bastando apenas implementar na wiki um suporte a modelagem e geração de código-fonte.
 
-hipótese 2:
-Para desenvolver um sistema colaborativamente usando uma DSL seria possível usar uma ao invés do processo tradicional de desenvolvimento (IDE+svn)?
+%tendencia de tudo na nuvem
+Ainda, observando o histórico de aplicações como músicas, vídeos, armazenamento de arquivos, jogos e etc, têm convergido para a web, como exemplo disso tem-se o Grooveshark®\footnote{} (Reprodutor de músicas on-line), o Youtube® \footnote{}(reprodutor de vídeos on-line), o Dropbox®\footnote{}(Armazenador de arquivos on-line) e até mesmo IDEs estão convergindo para a web, como é o caso do c9(). De modo que ter uma ferramenta possível de editar, compartilhar e versionar modelos, gerar código-fonte e ainda permitir a entrada de comentários pode beneficiar desenvolvedores e stakeholders.
 
-hipótese 3:
-as pessoas usam a wiki para uma série de fatores, como discussoes, documentações. Principalmente em virtude da sua simplicidade e agilidade (de acordo com o dicionario, simplicidade é ..., agilidade é ...), mas será que elas poderiam serem usadas para produzir codigo fonte? Ou seja, sera que as wikis podem servir como uma ide e ainda assim manter suas caracteristicas/beneficios de agilidade/simplicidade?
+Contudo, seria possível uma wiki de ser usada como uma ferramenta de desenvolvimento e compartilhamento de modelos, da mesma forma que uma ide e svn? A partir deste questionamente este trabalho definiu uma abordagem colaborativa orientada a modelos (\texit{Collaborative Model Driven Development} - CoMDD), a qual usa uma wiki para apoiar o MDD em uma equipe de desenvolvimento.
 
-
-Escopo/Limitações: nao é foco deste trabalho comparar o desenvolvimento de codigo com o de mdd uma vez que ha uma vasta literatura sobre isso. Este trabalho parte do principio de que o mdd é vantajoso para o desenvolvimento mais que o desenvolvimento tradicional (segundo ....)
-
-resultados esperados: espera-se que com este trabalho o uso de dsls seja cada vez mais empregado no desenvolvimento de sistemas e de que as wikis evoluam como uma ide para que um dia tenhamos o uso de wikis associadas a dsls para sistemas grandes e complexos.
-
-metodo: para tentarmos evidenciar que nossa hipótese faremos uma avaliação. Será pedido para duas equipes diferentes a mesma tarefa, sendo que uma delas usara o eclipse+svn e a outra uma wiki apenas. Ambas usarão dsls e geração de código, mas nao terao os recursos tradicionais de uma ide como import, highlight sugestao ... Para isso será implementado a dsl no eclipse e numa wiki usando o xtext/xpand e o antlr respectivamente. // Foi desenvolvido um sistema (implementação do comdd) para se realizar um estudo de caso a fim de evidenciar que a hipótese do trabalho é verdadeira ou não
-
-fechar com uma descrição sucinta dos demais capítulos.
-
-esse trabalho sugere o uso de mdd ao inves de linguagens como java, c e etc e o uso de wikis para colaboração ao inves de svns, git.... porque wikis sao extremamente mais simples de entender, mais dinamicas e promovem mais interação--> nao sei se isso é objetivo ou proposta ou hipotese ou sei la o que
+%como as pessoas colaboram na wiki? 
+%eu tenho que dizer que estamos propondo uma wiki para resolver essses problemas pois as wikis bloqueiam a edicao simultanea e tem historico, entao dependendo da necessidade da equipe de desenovlvimento uma wiki pode ser o suficiente, desde que ela suporte a modelagem e a geração de codigo, assim nao me importa as soluções para os problemas do svn, como as outras estrategias ou abordagens... Estamos apenas propondo o uso de wikis para acabar/evitar os problemas dos svns/merge. Foda-se o resto hehee
+%Geralmente temos no desenvolvimento de software um conjunto de ferramentas necessárias para que ele seja colaborativo. São ides, svns, bugtracks, emails, instant messangers, video/voice conference e por ai vai.
+%Pode-se dizer que é mais vantajoso para o \textit{stakeholder} ou para o especialista de domínio ficar o mais proximo possível do especialista da solução para evitar problemas de especificao e etc
 
 
+\section{Hipótese e objetivo}
+\label{}
+A partir do cenário levantado na seção anterior, definiu-se a seguinte hipótese que norteia este trabalho:
 
+Para desenvolver um sistema colaborativamente usando MDD\footnote{No caso estamos nos referindo a dsls como abordagem de mdd. No capítulo de revisão bibliográfica isso ficará mais claro}, é possível usar uma wiki ao invés do processo tradicional\footnote{Definimos processo tradicional de desenvolvimento como sendo o uso de uma IDE e de um sistema de controle de versão \textit{otimistic}} de desenvolvimento.
+
+%hipótese 3: as pessoas usam a wiki para uma série de fatores, como discussoes, documentações. Principalmente em virtude da sua simplicidade e agilidade (de acordo com o dicionario, simplicidade é ..., agilidade é ...), mas será que elas poderiam serem usadas para produzir codigo fonte? Ou seja, sera que as wikis podem servir como uma ide e ainda assim manter suas caracteristicas/beneficios de agilidade/simplicidade?
+
+O objetivo principal deste trabalho é tentar evidenciar que a hipótese de pesquisa é verdadeira para um caso específico (a ser tratado no estudo de caso) e incentivar o uso da abordagem desenvolvida neste trabalho para outros casos também (ver sessão a seguir: método). 
+
+
+\section{Metodo}
+\label{metodo}
+Para tentar evidenciar que a hipótese de pesquisa é possível/verdadeira foi implementado o CoMDD
+
+Para tentarmos evidenciar que nossa hipótese é possível/verdadeira faremos uma avaliação. Será pedido para duas equipes diferentes a mesma tarefa, sendo que uma delas usara o eclipse+svn e a outra uma wiki apenas. Ambas usarão dsls e geração de código, mas nao terao os recursos tradicionais de uma ide como import, highlight sugestao ... Para isso será implementado a dsl no eclipse e numa wiki usando o xtext/xpand e o antlr respectivamente. // Foi desenvolvido um sistema (implementação do comdd) para se realizar um estudo de caso a fim de evidenciar que a hipótese do trabalho é verdadeira ou não// mais detalhes no capitulo de desenvolvimento
+
+
+Para isso será mostrado as potencialidades da abordagem com o intuito dos usuarios poderem avaliar se a abordagem pode ser interessante para uso ou nao. Com isso acredito que teríamos mais produtividade e a aproximação maior de todos os envolvidos no processo, e com isso softwares mais próximos dos que o cliente precisa.
+
+
+\section{Escopo/Limitações}
+\label{}
+Nao é foco deste trabalho comparar o desenvolvimento de codigo com o de mdd uma vez que ha uma vasta literatura sobre isso. Este trabalho parte do principio de que o mdd é vantajoso para o desenvolvimento mais que o desenvolvimento tradicional (segundo ....)
+
+O foco deste trabalho não está no estudo da comunicação dos integrantes, contudo entende-se que para um trabalho colaborativo a comunicação é excencial.
+
+\section{Resultados Esperados}
+\label{}
+Espera-se que com este trabalho o uso de dsls seja cada vez mais empregado no desenvolvimento de sistemas e de que as wikis evoluam como uma ide para que um dia tenhamos o uso de wikis associadas a dsls para sistemas grandes e complexos.
+
+
+conclusão da introdução: assim, com o uso de mdd resolvemos vários problemas como ... e com o uso de wikis resolvemos outros problemas como ..., por isso o objetivo deste trabalho é ... 
+
+No capitulo 2 ...
 

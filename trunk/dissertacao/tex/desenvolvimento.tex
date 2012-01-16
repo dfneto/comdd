@@ -2,40 +2,48 @@
 
 \chapter{Desenvolvimento}
 \label{desenvolvimento}
+Definição do CoMDD ...
 
-	Definição do CoMDD
-		Ferramenta de Modelagem 
-		Transformações
-		Suporte a Design Rational: pode ser os comments das páginas?
-		Suporte a dois tipos de comentarios, o da pagina principal e o das alterações
-		Suporte a Controle de Versões: histórico
-		Controle de Acesso
-		merge: plugin
-		criar um bate-papo na wiki
-		highlight na wiki
-		deficiencia: nao compila como uma ide, entao subentende-se que o codigo que ela gera esta sintaticamente correto, mas ela pode retornar erros
-		como integrar testes?
-		é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
-	Falar de como é feito o desenvolvimento tradicional colaborativo -> Arquitetura do desenvolvimento tradicional e comparar com a nossa abordagem
-	Arquitetura do CoMDD 
-	Vantagens do CoMDD: sao as vantagens da wiki associadas as do mdd
+Funcionalidades: Ferramenta de Modelagem // Transformações // Suporte a dois tipos de comentarios, o da pagina principal e o das alterações //
+		Suporte a Controle de Versões: histórico // Controle de Acesso // merge: plugin ?? // pode-se criar um bate-papo na wiki // 
+		wiki como ide: highlight na wiki 
+
+
+Deficiencia do CoMDD: nao compila, entao subentende-se que o codigo que ela gera esta sintaticamente correto, mas ela pode retornar erros // como integrar testes?
+		
+Possibilidade: é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
+
+Vantagens do CoMDD: sao as vantagens da wiki associadas as do mdd
 		DDS
 		Produtividade
 		Comunicação
 		Pair Programming??
 
+
+\section{Arquitetura do CoMDD}
+Mostrar a arquitetura
+
+Comparar o desenvolvimento tradicional com ou sem MDD com a nossa abordagem numa figura 
+
+%Abordagem que usamos é uma política pessimistic
+Assegurar a integridade e consistência de artefatos versionados num ambiente que suporte acesso concorrente é um problema difícil \cite{Zhang2007}, portanto para evitar os conflitos de edição e merge adotou-se uma abordagem \textit{pessimistic}, ou seja, uma política em que o artefato é bloqueado quando já está sendo editado por outra pessoa. Aplicando essa política, conflitos de edição são evitados e com isso desenvolvedores não gastarão tempo ou esforços resolvendo conflitos. Ainda, a política \textit{pessimistic} pode ajudar na comunicação, pois os desenvolvedores saberiam quando outra pessoa estaria modificando o mesmo artefato, incentivando a comunicação entre os desenvolvedores com os mesmos interesses \cite{Prudencio2012, Sarma2003}. Uma outra possível solução seria a edição simultânea estilo google docs cite{Meu trabalho!}...
+
+\section{Método}: Colocar a ordem do desenvolvimento dos procedimentos para vibializar a execução na wiki. Mostrar os passos do desenvolvimento.	
+
+\subsection{Estudo de Caso}
 ESTUDO DE CASO: CONCLUSAO DO ESTUDO, COLOCAR AQUI o anexo com as perguntas
 
-Arquitetura da implementação/solução.
-
-Método: Colocar a ordem do desenvolvimento dos procedimentos para vibializar a execução na wiki. Mostrar os passos do desenvolvimento.	
-
-Escopo do trabalho: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
+Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
 
 Colocar os modelos transformados -> Detalhes no anexo
 
 falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]. por exemplo, acho que outras wikis sustentam melhor o merge, ver a wikipedia
 
 
-Limitações do trabalho: avaliar em que casos pode-se usar uma wiki no lugar de um svn nao é escopo deste trabalho
+Limitações do trabalho: avaliar em que casos pode-se usar uma wiki no lugar de um svn nao é escopo deste trabalho // A abordagem pessimistica possui suas desvantagens como "In contrast, the pessimistic policy has some disadvantages. First, locks can cause an unnecessary serialization over the development process. Sometimes different developers can independently modify different parts of the same CI, but using a lock-based approach that is not possible. In addition, locks can cause a false sense of security (Collins-Sussman et al., 2004). Developers may think that their work will not be affected by the work of other developers due to the
+locks. However, sometimes CIs rely on other CIs that can be modified by other developers. This situation leads to indirect conflicts (Sarma et al., 2003). \cite{Prudencio2012} Assim, um trabalho futuro seria no estudo de estratégias otimísticas ou até mesmo na adoção de ambas como propõe o trabalho de Prudencio et al. \cite{Prudencio2012}.
 
+mas qual a diferença da minha dsl para jogar tudo em métodos de poo? vc nao trabalha com modelos e sempre fica os detalhes de plataforma juntos com a logica. com mdd vc joga tudo nas transformações e trabalha em alto nivel.
+
+\subsection{Resultados do Estudo de Caso}
+conclusão: 100\% dos usuarios, quando questionados se para a dada tarefa que abordagem usariam, responderam o CoMDD.
