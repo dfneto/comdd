@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.11.21)  10 JAN 2012 23:27
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  15 JAN 2012 20:32
 entering extended mode
  %&-line parsing enabled.
-**dissertacao.tex
+**dissertacao
 (./dissertacao.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -147,13 +147,11 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: dvips.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count103
 ))
 (/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
@@ -174,15 +172,15 @@ Package: geometry 2008/12/21 v4.2 Page Geometry
 
 (/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode not detected.
+Package ifpdf Info: pdfTeX in pdf mode detected.
 )
 (/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count104
+\Gm@cntv=\count105
+\c@Gm@tempcnt=\count106
 \Gm@bindingoffset=\dimen121
 \Gm@wd@mp=\dimen122
 \Gm@odd@mp=\dimen123
@@ -213,30 +211,30 @@ Package: natbib 2009/07/16 8.31 (PWD, AO)
 \bibhang=\skip58
 \bibsep=\skip59
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count106
+\c@NAT@ctr=\count107
 )
 (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count107
+\lst@mode=\count108
 \lst@gtempboxa=\box30
 \lst@token=\toks27
-\lst@length=\count108
+\lst@length=\count109
 \lst@currlwidth=\dimen125
-\lst@column=\count109
-\lst@pos=\count110
+\lst@column=\count110
+\lst@pos=\count111
 \lst@lostspace=\dimen126
 \lst@width=\dimen127
-\lst@newlines=\count111
-\lst@lineno=\count112
+\lst@newlines=\count112
+\lst@lineno=\count113
 \lst@maxwidth=\dimen128
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count113
-\lst@skipnumbers=\count114
+\c@lstnumber=\count114
+\lst@skipnumbers=\count115
 \lst@framebox=\box31
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -271,12 +269,12 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 )
 (/usr/share/texmf-texlive/tex/latex/textfit/textfit.sty
 Package: textfit 1994/04/15
-\mags@f@r=\count115
+\mags@f@r=\count116
 \desired@size=\dimen130
-\r@mainder=\count116
-\m@gstepcount=\count117
-\m@gsteplimit=\count118
-\m@gstepvalue=\count119
+\r@mainder=\count117
+\m@gstepcount=\count118
+\m@gsteplimit=\count119
+\m@gstepvalue=\count120
 \m@gstepdimen=\dimen131
 )
 (/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
@@ -287,10 +285,10 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip62
 \subfigcapmargin=\dimen133
 \subfiglabelskip=\skip63
-\c@subfigure=\count120
-\c@lofdepth=\count121
-\c@subtable=\count122
-\c@lotdepth=\count123
+\c@subfigure=\count121
+\c@lofdepth=\count122
+\c@subtable=\count123
+\c@lotdepth=\count124
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -368,13 +366,13 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
 (/usr/share/texmf-texlive/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
-\c@DefaultLines=\count124
+\c@DefaultLines=\count125
 \DefaultFindent=\dimen134
 \DefaultNindent=\dimen135
 \DefaultSlope=\dimen136
 \L@lbox=\box34
 \L@tbox=\box35
-\c@L@lines=\count125
+\c@L@lines=\count126
 \L@Pindent=\dimen137
 \L@Findent=\dimen138
 \L@Nindent=\dimen139
@@ -396,16 +394,16 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip67
 \LTpre=\skip68
 \LTpost=\skip69
-\LTchunksize=\count126
+\LTchunksize=\count127
 \LTcapwidth=\dimen147
 \LT@head=\box36
 \LT@firsthead=\box37
 \LT@foot=\box38
 \LT@lastfoot=\box39
-\LT@cols=\count127
-\LT@rows=\count128
-\c@LT@tables=\count129
-\c@LT@chunks=\count130
+\LT@cols=\count128
+\LT@rows=\count129
+\c@LT@tables=\count130
+\c@LT@chunks=\count131
 \LT@p@ftn=\toks32
 )
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
@@ -421,28 +419,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-
-
-! Package pdftex.def Error: PDF mode expected, but DVI mode detected!
-(pdftex.def)                If you are using `latex', then call `pdflatex'.
-(pdftex.def)                Otherwise check and correct the driver options.
-(pdftex.def)                Error recovery by switching to PDF mode.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.385     }\@ehc
-                
-? 
-\Gread@gobject=\count131
-))
+)
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
-) (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
 (/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
@@ -536,23 +517,11 @@ Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 \c@Item=\count136
 \c@Hfootnote=\count137
 )
-
-Package hyperref Warning: Wrong driver `hpdftex.def';
-(hyperref)                pdfTeX is not running in PDF mode.
-(hyperref)                Using default driver.
-
-*hyperref using default driver hdvips*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
-
-(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
-\pdf@docset=\toks34
-\pdf@box=\box40
-\pdf@toks=\toks35
-\pdf@defaulttoks=\toks36
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count138
-))
+)
 Package hyperref Info: Option `colorlinks' set `true' on input line 66.
 Package hyperref Info: Option `debug' set `false' on input line 66.
 
@@ -560,8 +529,33 @@ Package hyperref Info: Option `debug' set `false' on input line 66.
 LaTeX Warning: Unused global option(s):
     [abnt].
 
-(./dissertacao.aux (./tex/referencias.aux) (./tex/apendiceA.aux)
-(./tex/apendiceB.aux) (./tex/apendiceC.aux))
+(./dissertacao.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+(./tex/referencias.aux) (./tex/apendiceA.aux) (./tex/apendiceB.aux)
+(./tex/apendiceC.aux))
 \openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -578,8 +572,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
-
-(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 71.
@@ -602,8 +595,21 @@ Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count139
+\scratchdimen=\dimen153
+\scratchbox=\box40
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen154
+\MPnumerator=\count143
+\everyMPtoPDFconversion=\toks35
+)
 *geometry auto-detecting driver*
-*geometry detected driver: dvips*
+*geometry detected driver: pdftex*
 -------------------- Geometry parameters
 paper: a4paper
 landscape: --
@@ -621,7 +627,7 @@ truedimen: --
 includehead: --
 includefoot: --
 includemp: --
-driver: dvips
+driver: pdftex
 -------------------- Page layout dimensions and switches
 \paperwidth  597.50787pt
 \paperheight 845.04684pt
@@ -643,22 +649,9 @@ driver: dvips
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-\c@lstlisting=\count139
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen153
-\scratchbox=\box41
-\nofMPsegments=\count141
-\nofMParguments=\count142
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen154
-\MPnumerator=\count144
-\everyMPtoPDFconversion=\toks38
-)
+\c@lstlisting=\count144
 Package hyperref Info: Link coloring ON on input line 71.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
@@ -672,14 +665,11 @@ LaTeX Info: Redefining \pageref on input line 71.
 \@outlinefile=\write4
 \openout4 = `dissertacao.out'.
 
-\AtBeginShipoutBox=\box42
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-(./tex/capa.tex
+\AtBeginShipoutBox=\box41
+ (./tex/capa.tex
 LaTeX Font Info:    Try loading font information for T1+phv on input line 12.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
@@ -689,42 +679,8 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 14.
  [1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-[2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]) (./tex/rosto.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
@@ -733,332 +689,198 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 25.
-[3
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [4
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+[3] [4
 
 ]) (./tex/resumo.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
 ) [1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+] [2
 
 
-] (./dissertacao.toc)
+] (./dissertacao.toc [3])
 \tf@toc=\write5
 \openout5 = `dissertacao.toc'.
 
- [3
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [4
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-] (./dissertacao.lof)
+ [4]
+(./dissertacao.lof)
 \tf@lof=\write6
 \openout6 = `dissertacao.lof'.
 
  [5
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [6
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+] [6
 
 ] (./dissertacao.lot)
 \tf@lot=\write7
 \openout7 = `dissertacao.lot'.
 
  [7
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
+] [8
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [8
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-] (./tex/siglas.tex) [9
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+] (./tex/siglas.tex)
+[9
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [10
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+] [10
 
 ] (./tex/introducao.tex
 Cap\'{\i }tulo 1.
-[1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
+
+Package natbib Warning: Citation `Selic2003' on page 1 undefined on input line 
+15.
+
+
+Package natbib Warning: Citation `Sriplakich2006' on page 1 undefined on input 
+line 15.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 
+      [1
 
 
 
+]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 26.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 A
+      lém do que, todo esse processo de instalação e de check-in, check-out,...
+[2]
+Overfull \hbox (25.71439pt too wide) in paragraph at lines 42--43
+\T1/ptm/m/n/12 pro-du-tor de músi-cas on-line), o Youtube\TS1/ptm/m/n/12 ® [][]
+[][][]\T1/ptm/m/n/12 (reprodutor de vídeos on-line), o Drop-box\TS1/ptm/m/n/12 
+®[][][][][]\T1/ptm/m/n/12 (Armazenador
+ []
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]) (./tex/trabalhosRelacionados.tex [3
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [4
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 O
+       objetivo principal deste trabalho é tentar evidenciar que a hipótese ...
+[3]) (./tex/trabalhosRelacionados.texpdfTeX warning (ext4): destination with th
+e same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \newpage
+             [4] [5] [6
 
 
 ]
 Cap\'{\i }tulo 2.
-) (./tex/revisaoBibliografica.tex [5
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [6
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+) (./tex/revisaoBibliografica.tex [7] [8
 
 
 ]
 Cap\'{\i }tulo 3.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 16.
-) (./tex/desenvolvimento.tex [7
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [8
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
+[9]) (./tex/desenvolvimento.tex [10]
+Cap\'{\i }tulo 4.
+[11
+
+
+]) (./tex/conclusao.tex [12] [13] [14
 
 
 ]
-Cap\'{\i }tulo 4.
-) (./tex/conclusao.tex [9
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [10
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
 Cap\'{\i }tulo 5.
-[11
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+[15]
+Overfull \hbox (13.10248pt too wide) in paragraph at lines 36--37
+[]\T1/ptm/m/n/12 Que ben-efi-cios em ter-mos de co-lab-o-ração o comdd traz qnd
+ com-parado a abor-da-gens eclipse+svn? 
+ []
 
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]) [12
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[16]) [17]
 \openout2 = `tex/referencias.aux'.
 
- (./tex/referencias.tex
-No file dissertacao.bbl.
+ (./tex/referencias.tex [18
+
+
+] (./dissertacao.bbl (./babelbst.tex)
+
+LaTeX Font Warning: Font shape `TS1/ptm/m/sc' undefined
+(Font)              using `TS1/ptm/m/n' instead
+(Font)              for symbol `textordfeminine' on input line 25.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
+Underfull \hbox (badness 10000) in paragraph at lines 25--32
+\T1/ptm/m/n/12 Disponível em: [][]$\T1/pcr/m/n/12 http : / / www . sciencedirec
+t . com / science / article / pii /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--50
+\T1/ptm/m/n/12 Disponível em: [][]$\T1/pcr/m/n/12 http : / / www . sciencedirec
+t . com / science / article / pii /
+ []
+
+)) [19
+
+
+]
 \openout2 = `tex/apendiceA.aux'.
 
- (./tex/apendiceA.tex
+ (./tex/apendiceA.tex [20
+
+
+
+
+]
 Cap\'{\i }tulo 6.
-) [13
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-
-
-
-
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+) [21]
 \openout2 = `tex/apendiceB.aux'.
 
- (./tex/apendiceB.tex [14
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+ (./tex/apendiceB.tex [22
 
 
 
 
 ]
 Cap\'{\i }tulo 7.
-) [15
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+) [23]
 \openout2 = `tex/apendiceC.aux'.
 
- (./tex/apendiceC.tex [16
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+ (./tex/apendiceC.tex [24
 
 
 
 
 ]
 Cap\'{\i }tulo 8.
-) [17
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] (./dissertacao.aux (./tex/referencias.aux)
-(./tex/apendiceA.aux) (./tex/apendiceB.aux) (./tex/apendiceC.aux))
+) [25]
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package natbib Warning: There were undefined citations.
+
+(./dissertacao.aux (./tex/referencias.aux) (./tex/apendiceA.aux)
+(./tex/apendiceB.aux) (./tex/apendiceC.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred inside a group at level 1)
@@ -1066,24 +888,24 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10129 strings out of 495062
- 144337 string characters out of 1182643
- 235653 words of memory out of 3000000
- 13024 multiletter control sequences out of 15000+50000
- 81807 words of font info for 84 fonts, out of 3000000 for 9000
+ 10147 strings out of 495061
+ 143559 string characters out of 1182620
+ 231456 words of memory out of 3000000
+ 12943 multiletter control sequences out of 15000+50000
+ 92566 words of font info for 96 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
- 43i,12n,49p,1026b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,49p,1499b,512s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/
-fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/h
-elvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-t
-exlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/u
-rw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb
->
-Output written on dissertacao.pdf (31 pages, 118384 bytes).
+re/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/f
+onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-
+texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertacao.pdf (39 pages, 188622 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
