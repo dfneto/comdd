@@ -1,0 +1,51 @@
+\begin{thebibliography}{6}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\input babelbst.tex
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{France e Rumpe(2007)}]{France2007}
+\textsc{France, R.; Rumpe, B.}\ \ \  Model-driven development of complex
+  software: A research roadmap.\ \ \ \capitalize\bblin{}: \textit{29th
+  International Conference on Software Engineering 2007 - Future of Software
+  Engineering}, Minneapolis, MN, USA: IEEE Computer Society, 2007, \bblpp{}
+  37--54.
+
+\bibitem[{ao~Gustavo~Prud\^encio \bbletal{}(2012)ao~Gustavo~Prud\^encio, Murta,
+  Werner e Cep\^eda}]{Prudencio2012}
+\textsc{Gustavo~Prud\^encio, J.; Murta, L.; Werner, C.; Cep\^eda, R.}\ \ \  To
+  lock, or not to lock: That is the question.\ \ \ \textit{Journal of Systems
+  and Software}, \bblvol{}~85, \bblno{}~2, \bblpp{}~277 -- 289, special issue
+  with selected papers from the 23rd Brazilian Symposium on Software
+  Engineering, 2012.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0164121211001063}
+
+\bibitem[{Jones e Scaffidi(2011)}]{Jones2011}
+\textsc{Jones, M.; Scaffidi, C.}\ \ \  Obstacles and opportunities with using
+  visual and domain-specific languages in scientific programming.\ \ \
+  \capitalize\bblin{}: \textit{Visual Languages and Human-Centric Computing
+  (VL/HCC), 2011 IEEE Symposium on}, 2011, \bblpp{} 9 --16.
+
+\bibitem[{Sarma \bbletal{}(2003)Sarma, Noroozi e van~der Hoek}]{Sarma2003}
+\textsc{Sarma, A.; Noroozi, Z.; Hoek, A.}\ \ \  Palantir: raising awareness
+  among configuration management workspaces.\ \ \ \capitalize\bblin{}:
+  \textit{Software Engineering, 2003. Proceedings. 25th International
+  Conference on}, 2003, \bblpp{} 444 -- 454.
+
+\bibitem[{Teppola \bbletal{}(2009)Teppola, Parviainen e Takalo}]{Teppola2009}
+\textsc{Teppola, S.; Parviainen, P.; Takalo, J.}\ \ \  Challenges in deployment
+  of model driven development.\ \ \ \capitalize\bblin{}: \textit{Software
+  Engineering Advances, 2009. ICSEA '09. Fourth International Conference on},
+  2009, \bblpp{} 15 --20.
+
+\bibitem[{Zhang e Ray(2007)}]{Zhang2007}
+\textsc{Zhang, J.; Ray, I.}\ \ \  Towards secure multi-sited transactional
+  revision control systems.\ \ \ 2007, \bblpp{} 365 -- 375.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0920548906000742}
+
+\end{thebibliography}
