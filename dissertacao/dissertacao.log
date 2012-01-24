@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  16 JAN 2012 23:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  24 JAN 2012 21:34
 entering extended mode
  %&-line parsing enabled.
 **dissertacao
@@ -455,8 +455,8 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
-(./tex/apendiceA.aux) (./tex/apendiceB.aux) (./tex/apendiceC.aux)
-(./tex/referencias.aux))
+(./tex/referencias.aux) (./tex/apendiceA.aux) (./tex/apendiceB.aux)
+(./tex/apendiceC.aux) (./tex/apendice_textos.aux) (./tex/apendiceE.aux))
 \openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -473,7 +473,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
 LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
- (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 71.
@@ -645,58 +646,39 @@ Cap\'{\i }tulo 2.
 
 ]
 Cap\'{\i }tulo 3.
+[9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
-[9]) (./tex/desenvolvimento.tex [10]
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+) (./tex/desenvolvimento.tex [10]
 Cap\'{\i }tulo 4.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 7.
 [11
 
 
-] [12]) (./tex/conclusao.tex [13] [14
+] [12] [13] [14] [15] [16] [17]
+Overfull \hbox (11.34982pt too wide) in paragraph at lines 263--264
+[]\T1/ptm/m/n/12 Será pe-dido para duas equipes difer-entes a mesma tarefa, sen
+do que uma de-las us-ara o eclipse+svn
+ []
+
+[18]) (./tex/conclusao.tex [19] [20
 
 
 ]
 Cap\'{\i }tulo 5.
-[15]
+[21]
 Overfull \hbox (13.10248pt too wide) in paragraph at lines 36--37
 []\T1/ptm/m/n/12 Que ben-efi-cios em ter-mos de co-lab-o-ração o comdd traz qnd
  com-parado a abor-da-gens eclipse+svn? 
  []
 
-[16]) [17]
-\openout2 = `tex/apendiceA.aux'.
-
- (./tex/apendiceA.tex [18
-
-
-
-]
-Cap\'{\i }tulo 6.
-) [19]
-\openout2 = `tex/apendiceB.aux'.
-
- (./tex/apendiceB.tex [20
-
-
-
-
-]
-Cap\'{\i }tulo 7.
-) [21]
-\openout2 = `tex/apendiceC.aux'.
-
- (./tex/apendiceC.tex [22
-
-
-
-
-]
-Cap\'{\i }tulo 8.
-) [23]
+[22]) [23]
 \openout2 = `tex/referencias.aux'.
 
  (./tex/referencias.tex [24
-
 
 
 ] (./dissertacao.bbl (./babelbst.tex)
@@ -720,11 +702,62 @@ com / science / article / pii /
 
 
 ]
+\openout2 = `tex/apendiceA.aux'.
+
+ (./tex/apendiceA.tex [26
+
+
+
+
+]
+Cap\'{\i }tulo 6.
+) [27]
+\openout2 = `tex/apendiceB.aux'.
+
+ (./tex/apendiceB.tex [28
+
+
+
+
+]
+Cap\'{\i }tulo 7.
+) [29]
+\openout2 = `tex/apendiceC.aux'.
+
+ (./tex/apendiceC.tex [30
+
+
+
+
+]
+Cap\'{\i }tulo 8.
+) [31]
+\openout2 = `tex/apendice_textos.aux'.
+
+ (./tex/apendice_textos.tex [32
+
+
+
+
+]
+Ap\^endice A.
+[33] [34]) [35]
+\openout2 = `tex/apendiceE.aux'.
+
+ (./tex/apendiceE.tex [36
+
+
+
+
+]
+Ap\^endice A.
+) [37]
 
 Package natbib Warning: There were undefined citations.
 
-(./dissertacao.aux (./tex/apendiceA.aux) (./tex/apendiceB.aux)
-(./tex/apendiceC.aux) (./tex/referencias.aux))
+(./dissertacao.aux (./tex/referencias.aux) (./tex/apendiceA.aux)
+(./tex/apendiceB.aux) (./tex/apendiceC.aux) (./tex/apendice_textos.aux)
+(./tex/apendiceE.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -734,24 +767,25 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7078 strings out of 495061
- 96618 string characters out of 1182620
- 178630 words of memory out of 3000000
- 10029 multiletter control sequences out of 15000+50000
- 92566 words of font info for 96 fonts, out of 3000000 for 9000
+ 7113 strings out of 495061
+ 97276 string characters out of 1182620
+ 185630 words of memory out of 3000000
+ 10047 multiletter control sequences out of 15000+50000
+ 96519 words of font info for 99 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
- 43i,11n,49p,1985b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,49p,1985b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
 re/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
-lvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pf
-b></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-
-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
-b></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (39 pages, 158436 bytes).
+lvetic/uhvbo8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/te
+xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
+xmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertacao.pdf (51 pages, 194033 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
