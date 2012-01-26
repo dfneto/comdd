@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  24 JAN 2012 21:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  25 JAN 2012 21:53
 entering extended mode
  %&-line parsing enabled.
 **dissertacao
@@ -658,27 +658,36 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
 [11
 
 
-] [12] [13] [14] [15] [16] [17]
-Overfull \hbox (11.34982pt too wide) in paragraph at lines 263--264
+] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22]
+Overfull \vbox (18.85089pt too high) has occurred while \output is active []
+
+
+[23]
+
+LaTeX Warning: Reference `apendice_log' on page 24 undefined on input line 550.
+
+
+[24] [25]
+Overfull \hbox (11.34982pt too wide) in paragraph at lines 665--666
 []\T1/ptm/m/n/12 Será pe-dido para duas equipes difer-entes a mesma tarefa, sen
 do que uma de-las us-ara o eclipse+svn
  []
 
-[18]) (./tex/conclusao.tex [19] [20
+[26]) (./tex/conclusao.tex [27] [28
 
 
 ]
 Cap\'{\i }tulo 5.
-[21]
+[29]
 Overfull \hbox (13.10248pt too wide) in paragraph at lines 36--37
 []\T1/ptm/m/n/12 Que ben-efi-cios em ter-mos de co-lab-o-ração o comdd traz qnd
  com-parado a abor-da-gens eclipse+svn? 
  []
 
-[22]) [23]
+[30]) [31]
 \openout2 = `tex/referencias.aux'.
 
- (./tex/referencias.tex [24
+ (./tex/referencias.tex [32
 
 
 ] (./dissertacao.bbl (./babelbst.tex)
@@ -698,66 +707,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--50
 com / science / article / pii /
  []
 
-)) [25
+)) [33
 
 
 ]
 \openout2 = `tex/apendiceA.aux'.
 
- (./tex/apendiceA.tex [26
+ (./tex/apendiceA.tex [34
 
 
 
 
 ]
 Cap\'{\i }tulo 6.
-) [27]
+) [35]
 \openout2 = `tex/apendiceB.aux'.
 
- (./tex/apendiceB.tex [28
+ (./tex/apendiceB.tex [36
 
 
 
 
 ]
 Cap\'{\i }tulo 7.
-) [29]
+) [37]
 \openout2 = `tex/apendiceC.aux'.
 
- (./tex/apendiceC.tex [30
+ (./tex/apendiceC.tex [38
 
 
 
 
 ]
 Cap\'{\i }tulo 8.
-) [31]
+) [39]
 \openout2 = `tex/apendice_textos.aux'.
 
- (./tex/apendice_textos.tex [32
+ (./tex/apendice_textos.tex [40
 
 
 
 
 ]
 Ap\^endice A.
-[33] [34]) [35]
+[41] [42]) [43]
 \openout2 = `tex/apendiceE.aux'.
 
- (./tex/apendiceE.tex [36
+ (./tex/apendiceE.tex [44
 
 
 
 
 ]
 Ap\^endice A.
-) [37]
+) [45]
 
 Package natbib Warning: There were undefined citations.
 
 (./dissertacao.aux (./tex/referencias.aux) (./tex/apendiceA.aux)
 (./tex/apendiceB.aux) (./tex/apendiceC.aux) (./tex/apendice_textos.aux)
 (./tex/apendiceE.aux))
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -767,13 +779,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7113 strings out of 495061
- 97276 string characters out of 1182620
+ 7117 strings out of 495061
+ 97334 string characters out of 1182620
  185630 words of memory out of 3000000
- 10047 multiletter control sequences out of 15000+50000
+ 10051 multiletter control sequences out of 15000+50000
  96519 words of font info for 99 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
- 43i,12n,49p,1985b,483s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,49p,1985b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
 re/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
@@ -783,9 +795,9 @@ xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (51 pages, 194033 bytes).
+Output written on dissertacao.pdf (59 pages, 208092 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 233 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

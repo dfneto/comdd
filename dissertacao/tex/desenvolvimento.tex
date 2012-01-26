@@ -102,13 +102,156 @@ O tempo entre o momento que o pesquisador começou a falar com os participantes a
 Tiverem a ajuda do Jefferson, apenas para explicar algumas intruções que não ficaram claras o suficiente, coisa que eu poderia ter feito, mas pelo skype tava dificil.
 
 \subsubsection{Resultados}
-A resposta correta que deveria ser apresentada é a seguinte:
-<modelo correto!!>
+A resposta correta é a seguinte:
 
-\subsubsection{Resultados das equipes}
-equipe 1...
-equipe 2...
-O grupo A, que leu pela segunda vez a API teve melhores resultados que o grupo B. 
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+	plataforma pionner 
+
+	robo david 
+
+	adicionar includes 
+
+	adicionar defines 
+
+	importar pacote player; 
+
+	importar pacote localizacao; 
+
+	criarSensor gps 
+
+	criarSensor bussola 
+
+	\hspace{5mm} int main() \{ 
+
+	\hspace{5mm}\hspace{5mm} gps.ligar();
+
+	\hspace{5mm}\hspace{5mm} bussola.ligar(); 
+
+	\hspace{5mm}\hspace{5mm} carregarListaCoordenadas(); 
+
+	\hspace{5mm}\hspace{5mm} inicializarPlayer(); 
+
+	\hspace{5mm}\hspace{5mm} while(true) \{ 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} bussola.ler(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} gps.ler(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} receberCoordenada();
+ 
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} processaInfo(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} defineRegraSeguirMultiplasCoordenadas(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} andar(); 
+
+	\hspace{5mm}\hspace{5mm} \} 
+
+	\hspace{5mm} \} 
+
+}}
+\end{center}
+
+\subsubsection{Resultados das equipes - aqui tinha que entrar mais um sub}
+A equipe 1 apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original (leu duas vezes a "api"):
+
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+	plataforma pioneer 
+
+	robo MLJ123 
+
+	adicionar defines 
+
+	adicionar includes 
+
+	adicionar while 
+
+	\vspace{5mm}
+	importar pacote player; 
+
+	importar pacote localizacao; 
+
+	\vspace{5mm}
+	criarSensor gps 
+
+	criarSensor bussola 
+
+	\vspace{5mm}
+	int main() \{ 
+
+	\hspace{5mm}       << 
+
+	\hspace{5mm}       gps.ligar(); 
+
+	\hspace{5mm}       bussola.ligar(); 
+
+	\hspace{5mm}       carregarListaCoordenadas(); 
+
+	\hspace{5mm}       inicializarPlayer(); 
+
+	\hspace{1mm} while(true) \{ 
+
+	\hspace{3,5mm}       gps.ler(); 
+
+	\hspace{5mm}	   bussola.ler(); 
+
+	\hspace{5mm}	carregarListaCoordenadas(); 
+
+	\hspace{5mm}	receberCoordenada(); 
+
+	\hspace{5mm}	processaInfo(); 
+
+	\hspace{5mm}	defineRegraSeguirMultiplasCoordenadas(); 
+
+	\hspace{5mm}	andar();             
+
+	\hspace{5mm}        \} 
+
+	\hspace{5mm}        >> 
+
+	\}
+
+}}
+\end{center}
+
+A equipe 2 apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original (eu estava conversando todo o tempo no skype com essa dupla):
+
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+plataforma pioneer 
+
+importar pacote player; 
+
+importar pacote localizacao; 
+
+criarSensor gps 
+
+criarSensor bússola 
+
+carregarListaCoordenadas(); 
+
+int main() { 
+
+<<Inicializações 
+
+Loop 
+
+Funções 
+
+>> 
+
+}	
+
+}}
+\end{center}
+
+
+O grupo A teve resultados melhores que o grupo B.
 
 \subsubsection{Opiniões dos participantes}
 \textit{Prós:} A linguagem é fácil de entender e o fato de ser em português facilita.
@@ -139,7 +282,7 @@ Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéct
 %--------Estudo de Caso-------------
 %-----------------------------------
 \subsection{Estudo de Caso II}
-O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem Eclipse+SVN, entre desenvolvedores.
+O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem Eclipse+SVN, entre desenvolvedores e coletar suas opiniões.
 
 \subsubsection{Descrição dos participantes}
 Todos os quatro participantes são formados em ciências da computação, atuaram na indústria desenvolvendo sistemas e estão cursando mestrado ou doutorado na Universidade de São Paulo em ciências da computação.
@@ -152,7 +295,8 @@ Antes de passar o comando todos os grupos receberam as seguintes instruções (dep
 \begin{itemize}
 \item Ler o \textit{Texto I: O que é o CoMDD?} (ver \ref{apendice_texto1_o_que_e_comdd}) no caso da equipe A e ler o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver \ref{apendice+texto1b_instalacao});
 \item Ler o \textit{Texto II: Como programar para o CoMDD} (ver \ref{apendice_texto2_como_programar_para_o_comdd});
-\item Pode-se comentar o modelo usando "//"
+\item Pode-se comentar o modelo usando "//";
+\item A função carregarListaCoordenadas() já está configurada para a lista de coordenadas, desta forma vocês não devem se preocupar em passar um lista de coordenadas, apenas chamar a função;
 \item O desenvolvimento é feito em turnos e em cada turno apenas um desenvolvedor pode trabalhar no código (editá-lo), para evitar conflitos e merges. Cada turno tem 3 minutos para desenvolver e mais 2 minuto para comentar e fazer o commit, ou comentar no CoMDD.
 Ex: 
 0'-3': O dev1 começa programando enquanto o dev2 fica esperando (o dev2 pode conversar via e-mail ou gtalk com o dev1 caso o dev1 precise). 
@@ -206,7 +350,7 @@ O código é de um robô que ao receber uma lista de coordenadas deve ser capaz de 
 } } 
 \end{center}
 
-\subsection{Equipe A: CoMDD}
+\subsubsection{Equipe A: CoMDD}
 Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para equipe A foram apresentadas as seguintes intruções:
 \begin{enumerate}
 \item Pode-se usar todas as funcionalidades da wiki como comentários, histórico e comparação de versões\footnote{Um exemplo de edição normal (sem ser usando a DSL) foi apresentado para que os participantes pudessem saber como e onde editar, comentar e comparar versões.};
@@ -214,43 +358,301 @@ Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para e
 \end{enumerate}
 
 
-\subsection{Equipe B: Eclipse+SVN}
+\subsubsection{Equipe B: Eclipse+SVN}
+Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para equipe B foram apresentadas as seguintes intruções:
+\begin{enumerate}
+\item Pode-se usar todas as funcionalidades do plugin SVN como check-in check-out, comentários, histórico e comparação de versões\footnote{Os participantes já conheciam o plugin.};
+\item Dêem preferencialmente para comunicação que o próprio SVN fornece: os comentários, caso contrário usem um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
+\item Não usar as funções comuns de uma IDE como highlight, auto-complete e etc\footnote{Assim as equipes ficam mais iguais, uma vez que no CoMDD essas funcionalidades não foram implementadas.}\footnote{O Eclipse tem um ambiente que não usa as funções citadas.}
+\end{enumerate}
 
 
+\subsubsection{Resultados}
+A resposta correta é a mesma apresentada na seção...
+
+\subsubsection{Resultados da Equipe A aqui entra mais um sub}
+A equipe A apresentou a seguinte resposta:
+
+\begin{center}
+\fbox{
+ \parbox{15cm}{
+//O robô deve ser da plataforma pionner - Danilo
+
+plataforma pionner
+
+\vspace{5mm}
+//O nome do robê deve ser uma concatenação dos nomes dos desenvolvedores - Davi
+
+robo davnilo
+
+\vspace{5mm}
+//O robô deve usar os pacotes de localização - Danilo
+
+importar pacote localizacao
+
+\vspace{5mm}
+//O robô deve usar os pacotes do player - Davi
+
+importar pacote player;
+
+\vspace{5mm}
+//O robô deve usar um gps - Danilo
+
+criarSensor gps
+
+\vspace{5mm}
+//O robô deve usar uma bússola- Davi
+
+criarSensor bussola
+
+\vspace{5mm}
+//função principal do código
+
+int main() \{
+
+bussola.ligar();
+
+gps.ligar();
+
+\vspace{5mm}
+//O robô seguir um conjunto de coordenadas - Danilo + Davi
+
+while(true) \{
+
+bussola.ler(); 
+
+gps.ler();
+
+receberCoordenada();
+
+processaInfo();
+
+defineRegraSeguir(); 
+
+defineRegraNaoBater();
+
+andar();
+
+\}
+
+\}
+
+}}
+\end{center}
+
+Comunicação do grupo A: colocar o historico da wiki - ver figura 
+
+O tempo entre o momento que o pesquisador começou a falar com os participantes até o fim foi de aproximadamente 1h45. Neste tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
+
+Em um momento eu indiquei que o modelo tinha erros e ainda assim, no final ainda faltou algumas coisas no modelo.
+
+O danilo teve uma duvida e eu sugeri ele ler a api ou perguntar para a dupla dele, mas perguntaram menos do que no estudo de caso 1
+
+Sugeri para eles conversarem entre si e lerem a API
+
+O tempo não era muito rígido, mas apenas uma pessoa editava por vez durante um turno.
+
+O modelo apresentado no final foi o seguinte:
+
+<>
+
+\subsubsection{Resultados da Equipe B aqui entra mais um sub}
+A Equipe B apresentou a seguinte resposta:
+
+\begin{center}
+\fbox{
+ \parbox{15cm}{
+// Definindo a plataforma do robo como pioneer
+
+plataforma pioneer
+
+\vspace{5mm}
+// Define o nome do robo como uma concatenacao dos nomes dos desenvolvedores
+
+robo filipeAlexandre
+
+\vspace{5mm}
+adicionar includes
+
+adicionar defines
+
+\vspace{5mm}
+importar pacote localizacao;
+
+importar pacote player;
+
+\vspace{5mm}
+criarSensor gps
+
+criarSensor bussola
+
+\vspace{5mm}
+int main() \{
+
+\vspace{5mm}
+    \hspace{5mm} // Ligar o GPS
+
+    \hspace{5mm} gps.ligar();
+    
+\vspace{5mm}
+    \hspace{5mm} // Ligar Bussola
+
+    \hspace{5mm} bussola.ligar();
+
+\vspace{5mm}    
+    \hspace{5mm} // Carrega lista de coordernadas e inicializa Player
+
+    \hspace{5mm} carregarListaCoordenadas();
+
+    \hspace{5mm} inicializarPlayer();
+
+\vspace{5mm}    
+    \hspace{5mm} // Define que robo ira seguir um conjungo de coordenadas
+
+    \hspace{5mm} defineRegraSeguirMultiplasCoordenadas();
+
+\vspace{5mm}    
+    \hspace{5mm} // Loop
+
+    \hspace{5mm} while(true) \{
+
+        \hspace{5mm}\hspace{5mm} // Le os dados atuais
+
+        \hspace{5mm}\hspace{5mm} gps.ler();
+
+        \hspace{5mm}\hspace{5mm} bussola.ler();
+
+\vspace{5mm}        
+        \hspace{5mm}\hspace{5mm} // Processa informacoes
+
+        \hspace{5mm}\hspace{5mm} processaInfo();
+
+        \hspace{5mm}\hspace{5mm} receberCoordenada();
+
+
+\vspace{5mm}        
+        \hspace{5mm}\hspace{5mm} andar();
+
+    \hspace{5mm} \}
+
+\}
+
+}}
+\end{center}
+
+Conversa do grupo B: ver figura 
 
 O tempo entre o momento que o pesquisador começou a falar com os participantes até o fim foi de aproximadamente 2h45. Neste tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
 
-Tiverem a ajuda do Jefferson, apenas para explicar algumas intruções que não ficaram claras o suficiente, coisa que eu poderia ter feito, mas pelo skype tava dificil.
+O grillo e o michetti perguntou se sempre vai ter que adicionar defines, includes, robo michetti, plataforma pioneer
+Eles pensaram que era um requisito por turno, mas esclareci que não.
+O tempo foi mais rigido e eles conversaram pouco pelo skype, até que os instruí para que usassem algum instant messanger ao invés de uma voice conference.
+Este grupo está usando um instant messagener, coisa que o grupo anterior não usou. Abaixo o log da conversa: ver apendice \ref{apendice_log}
 
-\subsubsection{Resultados}
-A resposta correta que deveria ser apresentada é a seguinte:
-<modelo correto!!>
+Depois do experimento elas são questionadas (ver questionário) e por fim são apresentadas para a outra abordagem, a que não usaram.
 
-\subsubsection{Resultados das equipes}
+
+
 equipe 1...
 equipe 2...
 O grupo A, que leu pela segunda vez a API teve melhores resultados que o grupo B. 
 
 \subsubsection{Opiniões dos participantes}
-\textit{Prós:} 
+\subsubsection{Equipe A} aqui entra mais um sub
+A seguir são apresentadas as perguntas feitas aos participantes da Equipe A com suas respectivas respostas:
 
-\textit{Contras:} 
+\textbf{O que vcs acharam da linguagem?}
+Danilo: tá legal mas as funcoes estão muito genéricas, includes e defines estao confusos (redundante a parte de adicionar includes e importar pacotes)
+Davi: linguagem primitiva, abrir fechar parênteses e chaves, os pacotes já deveriam estar todos inclusos sem a necessidade de importar
+
+\textbf{Vocês mudariam algo na sintaxe?}
+Danilo: a estrutura da linguagem é comum a C, Java ao contrario do begin. É melhor deixar tudo em português ou tudo em inglês.
+Davi: a sintaxe esta boa para quem consegue programar em C ou java, aí consegue entender, mas para quem nunca programou (), {} e ; não significa nada.
+
+\textbf{Os comentários que vocês escreveram foram úteis de alguma forma?}
+Danilo: interessante. Mas no mundo real um chat ou gtalk é mais útil, caso os dois estejam programando na mesma classe. Mas para documentação ou quando os desenvolvedores não estão ao mesmo tempo e na mesma classe, é útil. 
+Davi: o sistema de comentário do svn funciona melhor, porque ao dar o commit você é obrigado a comentar e ao dar o check out você é obrigado a ler. Na wiki fica dissociado do código.
+
+\textbf{E o histórico, foi útil?}
+Danilo: Não usou. É mais util quando alguém faz alguma cagada.
+Davi: não usou
+
+\textbf{De uma maneira geral, o que vocês acharam da abordagem?}
+Dan: não é muito interessante uma vez que tenho que esperar pela pessoa terminar programar para depois programar. No tradicional os dois podem programar juntos e depois fazer o merge ou edição simultanea estilo o google seria interessante. \textbf{E se fosse em classes separadas ao memso tempo?} Aí é interessante.
+Programar na web também é bom, o lance do histórico tambem.
+É bom a flexibilidade de estar em qualquer computador.
+Davi: programar na web é bom porque evita problemas de Infraestrutura (a infraestrutura é instantanea, independente do computador).
+
+\textbf{Então seria interessante uma wiki ou seria melhor um outro site?}
+Danilo: a wiki um site mais dinamico, mais facil de editar, as pessoas já conhecem.
+Davi: poderia ser um site mais especializado
+
+\textbf{O que voce achou da abordagem comdd e da abordagem eclipse+svn? Que comparação vocês fazem entre o eclipse+svn e o CoMDD? Qual vocês preferem?}
+Danilo: estar na web é mais flexivel, configurar uma ide, svn e tudo o mais é trabalhoso
+Davi: em geral é melhor programar na wiki do que usar uma ide, mas fica dependente da conexão. Aí seria interessante ter uma forma de usar a wiki mesmo seminternet.
+
+\textbf{Vocês usariam uma wiki no lugar do eclipse+svn? Por que não? E se fosse para fazer programas como este, vocês usariam o CoMDD?} 
+Danilo: usaria desde que o processo de compilação funcionasse, agora sem compilar e sem executar não.
+Davi: concordo.
+
+
+
+\subsubsection{Equipe B} aqui entra mais um sub
+A seguir são apresentadas as perguntas feitas aos participantes da Equipe A com suas respectivas respostas:
+
+\textbf{A empresa de voces seguia essa abordagem?}
+Usam o eclipse e o subversion
+
+\textbf{O que vcs acharam da linguagem?}
+Michetti: fácil e simples, poucos comandos
+Grillo: curva de aprendizagem rapida, mas faltou pratica, não sei se o codigo funciona, a sintaxe é simples
+outra coisa seria melhorar a documentação para incluir qual o simbolo que indica comentário, e quando se deve usar ou não ponto e virgula
+
+\textbf{Vocês mudariam algo na sintaxe?}
+Grillo e Michetti: a parte dos includes poderia ser uma linha só já que sempre vai precisar dela poderia ser numa linha.
+
+\textbf{Como voces colaboraram? O que foi mais importante, os comentarios?}
+Eles: O comentário do log não usaram porque o codigo é pequeno e usaram apenas os comentarios no codigo. Michetti: o comentário do svn é mais quando tem algum problema e não para notificar o que foi feito.
+
+\textbf{Os comentários que vocês escreveram no svn foram úteis de alguma forma?}
+Não usaram
+
+\textbf{E o histórico, foi útil?}
+Não usaram
+
+\textbf{E quais funcoes do SVN voces acham importantes alem das que voces usaram?}
+Michetti: Histórico caso tenha algum problema, merge caso editassem ao mesmo tempo.
+Grillo: quando o codigo é muito extenso é importante comparar as versoes de código para ver o que tá sendo alterado (as versoes do repositorio, com a local, o que alterou...)
+
+\textbf{Voces acham que a wiki atenderia esses propositos que o svn+eclipse trás?}
+M: para editar código eu nunca pensei numa wiki para isso, usaria mais para colaboração na documentação.
+G: auxilio de sintaxe no eclipse, auto-complet, import automatico, clicar em um arquivo e ir para outro arquivo. A parte de comentário, versionar, alterar o texto é praticamente a mesma coisa. Não sei se caso editasse ao mesmo tempo não sei como se comportaria.
+
+\textbf{O que voce achou da abordagem comdd e da abordagem eclipse+svn? Que comparação vocês fazem entre o eclipse+svn e o CoMDD? Qual vocês preferem?}
+M: to acostumado com o eclipse+svn, mas uso tambem o controle de versao integrado com um bugtrack.
+G: cor da grama, muita coisa já tem pronta pro eclipse, costume principal barreira, pensando como programador ainda usaria o eclipse.
+Tá, mas pensando que usariamos uma dsl e não java, logo seria algo bem mais simples.
+
+\textbf{Seria bom todos esses programas para matar uma formiga?}
+Para um projeto pontual e pequeno o comdd supriria mas para algo maior e complexo.
+
 
 
 \subsubsection{Ruídos e mal planejamento}
 
 \subsubsection{Conclusões e observações}
+Quanto a colaboração do grupo A: Foram instruídos a usarem os comentarios da wiki e puderam comentar no modelo usand
 
-\begin{enumerate}
-	\item
-\end{enumerate}
+Quanto ao uso do svn o grupo B: usou Check in, check out, update, não merge ou comparar codigo
+
+no experimento acho que as pessoas colaboraram igualmente, dando ainda um ponto positivo para o svn que "obriga" a pessoa a comentar, contudo fica muito mais facil da pessoas ler um comentário na wiki, só que com uma wiki é muito mais facil e simples de qualquer pessoa colaborar, bastando para isso ter permissões.
+
+Para atender um determinado dominio, a wiki é o suficiente, para coisas simples, para algo mais complexo e que necessite de varias pessoas editando ao mesmo tempo e que podem dar erro, ai talvez o melhor seja a tradicional.
 
 \subsubsection{Lições aprendidas}
 Como aprendizado do estudo de caso II ...
 
-\begin{itemize}
-	\item
-\end{itemize}
+
 
 
 
@@ -263,12 +665,10 @@ Como aprendizado do estudo de caso II ...
 Será pedido para duas equipes diferentes a mesma tarefa, sendo que uma delas usara o eclipse+svn e a outra uma wiki apenas. Ambas usarão dsls e geração de código, mas nao terao os recursos tradicionais de uma ide como import, highlight sugestao ... 
 
 Para isso será implementado a dsl no eclipse e numa wiki usando o xtext/xpand e o antlr respectivamente. 
-\subsection{Estuo de caso 2: análise de vídeos e planilha de ticar}
 
-\subsection{Resultados do Estudo de Caso}
-?Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
 
-conclusão: 100\% dos usuarios, quando questionados se para a dada tarefa que abordagem usariam, responderam o CoMDD.
+\subsection{Estuo de caso 3: análise de vídeos e planilha de ticar}
+BLAHBLHABLHA...
 
 \section{Limitações e Soluções}
 Deficiencia do CoMDD: nao compila, entao subentende-se que o codigo que ela gera esta sintaticamente correto, mas ela pode retornar erros 
@@ -277,14 +677,16 @@ como integrar testes? debug? ou seria isso inexistentes em dsls ja que elas nao 
 \subsection{Do trabalho}
 Escopo do trabalho: avaliar em que casos pode-se usar uma wiki no lugar de um svn nao faz parte do escopo deste trabalho 
 
-
 A abordagem pessimistica possui suas desvantagens como "In contrast, the pessimistic policy has some disadvantages. First, locks can cause an unnecessary serialization over the development process. Sometimes different developers can independently modify different parts of the same CI, but using a lock-based approach that is not possible. In addition, locks can cause a false sense of security (Collins-Sussman et al., 2004). Developers may think that their work will not be affected by the work of other developers due to the
 locks. However, sometimes CIs rely on other CIs that can be modified by other developers. This situation leads to indirect conflicts (Sarma et al., 2003). \cite{Prudencio2012} Assim, um trabalho futuro seria no estudo de estratégias otimísticas ou até mesmo na adoção de ambas como propõe o trabalho de Prudencio et al. \cite{Prudencio2012}.
+
 \subsection{Da ferramenta}
+Desvantagem da linguagem apontada por mim: o código gerado não pode ser testado uma vez que precisa usar o robô, mas o mais importante é ver como as pessoas interagem e colaboram.
+
+
 \subsection{Do estudo de caso}
 
-
-\section{Contribuições}
+\section{Contribuições do CoMDD}
 MDD e tudo na web: mais produtividade 
 Modelos e wiki: aproximação maior de todos os envolvidos no processo, e com isso softwares mais próximos dos que o cliente precisa.
 
@@ -298,4 +700,8 @@ Modelos e wiki: aproximação maior de todos os envolvidos no processo, e com isso
 
 O Danilo perguntou se podia usar comentários. Embora a linguagem não dê suporte a isso eu deixei.
 Seria interessante a linguagem aceitar código C, C++ ou Java puro.
+
+
+
+
 
