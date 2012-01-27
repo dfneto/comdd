@@ -2,34 +2,42 @@
 
 \chapter{Desenvolvimento}
 \label{desenvolvimento}
-Este capítulo apresentará a abordagem desenvolvida neste trabalho, citará suas funcionalidades (com mais detalhes no anexo...), limitações....
+Este capítulo apresenta a abordagem desenvolvida neste trabalho, cita suas funcionalidades e relata o estudo de caso desenvolvido. Também discute os resultados do estudo de caso, apresenta lições aprendidas durante o estudo de caso e as limitações da abordagem e da implementação. 
 
 \section{O CoMDD - \textit{Collaborative Model Driven Development}}
 
-O CoMDD é uma abordagem que consiste no uso de uma DSL para edição de modelos e geração de código-fonte, e de uma Wiki como ferramenta de suporte a DSL, possibilitar o trabalho em equipe e o versionamento de modelos. 
+O CoMDD é uma abordagem que consiste no desenvolvimento colaborativo orientado a modelos, onde a colaboração é referente a edição colaborativa de modelos. Seja mais de uma pessoa editando o mesmo modelo (concorrentemente ou não), seja várias pessoas editando vários modelos, de forma que cada modelo tenha apenas uma pessoa e que esses modelos sejam dependentes.
 
-O CoMDD permite:
+A figura A ilustra duas pessoas editando um mesmo modelo e a figura B ilustra três pessoas editando diferentes modelos, mas que são dependentes.
+
+A implementação da abordagem CoMDD realizada neste trabalho para evidenciar a hipótese, consiste no uso de uma DSL como abordagem MDD e de uma Wiki para promover a colaboração e suporte da DSL. Mais especificamente, a DSL é para o domínio de robôs móveis autônomos e foi implementada com o ANTLR\footnote{} e a Wiki usada foi a Xwiki\footnote{}. 
+
+A DSL permite a edição de modelos e geração de código-fonte, usando templates, em uma Wiki. Desta forma, a Wiki serve tanto como ferramenta de suporte da DSL quanto ferramenta colaborativa pois possibilita o trabalho em equipe e o versionamento de modelos. 
+
+O implementação do CoMDD permite:
 \begin{enumerate}
-	\item \textbf{Edição de modelos:} criar ou alterar modelos de acordo com o metamodelo definido\footnote{O metamodelo pode ser alterado na wiki, assim como as transformações, mas a princípio está sendo definido fora da wiki.}. Os modelos serão a entrada do transformador e eles são editados na wiki
-	\item \textbf{Transformação de modelos em código-fonte:} o transformador, desenvolvido para a wiki, irá gerar o código-fonte de acordo com o modelo de entrada e apresentar erros de sintaxe\footnote{Na atual versão do CoMDD, o transformador não retorna os erros sintáticos e sim os ignora. O transformador então retorna o código-fonte da parte dos modelos válidas}
-	\item \textbf{Colaboração:} a wiki permite que mais desenvolvedores possam editar o mesmo modelo usando uma política \textit{pessimistic}, promovendo a colaboração
-	\item \textbf{Versionamento de modelos:} a wiki armazena um histórico dos modelos com a possibilidade de comparar as alterações e retornar à edições anteriores
-	\item \textbf{Controle de acesso por grupos}: a wiki permite criar um grupo com permissão de edição de modelos e outro com permissão de apenas visualização
-	\item \textbf{Comentários}: tanto é possível definir um comentário para cada versão alterada quanto na página editada (versão do modelo atual). A figura abaixo XXX ilustra vários comentários na página principal (lado esquerdo) e comentários específicos para versões (lado direito).
+	\item \textbf{Edição de modelos:} criar ou alterar modelos de acordo com o metamodelo definido\footnote{O metamodelo pode ser alterado na wiki, assim como as transformações, mas a princípio está sendo definido fora da wiki e esta funcionalidade ainda não foi implementada.}. Os modelos serão a entrada do transformador e eles são editados na wiki;
+	\item \textbf{Transformação de modelos em código-fonte:} o transformador, desenvolvido para a wiki, gera o código-fonte de acordo com o modelo de entrada;% e apresentar erros de sintaxe\footnote{Na atual versão do CoMDD, o transformador não retorna os erros sintáticos e sim os ignora. O transformador então retorna o código-fonte da parte dos modelos válidas}
+	\item \textbf{Colaboração:} a wiki permite que mais desenvolvedores possam editar o mesmo modelo usando uma política \textit{pessimistic};
+	\item \textbf{Versionamento de modelos:} a wiki armazena um histórico dos modelos com a possibilidade de comparar as versões e retornar à edições anteriores;
+	\item \textbf{Controle de acesso por grupos}: a wiki permite criar um grupo com permissão de edição de modelos e outro com permissão de apenas visualização, por exemplo;
+	\item \textbf{Comentários}: há dois tipos de comentários. Um é inserido em cada versão alterada e o outro é inserido na página editada (versão do modelo atual). A figura abaixo ilustra vários comentários na página de edição do modelo (lado esquerdo fig comentarios na pagina de edicao) e comentários específicos para versões (lado direito fig comentarios por Edicao).
 \end{enumerate}
 
-No anexo XXX estão detalhes da implementação.
+No apendice XXX estão detalhes da implementação, como: código-fonte, como fazer o plugin para a xwiki e afins.
 
-%mostrar um exemplo completo (vai ficar confuso principalmente como pessoas editam na wiki, modelos) com screenshots: anexo?
-%O desenvolvimento tradicional (abrir um parentese e falar do desenvolvimento sem mdd)
+A figura XXX ilustra um desenvolvedor editando um modelo (passo 1). Este modelo deve estar de acordo com o metamodelo (passo 2). É o metamodelo que define a estrutura do modelo, ou seja é ele quem define o que é uma bola e se ela vem antes ou depois do quadrado. Se o modelo estiver de acordo, então são aplicadas transformações (passo 3) que geram o código-fonte (passo 4). Todo esse processo é realizado na wiki.
 
-Possíveis de serem implementadas: 
-	Merge (ver como a wikipedia faz e um plugin)
-	Bate papo dentro da wiki
-	Highlight com javascript
-	Wiki como ide: ver outras características de uma ide
-	Metametamodelagem: é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
-	Falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]
+FIGURA!!
+
+
+%Possíveis de serem implementadas: 
+%	Merge (ver como a wikipedia faz e um plugin)
+%	Bate papo dentro da wiki
+%	Highlight com javascript
+%	Wiki como ide: ver outras características de uma ide
+%	Metametamodelagem: é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
+%	Falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]
 
 \section{Vantagens}
 O CoMDD tem as seguintes vantagens devido ao uso de uma wiki e de MDD:
@@ -40,27 +48,23 @@ O CoMDD tem as seguintes vantagens devido ao uso de uma wiki e de MDD:
 	\item \textbf{}
 \end{enumerate}
 
-\section{Arquitetura do CoMDD}
-Os passos para criar a dsl e para exportar para xwiki e sua interação com o usuário. --> Isso vai no anexo. \ref{apendiceE}
-
-
 \section{Método}
 \label{metodo}
 Para tentar evidenciar que a hipótese é possível/verdadeira o CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org} e a Xwiki\footnote{http://www.xwiki.org} (ver detalhes de implementação no Apêndice \ref{apendiceE}) e dois estudos de caso foram planejados.
 
 \subsection{Estudo de Caso I: }
-O objetivo do primeiro estudo de caso foi avaliar o CoMDD por pessoas não desenvolvedoras. 
+O objetivo do primeiro estudo de caso foi avaliar o CoMDD por pessoas não desenvolvedoras. Neste momento como o intuito era avaliar a linguagem e o ambiente do CoMDD e verificar se participantes jovens, com relativa baixa formação, sem conhecimentos de programação e sem conhecimentos do domínio, conseguiriam entender os conceitos e a linguagem. 
 
 \subsubsection{Descrição dos participantes}
 Alunos de pré-iniciação científica do Laboratório de Robótica Móvel da Universidade de São Paulo. Três deles tinham 16 anos e um 17 anos, sendo dois garotos e duas garotas. Todos os quatro haviam concluído o segundo colegial.
-Já tinham programado para o TAZ\footnote{Um robô de pequeno porte físico com intuito educaional} usando uma dsl própria. Não possuiam conceitos de algoritmos ou de programação orientada a objetos.
+Já tinham programado para o robô SRV\footnote{vem o site do srv que por algum motivo nao ta compilando no latex!} com o intuito educaional, usando uma API própria e simples usando. Não possuiam conceitos de algoritmos ou de programação orientada a objetos.
 
 \subsubsection{Instruções e Problema Apresentado}
-Foi formado duas equipes com dois integrantes. Cada equipe ficava em um único computador, ou seja, eram dois computadores com duas pessoas em cada. Neste momento, o intuito era avaliar a linguagem e o ambiente do CoMDD, verificando se participantes jovens, com relativa baixa formação, sem conhecimentos de programação e sem conhecimentos do domínio, conseguiriam entender os conceitos e a linguagem, por isso foram colocados juntos para que pudessem discutir amplamente. 
+Foi formado duas equipes com dois integrantes cada. Cada equipe ficava em um único computador, ou seja, eram dois computadores com duas pessoas. A distribuição foi definida dessa forma para que fosse estimulada a comunicação e facilitar a resolução do problema. Estima-se que se fosse uma pessoa por computador o experimento iria durar o dobro do tempo, se tornando inviável de conseguir pessoas que se dispusessem em participar.
 
 Antes de passar o comando foi lido junto com os participanetes dois textos, o primeiro explicando o que é o CoMDD (ver \textit{Texto I: O que é o CoMDD?} no apêndice \ref{apendice_textos}) e o segundo texto explicando como usar a DSL criada para o estudo de caso (ver \textit{Texto II: Como programar para o CoMDD} no apêndice \ref{apendice_texto2_como_programar_para_o_comdd}).
 
-O seguinte comando foi passado:
+Após a leitura, o seguinte comando foi passado:
 
 \begin{center}
  \fbox{
@@ -97,9 +101,7 @@ O seguinte comando foi passado:
 } } 
 \end{center}
 
-O tempo entre o momento que o pesquisador começou a falar com os participantes até o fim foi de aproximadamente 2h45. Neste tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
-
-Tiverem a ajuda do Jefferson, apenas para explicar algumas intruções que não ficaram claras o suficiente, coisa que eu poderia ter feito, mas pelo skype tava dificil.
+O tempo entre o momento que o pesquisador começou a falar com os participantes até o final do experimento foi de aproximadamente 2h45. Este tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
 
 \subsubsection{Resultados}
 A resposta correta é a seguinte:
@@ -154,8 +156,8 @@ A resposta correta é a seguinte:
 }}
 \end{center}
 
-\subsubsection{Resultados das equipes - aqui tinha que entrar mais um sub}
-A equipe 1 apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original (leu duas vezes a "api"):
+\paragraph{Resultados da equipe A}
+A equipe A apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original:
 
 \begin{center}
 \fbox{
@@ -218,7 +220,8 @@ A equipe 1 apresentou a seguinte resposta, observando que a identação apresentad
 }}
 \end{center}
 
-A equipe 2 apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original (eu estava conversando todo o tempo no skype com essa dupla):
+\paragraph{Resultado da equipe B}
+A equipe B apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original:
 
 \begin{center}
 \fbox{
@@ -250,39 +253,38 @@ Funções
 }}
 \end{center}
 
-
-O grupo A teve resultados melhores que o grupo B.
+\paragraph{Observações (trocar esse nome)}
+O grupo A teve um apoio de um ajudante local, visto que o experimento foi transmitido a distância, entretanto o grupo A leu uma segunda vez o texto II. O grupo B teve o suporte durante todo o tempo do pesquisador e via skype, enquanto o grupo A teve suporte apenas via instant messanger. O grupo A obteve melhores resultados que o grupo B. Pode-se considerar a resposta apresentada pelo grupo A como correta.
 
 \subsubsection{Opiniões dos participantes}
 \textit{Prós:} A linguagem é fácil de entender e o fato de ser em português facilita.
 
 \textit{Contras:} Foi mais complicado entender as intruções do experimento; ficou confusa a função \textit{carregarListaCoordenadas()}.
 
-
-\subsubsection{Ruídos e mal planejamento}
-O experimento foi passado a distância, via skype e com a ajuda de um aluno de doutorado do LRM que acompanhou os participantes*****ajudou???**** 
+\subsubsection{Ruídos}
 
 \subsubsection{Conclusões e observações}
 \begin{enumerate}
+	\item O experimento foi passado a distância, via skype e com a ajuda de um aluno de doutorado do LRM que acompanhou os participantes e auxiliou o grupo A, enquanto o pesquisador auxiliava o grupo B. Não pode-se precisar quanto foi o auxílio que o grupo A recebeu;
 	\item Ao observar as equipes estima-se a necessidade de pelo menos duas horas para que eles aprendessem a usar e instalar o Eclipse e SVN;
-	\item Os participantes tinham dificuldade ou preguiça de lerem o texto que ensinava como programar para o CoMDD (\ref{apendice_texto2_como_programar_para_o_comdd}) e tinha o hábito de perguntarem constantemente se o que faziam estava certo;
+	\item Os participantes tinham dificuldade ou preguiça de lerem o texto que ensinava como programar para o CoMDD (\ref{apendice_texto2_como_programar_para_o_comdd})
+	\item Os grupos, principalmente o grupo B, tinham o hábito de perguntarem constantemente se o que faziam estava certo;
 	\item Os participantes copiavam do texto \ref{apendice_texto2_como_programar_para_o_comdd} e colavam na página de edição;
-	\item Para pessoas que nunca programaram fica difícil elas entenderem o funcionamento da linguagem. Era esperado que elas compreendessem mais rapidamente a linguagem.
+	\item Para pessoas que nunca programaram fica difícil elas entenderem o funcionamento da linguagem. Era esperado que elas compreendessem mais rapidamente.
 \end{enumerate}
 
 \subsubsection{Lições aprendidas}
 Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéctos:
 \begin{itemize}
 	\item Organizar melhor a infra-estrutura: verificar quantos computadores serão necessários, se a comunicação for on-line preparar os softwares necessários e orientar bem uma pessoa que possa ajudar e que esteja presente com os participantes. No caso deste experimento houve um mal planejamento da infra-estrutura e da orientação ao ajudante; 
-	\item Para um experimento deste tipo o ideal é evitar ajudar os participantes para se ter uma opinião mais real. No caso deste experimento há quatro hipóteses que explicasse a dependência dos participantes com relação ao pesquisador: (i) relativa baixa instrução dos participantes, (ii) ruídos, (iii) mal planejamento por parte do pesquisador e/ou (iv) a disposição do pesquisador para tirar dúvidas.
+	\item Para um experimento deste tipo o ideal é evitar ajudar os participantes para se ter uma opinião mais real. No caso deste experimento há quatro hipóteses não excludentes que expliquem a dependência dos participantes com relação ao pesquisador: (i) relativa baixa instrução dos participantes, (ii) ruídos provocados pela distância, (iii) mal planejamento ou instrução por parte do pesquisador e/ou (iv) a disposição do pesquisador para tirar dúvidas.
 \end{itemize}
-
 
 %-----------------------------------
 %--------Estudo de Caso-------------
 %-----------------------------------
 \subsection{Estudo de Caso II}
-O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem Eclipse+SVN, entre desenvolvedores e coletar suas opiniões.
+O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem tradicional\footnote{Neste caso a abordagem tradicional escolhida é a IDE Eclipse com o plugin do SVN instalado (Eclipse+SVN)}, entre desenvolvedores e coletar suas opiniões.
 
 \subsubsection{Descrição dos participantes}
 Todos os quatro participantes são formados em ciências da computação, atuaram na indústria desenvolvendo sistemas e estão cursando mestrado ou doutorado na Universidade de São Paulo em ciências da computação.
@@ -291,21 +293,26 @@ Todos os quatro participantes são formados em ciências da computação, atuaram na
 \label{instrucoes_comuns}
 Os quatro integrantes foram dividos em duas equipes: equipe A (usando o CoMDD) e equipe B (usando Eclipse+SVN). Ambos integrantes de cada equipe estavam em locais (mais especificamente cidades) diferentes na hora do experimento. A equipe A realizou o experimento em um dia diferente da equipe B.
 
-Antes de passar o comando todos os grupos receberam as seguintes instruções (depois cada grupo recebeu suas instruções específicas):
-\begin{itemize}
-\item Ler o \textit{Texto I: O que é o CoMDD?} (ver \ref{apendice_texto1_o_que_e_comdd}) no caso da equipe A e ler o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver \ref{apendice+texto1b_instalacao});
+Antes de passar o comando todos os grupos receberam as instruções comuns seguidas instruções específicas. As instruções comuns foram:
+\begin{enumerate}
+\item A equipe A deve ler o \textit{Texto I: O que é o CoMDD?} (ver \ref{apendice_texto1_o_que_e_comdd}) e a equipe B deve ler o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver \ref{apendice+texto1b_instalacao});
 \item Ler o \textit{Texto II: Como programar para o CoMDD} (ver \ref{apendice_texto2_como_programar_para_o_comdd});
-\item Pode-se comentar o modelo usando "//";
+\item Pode-se comentar na edição do modelo usando "//";
 \item A função carregarListaCoordenadas() já está configurada para a lista de coordenadas, desta forma vocês não devem se preocupar em passar um lista de coordenadas, apenas chamar a função;
-\item O desenvolvimento é feito em turnos e em cada turno apenas um desenvolvedor pode trabalhar no código (editá-lo), para evitar conflitos e merges. Cada turno tem 3 minutos para desenvolver e mais 2 minuto para comentar e fazer o commit, ou comentar no CoMDD.
-Ex: 
-0'-3': O dev1 começa programando enquanto o dev2 fica esperando (o dev2 pode conversar via e-mail ou gtalk com o dev1 caso o dev1 precise). 
-3'01s - 5': o dev1 tem de salvar suas alterações e comentar o código caso ache necessário. 
-5'01s - 6': ninguém faz nada para que o servidor atualize os dados
-6'01s-9': o dev2 assume o comando de edição do código e o dev1 fica aguardando ou conversando via e-mail ou gtalk com o dev2 caso este precise
-9'01s-11': o dev2 tem de salvar suas alterações e comentar o código caso ache necessário. 
-11'01s-14': tudo se repete ...
-\end{itemize}
+\item O desenvolvimento é feito em turnos e em cada turno apenas um desenvolvedor pode trabalhar no código (editá-lo), para evitar conflitos e \textit{merges}. Cada turno tem 3 minutos para desenvolver e mais 2 minuto para comentar e comentar no CoMDD (equipe A) ou fazer o \textit{commit} (equipe B). Por ex: 
+
+0'-3': O desenvolvedor 1 começa programando enquanto o desenvolvedor 2 fica esperando (enquanto isso os desenvolvedores podem se comunicar via email ou gtalk);
+
+3'01s - 5': o desenvolvedor 1 tem de salvar suas alterações e comentar o código caso ache necessário;
+
+5'01s - 6': ninguém faz nada para que o servidor atualize os dados;
+
+6'01s-9': o desenvolvedor 2 assume o comando de edição do código e o desenvolvedor 1 fica aguardando ou conversando via e-mail ou gtalk com o desenvolvedor 2 caso este precise;
+
+9'01s-11': o desenvolvedor 2 tem de salvar suas alterações e comentar o código caso ache necessário;
+
+11'01s-14': o ciclo se repete
+\end{enumerate}
 
 O seguinte comando foi passado:
 
