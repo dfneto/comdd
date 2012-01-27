@@ -18,37 +18,38 @@
 \contentsline {chapter}{\numberline {4}Desenvolvimento}{11}
 \contentsline {section}{\numberline {4.1}O CoMDD - \textit {Collaborative Model Driven Development}}{11}
 \contentsline {section}{\numberline {4.2}Vantagens}{12}
-\contentsline {section}{\numberline {4.3}Arquitetura do CoMDD}{12}
-\contentsline {section}{\numberline {4.4}M\'etodo}{12}
-\contentsline {subsection}{\numberline {4.4.1}Estudo de Caso I: }{13}
-\contentsline {subsubsection}{Descri\c c\~ao dos participantes}{13}
-\contentsline {subsubsection}{Instru\c c\~oes e Problema Apresentado}{13}
-\contentsline {subsubsection}{Resultados}{14}
-\contentsline {subsubsection}{Resultados das equipes - aqui tinha que entrar mais um sub}{15}
-\contentsline {subsubsection}{Opini\~oes dos participantes}{17}
-\contentsline {subsubsection}{Ru\IeC {\'\i }dos e mal planejamento}{17}
-\contentsline {subsubsection}{Conclus\~oes e observa\c c\~oes}{17}
-\contentsline {subsubsection}{Li\c c\~oes aprendidas}{17}
-\contentsline {subsection}{\numberline {4.4.2}Estudo de Caso II}{18}
-\contentsline {subsubsection}{Descri\c c\~ao dos participantes}{18}
-\contentsline {subsubsection}{Instru\c c\~oes e Problema Apresentado}{18}
-\contentsline {subsubsection}{Equipe A: CoMDD}{19}
-\contentsline {subsubsection}{Equipe B: Eclipse+SVN}{20}
-\contentsline {subsubsection}{Resultados}{20}
-\contentsline {subsubsection}{Resultados da Equipe A aqui entra mais um sub}{20}
-\contentsline {subsubsection}{Resultados da Equipe B aqui entra mais um sub}{22}
-\contentsline {subsubsection}{Opini\~oes dos participantes}{24}
-\contentsline {subsubsection}{Equipe A}{24}
-\contentsline {subsubsection}{Equipe B}{25}
-\contentsline {subsubsection}{Ru\IeC {\'\i }dos e mal planejamento}{26}
-\contentsline {subsubsection}{Conclus\~oes e observa\c c\~oes}{26}
-\contentsline {subsubsection}{Li\c c\~oes aprendidas}{26}
-\contentsline {subsection}{\numberline {4.4.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{27}
-\contentsline {section}{\numberline {4.5}Limita\c c\~oes e Solu\c c\~oes}{27}
-\contentsline {subsection}{\numberline {4.5.1}Do trabalho}{27}
-\contentsline {subsection}{\numberline {4.5.2}Da ferramenta}{27}
-\contentsline {subsection}{\numberline {4.5.3}Do estudo de caso}{27}
-\contentsline {section}{\numberline {4.6}Contribui\c c\~oes do CoMDD}{27}
+\contentsline {section}{\numberline {4.3}M\'etodo}{13}
+\contentsline {subsection}{\numberline {4.3.1}Estudo de Caso I: }{13}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Descri\c c\~ao dos participantes}{13}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Instru\c c\~oes e Problema Apresentado}{13}
+\contentsline {subsubsection}{\numberline {4.3.1.3}Resultados}{14}
+\contentsline {paragraph}{\numberline {4.3.1.3.1}Resultados da equipe A}{15}
+\contentsline {paragraph}{\numberline {4.3.1.3.2}Resultado da equipe B}{16}
+\contentsline {paragraph}{\numberline {4.3.1.3.3}Observa\c c\~oes (trocar esse nome)}{17}
+\contentsline {subsubsection}{\numberline {4.3.1.4}Opini\~oes dos participantes}{17}
+\contentsline {subsubsection}{\numberline {4.3.1.5}Ru\IeC {\'\i }dos}{17}
+\contentsline {subsubsection}{\numberline {4.3.1.6}Conclus\~oes e observa\c c\~oes}{17}
+\contentsline {subsubsection}{\numberline {4.3.1.7}Li\c c\~oes aprendidas}{18}
+\contentsline {subsection}{\numberline {4.3.2}Estudo de Caso II}{18}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Descri\c c\~ao dos participantes}{18}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Instru\c c\~oes e Problema Apresentado}{18}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Equipe A: CoMDD}{20}
+\contentsline {subsubsection}{\numberline {4.3.2.4}Equipe B: Eclipse+SVN}{20}
+\contentsline {subsubsection}{\numberline {4.3.2.5}Resultados}{21}
+\contentsline {subsubsection}{\numberline {4.3.2.6}Resultados da Equipe A aqui entra mais um sub}{21}
+\contentsline {subsubsection}{\numberline {4.3.2.7}Resultados da Equipe B aqui entra mais um sub}{23}
+\contentsline {subsubsection}{\numberline {4.3.2.8}Opini\~oes dos participantes}{25}
+\contentsline {subsubsection}{\numberline {4.3.2.9}Equipe A}{25}
+\contentsline {subsubsection}{\numberline {4.3.2.10}Equipe B}{26}
+\contentsline {subsubsection}{\numberline {4.3.2.11}Ru\IeC {\'\i }dos e mal planejamento}{27}
+\contentsline {subsubsection}{\numberline {4.3.2.12}Conclus\~oes e observa\c c\~oes}{27}
+\contentsline {subsubsection}{\numberline {4.3.2.13}Li\c c\~oes aprendidas}{27}
+\contentsline {subsection}{\numberline {4.3.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{28}
+\contentsline {section}{\numberline {4.4}Limita\c c\~oes e Solu\c c\~oes}{28}
+\contentsline {subsection}{\numberline {4.4.1}Do trabalho}{28}
+\contentsline {subsection}{\numberline {4.4.2}Da ferramenta}{28}
+\contentsline {subsection}{\numberline {4.4.3}Do estudo de caso}{28}
+\contentsline {section}{\numberline {4.5}Contribui\c c\~oes do CoMDD}{28}
 \contentsline {chapter}{\numberline {5}Conclus\~ao}{29}
 \contentsline {section}{\numberline {5.1}Considera\c c\~oes finais}{29}
 \contentsline {section}{\numberline {5.2}Contribui\c c\~oes}{30}
