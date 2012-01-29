@@ -50,20 +50,20 @@
 %% ----------------------------------------------------------------------------
 
 %% Para DVI, mantenha apenas a linha abaixo, comente o resto
-\usepackage{graphicx}                                                         % pacote para incluir imagens
+%\usepackage{graphicx}                                                         % pacote para incluir imagens - lembrando que dá pau com as figuras png e jpeg, só funciona com figuras eps
 
 %% Para PDF, mantenha apenas o bloco abaixo, comente acima
-%\usepackage[pdftex]{graphicx}                                                   % pacote para incluir imagens
-%\usepackage[pdftex]{hyperref}
-%\hypersetup{colorlinks=true,debug=false,
-%              linkcolor=black,                                                   % cor do indice, \ref, \footnote
-%              citecolor=black,                                                   % cor do \cite
-%              urlcolor=black,                                                    % cor do \url e \href
-              %pdftitle={Um estudo sobre as possibilidades de formas de interação em wikis},
-              %pdftitle={Um estudo sobre a interação em wikis via \\ mensageiros instantâneos},
-%              pdftitle={CoMDD: Colaboração em MDD},
-%              pdfauthor={David Fernandes Neto},
-%              pdfsubject={Colaboração MDD}}
+\usepackage[pdftex]{graphicx}                                                   % pacote para incluir imagens
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true,debug=false,
+              linkcolor=black,                                                   % cor do indice, \ref, \footnote
+              citecolor=black,                                                   % cor do \cite
+              urlcolor=black,                                                    % cor do \url e \href
+              pdftitle={Um estudo sobre as possibilidades de formas de interação em wikis},
+              pdftitle={Um estudo sobre a interação em wikis via \\ mensageiros instantâneos},
+              pdftitle={CoMDD: Colaboração em MDD},
+              pdfauthor={David Fernandes Neto},
+              pdfsubject={Colaboração MDD}}
 
 %% ----------------------------------------------------------------------------
 %% INÍCIO
@@ -181,6 +181,8 @@
 \include{tex/apendiceB}
 \include{tex/apendiceC}
 \include{tex/apendice_textos}
+\include{tex/apendice_log}
+\include{tex/apendice_questionarios}
 \include{tex/apendiceE}
 
 

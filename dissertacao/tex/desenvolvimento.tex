@@ -104,6 +104,7 @@ Após a leitura, o seguinte comando foi passado:
 O tempo entre o momento que o pesquisador começou a falar com os participantes até o final do experimento foi de aproximadamente 2h45. Este tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
 
 \subsubsection{Resultados}
+\label{resposta_correta_do_modelo}
 A resposta correta é a seguinte:
 
 \begin{center}
@@ -284,7 +285,9 @@ Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéct
 %--------Estudo de Caso-------------
 %-----------------------------------
 \subsection{Estudo de Caso II}
-O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem tradicional\footnote{Neste caso a abordagem tradicional escolhida é a IDE Eclipse com o plugin do SVN instalado (Eclipse+SVN)}, entre desenvolvedores e coletar suas opiniões.
+O objetivo do segundo estudo de caso foi avaliar comparativamente o CoMDD com a abordagem tradicional por desenvolvedores. A avaliação consiste na coleta de opinião por parte destes usuários. Neste caso a abordagem tradicional é definida pelo uso do Eclipse com o plugin SVN instalado (Eclipse+SVN). 
+
+Para realizar este estudo de caso foi implementada a mesma linguagem usada no CoMDD no Eclipse usando o Xtext\footnote{http://www.eclipse.org/Xtext/} para definir a linguagem e o Xpand\footnote{http://wiki.eclipse.org/Xpand} para definir as transformações;
 
 \subsubsection{Descrição dos participantes}
 Todos os quatro participantes são formados em ciências da computação, atuaram na indústria desenvolvendo sistemas e estão cursando mestrado ou doutorado na Universidade de São Paulo em ciências da computação.
@@ -293,9 +296,9 @@ Todos os quatro participantes são formados em ciências da computação, atuaram na
 \label{instrucoes_comuns}
 Os quatro integrantes foram dividos em duas equipes: equipe A (usando o CoMDD) e equipe B (usando Eclipse+SVN). Ambos integrantes de cada equipe estavam em locais (mais especificamente cidades) diferentes na hora do experimento. A equipe A realizou o experimento em um dia diferente da equipe B.
 
-Antes de passar o comando todos os grupos receberam as instruções comuns seguidas instruções específicas. As instruções comuns foram:
+Antes de passar o comando todos os grupos receberam instruções comuns e instruções específicas. As instruções comuns foram:
 \begin{enumerate}
-\item A equipe A deve ler o \textit{Texto I: O que é o CoMDD?} (ver \ref{apendice_texto1_o_que_e_comdd}) e a equipe B deve ler o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver \ref{apendice+texto1b_instalacao});
+\item Ler o texto base. O texto base da equipe é o \textit{Texto I: O que é o CoMDD?} (ver \ref{apendice_texto1_o_que_e_comdd}) e da equipe B é o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver \ref{apendice+texto1b_instalacao});
 \item Ler o \textit{Texto II: Como programar para o CoMDD} (ver \ref{apendice_texto2_como_programar_para_o_comdd});
 \item Pode-se comentar na edição do modelo usando "//";
 \item A função carregarListaCoordenadas() já está configurada para a lista de coordenadas, desta forma vocês não devem se preocupar em passar um lista de coordenadas, apenas chamar a função;
@@ -361,7 +364,7 @@ O código é de um robô que ao receber uma lista de coordenadas deve ser capaz de 
 Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para equipe A foram apresentadas as seguintes intruções:
 \begin{enumerate}
 \item Pode-se usar todas as funcionalidades da wiki como comentários, histórico e comparação de versões\footnote{Um exemplo de edição normal (sem ser usando a DSL) foi apresentado para que os participantes pudessem saber como e onde editar, comentar e comparar versões.};
-\item Dêem preferencialmente para comunicação que a própria wiki fornece: os comentários, caso contrário usem um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
+\item Dar preferência para comunicação que a própria wiki fornece: os comentários, caso contrário usar um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
 \end{enumerate}
 
 
@@ -369,16 +372,16 @@ Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para e
 Além das instruções comuns apresentadas na seção \ref{instrucoes_comuns}, para equipe B foram apresentadas as seguintes intruções:
 \begin{enumerate}
 \item Pode-se usar todas as funcionalidades do plugin SVN como check-in check-out, comentários, histórico e comparação de versões\footnote{Os participantes já conheciam o plugin.};
-\item Dêem preferencialmente para comunicação que o próprio SVN fornece: os comentários, caso contrário usem um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
+\item Dar preferência para comunicação que o próprio SVN fornece: os comentários, caso contrário usar um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
 \item Não usar as funções comuns de uma IDE como highlight, auto-complete e etc\footnote{Assim as equipes ficam mais iguais, uma vez que no CoMDD essas funcionalidades não foram implementadas.}\footnote{O Eclipse tem um ambiente que não usa as funções citadas.}
 \end{enumerate}
 
 
 \subsubsection{Resultados}
-A resposta correta é a mesma apresentada na seção...
+A resposta correta é a mesma apresentada na seção \ref{resposta_correta_do_modelo}.
 
-\subsubsection{Resultados da Equipe A aqui entra mais um sub}
-A equipe A apresentou a seguinte resposta:
+\paragraph{Resultados da Equipe A}
+O pesquisador acompanhou a equipe e foi responsável por avisar quando um desenvolvedor podia editar ou devia esperar, para evitar conflitos de edição, contudo o tempo apresentado nas instruções não foi rígido. A equipe A apresentou a seguinte resposta:
 
 \begin{center}
 \fbox{
@@ -447,24 +450,23 @@ andar();
 }}
 \end{center}
 
-Comunicação do grupo A: colocar o historico da wiki - ver figura 
+A figura \ref{fig:conversa_grupo_a} registra a comunicação realizada pelo grupo. O grupo usou os comentários da página de edição e não usou os comentários de versões. Observando a figura \ref{fig:conversa_grupo_a} pode-se dizer que o grupo usou esse comentário como um \textit{intant messanger}. 
 
-O tempo entre o momento que o pesquisador começou a falar com os participantes até o fim foi de aproximadamente 1h45. Neste tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/conversa_grupo_a.png}
+	\caption{Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2} 
+	\label{fig:conversa_grupo_a}
+\end{figure}
 
-Em um momento eu indiquei que o modelo tinha erros e ainda assim, no final ainda faltou algumas coisas no modelo.
 
-O danilo teve uma duvida e eu sugeri ele ler a api ou perguntar para a dupla dele, mas perguntaram menos do que no estudo de caso 1
+%Em um momento eu indiquei que o modelo tinha erros e ainda assim, no final ainda faltou algumas coisas no modelo.
+%O danilo teve uma duvida e eu sugeri ele ler a api ou perguntar para a dupla dele, mas perguntaram menos do que no estudo de caso 1
+%Sugeri para eles conversarem entre si e lerem a API
+%O tempo não era muito rígido, mas apenas uma pessoa editava por vez durante um turno.
 
-Sugeri para eles conversarem entre si e lerem a API
-
-O tempo não era muito rígido, mas apenas uma pessoa editava por vez durante um turno.
-
-O modelo apresentado no final foi o seguinte:
-
-<>
-
-\subsubsection{Resultados da Equipe B aqui entra mais um sub}
-A Equipe B apresentou a seguinte resposta:
+\paragraph{Resultados da Equipe B}
+O pesquisador acompanhou a equipe e foi responsável por avisar quando um desenvolvedor podia editar ou devia esperar, para evitar conflitos de edição, contudo o tempo apresentado nas instruções não foi rígido. A equipe B apresentou a seguinte resposta:
 
 \begin{center}
 \fbox{
@@ -547,156 +549,114 @@ int main() \{
 }}
 \end{center}
 
-Conversa do grupo B: ver figura 
 
-O tempo entre o momento que o pesquisador começou a falar com os participantes até o fim foi de aproximadamente 2h45. Neste tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
-
-O grillo e o michetti perguntou se sempre vai ter que adicionar defines, includes, robo michetti, plataforma pioneer
-Eles pensaram que era um requisito por turno, mas esclareci que não.
-O tempo foi mais rigido e eles conversaram pouco pelo skype, até que os instruí para que usassem algum instant messanger ao invés de uma voice conference.
-Este grupo está usando um instant messagener, coisa que o grupo anterior não usou. Abaixo o log da conversa: ver apendice \ref{apendice_log}
-
-Depois do experimento elas são questionadas (ver questionário) e por fim são apresentadas para a outra abordagem, a que não usaram.
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/conversa_grupo_b.png}
+	\caption{Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2} 
+	\label{fig:conversa_grupo_b}
+\end{figure}
 
 
+A figura \ref{fig:conversa_grupo_b} registra a comunicação realizada pelo grupo. O grupo usou os comentários do check-in do SVN, e não usaram como um \textit{instant messanger} e quando estavam acabando usaram um \textit{intant messanger}. O log da conversa é apresentado no apêndice \ref{apendice_log}.
 
-equipe 1...
-equipe 2...
-O grupo A, que leu pela segunda vez a API teve melhores resultados que o grupo B. 
+%O grillo e o michetti perguntou se sempre vai ter que adicionar defines, includes, robo michetti, plataforma pioneer
+%Eles pensaram que era um requisito por turno, mas esclareci que não.
+%O tempo foi mais rigido e eles conversaram pouco pelo skype, até que os instruí para que usassem algum instant messanger ao invés de uma voice conference.
 
-\subsubsection{Opiniões dos participantes}
-\subsubsection{Equipe A} aqui entra mais um sub
-A seguir são apresentadas as perguntas feitas aos participantes da Equipe A com suas respectivas respostas:
+Depois do experimento a equipe B foi apresentada ao CoMDD e então foi questionada pelo pesquisador.
 
-\textbf{O que vcs acharam da linguagem?}
-Danilo: tá legal mas as funcoes estão muito genéricas, includes e defines estao confusos (redundante a parte de adicionar includes e importar pacotes)
-Davi: linguagem primitiva, abrir fechar parênteses e chaves, os pacotes já deveriam estar todos inclusos sem a necessidade de importar
+\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
+Serão apresentadas as opniões dos participantes juntamente com as observações do pesquisador.
 
-\textbf{Vocês mudariam algo na sintaxe?}
-Danilo: a estrutura da linguagem é comum a C, Java ao contrario do begin. É melhor deixar tudo em português ou tudo em inglês.
-Davi: a sintaxe esta boa para quem consegue programar em C ou java, aí consegue entender, mas para quem nunca programou (), {} e ; não significa nada.
+\paragraph{Equipe A}
+Quando os participantes da equipe A foram questionados sobre a \textit{linguagem} usada, eles responderam que precisava melhorar aspectos pontuais como deixar toda em inglês ou em português, mas que era fácil de aprender. Em relação aos \textit{comentários} que a Wiki propicia eles são úteis mas sentiram falta de um \textit{instant messanger}.
 
-\textbf{Os comentários que vocês escreveram foram úteis de alguma forma?}
-Danilo: interessante. Mas no mundo real um chat ou gtalk é mais útil, caso os dois estejam programando na mesma classe. Mas para documentação ou quando os desenvolvedores não estão ao mesmo tempo e na mesma classe, é útil. 
-Davi: o sistema de comentário do svn funciona melhor, porque ao dar o commit você é obrigado a comentar e ao dar o check out você é obrigado a ler. Na wiki fica dissociado do código.
+De uma maneira geral, a equipe gostou da abordagem do CoMDD principalmente pela flexibilidade, independência de instalações locais (eles acham a necessidade de instalar programas como IDEs e SVNs algo trabalhoso) e facilidade de edição. Entretanto sentiram falta do processo de compilação, sendo esta a maior barreira apontada pela equipe A para usar o CoMDD.
 
-\textbf{E o histórico, foi útil?}
-Danilo: Não usou. É mais util quando alguém faz alguma cagada.
-Davi: não usou
+A equipe A usou os comentários da página de edição, mas não os comentários de versionamento e comentaram no modelo. A comparação de modelos não foi necessária.
 
-\textbf{De uma maneira geral, o que vocês acharam da abordagem?}
-Dan: não é muito interessante uma vez que tenho que esperar pela pessoa terminar programar para depois programar. No tradicional os dois podem programar juntos e depois fazer o merge ou edição simultanea estilo o google seria interessante. \textbf{E se fosse em classes separadas ao memso tempo?} Aí é interessante.
-Programar na web também é bom, o lance do histórico tambem.
-É bom a flexibilidade de estar em qualquer computador.
-Davi: programar na web é bom porque evita problemas de Infraestrutura (a infraestrutura é instantanea, independente do computador).
+No apêndice \ref{apendice_questionarios} são apresentadas as perguntas feitas para a Equipe A com as respostas coletadas pelo pesquisador. 
 
-\textbf{Então seria interessante uma wiki ou seria melhor um outro site?}
-Danilo: a wiki um site mais dinamico, mais facil de editar, as pessoas já conhecem.
-Davi: poderia ser um site mais especializado
+\paragraph{Equipe B}
+Quando os participantes da equipe B foram questionados sobre a \textit{linguagem} usada, eles responderam que era fácil e simples, com poucos comandos e com uma curva de aprendizagem rápida, mas que a parte dos \textit{includes} estava confusa. Em relação aos \textit{comentários} que o SVN propicia eles não foram úteis pois o problema apresentado era simples e por isso apenas os comentários no código e o diálogo no \textit{instant messanger} era o suficiente.
 
-\textbf{O que voce achou da abordagem comdd e da abordagem eclipse+svn? Que comparação vocês fazem entre o eclipse+svn e o CoMDD? Qual vocês preferem?}
-Danilo: estar na web é mais flexivel, configurar uma ide, svn e tudo o mais é trabalhoso
-Davi: em geral é melhor programar na wiki do que usar uma ide, mas fica dependente da conexão. Aí seria interessante ter uma forma de usar a wiki mesmo seminternet.
+De uma maneira geral, a equipe aprovaria o uso do CoMDD para um projeto de pequeno porte e apontaram como o costume a maior barreira para usar o CoMDD, pois os desenvolvedores estão acostumados com o uso de IDEs e SVNs.
 
-\textbf{Vocês usariam uma wiki no lugar do eclipse+svn? Por que não? E se fosse para fazer programas como este, vocês usariam o CoMDD?} 
-Danilo: usaria desde que o processo de compilação funcionasse, agora sem compilar e sem executar não.
-Davi: concordo.
+A equipe B usou o check-in, check-out e comentaram no modelo. A comparação de modelos não foi necessária. 
 
+No apêndice \ref{apendice_questionarios} são apresentadas as perguntas feitas para a Equipe B com as respostas coletadas pelo pesquisador. 
 
+\subsubsection{Ruídos}
+O experimento foi passado por um software de conferência por voz.
 
-\subsubsection{Equipe B} aqui entra mais um sub
-A seguir são apresentadas as perguntas feitas aos participantes da Equipe A com suas respectivas respostas:
+\subsubsection{Conclusões e Observações}
+A seguir as conclusões e observações do estudo de caso 2:
+\begin{enumerate}
 
-\textbf{A empresa de voces seguia essa abordagem?}
-Usam o eclipse e o subversion
+\item Pode-se dizer que para ambas equipes os comentários ao longo do modelo foram importantes para permitir que dua pessoas editassem a mesma classe, podendo separar as atividades de cada um;
 
-\textbf{O que vcs acharam da linguagem?}
-Michetti: fácil e simples, poucos comandos
-Grillo: curva de aprendizagem rapida, mas faltou pratica, não sei se o codigo funciona, a sintaxe é simples
-outra coisa seria melhorar a documentação para incluir qual o simbolo que indica comentário, e quando se deve usar ou não ponto e virgula
+\item Ambas equipes conseguiram chegar na resposta correta, entretanto a equipe A com menos esforços por não precisarem instalar ferramentas;
 
-\textbf{Vocês mudariam algo na sintaxe?}
-Grillo e Michetti: a parte dos includes poderia ser uma linha só já que sempre vai precisar dela poderia ser numa linha.
+\item A equipe A usou os comentários da página de edição para se comunicarem como se fosse um \textit{instant messanger}. Através desses comentários cada integrante da equipe estava ciente do que o outro estava fazendo e puderam compartilhar conhecimento para resolver a tarefa, compartilhando dúvidas e conclusões;
 
-\textbf{Como voces colaboraram? O que foi mais importante, os comentarios?}
-Eles: O comentário do log não usaram porque o codigo é pequeno e usaram apenas os comentarios no codigo. Michetti: o comentário do svn é mais quando tem algum problema e não para notificar o que foi feito.
+\item A equipe B usou um \textit{instant messanger} quando estavam terminando de resolver o problema para trocar conhecimento e se comunicarem no sentido de já terem terminado de resolver o problema ou não;
 
-\textbf{Os comentários que vocês escreveram no svn foram úteis de alguma forma?}
-Não usaram
+\item Em termos de comunicação o SVN "obriga" que o usuário comente ao fazer o check-in o que é bom, entretanto a leitura dos comentários da wiki é mais simples;
 
-\textbf{E o histórico, foi útil?}
-Não usaram
+\item Para o problema dado, desconsiderando os recursos de uma IDE, os quatro participantes das duas equipes usariam o CoMDD no lugar do Eclipse+SVN;
 
-\textbf{E quais funcoes do SVN voces acham importantes alem das que voces usaram?}
-Michetti: Histórico caso tenha algum problema, merge caso editassem ao mesmo tempo.
-Grillo: quando o codigo é muito extenso é importante comparar as versoes de código para ver o que tá sendo alterado (as versoes do repositorio, com a local, o que alterou...)
+\item Os quatro participantes das duas equipes concordaram que o CoMDD é melhor para usuários não desenvolvedores do que o Eclipse+SVN.
 
-\textbf{Voces acham que a wiki atenderia esses propositos que o svn+eclipse trás?}
-M: para editar código eu nunca pensei numa wiki para isso, usaria mais para colaboração na documentação.
-G: auxilio de sintaxe no eclipse, auto-complet, import automatico, clicar em um arquivo e ir para outro arquivo. A parte de comentário, versionar, alterar o texto é praticamente a mesma coisa. Não sei se caso editasse ao mesmo tempo não sei como se comportaria.
+%\item Para atender um determinado dominio, a wiki é o suficiente, para coisas simples, para algo mais complexo e que necessite de varias pessoas editando ao mesmo tempo e que podem dar erro, ai talvez o melhor seja a tradicional.
 
-\textbf{O que voce achou da abordagem comdd e da abordagem eclipse+svn? Que comparação vocês fazem entre o eclipse+svn e o CoMDD? Qual vocês preferem?}
-M: to acostumado com o eclipse+svn, mas uso tambem o controle de versao integrado com um bugtrack.
-G: cor da grama, muita coisa já tem pronta pro eclipse, costume principal barreira, pensando como programador ainda usaria o eclipse.
-Tá, mas pensando que usariamos uma dsl e não java, logo seria algo bem mais simples.
-
-\textbf{Seria bom todos esses programas para matar uma formiga?}
-Para um projeto pontual e pequeno o comdd supriria mas para algo maior e complexo.
-
-
-
-\subsubsection{Ruídos e mal planejamento}
-
-\subsubsection{Conclusões e observações}
-Quanto a colaboração do grupo A: Foram instruídos a usarem os comentarios da wiki e puderam comentar no modelo usand
-
-Quanto ao uso do svn o grupo B: usou Check in, check out, update, não merge ou comparar codigo
-
-no experimento acho que as pessoas colaboraram igualmente, dando ainda um ponto positivo para o svn que "obriga" a pessoa a comentar, contudo fica muito mais facil da pessoas ler um comentário na wiki, só que com uma wiki é muito mais facil e simples de qualquer pessoa colaborar, bastando para isso ter permissões.
-
-Para atender um determinado dominio, a wiki é o suficiente, para coisas simples, para algo mais complexo e que necessite de varias pessoas editando ao mesmo tempo e que podem dar erro, ai talvez o melhor seja a tradicional.
+%\item só que com uma wiki é muito mais facil e simples de qualquer pessoa colaborar, bastando para isso ter permissões.
+\end{enumerate}
 
 \subsubsection{Lições aprendidas}
-Como aprendizado do estudo de caso II ...
+O estudo de caso dois foi necessário para se fazer uma análise qualitativa das abordagens, contudo foi necessário um esforço grande para reunir pessoas que estivessem dipostas a realizar um experimento que durasse em torno de 2 ou 3h e um esforço maior ainda para realizar os experimentos pois para isso o pesquisador teve que além de preparar o experimento, acompanhar as equipes na execução. 
 
-
-
-
-
-
-
-
-
-
-
-Será pedido para duas equipes diferentes a mesma tarefa, sendo que uma delas usara o eclipse+svn e a outra uma wiki apenas. Ambas usarão dsls e geração de código, mas nao terao os recursos tradicionais de uma ide como import, highlight sugestao ... 
-
-Para isso será implementado a dsl no eclipse e numa wiki usando o xtext/xpand e o antlr respectivamente. 
-
+A partir dessas observações surgiu a ideia de fazer dois vídeos. Um apresentando o CoMDD e o outro apresentando o Eclipse+SVN. Esse vídeo deveria ser transmitido para o maior número de desenvolvedores e então responder um questionário. Assim tería-se além de um estudo qualitativo um estudo comparativo e o estudo de caso 2 foi necessário tanto para conceber o estudo de caso 3 quanto para definir o questionário a ser apresentado.
 
 \subsection{Estuo de caso 3: análise de vídeos e planilha de ticar}
 BLAHBLHABLHA...
 
+
+
+
+
+
+
+
+
+
+
+
+%###############################################
+% COLOCAR EM CONCLUSOES#########################
+%###############################################
+
 \section{Limitações e Soluções}
 Deficiencia do CoMDD: nao compila, entao subentende-se que o codigo que ela gera esta sintaticamente correto, mas ela pode retornar erros 
 
-como integrar testes? debug? ou seria isso inexistentes em dsls ja que elas nao tem um compilador?
-\subsection{Do trabalho}
 Escopo do trabalho: avaliar em que casos pode-se usar uma wiki no lugar de um svn nao faz parte do escopo deste trabalho 
 
 A abordagem pessimistica possui suas desvantagens como "In contrast, the pessimistic policy has some disadvantages. First, locks can cause an unnecessary serialization over the development process. Sometimes different developers can independently modify different parts of the same CI, but using a lock-based approach that is not possible. In addition, locks can cause a false sense of security (Collins-Sussman et al., 2004). Developers may think that their work will not be affected by the work of other developers due to the
 locks. However, sometimes CIs rely on other CIs that can be modified by other developers. This situation leads to indirect conflicts (Sarma et al., 2003). \cite{Prudencio2012} Assim, um trabalho futuro seria no estudo de estratégias otimísticas ou até mesmo na adoção de ambas como propõe o trabalho de Prudencio et al. \cite{Prudencio2012}.
 
-\subsection{Da ferramenta}
-Desvantagem da linguagem apontada por mim: o código gerado não pode ser testado uma vez que precisa usar o robô, mas o mais importante é ver como as pessoas interagem e colaboram.
+Podia ter me preocupado em fazer uma dsl mais complexa para que mais pessoas pudessem trabalharem juntas, ou seja, necessitasse mais do trabalho colaborativo. Contudo mais difícil fica de realizar um experimento
 
+Em relação ao domínio escolhido: o código gerado não podia ser testado uma vez que precisava ser inserido no robô, assim se o desenvolvedor pudesse simular o código gerado seria uma informação de retorno importante. Ainda, o cerne do domínio de robótica móvel autônoma são os algoritmos que tornam os robôs autônomos, entretanto a colaboração foi mais na definição dos sensores e atuadores que estes robôs usam, portanto a abordagem seria mais interessante para desenvolverem um algoritmo, só que para isso seria melhor uma edição concorrente estilo google docs. Assim, entende-se que o domínio escolhido foi beneficiado pelo uso de uma DSL, mas não pelo uso da colaboração.
 
-\subsection{Do estudo de caso}
+O estudo de caso foi o suficiente para observar como as pessoas colaboram e interagem na resolução do problema pedido, observando a equipe A conseguiu atingir os mesmos resultados que a equipe B com menos esforços.
+
+como integrar testes? debug? ou seria isso inexistentes em dsls ja que elas nao tem um compilador?
 
 \section{Contribuições do CoMDD}
 MDD e tudo na web: mais produtividade 
 Modelos e wiki: aproximação maior de todos os envolvidos no processo, e com isso softwares mais próximos dos que o cliente precisa.
 
+%Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
 
 
 
@@ -705,8 +665,6 @@ Modelos e wiki: aproximação maior de todos os envolvidos no processo, e com isso
 
 
 
-O Danilo perguntou se podia usar comentários. Embora a linguagem não dê suporte a isso eu deixei.
-Seria interessante a linguagem aceitar código C, C++ ou Java puro.
 
 
 
