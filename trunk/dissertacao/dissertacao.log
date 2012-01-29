@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  26 JAN 2012 22:17
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  29 JAN 2012 20:18
 entering extended mode
  %&-line parsing enabled.
 **dissertacao
@@ -423,6 +423,112 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \Gin@req@height=\dimen148
 \Gin@req@width=\dimen149
 )
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen150
+\Hy@linkcounter=\count132
+\Hy@pagecounter=\count133
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count134
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
+\Field@toks=\toks33
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count135
+\c@Item=\count136
+\c@Hfootnote=\count137
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count138
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 66.
+Package hyperref Info: Option `debug' set `false' on input line 66.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 66.
+
 
 LaTeX Warning: Unused global option(s):
     [abnt].
@@ -456,7 +562,8 @@ LaTeX Warning: Label `' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 (./tex/referencias.aux) (./tex/apendiceA.aux) (./tex/apendiceB.aux)
-(./tex/apendiceC.aux) (./tex/apendice_textos.aux) (./tex/apendiceE.aux))
+(./tex/apendiceC.aux) (./tex/apendice_textos.aux) (./tex/apendice_log.aux)
+(./tex/apendice_questionarios.aux) (./tex/apendiceE.aux))
 \openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
@@ -478,6 +585,8 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 71.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
@@ -485,6 +594,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -496,16 +606,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
-\scratchdimen=\dimen150
+\scratchcounter=\count139
+\scratchdimen=\dimen153
 \scratchbox=\box40
-\nofMPsegments=\count133
-\nofMParguments=\count134
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count135
-\MPscratchDim=\dimen151
-\MPnumerator=\count136
-\everyMPtoPDFconversion=\toks34
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen154
+\MPnumerator=\count143
+\everyMPtoPDFconversion=\toks35
 )
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -548,10 +658,27 @@ driver: pdftex
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-\c@lstlisting=\count137
-(./tex/capa.tex
+\c@lstlisting=\count144
+Package hyperref Info: Link coloring ON on input line 71.
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count145
+)
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+ (./dissertacao.out) (./dissertacao.out)
+\@outlinefile=\write4
+\openout4 = `dissertacao.out'.
+
+\AtBeginShipoutBox=\box41
+ (./tex/capa.tex
 LaTeX Font Info:    Try loading font information for T1+phv on input line 12.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
@@ -584,13 +711,13 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 
 
 ] (./dissertacao.toc [3])
-\tf@toc=\write4
-\openout4 = `dissertacao.toc'.
+\tf@toc=\write5
+\openout5 = `dissertacao.toc'.
 
  [4]
 (./dissertacao.lof)
-\tf@lof=\write5
-\openout5 = `dissertacao.lof'.
+\tf@lof=\write6
+\openout6 = `dissertacao.lof'.
 
  [5
 
@@ -599,8 +726,8 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 ] [6
 
 ] (./dissertacao.lot)
-\tf@lot=\write6
-\openout6 = `dissertacao.lot'.
+\tf@lot=\write7
+\openout7 = `dissertacao.lot'.
 
  [7
 
@@ -620,6 +747,14 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
 
+Package natbib Warning: Citation `Teppola2009' on page 1 undefined on input lin
+e 12.
+
+
+Package natbib Warning: Citation `France2007' on page 1 undefined on input line
+ 12.
+
+
 Package natbib Warning: Citation `Selic2003' on page 1 undefined on input line 
 15.
 
@@ -627,16 +762,52 @@ Package natbib Warning: Citation `Selic2003' on page 1 undefined on input line
 Package natbib Warning: Citation `Sriplakich2006' on page 1 undefined on input 
 line 15.
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 E
+      ntretanto, em relação à modelos textuais\footnote{Ver capítulo de DSLs...
 [1
 
 
 
-] [2]
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
+
+
+Package natbib Warning: Citation `Sarma2003' on page 2 undefined on input line 
+24.
+
+
+Package natbib Warning: Citation `Prudencio2012' on page 2 undefined on input l
+ine 26.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 
+      [2]
+
+Package natbib Warning: Citation `Jones2011' on page 3 undefined on input line 
+32.
+
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 41.
- (/usr/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
+(/usr/share/texmf-texlive/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3] [4])
-(./tex/trabalhosRelacionados.tex [5] [6
+)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 \section{Hipótese e objetivo}
+                                   [3]pdfTeX warning (ext4): destination with t
+he same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 
+      [4]) (./tex/trabalhosRelacionados.tex [5] [6
 
 
 ]
@@ -649,6 +820,19 @@ Cap\'{\i }tulo 3.
 [9]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
+
+
+Package natbib Warning: Citation `Zhang2007' on page 10 undefined on input line
+ 45.
+
+
+Package natbib Warning: Citation `Prudencio2012' on page 10 undefined on input 
+line 45.
+
+
+Package natbib Warning: Citation `Sarma2003' on page 10 undefined on input line
+ 45.
+
 ) (./tex/desenvolvimento.tex [10]
 Cap\'{\i }tulo 4.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
@@ -658,118 +842,171 @@ LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
 [11
 
 
-] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]
+] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+<imagens/conversa_grupo_a.png, id=498, 1371.1225pt x 770.88pt>
+File: imagens/conversa_grupo_a.png Graphic file (type png)
+
+<use imagens/conversa_grupo_a.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22] [23 <./imagens/conversa_grupo_a.png (PNG copy)>]
 Overfull \vbox (18.85089pt too high) has occurred while \output is active []
 
 
-[24]
+[24] <imagens/conversa_grupo_b.png, id=513, 1371.1225pt x 770.88pt>
+File: imagens/conversa_grupo_b.png Graphic file (type png)
 
-LaTeX Warning: Reference `apendice_log' on page 25 undefined on input line 557.
-
-
-[25] [26]
-Overfull \hbox (11.34982pt too wide) in paragraph at lines 672--673
-[]\T1/ptm/m/n/12 Será pe-dido para duas equipes difer-entes a mesma tarefa, sen
-do que uma de-las us-ara o eclipse+svn
+<use imagens/conversa_grupo_b.png>
+Overfull \hbox (1.17384pt too wide) in paragraph at lines 570--571
+[]\T1/ptm/m/n/12 Serão ap-re-sen-tadas as op-niões dos par-tic-i-pantes jun-ta-
+mente com as ob-ser-vações do pesquisador. 
  []
+
+[25 <./imagens/conversa_grupo_b.png (PNG copy)>] [26]
+
+Package natbib Warning: Citation `Prudencio2012' on page 27 undefined on input 
+line 645.
+
+
+Package natbib Warning: Citation `Prudencio2012' on page 27 undefined on input 
+line 645.
 
 [27]) (./tex/conclusao.tex [28]
 Cap\'{\i }tulo 5.
 [29
 
 
-]
-Overfull \hbox (13.10248pt too wide) in paragraph at lines 36--37
-[]\T1/ptm/m/n/12 Que ben-efi-cios em ter-mos de co-lab-o-ração o comdd traz qnd
- com-parado a abor-da-gens eclipse+svn? 
- []
-
-[30]) [31]
+] [30]) [31]
 \openout2 = `tex/referencias.aux'.
 
  (./tex/referencias.tex [32
 
 
-] (./dissertacao.bbl (./babelbst.tex)
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 25.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
-\T1/ptm/m/n/12 Disponível em: $\T1/pcr/m/n/12 http : / / www . sciencedirect . 
-com / science / article / pii /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--50
-\T1/ptm/m/n/12 Disponível em: $\T1/pcr/m/n/12 http : / / www . sciencedirect . 
-com / science / article / pii /
- []
-
-)) [33
-
-
 ]
+No file dissertacao.bbl.
+)
 \openout2 = `tex/apendiceA.aux'.
 
- (./tex/apendiceA.tex [34
+ (./tex/apendiceA.tex
+Cap\'{\i }tulo 6.
+) [33
 
 
 
 
 ]
-Cap\'{\i }tulo 6.
-) [35]
 \openout2 = `tex/apendiceB.aux'.
 
- (./tex/apendiceB.tex [36
+ (./tex/apendiceB.tex [34
 
 
 
 
 ]
 Cap\'{\i }tulo 7.
-) [37]
+) [35]
 \openout2 = `tex/apendiceC.aux'.
 
- (./tex/apendiceC.tex [38
+ (./tex/apendiceC.tex [36
 
 
 
 
 ]
 Cap\'{\i }tulo 8.
-) [39]
+) [37]
 \openout2 = `tex/apendice_textos.aux'.
 
- (./tex/apendice_textos.tex [40
+ (./tex/apendice_textos.tex [38
 
 
 
 
 ]
 Ap\^endice A.
-[41] [42]) [43]
+[39] [40]) [41]
+\openout2 = `tex/apendice_log.aux'.
+
+ (./tex/apendice_log.tex [42
+
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{appendix.A})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \chapter{Textos apresentados no experimento}
+                                                
+Ap\^endice A.
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 ...e Caso 2 realizada no final do experimento}
+                                                   [43])
+
+Package Fancyhdr Warning: \headheight is too small (15.50002pt): 
+ Make it at least 26.98592pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44]
+\openout2 = `tex/apendice_questionarios.aux'.
+
+ (./tex/apendice_questionarios.texpdfTeX warning (ext4): destination with the s
+ame identifier (name{appendix.A}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 ...as pelas Equipes A e B do Estudo de Caso 2}
+                                                  
+Ap\^endice A.
+pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 \section{Perguntas e respostas da Equipe A}
+                                                [45
+
+
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{section.A.2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 \section{Perguntas e respostas da Equipe B}
+                                                 [46])
+
+Package Fancyhdr Warning: \headheight is too small (26.98592pt): 
+ Make it at least 29.63202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47]
 \openout2 = `tex/apendiceE.aux'.
 
- (./tex/apendiceE.tex [44
+ (./tex/apendiceE.tex [48
 
 
 
 
-]
+]pdfTeX warning (ext4): destination with the same identifier (name{appendix.A})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4 \chapter{Detalhes de implementação}
+                                       
 Ap\^endice A.
-) [45]
+) [49]
 
 Package natbib Warning: There were undefined citations.
 
 (./dissertacao.aux (./tex/referencias.aux) (./tex/apendiceA.aux)
 (./tex/apendiceB.aux) (./tex/apendiceC.aux) (./tex/apendice_textos.aux)
+(./tex/apendice_log.aux) (./tex/apendice_questionarios.aux)
 (./tex/apendiceE.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -779,25 +1016,24 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 7119 strings out of 495061
- 97362 string characters out of 1182620
- 185630 words of memory out of 3000000
- 10053 multiletter control sequences out of 15000+50000
- 96519 words of font info for 99 fonts, out of 3000000 for 9000
+ 10267 strings out of 495061
+ 145608 string characters out of 1182620
+ 244104 words of memory out of 3000000
+ 12936 multiletter control sequences out of 15000+50000
+ 98701 words of font info for 99 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
- 43i,12n,49p,1985b,489s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,49p,1986b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/sha
-re/texmf-texlive/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-texlive/f
-onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/he
-lvetic/uhvbo8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pf
-b></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/te
-xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8
-a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
-xmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (59 pages, 210571 bytes).
+re/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/
+fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/
+helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.
+pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texm
+f-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/typ
+e1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertacao.pdf (63 pages, 538591 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 191 named destinations out of 1000 (max. 500000)
+ 371 words of extra memory for PDF output out of 10000 (max. 10000000)
 
