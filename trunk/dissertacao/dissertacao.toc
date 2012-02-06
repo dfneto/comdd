@@ -26,10 +26,10 @@
 \contentsline {paragraph}{\numberline {4.2.1.3.2}Resultado da equipe B}{17}{paragraph.4.2.1.3.2}
 \contentsline {paragraph}{\numberline {4.2.1.3.3}Observa\c c\~oes (trocar esse nome)}{18}{paragraph.4.2.1.3.3}
 \contentsline {subsubsection}{\numberline {4.2.1.4}Opini\~oes dos participantes}{18}{subsubsection.4.2.1.4}
-\contentsline {subsubsection}{\numberline {4.2.1.5}Conclus\~oes e observa\c c\~oes}{18}{subsubsection.4.2.1.5}
+\contentsline {subsubsection}{\numberline {4.2.1.5}Conclus\~oes e observa\c c\~oes do Estudo de Caso I}{18}{subsubsection.4.2.1.5}
 \contentsline {subsubsection}{\numberline {4.2.1.6}Li\c c\~oes aprendidas}{19}{subsubsection.4.2.1.6}
 \contentsline {subsection}{\numberline {4.2.2}Estudo de Caso II}{19}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Descri\c c\~ao dos participantes}{19}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Descri\c c\~ao dos participantes}{20}{subsubsection.4.2.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2.2}Instru\c c\~oes e Problema Apresentado}{20}{subsubsection.4.2.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.3}Equipe A: CoMDD}{21}{subsubsection.4.2.2.3}
 \contentsline {subsubsection}{\numberline {4.2.2.4}Equipe B: Eclipse+SVN}{21}{subsubsection.4.2.2.4}
@@ -39,25 +39,25 @@
 \contentsline {subsubsection}{\numberline {4.2.2.6}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{26}{subsubsection.4.2.2.6}
 \contentsline {paragraph}{\numberline {4.2.2.6.1}Equipe A}{26}{paragraph.4.2.2.6.1}
 \contentsline {paragraph}{\numberline {4.2.2.6.2}Equipe B}{27}{paragraph.4.2.2.6.2}
-\contentsline {subsubsection}{\numberline {4.2.2.7}Conclus\~oes e Observa\c c\~oes}{27}{subsubsection.4.2.2.7}
+\contentsline {subsubsection}{\numberline {4.2.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{27}{subsubsection.4.2.2.7}
+\contentsline {subsubsection}{\numberline {4.2.2.8}Li\c c\~oes aprendidas}{28}{subsubsection.4.2.2.8}
 \contentsline {subsection}{\numberline {4.2.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{28}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Limita\c c\~oes e Solu\c c\~oes}{28}{section.4.3}
-\contentsline {section}{\numberline {4.4}Contribui\c c\~oes do CoMDD}{29}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclus\~ao}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclus\~oes - verificar com carinho}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Contribui\c c\~oes}{32}{section.5.2}
-\contentsline {section}{\numberline {5.3}Trabalhos Futuros}{32}{section.5.3}
-\contentsline {section}{\numberline {5.4}Li\c c\~oes aprendidas}{33}{section.5.4}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{35}{section.5.4}
-\contentsline {chapter}{\numberline {A}Implementa\c c\~ao do CoMDD}{35}{appendix.A}
-\contentsline {chapter}{\numberline {B}Ap\^endice C}{37}{appendix.B}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{39}{section.A.1}
-\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{40}{section.A.2}
-\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{41}{section.A.3}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{43}{appendix.A}
-\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{43}{section.A.1}
-\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{45}{section.A.1}
-\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{46}{section.A.2}
-\contentsline {chapter}{\numberline {A}Detalhes de implementa\c c\~ao}{49}{appendix.A}
+\contentsline {chapter}{\numberline {5}Conclus\~ao}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conclus\~oes - verificar com carinho}{29}{section.5.1}
+\contentsline {section}{\numberline {5.2}Contribui\c c\~oes}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}Trabalhos Futuros}{30}{section.5.3}
+\contentsline {section}{\numberline {5.4}Limita\c c\~oes do Trabalho}{31}{section.5.4}
+\contentsline {section}{\numberline {5.5}Li\c c\~oes aprendidas}{32}{section.5.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{33}{section.5.5}
+\contentsline {chapter}{\numberline {A}Implementa\c c\~ao do CoMDD}{33}{appendix.A}
+\contentsline {chapter}{\numberline {B}Ap\^endice C}{35}{appendix.B}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{37}{appendix.A}
+\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{37}{section.A.1}
+\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{38}{section.A.2}
+\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{39}{section.A.3}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{41}{appendix.A}
+\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{41}{section.A.1}
+\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{43}{appendix.A}
+\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{43}{section.A.1}
+\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{44}{section.A.2}
+\contentsline {chapter}{\numberline {A}Detalhes de implementa\c c\~ao}{47}{appendix.A}
