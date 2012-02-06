@@ -648,29 +648,78 @@ A DSL do CoMDD poderia aceitar algumas partes do modelo linguagens de programaçã
 
 \section{Trabalhos Relacionados}
 \label{trabalhosRelacionados} 
+%%Atenção: quando for publicar eu tenho que ler estes trabalhos melhor e também ler os trabalhos da minha quali.
 
 \subsection*{Adessowiki}
-Os trabalhos de Lotufo et al \cite{Lotufo2009} e de Machado et al. \cite{Machado2011} apresentam o Adessowiki\footnote{http://www.adessowiki.org}, um ambiente colaborativo para desenvolvimento, documentação, ensino e repositório de algoritmos científicos, com foco na área de processamento de imagens. %Uma página típica do Adessowiki contém um texto, um código e uma imagem gerada por este código.
+Os trabalhos de Lotufo et al \cite{Lotufo2009} e de Machado et al. \cite{Machado2011} apresentam o Adessowiki\footnote{http://www.adessowiki.org}, um ambiente colaborativo para desenvolvimento, documentação, ensino e repositório de algoritmos científicos, com foco na área de processamento de imagens. Este ambiente está sendo usado desde 2008 como um ambiente educacional e como uma ferramenta colaborativa para escrita de artigos e outros textos científicos.  %Uma página típica do Adessowiki contém um texto, um código e uma imagem gerada por este código.
 
-Segundo os autores, o que torna o Adessowiki especial em relação às outras wikis e aplicações Web é sua capaciadade de incluir pedaços de código em \textit{Python} ou C++, que são executados quando as páginas wiki são renderizadas. Desta forma, os resultados deste código podem fazer parte de textos científicos, em forma de figuras, textos e tabelas.
+Segundo os autores, o que torna o Adessowiki especial em relação às outras wikis e aplicações Web é sua capaciadade de incluir pedaços de código em \textit{Python} ou C++ que são executados no servidor quando as páginas wiki são renderizadas. Desta forma, os resultados deste código podem fazer parte de textos científicos, em forma de figuras, textos e tabelas. %juntar com o parágrafo de baixo
 
 O principal objetivo deste ambiente é desenvolver colaborativamente algoritmos numéricos. As páginas do Adessowiki permitem a inserção de código, o qual é executado quando a página é renderizada, incorporando figuras, textos e tabelas, gerando um documento científico.
 
-Esse sistema pode ser também usado para ensino e pesquisa. Por estar em uma wiki, permite que várias pessoas possam colaborar. O Adessowiki está sendo usado desde 2008 como um ambiente educacional e como uma ferramenta colaborativa para escrita de artigos e outros textos científicos. 
+Em relação ao ensino, o Adessowiki pode, como wiki, servir para registrar informações do curso como notas, exercídios e etc; como um ambiente de programação, serve 
+de plataforma para atividades de programação solicitadas pelo profesor, uma vez que o código pode se inserido e os resultados visualizados nas páginas wiki.
 
-Em relação ao ensino, o Adessowiki pode, como wiki, servir para registrar informações do curso como notas, exercídios e etc; como um ambiente de programação serve de plataforma para atividades de programação solicitadas pelo profesor, uma vez que o código pode se inserido e os resultados vistos, nas páginas wiki. 
+O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no desenvolvimento de código (produto final do CoMDD), entretanto a principal diferença entre as abordagens está no foco dado por cada uma. Enquanto o Adessowiki tem mais o caráter de ensino, de pesquisa científica, de produção de textos científicos, e se limita à área de processamento de imagem e computação gráfica; o CoMDD foca no desenvolvimento de sistemas de software usando modelos, incentivando a colaboração de desenvolvedores ou não e com o intuito de ser uma espécie de substituto à IDEs e versionadores instalados localmente.
 
-O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no desenvolvimento de código (produto final do CoMDD), entretanto o que principal difere as abordagens está no foco dado por cada uma. Enquanto o Adessowiki tem mais o caráter de ensino, de pesquisa científica, de produção de textos científicos, e se limita à área de processamento de imagem e computação gráfica; o CoMDD foca no desenvolvimento de sistemas de software usando modelos, incentivando a colaboração de desenvolvedores ou não e com o intuito de ser um substituto à IDEs e versionadores instalados localmente.
+Ainda, o método usado pelo CoMDD está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende
 
-Ainda, o método usado neste trabalho está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende
+\subsection*{Galaxy Wiki}
+
+O Galaxy Wiki permite, em uma Wiki, que desenvolvedores não só possam navegar, criar, modificar e deletar código fonte, como também compilar, executar e debugar programas Java, e ainda colaborativamente.
+
+Os autores desenvolveram um plugin para o Eclipse de modo que o Eclipse acessa as páginas de projeto, de classes e de bibliotecas armazenadas no Galaxy Wiki e convertem em projetos e arquivos Java e JARs, respectivamente, integrando assim o Galaxy Wiki e o Eclipse.
+
+%Além da semelhança de desenvolver código usando uma wiki, o trabalho de \cite{Xiao2007} cita sobre engenharia de software orientada a páginas. Embora este trabalho apenas lance como proposta futura, o trabalho de Xiao et al., permite que um programador possa reusar outra código fonte apenas referenciando -- Page Oriented Software Engineering: We are trying to figure out an environment on the premise of programming in wiki. It contains freely expandable collection of interlinked source code, and each of them is easily editable and usable by any users with a Web browser. More specifically, a programmer can manipulate his source code via wiki pages, and reuse other programmers' source code by reference corresponding wiki pages.
+
+Contudo, o CoMDD se difere do Galaxy Wiki por trazer a ideia de MDD ao invés do uso de Java. Assim, com o uso de modelos, tem-se mais incentivo à colaboração. Além do que Xiao et al., não destacam as vantagens do Galaxy Wiki em relação à uma IDE associada à um sistema de versionamento, como este trabalho faz.
+
+%Ver trabalhos da Christiane M. Neuwirth, como por exemplo: Computer Support for Distributed Collaborative Writing: A Coordination Science Perspective
+
+
+%A web-based collaborative metamodeling environment with secure remote model access
+
+
+\section{Google Docs}
+
+\section{IDEs on-line}
+
+http://c9.io/
+
+semelhança: a ideia de ter tudo na web e nao localmente
+pros: aparentemente bastante robusto!
+constras: nao muda da abordagem tradicional de desenvolvimento numa ide+git, o que tras todos os problemas associados, sem contar que voce nao tem modelos, mas codigo fonte direto, o que tambem dificulta o entendimento dos stakeholders, sem contar que perde todos os demais beneficios do mdd.
+
+o c9 nao foi estudado a fundo em virtude de termos conhecido ha pouco tempo, de modo que o trabalho estava fechado.
+
+\section{}
+
+
+
+
+
+\section{Artigos}
+1-Sobre o que fala o trabalho deles?
+
+2-Quais as semelhanças?
+
+3-Qual seu diferencial?
 
 
 
 
 
 
+\section{Ferramentas já em uso}
+sugestao do michetti
+
+aquele que o chiquito mandou na lista, ...
 
 
+\section{Na falta de trabalhos relacionados}
+Ferramentas de MDD: eclipse, MPS, ...
+
+Ferramentas que auxiliam o trabalho colaborativo (sharepoint)...
 
 
 
