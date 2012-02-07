@@ -7,61 +7,63 @@
 \contentsline {section}{\numberline {1.3}Escopo}{4}{section.1.3}
 \contentsline {section}{\numberline {1.4}Resultados Esperados}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Estrutura deste trabalho}{5}{section.1.5}
-\contentsline {chapter}{\numberline {2}Trabalhos Relacionados}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Artigos}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Ferramentas j\'a em uso}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Na falta de trabalhos relacionados}{7}{section.2.3}
-\contentsline {chapter}{\numberline {3}Revis\~ao Bibliogr\'afica}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Model Driven Development}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}O desenvolvimento tradicional usando svns}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}Domain Specific Languages}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Templates}{10}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Colabora\c c\~ao}{10}{section.3.4}
-\contentsline {section}{\numberline {3.5}Wiki}{10}{section.3.5}
-\contentsline {chapter}{\numberline {4}Desenvolvimento}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}O CoMDD - \textit {Collaborative Model Driven Development}}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}M\'etodo}{13}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Estudo de Caso I}{14}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Descri\c c\~ao dos participantes}{14}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Instru\c c\~oes e Problema Apresentado}{14}{subsubsection.4.2.1.2}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Resultados}{15}{subsubsection.4.2.1.3}
-\contentsline {paragraph}{\numberline {4.2.1.3.1}Resultados da equipe A}{16}{paragraph.4.2.1.3.1}
-\contentsline {paragraph}{\numberline {4.2.1.3.2}Resultado da equipe B}{17}{paragraph.4.2.1.3.2}
-\contentsline {paragraph}{\numberline {4.2.1.3.3}Observa\c c\~oes (trocar esse nome)}{18}{paragraph.4.2.1.3.3}
-\contentsline {subsubsection}{\numberline {4.2.1.4}Opini\~oes dos participantes}{18}{subsubsection.4.2.1.4}
-\contentsline {subsubsection}{\numberline {4.2.1.5}Conclus\~oes e observa\c c\~oes do Estudo de Caso I}{18}{subsubsection.4.2.1.5}
-\contentsline {subsubsection}{\numberline {4.2.1.6}Li\c c\~oes aprendidas}{19}{subsubsection.4.2.1.6}
-\contentsline {subsection}{\numberline {4.2.2}Estudo de Caso II}{19}{subsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.1}Descri\c c\~ao dos participantes}{20}{subsubsection.4.2.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2.2}Instru\c c\~oes e Problema Apresentado}{20}{subsubsection.4.2.2.2}
-\contentsline {subsubsection}{\numberline {4.2.2.3}Equipe A: CoMDD}{21}{subsubsection.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.2.4}Equipe B: Eclipse+SVN}{21}{subsubsection.4.2.2.4}
-\contentsline {subsubsection}{\numberline {4.2.2.5}Resultados}{22}{subsubsection.4.2.2.5}
-\contentsline {paragraph}{\numberline {4.2.2.5.1}Resultados da Equipe A}{22}{paragraph.4.2.2.5.1}
-\contentsline {paragraph}{\numberline {4.2.2.5.2}Resultados da Equipe B}{23}{paragraph.4.2.2.5.2}
-\contentsline {subsubsection}{\numberline {4.2.2.6}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{26}{subsubsection.4.2.2.6}
-\contentsline {paragraph}{\numberline {4.2.2.6.1}Equipe A}{26}{paragraph.4.2.2.6.1}
-\contentsline {paragraph}{\numberline {4.2.2.6.2}Equipe B}{27}{paragraph.4.2.2.6.2}
-\contentsline {subsubsection}{\numberline {4.2.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{27}{subsubsection.4.2.2.7}
-\contentsline {subsubsection}{\numberline {4.2.2.8}Li\c c\~oes aprendidas}{28}{subsubsection.4.2.2.8}
-\contentsline {subsection}{\numberline {4.2.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{28}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Trabalhos Relacionados}{28}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclus\~ao}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conclus\~oes - verificar com carinho}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Contribui\c c\~oes}{32}{section.5.2}
-\contentsline {section}{\numberline {5.3}Trabalhos Futuros}{33}{section.5.3}
-\contentsline {section}{\numberline {5.4}Limita\c c\~oes do Trabalho}{33}{section.5.4}
-\contentsline {section}{\numberline {5.5}Li\c c\~oes aprendidas}{34}{section.5.5}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{37}{section.5.5}
-\contentsline {chapter}{\numberline {A}Implementa\c c\~ao do CoMDD}{37}{appendix.A}
-\contentsline {chapter}{\numberline {B}Ap\^endice C}{39}{appendix.B}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{41}{appendix.A}
-\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{41}{section.A.1}
-\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{42}{section.A.2}
-\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{43}{section.A.3}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{45}{section.A.1}
-\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{47}{appendix.A}
-\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{47}{section.A.1}
-\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{48}{section.A.2}
-\contentsline {chapter}{\numberline {A}Detalhes de implementa\c c\~ao}{51}{appendix.A}
+\contentsline {chapter}{\numberline {2}Revis\~ao Bibliogr\'afica}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Model Driven Development}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}O desenvolvimento tradicional usando svns}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Domain Specific Languages}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Templates}{8}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Colabora\c c\~ao}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}Wiki}{8}{section.2.5}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}O CoMDD - \textit {Collaborative Model Driven Development}}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}M\'etodo}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Estudo de Caso I}{12}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Descri\c c\~ao dos participantes}{12}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Instru\c c\~oes e Problema Apresentado}{12}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Resultados}{13}{subsubsection.3.2.1.3}
+\contentsline {paragraph}{\numberline {3.2.1.3.1}Resultados da equipe A}{14}{paragraph.3.2.1.3.1}
+\contentsline {paragraph}{\numberline {3.2.1.3.2}Resultado da equipe B}{15}{paragraph.3.2.1.3.2}
+\contentsline {paragraph}{\numberline {3.2.1.3.3}Observa\c c\~oes (trocar esse nome)}{16}{paragraph.3.2.1.3.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Opini\~oes dos participantes}{16}{subsubsection.3.2.1.4}
+\contentsline {subsubsection}{\numberline {3.2.1.5}Conclus\~oes e observa\c c\~oes do Estudo de Caso I}{16}{subsubsection.3.2.1.5}
+\contentsline {subsubsection}{\numberline {3.2.1.6}Li\c c\~oes aprendidas}{17}{subsubsection.3.2.1.6}
+\contentsline {subsection}{\numberline {3.2.2}Estudo de Caso II}{17}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Descri\c c\~ao dos participantes}{18}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Instru\c c\~oes e Problema Apresentado}{18}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Equipe A: CoMDD}{19}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Equipe B: Eclipse+SVN}{19}{subsubsection.3.2.2.4}
+\contentsline {subsubsection}{\numberline {3.2.2.5}Resultados}{20}{subsubsection.3.2.2.5}
+\contentsline {paragraph}{\numberline {3.2.2.5.1}Resultados da Equipe A}{20}{paragraph.3.2.2.5.1}
+\contentsline {paragraph}{\numberline {3.2.2.5.2}Resultados da Equipe B}{21}{paragraph.3.2.2.5.2}
+\contentsline {subsubsection}{\numberline {3.2.2.6}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{24}{subsubsection.3.2.2.6}
+\contentsline {paragraph}{\numberline {3.2.2.6.1}Equipe A}{24}{paragraph.3.2.2.6.1}
+\contentsline {paragraph}{\numberline {3.2.2.6.2}Equipe B}{25}{paragraph.3.2.2.6.2}
+\contentsline {subsubsection}{\numberline {3.2.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{25}{subsubsection.3.2.2.7}
+\contentsline {subsubsection}{\numberline {3.2.2.8}Li\c c\~oes aprendidas}{26}{subsubsection.3.2.2.8}
+\contentsline {subsection}{\numberline {3.2.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{26}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Trabalhos Relacionados}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Cloud 9 IDE}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Google Docs e ferramentas de edi\c c\~ao concorrente em tempo real}{28}{section.3.5}
+\contentsline {section}{\numberline {3.6}Artigos}{28}{section.3.6}
+\contentsline {section}{\numberline {3.7}Ferramentas j\'a em uso}{28}{section.3.7}
+\contentsline {section}{\numberline {3.8}Na falta de trabalhos relacionados}{28}{section.3.8}
+\contentsline {chapter}{\numberline {4}Conclus\~ao}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclus\~oes - verificar com carinho}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Contribui\c c\~oes}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{31}{section.4.3}
+\contentsline {section}{\numberline {4.4}Limita\c c\~oes do Trabalho}{31}{section.4.4}
+\contentsline {section}{\numberline {4.5}Li\c c\~oes aprendidas}{32}{section.4.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{35}{section.4.5}
+\contentsline {chapter}{\numberline {A}Implementa\c c\~ao do CoMDD}{35}{appendix.A}
+\contentsline {chapter}{\numberline {B}Ap\^endice C}{37}{appendix.B}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{39}{section.A.1}
+\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{40}{section.A.2}
+\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{41}{section.A.3}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{43}{appendix.A}
+\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{43}{section.A.1}
+\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{45}{appendix.A}
+\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{45}{section.A.1}
+\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{46}{section.A.2}
+\contentsline {chapter}{\numberline {A}Detalhes de implementa\c c\~ao}{49}{appendix.A}
+\contentsline {chapter}{\numberline {A}Resultados do Aluno}{51}{appendix.A}
