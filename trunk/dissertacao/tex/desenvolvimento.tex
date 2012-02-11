@@ -1,13 +1,31 @@
+Assegurar a integridade e consistência de artefatos versionados em um ambiente que suporte acesso concorrente é um problema difícil \cite{Zhang2007}, portanto para evitar os conflitos de edição e merge adotou-se uma abordagem \textit{pessimistic}, ou seja, uma política em que o artefato é bloqueado quando já está sendo editado por outra pessoa. Aplicando essa política, conflitos de edição são evitados e com isso desenvolvedores não gastarão tempo ou esforços resolvendo conflitos. Ainda, a política \textit{pessimistic} pode ajudar na comunicação, pois os desenvolvedores saberiam quando outra pessoa estaria modificando o mesmo artefato, incentivando a comunicação entre os desenvolvedores com os mesmos interesses \cite{Prudencio2012, Sarma2003}. Uma outra possível solução seria a edição simultânea estilo google docs cite{Meu trabalho!}...
+
+
+
 \newpage
 
 \chapter{Desenvolvimento}
 \label{desenvolvimento}
-Este capítulo apresenta a abordagem desenvolvida neste trabalho, cita suas funcionalidades e relata os estudos de caso desenvolvidos para evidenciar que a hipótese de pesquisa é verdadeira. Também discute os resultados e as lições aprendidas dos estudos de caso \textbf{bem como as limitações da abordagem e da implementação}. 
+Este capítulo apresenta a abordagem desenvolvida neste trabalho, cita suas funcionalidades e relata três estudos de caso desenvolvidos para evidenciar que a hipótese de pesquisa é verdadeira. Também discute os resultados e as lições aprendidas dos estudos de caso bem como as limitações da abordagem e da implementação. 
 
 \section{O CoMDD - \textit{Collaborative Model Driven Development}}
 O CoMDD é uma abordagem que consiste no desenvolvimento colaborativo orientado a modelos, onde a colaboração é referente a edição colaborativa de modelos. Seja mais de uma pessoa editando o mesmo modelo (concorrentemente ou não), seja várias pessoas editando vários modelos, de forma que cada modelo tenha apenas uma pessoa e que esses modelos sejam dependentes.
 
-A figura AXXX ilustra duas pessoas editando um mesmo modelo e a figura BXXX ilustra três pessoas editando diferentes modelos, mas que são dependentes.
+A figura \ref{fig:comdd_um_modelo} ilustra duas pessoas editando um mesmo modelo e a figura \ref{fig:comdd_varios_modelos} ilustra três pessoas editando diferentes modelos, mas que são dependentes.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comdd_um_modelo.png}
+	\caption{Dua pessoas editando o mesmo modelo, simultaneamente ou não. Na atual implementação o CoMDD não aceita edição simultânea.} 
+	\label{fig:comdd_um_modelo}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comdd_varios_modelos.png}
+	\caption{Três pessoas editando diferentes modelos que dependem entre si, simultaneamente ou não. Na atual implementação o CoMDD não aceita edição simultânea.} 
+	\label{fig:comdd_varios_modelos}
+\end{figure}
 
 A implementação da abordagem CoMDD realizada neste trabalho, para evidenciar a hipótese, consiste no uso de uma DSL como abordagem de MDD e de uma Wiki para promover a colaboração e suporte da DSL. Mais especificamente, a DSL é para o domínio de robôs móveis autônomos.
 
@@ -43,9 +61,14 @@ No apêndice \ref{apendice_implementacao} estão os detalhes da implementação como
 
 \subsection*{Processo Realizado na Wiki}
 
-A figura XXX ilustra o processo de edição e transformação dos modelos realizado na Wiki. Um desenvolvedor edita um modelo (passo 1). Este modelo deve estar de acordo com o metamodelo (passo 2). É o metamodelo que define a estrutura do modelo, ou seja é ele quem define o que é uma bola e se ela vem antes ou depois do quadrado. Se o modelo estiver de acordo com o metamodelo, então são aplicadas transformações (passo 3) que geram o código-fonte (passo 4).
+A figura \ref{fig:geracao_de_codigo} ilustra o processo de edição e transformação dos modelos realizado na Wiki. Um desenvolvedor edita um modelo (passo 1). Este modelo deve estar de acordo com o metamodelo (passo 2). É o metamodelo que define a estrutura do modelo, ou seja é ele quem define o que é uma bola e se ela vem antes ou depois do quadrado. Se o modelo estiver de acordo com o metamodelo, então são aplicadas transformações (passo 3) que geram o código-fonte (passo 4). Embora não esteja ilustrado na figura, todo este processo, no CoMDD, ocorre na própria wiki.
 
-FIGURA!!
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/geracao_de_codigo.jpg}
+	\caption{Processo de edição de modelos e geração de código-fonte realizado na wiki.} 
+	\label{fig:geracao_de_codigo}
+\end{figure}
 
 
 %Possíveis de serem implementadas: 
@@ -306,6 +329,7 @@ Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéct
 %--------Estudo de Caso-------------
 %-----------------------------------
 \subsection{Estudo de Caso II}
+\label{estudo_de_caso_ii}
 O objetivo do segundo estudo de caso foi avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. A avaliação consiste na coleta de opinião por parte destes usuários. Neste caso a abordagem tradicional é definida pelo uso do Eclipse com o plugin SVN instalado e será referenciada por "Eclipse+SVN" como sinônimos. 
 
 Para realizar este estudo de caso foi implementado para o Eclipse, a mesma linguagem usada no CoMDD. O Eclipse possui dois projetos: o Xtext\footnote{http://www.eclipse.org/Xtext/}, usado para definir a linguagem e o Xpand\footnote{http://wiki.eclipse.org/Xpand} usado para definir as transformações;
@@ -648,6 +672,19 @@ A DSL do CoMDD poderia aceitar algumas partes do modelo linguagens de programaçã
 
 \section{Trabalhos Relacionados}
 \label{trabalhosRelacionados} 
+
+%No \cite{Xiao2007}, ele fala de alguns problemas e que estao relacionados com este trabalho, como: 
+%attracted. However, nearly all currently available
+%development tools are designed for core developers [2], and
+%little of them take peripheral developers [2] in to account. As
+%a result, there are lots of barriers to peripheral developers
+%when they want to contribute to a project incrementally, and
+%grow to core developers gradually. For example, it is hard to
+%understand source code because documentation is discrete; it
+%is hard to taste functionalities quickly with zero-installation;
+%and it is hard to reuse a library as simply as accessing a
+%HTML page.
+
 %%Atenção: quando for publicar eu tenho que ler estes trabalhos melhor e também ler os trabalhos da minha quali.
 
 \subsection*{Adessowiki}
@@ -702,21 +739,6 @@ Então, pode-se dizer que não foi encontrado uma ferramenta que permitisse o dese
 
 3-Qual seu diferencial?
 
-
-
-
-
-
-\section{Ferramentas já em uso}
-sugestao do michetti
-
-aquele que o chiquito mandou na lista, ...
-
-
-\section{Na falta de trabalhos relacionados}
-Ferramentas de MDD: eclipse, MPS, ...
-
-Ferramentas que auxiliam o trabalho colaborativo (sharepoint)...
-
+Trabalhos da Quali!!!!!????
 
 

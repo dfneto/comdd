@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{32}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -6,6 +6,43 @@
 \input babelbst.tex
 \newcommand{\Capitalize}[1]{\uppercase{#1}}
 \newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem[{Abeti \bbletal{}(2009)Abeti, Ciancarini e Moretti}]{Abeti2009}
+\textsc{Abeti, L.; Ciancarini, P.; Moretti, R.}\ \ \  Wiki-based requirements
+  management for business process reengineering.\ \ \ \capitalize\bblin{}:
+  \textit{Wikis for Software Engineering, 2009. WIKIS4SE '09. ICSE Workshop
+  on}, 2009, \bblpp{} 14--24.
+
+\bibitem[{Aho \bbletal{}(2009)Aho, Merilinna e Ovaska}]{Aho2009}
+\textsc{Aho, P.; Merilinna, J.; Ovaska, E.}\ \ \  Model-driven open source
+  software development - the open models approach.\ \ \ \capitalize\bblin{}:
+  \textit{4th International Conference on Software Engineering Advances, ICSEA
+  2009}, Porto, Portugal, 2009, \bblpp{} 185--190.
+\newline Disponível em:
+  \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-70749149216&partnerI%
+D=40&md5=01413c76e574b96a0cc8d16043574d64}
+
+\bibitem[{Ben Collins-Sussman e Pilato(????)}]{BenCollins-Sussman}
+\textsc{Ben Collins-Sussman, B. W.~F.; Pilato, C.~M.}\ \ \  Version control
+  with subversion.\ \ \ \'Ultima visita em 11 de fevereiro de 2012., ????
+\newline Disponível em: \url{http://svnbook.red-bean.com/en/1.6/}
+
+\bibitem[{Bendix e Emanuelsson(2009)}]{Bendix2009}
+\textsc{Bendix, L.; Emanuelsson, P.}\ \ \  Collaborative work with software
+  models - industrial experience and requirements.\ \ \ \capitalize\bblin{}:
+  \textit{Model-Based Systems Engineering, 2009. MBSE '09. International
+  Conference on}, 2009, \bblpp{} 60--68.
+
+\bibitem[{van Deursen \bbletal{}(2000)van Deursen, Klint e
+  Visser}]{Deursen2000}
+\textsc{Deursen, A.; Klint, P.; Visser, J.}\ \ \  Domain-specific languages: an
+  annotated bibliography.\ \ \ \textit{SIGPLAN Not.}, \bblvol{}~35, \bblno{}~6,
+  \bblpp{}~26--36, 2000.
+
+\bibitem[{Elrufaie e Turner(2005)}]{Elrufaie2005}
+\textsc{Elrufaie, E.; Turner, D.~A.}\ \ \  A wiki paradigm for use in it
+  courses.\ \ \ \textit{Information Technology: Coding and Computing,
+  International Conference on}, \bblvol{}~2, \bblpp{}~770--771, 2005.
 
 \bibitem[{France e Rumpe(2007)}]{France2007}
 \textsc{France, R.; Rumpe, B.}\ \ \  Model-driven development of complex
@@ -24,11 +61,103 @@
 \newline Disponível em:
   \url{http://www.sciencedirect.com/science/article/pii/S0164121211001063}
 
+\bibitem[{Hailpern e Tarr(2006)}]{Hailpern2006}
+\textsc{Hailpern, B.; Tarr, P.}\ \ \  Model-driven development: the good, the
+  bad, and the ugly.\ \ \ \textit{IBM Syst. J.}, \bblvol{}~45, \bblno{}~3,
+  \bblpp{}~451--461, 2006.
+
+\bibitem[{Jang e Green(2006)}]{Jang2006}
+\textsc{Jang, S.; Green, T.~M.}\ \ \  Best practices on delivering a wiki
+  collaborative solution for enterprise applications.\ \ \ \capitalize\bblin{}:
+  \textit{Collaborative Computing: Networking, Applications and Worksharing,
+  2006. CollaborateCom 2006. International Conference on}, 2006, \bblpp{} 1--9.
+
+\bibitem[{Jing e Fan(2008)}]{Jing2008}
+\textsc{Jing, H.; Fan, Y.}\ \ \  Usability of wiki for knowledge management of
+  knowledge-based enterprises.\ \ \ \textit{Knowledge Acquisition and Modeling,
+  International Symposium on}, \bblvol{}~0, \bblpp{}~201--205, 2008.
+
 \bibitem[{Jones e Scaffidi(2011)}]{Jones2011}
 \textsc{Jones, M.; Scaffidi, C.}\ \ \  Obstacles and opportunities with using
   visual and domain-specific languages in scientific programming.\ \ \
   \capitalize\bblin{}: \textit{Visual Languages and Human-Centric Computing
   (VL/HCC), 2011 IEEE Symposium on}, 2011, \bblpp{} 9 --16.
+
+\bibitem[{Kleppe \bbletal{}(2003)Kleppe, Warmer e Bast}]{Kleppe2003}
+\textsc{Kleppe, A.~G.; Warmer, J.; Bast, W.}\ \ \  \emph{Mda explained: The
+  model driven architecture: Practice and promise}.\ \ \ Boston, MA, USA:
+  Addison-Wesley Longman Publishing Co., Inc., 2003.
+\newline Disponível em:
+  \url{http://proquest.safaribooksonline.com/0-321-19442-X/ch01lev1sec1#X2ludG%
+VybmFsX0ZsYXNoUmVhZGVyP3htbGlkPTAtMzIxLTE5NDQyLVgvdmlpJmltYWdlcGFnZT12aWk=}
+
+\bibitem[{Liggesmeyer e Trapp(2009)}]{Liggesmeyer2009}
+\textsc{Liggesmeyer, P.; Trapp, M.}\ \ \  Trends in embedded software
+  engineering.\ \ \ \textit{IEEE Software}, \bblvol{}~26, \bblpp{}~19--25,
+  2009.
+
+\bibitem[{Lotufo \bbletal{}(2009)Lotufo, Machado, K\"{o}rbes e
+  Ramos}]{Lotufo2009}
+\textsc{Lotufo, R.~A.; Machado, R.~C.; K\"{o}rbes, A.; Ramos, R.~G.}\ \ \
+  Adessowiki on-line collaborative scientific programming platform.\ \ \
+  \capitalize\bblin{}: \textit{Proceedings of the 5th International Symposium
+  on Wikis and Open Collaboration}, WikiSym '09, New York, NY, USA: ACM, 2009,
+  \bblpp{} 10:1--10:6 (\textit{WikiSym '09}, ).
+\newline Disponível em: \url{http://doi.acm.org/10.1145/1641309.1641325}
+
+\bibitem[{Louridas(2006)}]{Louridas2006}
+\textsc{Louridas, P.}\ \ \  Using wikis in software development.\ \ \
+  \textit{Software, IEEE}, \bblvol{}~23, \bblno{}~2, \bblpp{}~88--91, 2006.
+
+\bibitem[{Lucr\'edio(2009)}]{Lucredio2009}
+\textsc{Lucr\'edio, D.}\ \ \  \emph{Uma abordagem orientada a modelos para
+  reutiliza\'c\~ao de software}.\ \ \ \bblphdthesis{}, Universidade de S\~ao
+  Paulo, Instituto de Ci\^encias Matem\'aticas e de Computa\'c\~ao, 2009.
+
+\bibitem[{Machado \bbletal{}(2011)Machado, Rittner e Lotufo}]{Machado2011}
+\textsc{Machado, R.~C.; Rittner, L.; Lotufo, R.~A.}\ \ \  Adessowiki -
+  collaborative platform for writing executable papers.\ \ \ \textit{Procedia
+  Computer Science}, \bblvol{}~4, \bblno{}~0, \bblpp{}~759 -- 767,
+  <ce:title>Proceedings of the International Conference on Computational
+  Science, ICCS 2011</ce:title>, 2011.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050911001384}
+
+\bibitem[{Majchrzak \bbletal{}(2006)Majchrzak, Wagner e Yates}]{Majchrzak2006}
+\textsc{Majchrzak, A.; Wagner, C.; Yates, D.}\ \ \  Corporate wiki users:
+  results of a survey.\ \ \ \capitalize\bblin{}: \textit{WikiSym '06:
+  Proceedings of the 2006 international symposium on Wikis}, New York, NY, USA:
+  ACM, 2006, \bblpp{} 99--104.
+
+\bibitem[{McQuay(2004)}]{McQuay2004}
+\textsc{McQuay, W.}\ \ \  Distributed collaborative environments for systems
+  engineering.\ \ \ \capitalize\bblin{}: \textit{Digital Avionics Systems
+  Conference, 2004. DASC 04. The 23rd}, 2004, \bblpp{} 9.D.3--91--10 Vol.2.
+
+\bibitem[{Mehta(2009)}]{Mehta2009}
+\textsc{Mehta, N.}\ \ \  \emph{Choosing an open source cms: Beginner's guide}.\
+  \ \ Packt Publishing, 2009.
+\newline Disponível em: \url{http://amazon.com/o/ASIN/1847196225/}
+
+\bibitem[{Meijler(2005)}]{Meijler2005}
+\textsc{Meijler, T.}\ \ \  Requirements for an integrated domain specific
+  modeling, modeling language development, and execution environment.\ \ \
+  \capitalize\bblin{}: \textit{in Proceedings of NWUML'2005: The 3rd Nordic
+  Workshop on UML and Software Modeling}, 2005.
+
+\bibitem[{Mellor \bbletal{}(2003)Mellor, Clark e Futagami}]{Mellor2003}
+\textsc{Mellor, S.~J.; Clark, A.~N.; Futagami, T.}\ \ \  Guest editors'
+  introduction: Model-driven development.\ \ \ \textit{IEEE Software},
+  \bblvol{}~20, \bblpp{}~14--18, 2003.
+
+\bibitem[{S\'anchez \bbletal{}(2009)S\'anchez, Moreira, Fuentes, ao~Ara\'ujo e
+  Magno}]{Sanchez2009}
+\textsc{S\'anchez, P.; Moreira, A.; Fuentes, L.; Ara\'ujo, J.; Magno, J.}\ \ \
+  Model-driven development for early aspects.\ \ \ \textit{Information and
+  Software Technology}, \bblvol{}~In Press, Corrected Proof, \bblpp{}~--, 2009.
+\newline Disponível em:
+  \url{http://www.sciencedirect.com/science/article/B6V0B-4XMD5H4-1/2/6ea38b8d%
+fd8b3a555a3eacba8e25f226}
 
 \bibitem[{Sarma \bbletal{}(2003)Sarma, Noroozi e van~der Hoek}]{Sarma2003}
 \textsc{Sarma, A.; Noroozi, Z.; Hoek, A.}\ \ \  Palantir: raising awareness
@@ -36,16 +165,45 @@
   \textit{Software Engineering, 2003. Proceedings. 25th International
   Conference on}, 2003, \bblpp{} 444 -- 454.
 
+\bibitem[{Selic(2003)}]{Selic2003}
+\textsc{Selic, B.}\ \ \  The pragmatics of model-driven development.\ \ \
+  \textit{IEEE Softw.}, \bblvol{}~20, \bblno{}~5, \bblpp{}~19--25, 2003.
+
+\bibitem[{Sriplakich \bbletal{}(2006)Sriplakich, Blanc e
+  Gervais}]{Sriplakich2006}
+\textsc{Sriplakich, P.; Blanc, X.; Gervais, M.-P.}\ \ \  Supporting
+  collaborative development in an open mda environment.\ \ \
+  \capitalize\bblin{}: \textit{Software Maintenance, 2006. ICSM '06. 22nd IEEE
+  International Conference on}, 2006, \bblpp{} 244--253.
+
+\bibitem[{Stahl \bbletal{}(2006)Stahl, Voelter e Czarnecki}]{Stahl2006}
+\textsc{Stahl, T.; Voelter, M.; Czarnecki, K.}\ \ \  \emph{Model-driven
+  software development: Technology, engineering, management}.\ \ \ John Wiley
+  \& Sons, 2006.
+
 \bibitem[{Teppola \bbletal{}(2009)Teppola, Parviainen e Takalo}]{Teppola2009}
 \textsc{Teppola, S.; Parviainen, P.; Takalo, J.}\ \ \  Challenges in deployment
   of model driven development.\ \ \ \capitalize\bblin{}: \textit{Software
   Engineering Advances, 2009. ICSEA '09. Fourth International Conference on},
   2009, \bblpp{} 15 --20.
 
+\bibitem[{Tetard \bbletal{}(2009)Tetard, Patokorpi e Packalen}]{Tetard2009}
+\textsc{Tetard, F.; Patokorpi, E.; Packalen, K.}\ \ \  Using wikis to support
+  constructivist learning: A case study in university education settings.\ \ \
+  \capitalize\bblin{}: \textit{HICSS '09: Proceedings of the 42nd Hawaii
+  International Conference on System Sciences}, Washington, DC, USA: IEEE
+  Computer Society, 2009, \bblpp{} 1--10.
+
 \bibitem[{Zhang e Ray(2007)}]{Zhang2007}
 \textsc{Zhang, J.; Ray, I.}\ \ \  Towards secure multi-sited transactional
   revision control systems.\ \ \ 2007, \bblpp{} 365 -- 375.
 \newline Disponível em:
   \url{http://www.sciencedirect.com/science/article/pii/S0920548906000742}
+
+\bibitem[{Zimmerly(2009)}]{Zimmerly2009}
+\textsc{Zimmerly, B.}\ \ \  Entendendo o software wiki.\ \ \ 2009.
+\newline Disponível em:
+  \url{http://www.ibm.com/developerworks/br/library/os-social-mediawiki/index.%
+html}
 
 \end{thebibliography}
