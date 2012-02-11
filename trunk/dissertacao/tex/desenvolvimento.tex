@@ -1,4 +1,4 @@
-Assegurar a integridade e consistência de artefatos versionados em um ambiente que suporte acesso concorrente é um problema difícil \cite{Zhang2007}, portanto para evitar os conflitos de edição e merge adotou-se uma abordagem \textit{pessimistic}, ou seja, uma política em que o artefato é bloqueado quando já está sendo editado por outra pessoa. Aplicando essa política, conflitos de edição são evitados e com isso desenvolvedores não gastarão tempo ou esforços resolvendo conflitos. Ainda, a política \textit{pessimistic} pode ajudar na comunicação, pois os desenvolvedores saberiam quando outra pessoa estaria modificando o mesmo artefato, incentivando a comunicação entre os desenvolvedores com os mesmos interesses \cite{Prudencio2012, Sarma2003}. Uma outra possível solução seria a edição simultânea estilo google docs cite{Meu trabalho!}...
+%Assegurar a integridade e consistência de artefatos versionados em um ambiente que suporte acesso concorrente é um problema difícil \cite{Zhang2007}, portanto para evitar os conflitos de edição e merge adotou-se uma abordagem \textit{pessimistic}, ou seja, uma política em que o artefato é bloqueado quando já está sendo editado por outra pessoa. Aplicando essa política, conflitos de edição são evitados e com isso desenvolvedores não gastarão tempo ou esforços resolvendo conflitos. Ainda, a política \textit{pessimistic} pode ajudar na comunicação, pois os desenvolvedores saberiam quando outra pessoa estaria modificando o mesmo artefato, incentivando a comunicação entre os desenvolvedores com os mesmos interesses \cite{Prudencio2012, Sarma2003}. Uma outra possível solução seria a edição simultânea estilo google docs cite{Meu trabalho!}...
 
 
 
@@ -675,65 +675,49 @@ A partir dessas observações surgiu a ideia de fazer dois vídeos: um apresentando
 Os objetivos do terceiro estudo de caso são os mesmos dos objetivos do segundo estudo de caso: avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. A avaliação também consiste na coleta de opinião por parte destes usuários.
 
 \subsubsection{Descrição dos participantes}
+O experimento 3 foi passado para 42 pessoas, onde 90\% delas eram formadas em algum curso de computação, 83\% já fizeram ou faziam mestrado ou doutorado, 98\% já desenvolveu sistemas em equipe e 90\% já trabalharam ou trabalham em empresas. 79\% dos participantes já trabalharam ou trabalhavam com uma IDE associada à um programa de versionamento. Ainda, o gráfico \ref{grafico:experiencia_programacao} apresenta o número de pessoas pelo tempo em que elas programam em anos. Pode-se observar que a média dos participantes é de 8.22 anos por participante e a moda é de 8 anos.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/experiencia_programacao.png}
+	\caption{Experiência em programação dos participantes em anos por quantidade de participantes.} 
+	\label{grafico:experiencia_programacao}
+\end{figure}
 
 
 \subsubsection{Instruções e Problema Apresentado}
 \label{instrucoes_comuns}
+Foram apresentados dois vídeos para cada participante. Um vídeo do CoMDD realizando as atividades de edição de modelos com comentário da versão de alteração, comentário na página de edição, comparação entre modelos, retorno para uma versão anterior do modelo e geração de código. No outro vídeo foram feitas as mesmas atividades mas no contexto do Eclipse+SVN. Por fim, foi apresentado um questionário. 
+
+No Apêndice \ref{apendice_questionario_experimento_3} está o email enviado com a explicação do que era para ser feito, bem como todas as perguntas feitas aos participantes.
+
+\subsubsection{Resultados e Conclusões do Estudo de Caso III}
+Quando os participantes foram questionados se o CoMDD seria capaz de suprir suas necessidades em termos de ferramenta de versionamento, 74\% dos participantes disseram que sim; e 72\% dos participantes afirmaram que levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, ele atende aos propósitos que o Eclipse+SVN traz em termos de desenvolvimento de software e compartilhamento. Se o CoMDD tivesse \textit{syntax highligth} e \textit{auto complete}, 77\% dos participantes o usariam e 12\% usariam, mas insatisfeitos em termos de versionamento, o que indica que \textit{syntax highligth} e \textit{auto complete} são elementos muito importantes nas IDEs.
+
+84\% dos participantes não viam como uma barreira ter que instalar softwares nas máquinas para desenvolver, entretanto, quando questionados se isso seria uma barreira para um não desenvolvedor, 86\% disseram que sim.
+
+Ainda, quando os participantes foram questionados sobre se usariam o CoMDD para desenvolver usando modelos, o qual é o propósito do CoMDD e não desenvolver código-fonte, 86\% dos participantes disseram que usariam; 72\% dos participantes acham o CoMDD uma abordagem mais fácil e simples de usar e levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, 84\% dos participantes acham que o CoMDD traria produtividade no desenvolvimento de sofware em uma equipe.
+
+%\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
+%Serão apresentadas as opniões dos participantes juntamente com as observações do pesquisador.
 
 
+%\subsubsection{Conclusões e Observações do Estudo de Caso III}
+%A seguir as conclusões e observações do segundo estudo de caso realizado:
+%\begin{enumerate}
+%\item 
+%\end{enumerate}
 
-\subsubsection{Resultados}
-
-
-\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
-Serão apresentadas as opniões dos participantes juntamente com as observações do pesquisador.
-
-
-\subsubsection{Conclusões e Observações do Estudo de Caso II}
-A seguir as conclusões e observações do segundo estudo de caso realizado:
-\begin{enumerate}
-\item 
-\end{enumerate}
-
-\subsubsection{Lições aprendidas}
+%\subsubsection{Lições aprendidas}
  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-highlight, auto complete sao coisas simples de se acrescentar, mas o mais importante é observar que esses foram os principais empecilhos de uso do CoMDD, ou seja, se as pessoas tivessem essas funcionalidades implementadas numa wiki possivelmente usariam o comdd. -> Talvez venha concluir isso
-
-
-A DSL do CoMDD poderia aceitar algumas partes do modelo linguagens de programação como C, C++ ou Java e não realizar transformações nessas partes. Assim, a DSL teria mais aceitação entre os usuários.
+%Já meio que falei parte disso: Se o CoMDD tivesse \textit{syntax highligth} e \textit{auto complete}, 77\% dos participantes o usariam e 12\% usariam, mas insatisfeitos em termos de versionamento, o que indica que ......highlight, auto complete sao coisas simples de se acrescentar, mas o mais importante é observar que esses foram os principais empecilhos de uso do CoMDD, ou seja, se as pessoas tivessem essas funcionalidades implementadas numa wiki possivelmente usariam o comdd. -> Talvez venha concluir isso
 
 %Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
 
 
 \section{Trabalhos Relacionados}
 \label{trabalhosRelacionados} 
-
-%No \cite{Xiao2007}, ele fala de alguns problemas e que estao relacionados com este trabalho, como: 
-%attracted. However, nearly all currently available
-%development tools are designed for core developers [2], and
-%little of them take peripheral developers [2] in to account. As
-%a result, there are lots of barriers to peripheral developers
-%when they want to contribute to a project incrementally, and
-%grow to core developers gradually. For example, it is hard to
-%understand source code because documentation is discrete; it
-%is hard to taste functionalities quickly with zero-installation;
-%and it is hard to reuse a library as simply as accessing a
-%HTML page.
-
 %%Atenção: quando for publicar eu tenho que ler estes trabalhos melhor e também ler os trabalhos da minha quali.
 
 \subsection*{Adessowiki}
@@ -751,14 +735,17 @@ O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no 
 Ainda, o método usado pelo CoMDD está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende
 
 \subsection*{Galaxy Wiki}
-
 O Galaxy Wiki permite, em uma Wiki, que desenvolvedores não só possam navegar, criar, modificar e deletar código fonte, como também compilar, executar e debugar programas Java, e ainda colaborativamente.
 
 Os autores desenvolveram um plugin para o Eclipse de modo que o Eclipse acessa as páginas de projeto, de classes e de bibliotecas armazenadas no Galaxy Wiki e convertem em projetos e arquivos Java e JARs, respectivamente, integrando assim o Galaxy Wiki e o Eclipse.
 
 %Além da semelhança de desenvolver código usando uma wiki, o trabalho de \cite{Xiao2007} cita sobre engenharia de software orientada a páginas. Embora este trabalho apenas lance como proposta futura, o trabalho de Xiao et al., permite que um programador possa reusar outra código fonte apenas referenciando -- Page Oriented Software Engineering: We are trying to figure out an environment on the premise of programming in wiki. It contains freely expandable collection of interlinked source code, and each of them is easily editable and usable by any users with a Web browser. More specifically, a programmer can manipulate his source code via wiki pages, and reuse other programmers' source code by reference corresponding wiki pages.
 
-Contudo, o CoMDD se difere do Galaxy Wiki por trazer a ideia de MDD ao invés do uso de Java. Assim, com o uso de modelos, tem-se mais incentivo à colaboração. Além do que Xiao et al., não destacam as vantagens do Galaxy Wiki em relação à uma IDE associada à um sistema de versionamento, como este trabalho faz.
+Xiao et al \cite{Xiao2007} levantam alguns problemas no contexto de desenvolvimento em uma wiki, como: é difícil entender código-fonte porque a documentação é descontínua, é difícil experimentar funcionalidades rapidamente sem nada instalado localmente e é difícil reusar uma biblioteca simplesmentea cessando uma página HTML.
+
+O CoMDD se difere do Galaxy Wiki por trazer a ideia de MDD ao invés do uso de Java. Assim, com o uso de modelos, tem-se mais incentivo à colaboração. Além do que Xiao et al., não destacam as vantagens do Galaxy Wiki em relação à uma IDE associada à um sistema de versionamento, como este trabalho faz.
+
+
 
 %Ver trabalhos da Christiane M. Neuwirth, como por exemplo: Computer Support for Distributed Collaborative Writing: A Coordination Science Perspective
 
@@ -774,7 +761,7 @@ O Cloud 9 IDE parece ser uma ferramenta de desenvolvimento muito robusta e compl
 
 %http://www.contexteditor.org/ --> soluação para o hightlithg
 
-\subsection*{Google Docs e ferramentas de edição concorrente em tempo real}
+\subsection*{Google Docs e Ferramentas de Edição Concorrente em Tempo Real}
 Parte do CoMDD, a qual não foi implementada, levanta a questão de edição concorrente em tempo real, o que significa que duas ou mais pessoas podem digitar, ao mesmo tempo, o mesmo documento, e visualizar as alterações em tempo real do documento alterado. Um exemplo de ferramenta assim é o Google Docs\footnote{https://docs.google.com}, mas ainda há outras, como: o Thoughtslinger\footnote{http://www.thoughtslinger.com/}, o Zoho\footnote{https://writer.zoho.com/}, o Moondedit\footnote{http://moonedit.com/} e o Notapipte\footnote{http://notapipe.net/}. Entretanto, todos com exceção do último, são para edição de documentos de texto e não para modelos ou linguagens de programação com o foco de desenvolvimento de software. O Notapipe permite editar um texto com syntax highlight, mas ainda é um texto e não pode ser compilado ou executado na Web.
 
 Então, pode-se dizer que não foi encontrado uma ferramenta que permitisse o desenvolvimento de software concorrente e em tempo real.
