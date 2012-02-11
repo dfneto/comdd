@@ -15,14 +15,14 @@ A figura \ref{fig:comdd_um_modelo} ilustra duas pessoas editando um mesmo modelo
 
 \begin{figure}
 	\centering
-		\includegraphics[width=15cm]{imagens/comdd_um_modelo.png}
+		\includegraphics[width=10cm]{imagens/comdd_um_modelo.png}
 	\caption{Dua pessoas editando o mesmo modelo, simultaneamente ou não. Na atual implementação o CoMDD não aceita edição simultânea.} 
 	\label{fig:comdd_um_modelo}
 \end{figure}
 
 \begin{figure}
 	\centering
-		\includegraphics[width=15cm]{imagens/comdd_varios_modelos.png}
+		\includegraphics[width=15cm]{imagens/comdd_com_varios_modelos.png}
 	\caption{Três pessoas editando diferentes modelos que dependem entre si, simultaneamente ou não. Na atual implementação o CoMDD não aceita edição simultânea.} 
 	\label{fig:comdd_varios_modelos}
 \end{figure}
@@ -79,18 +79,30 @@ A figura \ref{fig:geracao_de_codigo} ilustra o processo de edição e transformaçã
 %	Metametamodelagem: é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
 %	Falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]
 
-\subsection*{Vantagens}
-O CoMDD tem as seguintes vantagens devido ao uso de uma wiki e de MDD:
-\begin{enumerate}
-	\item \textbf{Produtividade:}
-	\item \textbf{DDS:}
-	\item \textbf{Comunicação}
-	\item \textbf{Funciona na web e não precisa de programas instalados localmente}
-\end{enumerate}
+%\subsection*{Vantagens}
+%O CoMDD tem as seguintes vantagens devido ao uso de uma wiki e de MDD:
+%\begin{enumerate}
+%	\item \textbf{Produtividade:}
+%	\item \textbf{DDS:}
+%	\item \textbf{Comunicação}
+%	\item \textbf{Funciona na web e não precisa de programas instalados localmente}
+%\end{enumerate}
+
+\section{Arquitetura do CoMDD}
+\label{arquitetura}
+O CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org}, onde foi definido o metamodelo e as transformações; e a wiki usada foi a Xwiki\footnote{http://www.xwiki.org}. A Figura \ref{fig:arquitetura} ilustra o componente de modelagem, que é a entrada para o componente transformador. O transformador é feito de um subcomponente transformador e de um metamodelo. O componente colaboração é composto das funcionalidades de versionamento, comunicação por comentários e política de acesso. Todos os três componentes: modelagem, transformador e colaboração fazem parte da Xwiki e apenas o componente transformador faz parte da DSL desenvolvida no ANTLR.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/arquitetura.jpg}
+	\caption{Arquitetura do CoMDD.} 
+	\label{fig:arquitetura}
+\end{figure}
+
 
 \section{Método}
 \label{metodo}
-Para tentar evidenciar que a hipótese é possível/verdadeira o CoMDD três estudos de caso foram executados. O CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org}, onde foi definido o metamodelo e as transformações; e a wiki usada foi a Xwiki\footnote{http://www.xwiki.org} (ver detalhes de implementação no Apêndice \ref{apendice_implementacao}). 
+Para tentar evidenciar que a hipótese é possível/verdadeira foram executados três estudos de caso. 
 
 \subsection{Estudo de Caso I}
 O objetivo do primeiro estudo de caso foi avaliar o CoMDD por pessoas não desenvolvedoras. A avaliação consistia em verificar como participantes jovens, com relativa baixa formação, sem conhecimentos de programação e sem conhecimentos do domínio, conseguiriam entender os conceitos e a linguagem do CoMDD. 
