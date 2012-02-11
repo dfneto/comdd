@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Estudo de Caso I}{17}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Descri\c c\~ao dos participantes}{17}{subsubsection.3.3.1.1}
 \contentsline {subsubsection}{\numberline {3.3.1.2}Instru\c c\~oes e Problema Apresentado}{18}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{19}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{18}{subsubsection.3.3.1.3}
 \contentsline {paragraph}{\numberline {3.3.1.3.1}Resultados da equipe A}{19}{paragraph.3.3.1.3.1}
 \contentsline {paragraph}{\numberline {3.3.1.3.2}Resultado da equipe B}{20}{paragraph.3.3.1.3.2}
 \contentsline {paragraph}{\numberline {3.3.1.3.3}Observa\c c\~oes (trocar esse nome)}{21}{paragraph.3.3.1.3.3}
@@ -39,28 +39,28 @@
 \contentsline {paragraph}{\numberline {3.3.2.6.2}Equipe B}{30}{paragraph.3.3.2.6.2}
 \contentsline {subsubsection}{\numberline {3.3.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{30}{subsubsection.3.3.2.7}
 \contentsline {subsubsection}{\numberline {3.3.2.8}Li\c c\~oes aprendidas}{31}{subsubsection.3.3.2.8}
-\contentsline {subsection}{\numberline {3.3.3}Estuo de caso 3: an\'alise de v\IeC {\'\i }deos e planilha de ticar}{31}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Trabalhos Relacionados}{31}{section.3.4}
-\contentsline {section}{\numberline {3.5}Cloud 9 IDE}{32}{section.3.5}
-\contentsline {section}{\numberline {3.6}Google Docs e ferramentas de edi\c c\~ao concorrente em tempo real}{33}{section.3.6}
-\contentsline {section}{\numberline {3.7}Artigos}{33}{section.3.7}
+\contentsline {subsection}{\numberline {3.3.3}Estuo de caso III}{31}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Descri\c c\~ao dos participantes}{31}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Instru\c c\~oes e Problema Apresentado}{31}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Resultados e Conclus\~oes do Estudo de Caso III}{32}{subsubsection.3.3.3.3}
+\contentsline {section}{\numberline {3.4}Trabalhos Relacionados}{33}{section.3.4}
 \contentsline {chapter}{\numberline {4}Conclus\~ao}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclus\~oes - verificar com carinho}{35}{section.4.1}
+\contentsline {section}{\numberline {4.1}Conclus\~oes}{35}{section.4.1}
 \contentsline {section}{\numberline {4.2}Contribui\c c\~oes}{36}{section.4.2}
 \contentsline {section}{\numberline {4.3}Trabalhos Futuros}{37}{section.4.3}
 \contentsline {section}{\numberline {4.4}Limita\c c\~oes do Trabalho}{37}{section.4.4}
 \contentsline {section}{\numberline {4.5}Li\c c\~oes aprendidas}{38}{section.4.5}
 \contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{41}{section.4.5}
-\contentsline {chapter}{\numberline {A}Implementa\c c\~ao do CoMDD}{45}{appendix.A}
-\contentsline {chapter}{\numberline {B}Ap\^endice C}{47}{appendix.B}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{45}{appendix.A}
+\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{45}{section.A.1}
+\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{46}{section.A.2}
+\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{47}{section.A.3}
 \contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{49}{section.A.1}
-\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{50}{section.A.2}
-\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{51}{section.A.3}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{53}{appendix.A}
-\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{53}{section.A.1}
-\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{55}{appendix.A}
-\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{55}{section.A.1}
-\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{56}{section.A.2}
-\contentsline {chapter}{\numberline {A}Detalhes de implementa\c c\~ao}{59}{appendix.A}
-\contentsline {chapter}{\numberline {A}Resultados do Aluno}{61}{appendix.A}
+\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{49}{section.A.1}
+\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{52}{section.A.2}
+\contentsline {chapter}{\numberline {A}Resultados do Aluno}{55}{appendix.A}
+\contentsline {chapter}{\numberline {A}Documentos do Estudo de Caso III}{57}{appendix.A}
+\contentsline {section}{\numberline {A.1}Email solicitando a participa\c c\~ao dos desenvolvedores}{57}{section.A.1}
+\contentsline {section}{\numberline {A.2}Question\'ario Apresentado aos Participantes}{58}{section.A.2}

@@ -2,62 +2,47 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: dissertacao.aux
 A level-1 auxiliary file: tex/referencias.aux
 The style file: modelo/icmc2.bst
-A level-1 auxiliary file: tex/apendice_implementacao.aux
-A level-1 auxiliary file: tex/apendiceB.aux
-A level-1 auxiliary file: tex/apendiceC.aux
-A level-1 auxiliary file: tex/apendice_textos.aux
-A level-1 auxiliary file: tex/apendice_log.aux
-A level-1 auxiliary file: tex/apendice_questionarios.aux
-A level-1 auxiliary file: tex/apendiceE.aux
-A level-1 auxiliary file: tex/apendice_resultados_aluno.aux
+A level-1 auxiliary file: tex/apendice/apendice_textos.aux
+A level-1 auxiliary file: tex/apendice/apendice_log.aux
+A level-1 auxiliary file: tex/apendice/apendice_questionarios.aux
+A level-1 auxiliary file: tex/apendice/apendice_resultados_aluno.aux
+A level-1 auxiliary file: tex/apendice/apendice_questionario_experimento_3.aux
 Database file #1: bib/referencias_dissertacao.bib
 Warning--entry type for "BenCollins-Sussman" isn't style-file defined
 --line 90 of file bib/referencias_dissertacao.bib
 Warning--entry type for "Zimmerly2009" isn't style-file defined
---line 1902 of file bib/referencias_dissertacao.bib
-Name 1 in "Ben Collins-Sussman, Brian W. Fitzpatrick, and C. Michael Pilato" has a comma at the end for entry BenCollins-Sussman
-while executing---line 2931 of file modelo/icmc2.bst
-Name 1 in "Ben Collins-Sussman, Brian W. Fitzpatrick, and C. Michael Pilato" has a comma at the end for entry BenCollins-Sussman
-while executing---line 2931 of file modelo/icmc2.bst
+--line 1926 of file bib/referencias_dissertacao.bib
 Warning--Last access date missing in Aho2009
-Name 1 in "Ben Collins-Sussman, Brian W. Fitzpatrick, and C. Michael Pilato" has a comma at the end for entry BenCollins-Sussman
-while executing---line 3115 of file modelo/icmc2.bst
-Name 1 in "Ben Collins-Sussman, Brian W. Fitzpatrick, and C. Michael Pilato" has a comma at the end for entry BenCollins-Sussman
-while executing---line 3115 of file modelo/icmc2.bst
-Warning--empty year in BenCollins-Sussman; set to ????
 Warning--Last access date missing in BenCollins-Sussman
 Warning--Last access date missing in Prudencio2012
 Warning--Last access date missing in Kleppe2003
-`volume' is a missing field, not a string, for entry Lotufo2009
-while executing---line 3115 of file modelo/icmc2.bst
 Warning--Last access date missing in Lotufo2009
 Warning--Last access date missing in Machado2011
 Warning--Last access date missing in Mehta2009
 Warning--Last access date missing in Sanchez2009
 Warning--can't use both author and editor fields in Stahl2006
-Warning--empty booktitle in Zhang2007
-Warning--Last access date missing in Zhang2007
+Warning--Last access date missing in Xiao2007
 Warning--Last access date missing in Zimmerly2009
 You've used 32 entries,
             2716 wiz_defined-function locations,
-            859 strings with 12515 characters,
-and the built_in function-call counts, 17809 in all, are:
-= -- 1705
-> -- 672
+            855 strings with 12478 characters,
+and the built_in function-call counts, 17846 in all, are:
+= -- 1703
+> -- 680
 < -- 38
-+ -- 264
-- -- 228
-* -- 1546
-:= -- 2860
++ -- 267
+- -- 231
+* -- 1563
+:= -- 2868
 add.period$ -- 64
 call.type$ -- 32
 change.case$ -- 239
 chr.to.int$ -- 32
-cite$ -- 45
+cite$ -- 43
 duplicate$ -- 912
-empty$ -- 1402
-format.name$ -- 330
-if$ -- 3800
+empty$ -- 1406
+format.name$ -- 331
+if$ -- 3802
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 47
@@ -65,18 +50,18 @@ newline$ -- 116
 num.names$ -- 128
 pop$ -- 271
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 205
 quote$ -- 0
-skip$ -- 692
+skip$ -- 689
 stack$ -- 0
-substring$ -- 1031
-swap$ -- 310
-text.length$ -- 21
+substring$ -- 1025
+swap$ -- 312
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 279
-warning$ -- 13
-while$ -- 153
+warning$ -- 11
+while$ -- 154
 width$ -- 0
-write$ -- 372
-(There were 5 error messages)
+write$ -- 373
+(There were 13 warnings)
