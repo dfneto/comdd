@@ -22,9 +22,9 @@
   \url{http://www.scopus.com/inward/record.url?eid=2-s2.0-70749149216&partnerI%
 D=40&md5=01413c76e574b96a0cc8d16043574d64}
 
-\bibitem[{Ben Collins-Sussman e Pilato(????)}]{BenCollins-Sussman}
-\textsc{Ben Collins-Sussman, B. W.~F.; Pilato, C.~M.}\ \ \  Version control
-  with subversion.\ \ \ \'Ultima visita em 11 de fevereiro de 2012., ????
+\bibitem[{Ben Collins-Sussman e Pilato(2011)}]{BenCollins-Sussman}
+\textsc{Ben Collins-Sussman, B. W.~F.; Pilato, M.}\ \ \  Version control with
+  subversion.\ \ \ 2011.
 \newline Disponível em: \url{http://svnbook.red-bean.com/en/1.6/}
 
 \bibitem[{Bendix e Emanuelsson(2009)}]{Bendix2009}
@@ -101,8 +101,8 @@ VybmFsX0ZsYXNoUmVhZGVyP3htbGlkPTAtMzIxLTE5NDQyLVgvdmlpJmltYWdlcGFnZT12aWk=}
 \textsc{Lotufo, R.~A.; Machado, R.~C.; K\"{o}rbes, A.; Ramos, R.~G.}\ \ \
   Adessowiki on-line collaborative scientific programming platform.\ \ \
   \capitalize\bblin{}: \textit{Proceedings of the 5th International Symposium
-  on Wikis and Open Collaboration}, WikiSym '09, New York, NY, USA: ACM, 2009,
-  \bblpp{} 10:1--10:6 (\textit{WikiSym '09}, ).
+  on Wikis and Open Collaboration}, New York, NY, USA: ACM, 2009, \bblpp{}
+  10:1--10:6 (\textit{WikiSym '09}, \bblvol{}-).
 \newline Disponível em: \url{http://doi.acm.org/10.1145/1641309.1641325}
 
 \bibitem[{Louridas(2006)}]{Louridas2006}
@@ -194,11 +194,12 @@ fd8b3a555a3eacba8e25f226}
   International Conference on System Sciences}, Washington, DC, USA: IEEE
   Computer Society, 2009, \bblpp{} 1--10.
 
-\bibitem[{Zhang e Ray(2007)}]{Zhang2007}
-\textsc{Zhang, J.; Ray, I.}\ \ \  Towards secure multi-sited transactional
-  revision control systems.\ \ \ 2007, \bblpp{} 365 -- 375.
-\newline Disponível em:
-  \url{http://www.sciencedirect.com/science/article/pii/S0920548906000742}
+\bibitem[{Xiao \bbletal{}(2007)Xiao, Chi e Yang}]{Xiao2007}
+\textsc{Xiao, W.; Chi, C.; Yang, M.}\ \ \  On-line collaborative software
+  development via wiki.\ \ \ \capitalize\bblin{}: \textit{Proceedings of the
+  2007 international symposium on Wikis}, New York, NY, USA: ACM, 2007,
+  \bblpp{} 177--183 (\textit{WikiSym '07}, \bblvol{}-).
+\newline Disponível em: \url{http://doi.acm.org/10.1145/1296951.1296970}
 
 \bibitem[{Zimmerly(2009)}]{Zimmerly2009}
 \textsc{Zimmerly, B.}\ \ \  Entendendo o software wiki.\ \ \ 2009.
