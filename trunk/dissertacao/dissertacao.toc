@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Estudo de Caso I}{17}{subsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.1.1}Descri\c c\~ao dos participantes}{17}{subsubsection.3.3.1.1}
 \contentsline {subsubsection}{\numberline {3.3.1.2}Instru\c c\~oes e Problema Apresentado}{18}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{18}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{19}{subsubsection.3.3.1.3}
 \contentsline {paragraph}{\numberline {3.3.1.3.1}Resultados da equipe A}{19}{paragraph.3.3.1.3.1}
 \contentsline {paragraph}{\numberline {3.3.1.3.2}Resultado da equipe B}{20}{paragraph.3.3.1.3.2}
 \contentsline {paragraph}{\numberline {3.3.1.3.3}Observa\c c\~oes (trocar esse nome)}{21}{paragraph.3.3.1.3.3}
