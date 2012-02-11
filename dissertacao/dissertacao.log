@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  11 FEB 2012 07:02
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  11 FEB 2012 07:08
 entering extended mode
  %&-line parsing enabled.
 **dissertacao
@@ -826,12 +826,12 @@ de_edicao.png (PNG copy)> <./imagens/comentarios_especificos.png (PNG copy)>]
 <imagens/geracao_de_codigo.jpg, id=629, 961.5925pt x 698.61pt>
 File: imagens/geracao_de_codigo.jpg Graphic file (type jpg)
 
-<use imagens/geracao_de_codigo.jpg>
-<imagens/arquitetura.jpg, id=633, 963.6pt x 722.7pt>
+<use imagens/geracao_de_codigo.jpg> [16 <./imagens/geracao_de_codigo.jpg>]
+<imagens/arquitetura.jpg, id=639, 896.34875pt x 551.05875pt>
 File: imagens/arquitetura.jpg Graphic file (type jpg)
 
-<use imagens/arquitetura.jpg> [16 <./imagens/geracao_de_codigo.jpg>] [17 <./ima
-gens/arquitetura.jpg>] [18] [19] [20] [21] [22] [23] [24] [25]
+<use imagens/arquitetura.jpg> [17 <./imagens/arquitetura.jpg>] [18] [19]
+[20] [21] [22] [23] [24] [25]
 <imagens/conversa_grupo_a.png, id=741, 1371.1225pt x 770.88pt>
 File: imagens/conversa_grupo_a.png Graphic file (type png)
 
@@ -1088,7 +1088,7 @@ xmf-texlive/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (75 pages, 1157130 bytes).
+Output written on dissertacao.pdf (75 pages, 1169737 bytes).
 PDF statistics:
  1058 PDF objects out of 1200 (max. 8388607)
  259 named destinations out of 1000 (max. 500000)
