@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  11 FEB 2012 19:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.11.21)  13 FEB 2012 23:54
 entering extended mode
  %&-line parsing enabled.
 **dissertacao
@@ -773,11 +773,11 @@ l.82
 
 ]
 Cap\'{\i }tulo 2.
-[7] <imagens/desTrad.jpg, id=468, 465.4188pt x 195.129pt>
+[7] <imagens/desTrad.jpg, id=474, 465.4188pt x 195.129pt>
 File: imagens/desTrad.jpg Graphic file (type jpg)
 
 <use imagens/desTrad.jpg>
-<imagens/desMDD.jpg, id=473, 466.1415pt x 152.4897pt>
+<imagens/desMDD.jpg, id=479, 466.1415pt x 152.4897pt>
 File: imagens/desMDD.jpg Graphic file (type jpg)
  <use imagens/desMDD.jpg>
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
@@ -800,11 +800,11 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 11.
-<imagens/comdd_um_modelo.png, id=577, 735.74875pt x 347.2975pt>
+<imagens/comdd_um_modelo.png, id=583, 735.74875pt x 347.2975pt>
 File: imagens/comdd_um_modelo.png Graphic file (type png)
 
 <use imagens/comdd_um_modelo.png>
-<imagens/comdd_com_varios_modelos.png, id=579, 999.735pt x 684.5575pt>
+<imagens/comdd_com_varios_modelos.png, id=585, 999.735pt x 684.5575pt>
 File: imagens/comdd_com_varios_modelos.png Graphic file (type png)
 
 <use imagens/comdd_com_varios_modelos.png> [13
@@ -812,24 +812,24 @@ File: imagens/comdd_com_varios_modelos.png Graphic file (type png)
 
 ] [14 <./imagens/comdd_um_modelo.png> <./imagens/comdd_com_varios_modelos.png>]
 
-<imagens/comentarios_na_pagina_de_edicao.png, id=598, 1106.1325pt x 684.5575pt>
+<imagens/comentarios_na_pagina_de_edicao.png, id=604, 1106.1325pt x 684.5575pt>
 File: imagens/comentarios_na_pagina_de_edicao.png Graphic file (type png)
 <use imagens/comentarios_na_pagina_de_edicao.png>
-<imagens/comentarios_especificos.png, id=599, 1111.15125pt x 400.49625pt>
+<imagens/comentarios_especificos.png, id=605, 1111.15125pt x 400.49625pt>
 File: imagens/comentarios_especificos.png Graphic file (type png)
 
 <use imagens/comentarios_especificos.png> [15 <./imagens/comentarios_na_pagina_
 de_edicao.png (PNG copy)> <./imagens/comentarios_especificos.png (PNG copy)>]
-<imagens/geracao_de_codigo.jpg, id=608, 961.5925pt x 698.61pt>
+<imagens/geracao_de_codigo.jpg, id=614, 961.5925pt x 698.61pt>
 File: imagens/geracao_de_codigo.jpg Graphic file (type jpg)
 
 <use imagens/geracao_de_codigo.jpg>
-<imagens/arquitetura.jpg, id=612, 896.34875pt x 551.05875pt>
+<imagens/arquitetura.jpg, id=618, 896.34875pt x 551.05875pt>
 File: imagens/arquitetura.jpg Graphic file (type jpg)
 
 <use imagens/arquitetura.jpg> [16 <./imagens/geracao_de_codigo.jpg>] [17 <./ima
 gens/arquitetura.jpg>] [18] [19] [20] [21] [22] [23] [24] [25]
-<imagens/conversa_grupo_a.png, id=721, 1371.1225pt x 770.88pt>
+<imagens/conversa_grupo_a.png, id=727, 1371.1225pt x 770.88pt>
 File: imagens/conversa_grupo_a.png Graphic file (type png)
 
 <use imagens/conversa_grupo_a.png>
@@ -840,7 +840,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Overfull \vbox (18.85089pt too high) has occurred while \output is active []
 
 
-[28] <imagens/conversa_grupo_b.png, id=735, 1371.1225pt x 770.88pt>
+[28] <imagens/conversa_grupo_b.png, id=741, 1371.1225pt x 770.88pt>
 File: imagens/conversa_grupo_b.png Graphic file (type png)
 
 <use imagens/conversa_grupo_b.png>
@@ -850,20 +850,43 @@ mente com as ob-ser-vações do pesquisador.
  []
 
 [29 <./imagens/conversa_grupo_b.png (PNG copy)>] [30]
-<imagens/experiencia_programacao.png, id=762, 602.25pt x 372.39125pt>
+<imagens/experiencia_programacao.png, id=768, 602.25pt x 372.39125pt>
 File: imagens/experiencia_programacao.png Graphic file (type png)
 
 <use imagens/experiencia_programacao.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32 <./imagens/experiencia_programacao.png (PNG copy)>] [33])
-(./tex/conclusao.tex [34]
+[31] [32 <./imagens/experiencia_programacao.png (PNG copy)>]
+Overfull \hbox (2.39705pt too wide) in paragraph at lines 713--714
+[]\T1/ptm/m/n/12 Estas foram as palavras e/ou ex-pressões mais citadas pe-los p
+ar-tic-i-pantes. Desta forma, levantou-
+ []
+
+<imagens/formas_colaboracao.png, id=787, 602.25pt x 372.39125pt>
+File: imagens/formas_colaboracao.png Graphic file (type png)
+
+<use imagens/formas_colaboracao.png> [33 <./imagens/formas_colaboracao.png (PNG
+ copy)>]
+<imagens/funcionalidades_versionamento.png, id=802, 602.25pt x 372.39125pt>
+File: imagens/funcionalidades_versionamento.png Graphic file (type png)
+
+<use imagens/funcionalidades_versionamento.png>
+<imagens/principais_barreiras.png, id=803, 602.25pt x 372.39125pt>
+File: imagens/principais_barreiras.png Graphic file (type png)
+
+<use imagens/principais_barreiras.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <./imagens/funcionalidades_versionamento.png (PNG copy)>] [35 <./imagens/pr
+incipais_barreiras.png (PNG copy)>] [36] [37] [38]) (./tex/conclusao.tex
+[39] [40
+
+
+]
 Cap\'{\i }tulo 4.
-[35
-
-
-] [36] [37] [38])
+[41] [42] [43] [44])
 Runaway argument?
 ! File ended while scanning use of \language@active@arg".
 <inserted text> 
@@ -871,10 +894,10 @@ Runaway argument?
 l.178 \input{tex/conclusao}
                            
 ? 
-[39]
+[45]
 \openout2 = `tex/referencias.aux'.
 
- (./tex/referencias.tex [40
+ (./tex/referencias.tex [46
 
 
 ] (./dissertacao.bbl (./babelbst.tex)
@@ -894,7 +917,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--63
 t . com / science / article / pii /
  []
 
-[41
+[47
 
 
 ]
@@ -915,32 +938,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--125
 t . com / science / article / pii /
  []
 
-[42]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 155--161
 \T1/ptm/m/n/12 Disponível em: [][]$\T1/pcr/m/n/12 http : / / www . sciencedirec
 t . com / science / article /
  []
 
-[43]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 205--209
 \T1/ptm/m/n/12 Disponível em: [][]$\T1/pcr/m/n/12 http : / / www . ibm . com / 
 developerworks / br / library /
  []
 
-)) [44]
+)) [50]
 \openout2 = `tex/apendice/apendice_textos.aux'.
 
  (./tex/apendice/apendice_textos.tex
 Ap\^endice A.
-[45
+[51
 
 
 
 
-] [46]) [47]
+] [52]) [53]
 \openout2 = `tex/apendice/apendice_log.aux'.
 
- (./tex/apendice/apendice_log.tex [48
+ (./tex/apendice/apendice_log.tex [54
 
 
 
@@ -957,14 +980,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
 <to be read again> 
                    \relax 
 l.7 ...e Caso 2 realizada no final do experimento}
-                                                   [49])
+                                                   [55])
 
 Package Fancyhdr Warning: \headheight is too small (15.50002pt): 
  Make it at least 26.98592pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]
+[56]
 \openout2 = `tex/apendice/apendice_questionarios.aux'.
 
  (./tex/apendice/apendice_questionarios.texpdfTeX warning (ext4): destination w
@@ -980,7 +1003,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
 <to be read again> 
                    \relax 
 l.7 \section{Perguntas e respostas da Equipe A}
-                                                [51
+                                                [57
 
 
 
@@ -990,17 +1013,17 @@ l.7 \section{Perguntas e respostas da Equipe A}
 <to be read again> 
                    \relax 
 l.46 \section{Perguntas e respostas da Equipe B}
-                                                 [52])
+                                                 [58])
 
 Package Fancyhdr Warning: \headheight is too small (26.98592pt): 
  Make it at least 29.63202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
+[59]
 \openout2 = `tex/apendice/apendice_resultados_aluno.aux'.
 
- (./tex/apendice/apendice_resultados_aluno.tex [54
+ (./tex/apendice/apendice_resultados_aluno.tex [60
 
 
 
@@ -1012,10 +1035,10 @@ Package Fancyhdr Warning: \headheight is too small (26.98592pt):
 l.4 \chapter{Resultados do Aluno}
                                  
 Ap\^endice A.
-) [55]
+) [61]
 \openout2 = `tex/apendice/apendice_questionario_experimento_3.aux'.
 
- (./tex/apendice/apendice_questionario_experimento_3.tex [56
+ (./tex/apendice/apendice_questionario_experimento_3.tex [62
 
 
 
@@ -1064,7 +1087,7 @@ eadsheet/viewform?pli=1&hl=en$[]\OML/cmm/m/it/12 S\OT1/cmr/m/n/12 &\OML/cmm/m/i
 t/12 rm \OT1/cmr/m/n/12 =
  []
 
-[57]pdfTeX warning (ext4): destination with the same identifier (name{section.A
+[63]pdfTeX warning (ext4): destination with the same identifier (name{section.A
 .2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1075,7 +1098,7 @@ Overfull \hbox (15.17682pt too wide) in paragraph at lines 79--81
 to-complet, você o us-aria? Sim/Sim,
  []
 
-[58]) [59] (./dissertacao.aux (./tex/referencias.aux)
+[64]) [65] (./dissertacao.aux (./tex/referencias.aux)
 (./tex/apendice/apendice_textos.aux) (./tex/apendice/apendice_log.aux)
 (./tex/apendice/apendice_questionarios.aux)
 (./tex/apendice/apendice_resultados_aluno.aux)
@@ -1089,10 +1112,10 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10520 strings out of 495061
- 150859 string characters out of 1182620
- 247846 words of memory out of 3000000
- 13121 multiletter control sequences out of 15000+50000
+ 10572 strings out of 495061
+ 151862 string characters out of 1182620
+ 248117 words of memory out of 3000000
+ 13143 multiletter control sequences out of 15000+50000
  93503 words of font info for 97 fonts, out of 3000000 for 9000
  33 hyphenation exceptions out of 8191
  43i,12n,49p,1266b,700s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1108,9 +1131,9 @@ tmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/times/utmr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on dissertacao.pdf (73 pages, 1212423 bytes).
+Output written on dissertacao.pdf (79 pages, 1260770 bytes).
 PDF statistics:
- 1053 PDF objects out of 1200 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
- 384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1112 PDF objects out of 1200 (max. 8388607)
+ 284 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -672,12 +672,12 @@ O estudo de caso II foi necessário para se fazer uma análise qualitativa das abo
 
 A partir dessas observações surgiu a ideia de fazer dois vídeos: um apresentando o CoMDD e o outro apresentando o Eclipse+SVN. Esses vídeos seriam transmitidos para desenvolvedores da indústria, preferencialmente, e seriam acompanhados de um questionário. Assim tería-se, além de um estudo qualitativo, um estudo quantitativo. Esse foi o princípio de formação do estudo de caso 3. 
 
-\subsection{Estuo de caso III}
+\subsection{Estudo de caso III}
 \label{estudo_de_caso_iii}
-Os objetivos do terceiro estudo de caso são os mesmos dos objetivos do segundo estudo de caso: avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. A avaliação também consiste na coleta de opinião por parte destes usuários.
+Os objetivos do terceiro estudo de caso são os mesmos dos objetivos do segundo estudo de caso: avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. Entretanto, enquanto o segundo estudo de caso teve um caráter qualitativo, o terceiro estudo de caso tem um caráter mais quantitativo. A avaliação também consiste na coleta de opinião por parte destes usuários. 
 
 \subsubsection{Descrição dos participantes}
-O experimento 3 foi passado para 42 pessoas, onde 90\% delas eram formadas em algum curso de computação, 83\% já fizeram ou faziam mestrado ou doutorado, 98\% já desenvolveu sistemas em equipe e 90\% já trabalharam ou trabalham em empresas. 79\% dos participantes já trabalharam ou trabalhavam com uma IDE associada à um programa de versionamento. Ainda, o gráfico \ref{grafico:experiencia_programacao} apresenta o número de pessoas pelo tempo em que elas programam em anos. Pode-se observar que a média dos participantes é de 8.22 anos por participante e a moda é de 8 anos.
+O experimento 3 foi respondido por 48 pessoas, onde 92\% delas eram formadas em algum curso de computação, 81\% já fizeram ou faziam mestrado/doutorado, 98\% já desenvolveu sistemas em equipe e 92\% já trabalharam ou trabalham em empresas. 79\% dos participantes já trabalharam ou trabalhavam com uma IDE associada à um programa de versionamento. A média de anos por participante é de 8.37 anos por participante e a moda é de 8 anos. Ainda, o gráfico \ref{grafico:experiencia_programacao} apresenta o número de pessoas pelo tempo em que elas programam na medida de tempo anos.
 
 \begin{figure}[h]
 	\centering
@@ -694,14 +694,95 @@ Foram apresentados dois vídeos para cada participante. Um vídeo do CoMDD realiza
 No Apêndice \ref{apendice_questionario_experimento_3} está o email enviado com a explicação do que era para ser feito, bem como todas as perguntas feitas aos participantes.
 
 \subsubsection{Resultados e Conclusões do Estudo de Caso III}
+Quando os participantes foram questionados que tipo de colaboração eles tinham/tiveram na sua empresa ou na sua equipe de desenvolvimento, ou seja, como eles colaboram na resolução de problemas, foram definidos 9 itens a partir das respostas e que assim as classificariam\footnote{A análise dos resultados foi feita a partir da leitura e interpretação das respostas subjetivas, de modo que possibilitasse o agrupamento dos dados e assim extrair uma possível informação. Pox exemplo, dada a pergunta "Que tipo de colaboração você tem/teve na sua empresa ou na sua equipe de desenvolvimento. Ou seja, como vocês colaboram na resolução de problemas?" um participante respondeu: "Nas empresas que trabalhei não havia nenhuma metodologia definida de engenharia de software. Nós programávamos individualmente nas máquinas e assim a colaboração geralmente eram em conversas informais".
+
+Mas nao foi subentendido nada de uma resposta, ou seja, se o participante citasse divisão de tarefas, mas nao citasse reuniões ou diálogos ou mencionasse que havia conversas entre os líderes e desenvolvedores, a gente nao colocava reuniões, mas apenas divisão de tarefas.}:
+
+\begin{enumerate}
+	\item Reuniões:são discussões ou conversas, informais ou não, para solucionar um problema, esclarecer uma dúvida ou distribuir tarefas;
+	\item Divisão de tarefas: quando há um planejamento do que será feito pela equipe ou por um gerente e então cada membro é responsável por uma tarefa;
+	\item Sistema de versionamento: quando mencionavam algum programa de versionamento;
+	\item Email: ou lista de email;
+	\item Bugger tracker ou issue tracker;
+	\item Quadro branco;
+	\item Programação/Revisão em pares;
+	\item Wiki;
+	\item Skype.
+\end{enumerate}
+
+Estas foram as palavras e/ou expressões mais citadas pelos participantes. Desta forma, levantou-se o seguinte gráfico:
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/formas_colaboracao.png}
+	\caption{Formas de Colaboração Citadas.} 
+	\label{grafico:formas_colaboracao}
+\end{figure}
+
+Quando os participantes foram questionados quais funcionalidades de uma ferramenta de versionamento eles achavam mais importante e/ou quais funcionalidades eles mais usavam, foram levantadas as 6 funcionalidades\footnote{Apenas 25 participantes citaram check-in e check-out e por isso essa funcionalidade foir descartada, pois, provavelmente os participantes acharam que esta funcionalidade já estava implicita, visto que dificilmente alguém que compara versões não irá fazer check-in ou não tenha feitocheck-out}:
+
+\begin{enumerate}
+	\item Rollback: capacidade de reverter um artefato para uma versão anterior;
+	\item Histórico: ou log de versões, com o intuito de controlar alterações, engloba todas as informações de um commit, como data, autor, comentário etc;
+	\item Comparação de versões;
+	\item Mesclagem ou resolução automática de conflitos;
+	\item Criação de branchs;
+	\item Integração com outras ferramentas, como IDEs, por exemplo.
+\end{enumerate}
+
+Assim, observou-se os seguintes resultados:
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/funcionalidades_versionamento.png}
+	\caption{Principais e Mais Usadas Funcionalidades de um Sistema de Versionamento Citadas.} 
+	\label{grafico:funcionalidades_versionamento}
+\end{figure}
+
+Quando os participantes foram questionados se usariam o CoMDD ou não, algumas respostas foram expressamente sim ou não, entretanto outras tiveram que ser interpretadas se o participante usaria ou não, desta forma, 42,22\% (19 de 45 respostas válidas) usariam o CoMDD, com ou sem restrições para seu uso, mas usariam e 35,55\% não usariam, com ou sem restrições de uso (16 de 45). Isso quer dizer que entre os 42,22\% que disseram que usariam o CoMDD, alguns deles disseram que precisava melhorar em alguns aspectos, assim como, entre os 35,55\% dos que disseram que não usariam o CoMDD, disseram que não usariam por alguns aspectos.
+
+Esses aspectos, definidos como as barreiras para uso do CoMDD, foram levantados pelos participantes e tem-se como:
+Entre as respostas negativas e positavas, foram apontadas barreiras para o uso do CoMDD. Foram as mais citadas:
+Um dos resultados deste trabalho é apontar uma tendência dos desenvolvedores a aceitarem uma ide que funciona em uma wiki e com modelos. Desta forma, pode-se dizer, que para o caso apresentado, o comdd teve aceitação de X\%.
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/principais_barreiras.png}
+	\caption{Principais Barreiras para o uso do CoMDD Citadas.} 
+	\label{grafico:principais_barreiras}
+\end{figure}
+
+
 Quando os participantes foram questionados se o CoMDD seria capaz de suprir suas necessidades em termos de ferramenta de versionamento, 74\% dos participantes disseram que sim; e 72\% dos participantes afirmaram que levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, ele atende aos propósitos que o Eclipse+SVN traz em termos de desenvolvimento de software e compartilhamento. Se o CoMDD tivesse \textit{syntax highligth} e \textit{auto complete}, 77\% dos participantes o usariam e 12\% usariam, mas insatisfeitos em termos de versionamento, o que indica que \textit{syntax highligth} e \textit{auto complete} são elementos muito importantes nas IDEs.
 
 84\% dos participantes não viam como uma barreira ter que instalar softwares nas máquinas para desenvolver, entretanto, quando questionados se isso seria uma barreira para um não desenvolvedor, 86\% disseram que sim.
 
 Ainda, quando os participantes foram questionados sobre se usariam o CoMDD para desenvolver usando modelos, o qual é o propósito do CoMDD e não desenvolver código-fonte, 86\% dos participantes disseram que usariam; 72\% dos participantes acham o CoMDD uma abordagem mais fácil e simples de usar e levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, 84\% dos participantes acham que o CoMDD traria produtividade no desenvolvimento de sofware em uma equipe.
 
-%\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
-%Serão apresentadas as opniões dos participantes juntamente com as observações do pesquisador.
+\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
+Serão apresentadas algumas opniões dos participantes, onde cada item é de um participante selecionado:
+
+\begin{itemize}
+ \item Os screencasts poderiam ser acompanhadas de uma explicação breve da finalidade do código sendo editado, assim ficaria mais fácil para quem responde o questionário entender o tipo de código que se espera gerar com a ferramenta, mesmo que para isso eles precisassem ficar um pouquinho mais longos. Tipo 4 minutos em vez de 3. Para mim isso não foi um problema pois eu já havia recebido uma explicação presencial antes.
+
+ \item "Talvez aumentaria a produtividade de equipes formadas por desenvolvedores com pouca experiência que não utilizam todos os recursos das ferramentas já disponíveis".
+
+ \item "Acredito que a ferramenta não seja adequada/ideal para o desenvolvimento de sistemas em geral, mas com algumas melhorias poderia ser muito útil na área de ensino de programação, no desenvolvimento em pares (eg. XP), desenvolvimento de exemplos/snippets e na resolução de alguns bugs mais chatos por uma equipe. No caso de equipes separadas geográficamente, os ganhos seriam ainda maiores. O motivo é que desenvolvedores costumam possuir gosto muito variado pelas ferramentas, e dificilmente uma equipe completa vai se sentir a vontade utilizando uma única ferramenta para o desenvolvimento, fazendo a produtividade cair. Mesmo dentro de uma mesma ferramenta ou ambiente, é muito comum um alto grau de customização pessoal, que não seria possível nesse caso."
+
+ \item Acho mais proveitoso incorporar o CoMDD a uma IDE do que fazer com que ele se comporte como uma.
+
+ \item Parabéns pelo trabalho e principalmente pela implementação e pela preocupação em saber o que os desenvolvedores pensam sobre a sua abordagem. Com certeza enriquece muito um trabalho de pesquisa. Mesmo que seja um protótipo, você consegue provar que muito da teoria pode ser aplicada.
+
+ \item O seu trabalho tem tudo a ver com um dos itens do manifesto ágil: Indivíduos e interação entre eles mais que processos e ferramentas. Mesmo utilizando uma ferramenta de ES vc consegue de diversas formas promover a colaboração entre os desenvolvedores o que é muito importante.
+
+ \item "Usabilidade bastante agradável o que facilita na aceitação de uma nova ferramenta."
+
+ \item Respondi não à pergunta anterior porque não ficou claro como a ferramenta poderia aumentar a produtividade em relação às outras IDEs. No máximo, seria equivalente, uma vez que todas as funcionalidades fossem finalizadas para um ambiente de produção.
+
+ \item Se a equipe for muito grande, talvez a wiki não seja adequada para o desenvolvimento. Como a wiki se comporta quando mais de um usuário tenta alterar os mesmo código ao mesmo tempo?
+
+ \item "Acho que a comparação entre o CoMDD e o Eclipse/SVN não é justa. Cada uma tem suas vantagens e desvantagens. SVN e Eclipse já vem sendo usados com sucesso há muito tempo, e não precisam de melhorias, pois já fazem muito bem aquilo a que se propõem. Já o uso de uma Wiki pode ser uma tendência futura. Talvez com a evolução do software em nuvem leve a uma aplicação tão poderosa quanto o Eclipse. Outra questão que não entendi muito bem é essa parte da geração de código. Os vídeos não explicam isso direito, nem no CoMDD e nem no Eclipse/SVN."
+\end{itemize}
+
 
 
 %\subsubsection{Conclusões e Observações do Estudo de Caso III}

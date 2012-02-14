@@ -39,28 +39,29 @@
 \contentsline {paragraph}{\numberline {3.3.2.6.2}Equipe B}{30}{paragraph.3.3.2.6.2}
 \contentsline {subsubsection}{\numberline {3.3.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{30}{subsubsection.3.3.2.7}
 \contentsline {subsubsection}{\numberline {3.3.2.8}Li\c c\~oes aprendidas}{31}{subsubsection.3.3.2.8}
-\contentsline {subsection}{\numberline {3.3.3}Estuo de caso III}{31}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Estudo de caso III}{31}{subsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.3.1}Descri\c c\~ao dos participantes}{31}{subsubsection.3.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.3.2}Instru\c c\~oes e Problema Apresentado}{31}{subsubsection.3.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3.3}Resultados e Conclus\~oes do Estudo de Caso III}{32}{subsubsection.3.3.3.3}
-\contentsline {section}{\numberline {3.4}Trabalhos Relacionados}{33}{section.3.4}
-\contentsline {chapter}{\numberline {4}Conclus\~ao}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclus\~oes}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Contribui\c c\~oes}{36}{section.4.2}
-\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{37}{section.4.3}
-\contentsline {section}{\numberline {4.4}Limita\c c\~oes do Trabalho}{37}{section.4.4}
-\contentsline {section}{\numberline {4.5}Li\c c\~oes aprendidas}{38}{section.4.5}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{41}{section.4.5}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{45}{section.A.1}
-\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{46}{section.A.2}
-\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{47}{section.A.3}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{49}{appendix.A}
-\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{49}{section.A.1}
-\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{51}{appendix.A}
-\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{51}{section.A.1}
-\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{52}{section.A.2}
-\contentsline {chapter}{\numberline {A}Resultados do Aluno}{55}{appendix.A}
-\contentsline {chapter}{\numberline {A}Documentos do Estudo de Caso III}{57}{appendix.A}
-\contentsline {section}{\numberline {A.1}Email solicitando a participa\c c\~ao dos desenvolvedores}{57}{section.A.1}
-\contentsline {section}{\numberline {A.2}Question\'ario Apresentado aos Participantes}{58}{section.A.2}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{35}{subsubsection.3.3.3.4}
+\contentsline {section}{\numberline {3.4}Trabalhos Relacionados}{37}{section.3.4}
+\contentsline {chapter}{\numberline {4}Conclus\~ao}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Conclus\~oes}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Contribui\c c\~oes}{42}{section.4.2}
+\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Limita\c c\~oes do Trabalho}{43}{section.4.4}
+\contentsline {section}{\numberline {4.5}Li\c c\~oes aprendidas}{44}{section.4.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{47}{section.4.5}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{52}{section.A.2}
+\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{53}{section.A.3}
+\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{55}{appendix.A}
+\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{55}{section.A.1}
+\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{57}{appendix.A}
+\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{57}{section.A.1}
+\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{58}{section.A.2}
+\contentsline {chapter}{\numberline {A}Resultados do Aluno}{61}{appendix.A}
+\contentsline {chapter}{\numberline {A}Documentos do Estudo de Caso III}{63}{appendix.A}
+\contentsline {section}{\numberline {A.1}Email solicitando a participa\c c\~ao dos desenvolvedores}{63}{section.A.1}
+\contentsline {section}{\numberline {A.2}Question\'ario Apresentado aos Participantes}{64}{section.A.2}
