@@ -5,63 +5,65 @@ The style file: modelo/icmc2.bst
 A level-1 auxiliary file: tex/apendice/apendice_textos.aux
 A level-1 auxiliary file: tex/apendice/apendice_log.aux
 A level-1 auxiliary file: tex/apendice/apendice_questionarios.aux
-A level-1 auxiliary file: tex/apendice/apendice_resultados_aluno.aux
 A level-1 auxiliary file: tex/apendice/apendice_questionario_experimento_3.aux
 Database file #1: bib/referencias_dissertacao.bib
 Warning--entry type for "BenCollins-Sussman" isn't style-file defined
 --line 90 of file bib/referencias_dissertacao.bib
 Warning--entry type for "Zimmerly2009" isn't style-file defined
---line 1926 of file bib/referencias_dissertacao.bib
+--line 1976 of file bib/referencias_dissertacao.bib
 Warning--Last access date missing in Aho2009
 Warning--Last access date missing in BenCollins-Sussman
+Warning--empty year in Cesar; set to ????
+Warning--Last access date missing in Cesar
 Warning--Last access date missing in Prudencio2012
 Warning--Last access date missing in Kleppe2003
 Warning--Last access date missing in Lotufo2009
 Warning--Last access date missing in Machado2011
 Warning--Last access date missing in Mehta2009
+Warning--Last access date missing in Runeson2009
 Warning--Last access date missing in Sanchez2009
 Warning--can't use both author and editor fields in Stahl2006
 Warning--Last access date missing in Xiao2007
 Warning--Last access date missing in Zimmerly2009
-You've used 32 entries,
+You've used 34 entries,
             2716 wiz_defined-function locations,
-            855 strings with 12478 characters,
-and the built_in function-call counts, 17846 in all, are:
-= -- 1703
-> -- 680
-< -- 38
-+ -- 267
-- -- 231
-* -- 1563
-:= -- 2868
-add.period$ -- 64
-call.type$ -- 32
-change.case$ -- 239
-chr.to.int$ -- 32
-cite$ -- 43
-duplicate$ -- 912
-empty$ -- 1406
-format.name$ -- 331
-if$ -- 3802
+            869 strings with 13308 characters,
+and the built_in function-call counts, 18754 in all, are:
+= -- 1795
+> -- 708
+< -- 40
++ -- 278
+- -- 240
+* -- 1638
+:= -- 3020
+add.period$ -- 68
+call.type$ -- 34
+change.case$ -- 252
+chr.to.int$ -- 34
+cite$ -- 48
+duplicate$ -- 960
+empty$ -- 1475
+format.name$ -- 346
+if$ -- 3988
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 47
-newline$ -- 116
-num.names$ -- 128
-pop$ -- 271
+missing$ -- 48
+newline$ -- 124
+num.names$ -- 136
+pop$ -- 286
 preamble$ -- 1
-purify$ -- 205
+purify$ -- 216
 quote$ -- 0
-skip$ -- 689
+skip$ -- 722
 stack$ -- 0
-substring$ -- 1025
-swap$ -- 312
+substring$ -- 1079
+swap$ -- 325
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 279
-warning$ -- 11
-while$ -- 154
+type$ -- 297
+warning$ -- 14
+while$ -- 163
 width$ -- 0
-write$ -- 373
-(There were 13 warnings)
+write$ -- 395
+(There were 16 warnings)

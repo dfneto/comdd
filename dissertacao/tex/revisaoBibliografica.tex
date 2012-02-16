@@ -3,7 +3,7 @@
 \chapter{Revisão Bibliográfica}
 \label{revisaoBibliografica}
 
-\section{Model Driven Development}
+\section{Conceitos Sobre MDD}
 \label{mdd} %copiei a parte de mdd da qualificação
 O Desenvolvimento Orientado a Modelos (\textit{Model-Driven Development} - MDD) é uma abordagem da Engenharia de Software que consiste na aplicação de modelos para elevar o nível de abstração, na qual os desenvolvedores criam e evoluem o software. Sua intenção é tanto simplificar (tornar mais fácil) quanto formalizar (padronizando, de forma que a automação seja possível) as várias atividades e tarefas que formam o ciclo de vida do software \cite{Hailpern2006}; ou numa definição mais singela: o MDD é a simples noção de construir um modelo de um sistema e depois transformá-lo em algo real \cite{Mellor2003}.
 
@@ -60,7 +60,7 @@ Um metamodelo descreve a estrutura de um modelo. De maneira abstrata, o metamode
 
 %?falta sobre sintaxes... > Ver material do lucreio
 
-\section{Domain Specific Languages}
+\section{Conceitos Sobre DSL}
 \label{dsl}
 Uma DSL (\textit{Domain-Specific Language}) é uma linguagem de programação ou uma linguagem de especificação executável, que oferece, através de notações e abstrações, poder expressivo focado em um problema de um domínio particular, e geralmente restrito a este domínio. Embora seja uma linguagem específica e não forneça uma solução geral para muitas áreas, ela provê uma solução muito melhor para um domínio particular \cite{Deursen2000} quando comparada com uma linguagem de propósito geral, como a UML, por exemplo. 
 
@@ -128,5 +128,50 @@ As Wikis focam na velocidade, flexibilidade, colaboração e compartilhamento de c
 
 %3- Artefatos online (wikis, gdocs) são mais colaborativos que controles de versao, bug tracks, ou outras ferramentas de gestao de configuração por terem interfaces mais amigáveis -> Assim a Web aumenta ainda mais colaboração: justificativa para wikis
 
+\section{Trabalhos Relacionados}
+\subsection*{Adessowiki}
+Os trabalhos de Lotufo et al \cite{Lotufo2009} e de Machado et al. \cite{Machado2011} apresentam o Adessowiki\footnote{http://www.adessowiki.org}, um ambiente colaborativo para desenvolvimento, documentação, ensino e repositório de algoritmos científicos, com foco na área de processamento de imagens. Este ambiente está sendo usado desde 2008 como um ambiente educacional e como uma ferramenta colaborativa para escrita de artigos e outros textos científicos.  %Uma página típica do Adessowiki contém um texto, um código e uma imagem gerada por este código.
 
+Segundo os autores, o que torna o Adessowiki especial em relação às outras wikis e aplicações Web é sua capaciadade de incluir pedaços de código em \textit{Python} ou C++ que são executados no servidor quando as páginas wiki são renderizadas. Desta forma, os resultados deste código podem fazer parte de textos científicos, em forma de figuras, textos e tabelas. %juntar com o parágrafo de baixo
+
+O principal objetivo deste ambiente é desenvolver colaborativamente algoritmos numéricos. As páginas do Adessowiki permitem a inserção de código, o qual é executado quando a página é renderizada, incorporando figuras, textos e tabelas, gerando um documento científico.
+
+Em relação ao ensino, o Adessowiki pode, como wiki, servir para registrar informações do curso como notas, exercídios e etc; como um ambiente de programação, serve 
+de plataforma para atividades de programação solicitadas pelo profesor, uma vez que o código pode se inserido e os resultados visualizados nas páginas wiki.
+
+O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no desenvolvimento de código (produto final do CoMDD), entretanto a principal diferença entre as abordagens está no foco dado por cada uma. Enquanto o Adessowiki tem mais o caráter de ensino, de pesquisa científica, de produção de textos científicos, e se limita à área de processamento de imagem e computação gráfica; o CoMDD foca no desenvolvimento de sistemas de software usando modelos, incentivando a colaboração de desenvolvedores ou não e com o intuito de ser uma espécie de substituto à IDEs e versionadores instalados localmente.
+
+Ainda, o método usado pelo CoMDD está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende
+
+\subsection*{Galaxy Wiki}
+Xiao et al desenvolveram o Galaxy Wiki, uma Wiki que permite que desenvolvedores possam criar, modificar e deletar código-fonte, como também compilar, executar e debugar programas Java, e ainda colaborativamente, da mesma forma como é feito no Eclipse.
+
+Como complemento do Galaxy Wiki, os autores desenvolveram um plugin para o Eclipse de modo que o Eclipse acessa as páginas de projeto, de classes e de bibliotecas armazenadas no Galaxy Wiki e convertem em projetos e arquivos Java e JARs, respectivamente, integrando assim o Galaxy Wiki e o Eclipse.
+
+Xiao et al. ainda apresentam alguns problemas do uso de IDEs, como: é difícil entender código-fonte porque a documentação é descontínua, é difícil experimentar funcionalidades rapidamente sem nada instalado localmente e é difícil reusar uma biblioteca simplesmentea acessando uma página HTML. 
+
+%Dada a proximidade entre o Galaxy Wiki e o CoMDD, este trabalho 
+
+%Além da semelhança de desenvolver código usando uma wiki, o trabalho de \cite{Xiao2007} cita sobre engenharia de software orientada a páginas. Embora este trabalho apenas lance como proposta futura, o trabalho de Xiao et al., permite que um programador possa reusar um código fonte apenas referenciando uma página -- Page Oriented Software Engineering: We are trying to figure out an environment on the premise of programming in wiki. It contains freely expandable collection of interlinked source code, and each of them is easily editable and usable by any users with a Web browser. More specifically, a programmer can manipulate his source code via wiki pages, and reuse other programmers' source code by reference corresponding wiki pages.
+
+\section{Uma Breve Ontogonia da Wiki}
+
+
+Rames et al \cite{KhalidRamesAl-asmari2006} apresentem um estudo de wikis para o desenvolvimento de software distribuído. Segundo os autores, para suportar a \textit{comunicação e coordenação} de grupos distribuídos de desenvolvimento, alguns mecanismos são usados, como: viagens, telefonemas, emails, vídeo conferências, softwares de gerenciamento de projeto on-line e softwarea de gerenciamento de conteúdo. Os autores então realizam um experimento em que envolvem cinco \textit{stakeholders}, três desenvolvedores, um cliente primário e um mentor, de modo que as dez pessoas trabalham no mesmo projeto, mas distribuídas. A principal conclusão dos autores sobre o trabalho é que as wikis, comparadas a outros métodos de comunicação, elas são fáceis de usar, confiáveis e de baixo custo e portanto são ferramentas ideais para o desenvolvimento de software distribuído.
+
+Wikis para troca de conhecimento:
+
+
+Wikis para engenharia de requisitos:
+Ferreira2009
+
+Wikis para ensino:
+As wikis também são muito aplicadas no ensino, como \cite{Minocha2007}, Adessowiki, 
+
+
+Wikis para desenvolvimento: como foi mostrado nos trabalhos de Xiao, entretanto o comdd foca mais num desenvolvimento colaborativo realizado por mais de uma pessoa.
+
+
+\section{Considerações Finais}
+Este capítulo ...
 

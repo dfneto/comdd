@@ -4,19 +4,18 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Processo convencional de desenvolvimento de software \citep {Lucredio2009}\relax }}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Processo de desenvolvimento de software orientado a modelos \citep {Lucredio2009}\relax }}{8}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Dua pessoas editando o mesmo modelo, simultaneamente ou n\~ao. Na atual implementa\c c\~ao o CoMDD n\~ao aceita edi\c c\~ao simult\^anea.\relax }}{14}{figure.caption.8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Tr\^es pessoas editando diferentes modelos que dependem entre si, simultaneamente ou n\~ao. Na atual implementa\c c\~ao o CoMDD n\~ao aceita edi\c c\~ao simult\^anea.\relax }}{14}{figure.caption.9}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Coment\'arios feitos na p\'agina de edi\c c\~ao\relax }}{15}{figure.caption.10}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Coment\'arios feitos para cada vers\~ao da p\'agina\relax }}{15}{figure.caption.11}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Processo de edi\c c\~ao de modelos e gera\c c\~ao de c\'odigo-fonte realizado na wiki.\relax }}{16}{figure.caption.12}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Arquitetura do CoMDD.\relax }}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2\relax }}{27}{figure.caption.14}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2\relax }}{29}{figure.caption.15}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Experi\^encia em programa\c c\~ao dos participantes em anos por quantidade de participantes.\relax }}{32}{figure.caption.16}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Formas de Colabora\c c\~ao Citadas.\relax }}{33}{figure.caption.17}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Principais e Mais Usadas Funcionalidades de um Sistema de Versionamento Citadas.\relax }}{34}{figure.caption.18}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Principais Barreiras para o uso do CoMDD Citadas.\relax }}{35}{figure.caption.19}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Dua pessoas editando o mesmo modelo, simultaneamente ou n\~ao. Na atual implementa\c c\~ao o CoMDD n\~ao aceita edi\c c\~ao simult\^anea.\relax }}{16}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Tr\^es pessoas editando diferentes modelos que dependem entre si, simultaneamente ou n\~ao. Na atual implementa\c c\~ao o CoMDD n\~ao aceita edi\c c\~ao simult\^anea.\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Coment\'arios feitos na p\'agina de edi\c c\~ao\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Coment\'arios feitos para cada vers\~ao da p\'agina\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Processo de edi\c c\~ao de modelos e gera\c c\~ao de c\'odigo-fonte realizado na wiki.\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Arquitetura do CoMDD.\relax }}{19}{figure.caption.13}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Experi\^encia em programa\c c\~ao dos participantes em anos por quantidade de participantes.\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Formas de Colabora\c c\~ao Citadas.\relax }}{36}{figure.caption.17}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Principais e Mais Usadas Funcionalidades de um Sistema de Versionamento Citadas.\relax }}{37}{figure.caption.18}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Principais Barreiras para o uso do CoMDD Citadas.\relax }}{38}{figure.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

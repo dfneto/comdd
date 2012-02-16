@@ -1,7 +1,7 @@
 \newpage
 
 \appendix
-\chapter{Textos apresentados no experimento}
+\chapter{Textos Apresentados no EC-PG}
 \label{apendice_textos}
 
 Aqui são dispostos os textos apresentados no experimento e referenciados na seção \ref{metodo}
@@ -27,75 +27,143 @@ Muito bem! Estamos felizes que o CoMDD esteja lhe interessando. Para você desenv
 \label{apendice_texto2_como_programar_para_o_comdd}
 
 A-Estrutura
+
 A estrutura do código deve ser seguida dessa forma:
+
 1-Declarações
+
 2-Includes e Defines
+
 3-Pacotes
+
 4-Adicionando sensores
-5-Main
-5.1-Inicializações
-5.2-Loop
-5.3-Funções
-Nota
-Atente para as palavras. A linguagem é case sensitive, o que significa que as palavras devem ser escritas exatamente como são mostradas. Caso falte falte um "s", como por exemplo: adicionar define ao invés de adicionar defines o código gerado estará errado.
-1-Declarações
-1.1 - Plataforma 
-Você pode desenvolver código para 3 plataformas. São elas pioneer, srv e carrinho de golfe. Veja como escrever:
-                                            plataforma [tipo da plataforma]
-Ex:                                         plataforma srv
-Os tipos são pioneer, srv, golfe
-1.2 - Nome do robô
-                                            robo [nome qualquer]
-Ex:                                         robo XyZ33
-2-Includes e Defines
-O CoMDD trás um conjunto de includes e defines. Para usá-los basta escrever:
-                                            adicionar [includes ou defines]
-Ex:                                         adicionar defines
-3-Pacotes
-Há dois pacotes disponíveis. São eles o player e o localizacao. Para usá-los basta escrever:
-                                            importar pacote [tipo do pacote];
-Ex:                                         importar pacote player;
-4-Adicionando Sensores
-Para usar os 3 tipos de sensores (gps, bussola e camera) você deve adicioná-los antes no código, da seguinte forma:
-                                            criarSensor [tipo de sensor]
-Ex:                                         criarSensor gps
 
 5-Main
+
+5.1-Inicializações
+
+5.2-Loop
+
+5.3-Funções
+
+Nota:
+
+Atente para as palavras. A linguagem é case sensitive, o que significa que as palavras devem ser escritas exatamente como são mostradas. Caso falte falte um "s", como por exemplo: adicionar define ao invés de adicionar defines o código gerado estará errado.
+
+1-Declarações
+
+1.1 - Plataforma 
+
+Você pode desenvolver código para 3 plataformas. São elas pioneer, srv e carrinho de golfe. Veja como escrever:
+
+\hspace{5mm} plataforma [tipo da plataforma]
+
+Ex: plataforma srv
+
+Os tipos são pioneer, srv, golfe
+
+1.2 - Nome do robô
+
+\hspace{5mm} [nome qualquer]
+
+Ex: robo XyZ33
+
+2-Includes e Defines
+
+O CoMDD trás um conjunto de includes e defines. Para usá-los basta escrever:
+
+\hspace{5mm} [includes ou defines]
+
+Ex: adicionar defines
+
+3-Pacotes
+
+Há dois pacotes disponíveis. São eles o player e o localizacao. Para usá-los basta escrever:
+
+\hspace{5mm} importar pacote [tipo do pacote];
+
+Ex: importar pacote player;
+
+4-Adicionando Sensores
+
+Para usar os 3 tipos de sensores (gps, bussola e camera) você deve adicioná-los antes no código, da seguinte forma:
+
+\hspace{5mm} criarSensor [tipo de sensor]
+
+Ex: criarSensor gps
+
+5-Main
+
 A Main é a função principal do código, todo a lógica do código vai dentro desta função. Para isso você precisa escrever:
-                                            int main() {
-                                                <<Inicializações
-                                                  Loop
-                                                  Funções
-                                                >>
-                                            }
+
+\hspace{5mm} int main() {
+
+\hspace{10mm} <<Inicializações
+
+\hspace{10mm} Loop
+
+\hspace{10mm} Funções
+
+\hspace{10mm} >>
+
+\hspace{5mm} }
+
 O que está dentro de <<>> deve ser substituído de acordo com as explicações dos itens 5.1, 5.2, 5.3.
+
 5.1 - Inicializações
+
 Para você usar os sensores criados ou outras funções você deve iniciá-las antes. No caso do sensor:
-                                            [tipo do sensor].ligar();
-Ex:                                         gps.ligar();
+
+\hspace{5mm} [tipo do sensor].ligar();
+
+Ex: gps.ligar();
+
 Ainda é possível carregar uma lista de coordenadas e inicializar o player da seguinte forma:
-                                            carregarListaCoordenadas();
-                                            inicializarPlayer();
+
+\hspace{5mm} carregarListaCoordenadas();
+
+\hspace{5mm} inicializarPlayer();
+
 5.2 - Loop 
+
 Loop é algo que vai ser executado continuamente. Para usá-lo você deve escrever:
-                                            while(true) {
-                                                 <<Funções>>             
-                                            }
+
+\hspace{5mm}  while(true) {
+
+\hspace{10mm}  <<Funções>>             
+
+\hspace{5mm} }
+
 Não se esqueça de fechar a chave depois de escrever as funções. 
+
 5.3 - Funções
+
 São possíveis as seguintes funções, a explicação delas está após a seta (->):
+
 gps.ler(); -> O sensor gps lê suas coordenadas
+
 bussola.ler(); -> O sensor bússola obtém a sua orientação
+
 camera.ler(); -> O sensor câmera obtém a sua imagem
+
 carregarListaCoordenadas(); -> O robô carrega uma lista de coordenadas
+
 receberCoordenada(); -> O robô recebe uma coordenada que deve seguir
+
 processaImagem(); -> Processa a imagem recebida pela câmera. Para usá-la você deve antes obter a imagem da câmera.
+
 processaInfo(); -> Processa todas as informações dos sensores.
+
 defineRegraSeguir(); -> Define a regra seguir um outro robô. 
+
 defineRegraNaoBater(); -> Define a regra andar pelo ambiente sem bater.
+
 defineRegraSeguirMultiplasCoordenadas(); -> Define a regra percorrer um conjunto de coordenadas dadas.
+
 andar(); -> O robô começa a se locomover no ambiente de acordo com a regra definida.
+
 Para usar uma das funções basta escrever igual ao que está antes da seta
+
 
 Fonte: http://143.107.183.158:8008/xwiki/bin/view/Main/aqui
 
@@ -104,9 +172,16 @@ Fonte: http://143.107.183.158:8008/xwiki/bin/view/Main/aqui
 \label{apendice+texto1b_instalacao}
 
 Texto 1B:
+
 Instalação do Eclipse+svn e importação da dsl
+
 1. Instalar o Eclipse Modeling Tools versão helios http://www.eclipse.org/downloads/packages/eclipse-modeling-tools-includes-incubating-components/heliossr2
+
 2. A versão helios precisa do java 1.5 (pode-se colar o jre 1.5 direto na pasta do eclipse, assim não precisa alterar o path)
+
 3. Instalar os plugins: xpand e xtext
+
 4. Instalar o svn
+
 5. Configurar o svn no eclipse com o projeto http://code.google.com/p/comdd-eclipse-svn/source/checkout
+

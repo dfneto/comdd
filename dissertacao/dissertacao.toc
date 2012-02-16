@@ -8,60 +8,63 @@
 \contentsline {section}{\numberline {1.4}Resultados Esperados}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Estrutura deste trabalho}{5}{section.1.5}
 \contentsline {chapter}{\numberline {2}Revis\~ao Bibliogr\'afica}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Model Driven Development}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Domain Specific Languages}{9}{section.2.2}
+\contentsline {section}{\numberline {2.1}Conceitos Sobre MDD}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Conceitos Sobre DSL}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Colabora\c c\~ao}{10}{section.2.3}
 \contentsline {section}{\numberline {2.4}Wiki}{10}{section.2.4}
-\contentsline {chapter}{\numberline {3}Desenvolvimento}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}O CoMDD - \textit {Collaborative Model Driven Development}}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Arquitetura do CoMDD}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}M\'etodo}{17}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Estudo de Caso I}{17}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Descri\c c\~ao dos participantes}{17}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Instru\c c\~oes e Problema Apresentado}{18}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{18}{subsubsection.3.3.1.3}
-\contentsline {paragraph}{\numberline {3.3.1.3.1}Resultados da equipe A}{19}{paragraph.3.3.1.3.1}
-\contentsline {paragraph}{\numberline {3.3.1.3.2}Resultado da equipe B}{20}{paragraph.3.3.1.3.2}
-\contentsline {paragraph}{\numberline {3.3.1.3.3}Observa\c c\~oes (trocar esse nome)}{21}{paragraph.3.3.1.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Opini\~oes dos participantes}{21}{subsubsection.3.3.1.4}
-\contentsline {subsubsection}{\numberline {3.3.1.5}Conclus\~oes e observa\c c\~oes do Estudo de Caso I}{21}{subsubsection.3.3.1.5}
-\contentsline {subsubsection}{\numberline {3.3.1.6}Li\c c\~oes aprendidas}{22}{subsubsection.3.3.1.6}
-\contentsline {subsection}{\numberline {3.3.2}Estudo de Caso II}{22}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Descri\c c\~ao dos participantes}{23}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Instru\c c\~oes e Problema Apresentado}{23}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Equipe A: CoMDD}{24}{subsubsection.3.3.2.3}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Equipe B: Eclipse+SVN}{24}{subsubsection.3.3.2.4}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Resultados}{25}{subsubsection.3.3.2.5}
-\contentsline {paragraph}{\numberline {3.3.2.5.1}Resultados da Equipe A}{25}{paragraph.3.3.2.5.1}
-\contentsline {paragraph}{\numberline {3.3.2.5.2}Resultados da Equipe B}{26}{paragraph.3.3.2.5.2}
-\contentsline {subsubsection}{\numberline {3.3.2.6}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{29}{subsubsection.3.3.2.6}
-\contentsline {paragraph}{\numberline {3.3.2.6.1}Equipe A}{29}{paragraph.3.3.2.6.1}
-\contentsline {paragraph}{\numberline {3.3.2.6.2}Equipe B}{30}{paragraph.3.3.2.6.2}
-\contentsline {subsubsection}{\numberline {3.3.2.7}Conclus\~oes e Observa\c c\~oes do Estudo de Caso II}{30}{subsubsection.3.3.2.7}
-\contentsline {subsubsection}{\numberline {3.3.2.8}Li\c c\~oes aprendidas}{31}{subsubsection.3.3.2.8}
-\contentsline {subsection}{\numberline {3.3.3}Estudo de caso III}{31}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Descri\c c\~ao dos participantes}{31}{subsubsection.3.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Instru\c c\~oes e Problema Apresentado}{31}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}Resultados e Conclus\~oes do Estudo de Caso III}{32}{subsubsection.3.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.4}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{35}{subsubsection.3.3.3.4}
-\contentsline {section}{\numberline {3.4}Trabalhos Relacionados}{37}{section.3.4}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}Considera\c c\~oes Finais}{13}{section.2.6}
+\contentsline {chapter}{\numberline {3}Desenvolvimento}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}O CoMDD - \textit {Collaborative Model Driven Development}}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Arquitetura do CoMDD}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}M\'etodo}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Estudo de Caso I - EC-ND}{20}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Descri\c c\~ao dos participantes}{20}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Instru\c c\~oes e Problema Apresentado}{21}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Resultados}{21}{subsubsection.3.3.1.3}
+\contentsline {paragraph}{\numberline {3.3.1.3.1}Resultados da equipe A}{22}{paragraph.3.3.1.3.1}
+\contentsline {paragraph}{\numberline {3.3.1.3.2}Resultado da equipe B}{23}{paragraph.3.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Opini\~oes dos participantes}{24}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.3.1.5}Conclus\~oes e observa\c c\~oes do EC-ND}{24}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.1.6}Li\c c\~oes aprendidas}{25}{subsubsection.3.3.1.6}
+\contentsline {subsection}{\numberline {3.3.2}Estudo de Caso II - EC-PG}{25}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Descri\c c\~ao dos participantes}{25}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Instru\c c\~oes e Problema Apresentado}{25}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Equipe A: CoMDD}{27}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Equipe B: Eclipse+SVN}{27}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Resultados}{28}{subsubsection.3.3.2.5}
+\contentsline {paragraph}{\numberline {3.3.2.5.1}Resultados da Equipe A}{28}{paragraph.3.3.2.5.1}
+\contentsline {paragraph}{\numberline {3.3.2.5.2}Resultados da Equipe B}{29}{paragraph.3.3.2.5.2}
+\contentsline {subsubsection}{\numberline {3.3.2.6}Opini\~oes dos Participantes e Obersva\c c\~oes do Pesquisador}{32}{subsubsection.3.3.2.6}
+\contentsline {paragraph}{\numberline {3.3.2.6.1}Equipe A}{32}{paragraph.3.3.2.6.1}
+\contentsline {paragraph}{\numberline {3.3.2.6.2}Equipe B}{33}{paragraph.3.3.2.6.2}
+\contentsline {subsubsection}{\numberline {3.3.2.7}Observa\c c\~oes do EC-PG}{33}{subsubsection.3.3.2.7}
+\contentsline {subsubsection}{\numberline {3.3.2.8}Li\c c\~oes aprendidas}{33}{subsubsection.3.3.2.8}
+\contentsline {subsection}{\numberline {3.3.3}Estudo de caso III - EC-IN}{33}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Descri\c c\~ao dos participantes}{34}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Instru\c c\~oes e Problema Apresentado}{34}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Resultados do EC-IN}{35}{subsubsection.3.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Opini\~oes dos Participantes}{37}{subsubsection.3.3.3.4}
+\contentsline {section}{\numberline {3.4}CoMDD vs Ferramentas Existentes}{39}{section.3.4}
+\contentsline {section}{\numberline {3.5}Considera\c c\~oes Finais}{40}{section.3.5}
 \contentsline {chapter}{\numberline {4}Conclus\~ao}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}Conclus\~oes}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Contribui\c c\~oes}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Trabalhos Futuros}{43}{section.4.3}
-\contentsline {section}{\numberline {4.4}Limita\c c\~oes do Trabalho}{43}{section.4.4}
-\contentsline {section}{\numberline {4.5}Li\c c\~oes aprendidas}{44}{section.4.5}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{47}{section.4.5}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{51}{appendix.A}
-\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{51}{section.A.1}
-\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{52}{section.A.2}
-\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{53}{section.A.3}
-\contentsline {chapter}{\numberline {A}Textos apresentados no experimento}{55}{appendix.A}
-\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{55}{section.A.1}
-\contentsline {chapter}{\numberline {A}Perguntas Respondidas pelas Equipes A e B do Estudo de Caso 2}{57}{appendix.A}
-\contentsline {section}{\numberline {A.1}Perguntas e respostas da Equipe A}{57}{section.A.1}
-\contentsline {section}{\numberline {A.2}Perguntas e respostas da Equipe B}{58}{section.A.2}
-\contentsline {chapter}{\numberline {A}Resultados do Aluno}{61}{appendix.A}
+\contentsline {section}{\numberline {4.1}Conclus\~oes dos Estudos de Caso}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Conclus\~oes}{42}{section.4.2}
+\contentsline {section}{\numberline {4.3}Contribui\c c\~oes}{43}{section.4.3}
+\contentsline {section}{\numberline {4.4}Trabalhos Futuros}{44}{section.4.4}
+\contentsline {section}{\numberline {4.5}Limita\c c\~oes do Trabalho}{45}{section.4.5}
+\contentsline {section}{\numberline {4.6}Li\c c\~oes aprendidas}{45}{section.4.6}
+\contentsline {section}{\numberline {4.7}Atividades e Resultados Paralelos}{46}{section.4.7}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Refer\^encias}{49}{Item.68}
+\contentsline {chapter}{\numberline {A}Textos Apresentados no EC-PG}{53}{appendix.A}
+\contentsline {section}{\numberline {A.1}Texto I: O que \'e o CoMDD?}{53}{section.A.1}
+\contentsline {section}{\numberline {A.2}Texto II: Como programar para o CoMDD}{54}{section.A.2}
+\contentsline {section}{\numberline {A.3}Instala\c c\~ao do Eclipse+SVN e importa\c c\~ao da DSL}{56}{section.A.3}
+\contentsline {chapter}{\numberline {A}Discuss\~ao realizada pela equipe B no EC-PG}{57}{appendix.A}
+\contentsline {section}{\numberline {A.1}Conversa da Equipe B do Estudo de Caso 2 realizada no final do experimento}{57}{section.A.1}
+\contentsline {chapter}{\numberline {A}Question\'arios Respondidos pelas Equipes A e B do Estudo de Caso 2}{59}{appendix.A}
+\contentsline {section}{\numberline {A.1}Question\'ario Respondido pela Equipe A}{59}{section.A.1}
+\contentsline {section}{\numberline {A.2}Question\'ario Respondido pela Equipe B}{60}{section.A.2}
 \contentsline {chapter}{\numberline {A}Documentos do Estudo de Caso III}{63}{appendix.A}
 \contentsline {section}{\numberline {A.1}Email solicitando a participa\c c\~ao dos desenvolvedores}{63}{section.A.1}
 \contentsline {section}{\numberline {A.2}Question\'ario Apresentado aos Participantes}{64}{section.A.2}
