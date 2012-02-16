@@ -94,7 +94,7 @@ O CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org}, onde foi
 
 \begin{figure}
 	\centering
-		\includegraphics[width=15cm]{imagens/arquitetura.jpg}
+		\includegraphics[width=15cm]{imagens/arquitetura.png}
 	\caption{Arquitetura do CoMDD.} 
 	\label{fig:arquitetura}
 \end{figure}
@@ -102,9 +102,21 @@ O CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org}, onde foi
 
 \section{Método}
 \label{metodo}
-Para tentar evidenciar que a hipótese é possível/verdadeira foram executados três estudos de caso. 
+A aceitação de estudos empíricos na engenharia de software está crescendo, pois a pesquisa analítica não é o suficiente para investigar a real complexidade entre humanos e sua interação com a tecnologia \cite{Runeson2009}. Deste forma, este trabalho realiza como método de pesquisa a elaboração e execução de estudo de caso.
 
-\subsection{Estudo de Caso I}
+Segundo Runenson \cite{Runeson2009}, um estudo de caso é um método empírico com o intuito de investigar um fenômeno em um contexto. Cesar \cite{Cesar} define um estudo de caso como sendo uma abordagem qualitativa para coleta de dados a cerca de um fenômeno a ser investigado. Cesar também afirma que um estudo de caso deve ter três fases distintas: o desenvolvimento de um protocolo que norteie o estudo; coleta e análise dos dados e a interpretação desses dados. Assim, este trabalho se baseou parcialmente nos trabalhos de Runeson e Cesar.
+
+Foram definidos desenvolvidos três estudos de caso: EC-ND (Estudo de Caso dos Não Desenvolvedores), EC-PG (Estudo de Caso dos Pós Graduandos) e EC-IN (Estudo de Caso da Indústria)\footnote{Nas respectivas seções de cada estudo de caso será apresentado o perfil dos participantes, sendo ND, PG e IN generalizações com o intuito de facilitar a referência aos estudos de caso.}. 
+
+O EC-ND tinha o intuito de avaliar o CoMDD por não desenvolvedores e com um grau de escolaridade mediano\footnote{Não faz-se aqui uma análise da escolaridade nacional, tampouco deseja-se diminuir ou inferiorizar o nível de escolaridade dos participantes. Classificou-se como mediano pois os participantes já haviam concluído a maior parte do ensino médio, entretanto ainda não haviam feito graduação.}. Desta forma seria possível avaliar o nível de aceitação por não desenvolvedores.
+
+O EC-PG tinha a intenção de avaliar o CoMDD por alunos de pós graduação em ciências da computação, e formação também em ciências da computação, e que já tivessem uma experiência mínima de um ano na indústria\footnote{Neste trabalho, o termo indústria se refere à indústria de desenvolvimento de software.}.  Desta forma, os resultados do EC-PG teriam uma visão intermediária entre academia e indústria.
+
+Por fim, o EC-IN, tinha o objetivo de avaliar o CoMDD principalmente, mas não essencialmente, por desenvolvedores e com experiência de desenvolvimento de software. Desta maneira, os resultados do EC-IN teriam uma visão que refletisse maior as necessidades e interesses da indústria.
+
+Assim, este trabalho realizou três estudos de caso com o intuito de evidenciar a \tetbf{hipótese de que é possível usar uma wiki para desenvolver um sistema colaborativamente usando MDD}. 
+
+\subsection{Estudo de Caso I - EC-ND}
 \label{estudo_de_caso_i}
 O objetivo do primeiro estudo de caso foi avaliar o CoMDD por pessoas não desenvolvedoras. A avaliação consistia em verificar como participantes jovens, com relativa baixa formação, sem conhecimentos de programação e sem conhecimentos do domínio, conseguiriam entender os conceitos e a linguagem do CoMDD. 
 
@@ -307,32 +319,28 @@ Funções
 }}
 \end{center}
 
-\paragraph{Observações (trocar esse nome)}
-\begin{enumerate}
-\item Ambos grupos receberam as instruções pelo pesquisador por vídeo conferência;
-\item Durante todo o experimento, o grupo B teve suporte via vídeo conferência, enquanto que o grupo A teve suporte via \textit{instant messanger} e o auxílio de um aluno de doutorado do LRM que estava no local; 
-\item O grupo A leu uma segunda vez o texto II;
-\item O grupo A teve melhores resultados que o grupo B. Os resultados do grupo A são considerados como corretos, enquanto que os do grupo B estão errados.
-\end{enumerate}
+
 
 \subsubsection{Opiniões dos participantes}
 \textit{Prós:} A linguagem é fácil de entender e o fato de ser em português facilita.
 
 \textit{Contras:} Foi mais complicado entender as intruções do experimento; ficou confusa a função \textit{carregarListaCoordenadas()}.
 
-\subsubsection{Conclusões e observações do Estudo de Caso I}
+\subsubsection{Conclusões e observações do EC-ND}
 A seguir as conclusões e observações do primeiro estudo de caso realizado:
+
 \begin{enumerate}
 	\item O experimento foi transmitido a distância, via vídeo conferência e com a ajuda de um aluno de doutorado do LRM que acompanhou os participantes e auxiliou o grupo A, enquanto o pesquisador auxiliava o grupo B. Não pode-se precisar quanto foi o auxílio que o grupo A recebeu;
-	\item Ao observar as equipes estima-se a necessidade de pelo menos duas horas adicionar para que eles aprendessem a usar e instalar o Eclipse e SVN;
 	\item Os participantes tinham dificuldade ou preguiça de lerem o texto que ensinava como programar para o CoMDD (\ref{apendice_texto2_como_programar_para_o_comdd})
+	\item Durante todo o experimento, o grupo B teve suporte via vídeo conferência, enquanto que o grupo A teve suporte via \textit{instant messanger} e o auxílio de um aluno de doutorado do LRM que estava no local; 
+	\item O grupo A leu uma segunda vez o texto II;
+	\item O grupo A teve melhores resultados que o grupo B. Os resultados do grupo A são considerados como corretos, enquanto que os do grupo B estão errados.
 	\item Os grupos, principalmente o grupo B, tinham o hábito de perguntarem constantemente se o que faziam estava certo;
-	\item Os participantes copiavam do texto \ref{apendice_texto2_como_programar_para_o_comdd} e colavam na página de edição;
-	\item Era esperado que mesmo os participantes sem conhecimento de programação teriam mais facilidade em aprender a linguagem.
+	\item Os participantes copiavam do texto \ref{apendice_texto2_como_programar_para_o_comdd} e colavam na página de edição
 \end{enumerate}
 
 \subsubsection{Lições aprendidas}
-Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéctos:
+Como aprendizado do EC-ND é necessário planejar melhor em dois aspéctos:
 \begin{enumerate}
 	\item Organizar melhor a infra-estrutura: verificar quantos computadores serão necessários; se a comunicação for on-line, preparar os softwares necessários e orientar bem uma pessoa que possa ajudar e que esteja presente com os participantes. No caso deste experimento houve um mal planejamento da infra-estrutura e da orientação ao ajudante; 
 	\item Para um experimento deste tipo o ideal é evitar ajudar os participantes após passar o problema. Dessa forma, tem-se uma visão mais real de como não desenvolvedores se comportaria com o CoMDD. Os participantes estiveram muito dependentes do pesquisador e estima-se quatro hipóteses não excludentes que expliquem essa dependência: (i) relativa baixa instrução dos participantes, (ii) ruídos provocados pela distância, (iii) mal planejamento ou instrução por parte do pesquisador e/ou (iv) a disposição do pesquisador para tirar dúvidas.
@@ -341,7 +349,7 @@ Como aprendizado do estudo de caso I é necessário planejar melhor em dois aspéct
 %-----------------------------------
 %--------Estudo de Caso-------------
 %-----------------------------------
-\subsection{Estudo de Caso II}
+\subsection{Estudo de Caso II - EC-PG}
 \label{estudo_de_caso_ii}
 O objetivo do segundo estudo de caso foi avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. A avaliação consiste na coleta de opinião por parte destes usuários. Neste caso a abordagem tradicional é definida pelo uso do Eclipse com o plugin SVN instalado e será referenciada por "Eclipse+SVN" como sinônimos. 
 
@@ -634,7 +642,7 @@ De uma maneira geral, a equipe gostou da abordagem do CoMDD principalmente pela 
 
 A equipe A usou os comentários da página de edição, mas não os comentários de versionamento e comentaram no modelo. A comparação de modelos não foi necessária.
 
-No apêndice \ref{apendice_questionarios} são apresentadas as perguntas feitas para a Equipe A com as respostas coletadas pelo pesquisador. 
+No apêndice \ref{apendice_questionarios} é apresentado o questionário apresentado à Equipe A, com as respostas coletadas pelo pesquisador. 
 
 \paragraph{Equipe B}
 Quando os participantes da equipe B foram questionados sobre a \textit{linguagem} usada, eles responderam que era fácil e simples, com poucos comandos e com uma curva de aprendizagem rápida, mas que a parte dos \textit{includes} estava confusa. Em relação aos \textit{comentários} que o SVN propicia eles não foram úteis pois o problema apresentado era simples e por isso apenas os comentários no código e o diálogo no \textit{instant messanger} era o suficiente.
@@ -643,24 +651,14 @@ De uma maneira geral, a equipe aprovaria o uso do CoMDD para um projeto de peque
 
 A equipe B usou o check-in, check-out e comentaram no modelo. A comparação de modelos não foi necessária. 
 
-No apêndice \ref{apendice_questionarios} são apresentadas as perguntas feitas para a Equipe B com as respostas coletadas pelo pesquisador. 
+No apêndice \ref{apendice_questionarios} é apresentado o questionário apresentado à Equipe B, com as respostas coletadas pelo pesquisador. 
 
-\subsubsection{Conclusões e Observações do Estudo de Caso II}
-A seguir as conclusões e observações do segundo estudo de caso realizado:
+\subsubsection{Observações do EC-PG}
+A seguir algumas observações do segundo estudo de caso realizado:
 \begin{enumerate}
-\item Pode-se dizer que para ambas equipes os comentários ao longo do modelo foram importantes para permitir que dua pessoas editassem a mesma classe, podendo separar as atividades de cada um;
-
-\item Ambas equipes conseguiram chegar na resposta correta, entretanto a equipe A com menos esforços por não precisarem instalar ferramentas;
-
-\item A equipe A usou os comentários da página de edição para se comunicarem como se fosse um \textit{instant messanger}. Através desses comentários cada integrante da equipe estava ciente do que o outro estava fazendo e puderam compartilhar conhecimento para resolver a tarefa, compartilhando dúvidas e conclusões. Essa comunicação fica registrada na página do modelo, o que pode ser útil para documentação;
+\item Os comentários ao longo do modelo foram importantes para permitir que duas pessoas editassem a mesma classe, podendo separar as atividades de cada um;
 
 \item A equipe B usou um \textit{instant messanger} quando estavam terminando de resolver o problema para concluirem se já haviam terminado de resolver o problema ou não;
-
-\item Um ponto positivo do SVN é que ele "obriga" que o usuário comente ao fazer o check-in, entretanto a leitura dos comentários da wiki é mais simples;
-
-\item Para o problema dado, desconsiderando os recursos de uma IDE, os quatro participantes das duas equipes usariam o CoMDD no lugar do Eclipse+SVN;
-
-\item Os quatro participantes das duas equipes concordaram que o CoMDD é melhor para usuários não desenvolvedores do que o Eclipse+SVN.
 
 %\item Para atender um determinado dominio, a wiki é o suficiente, para coisas simples, para algo mais complexo e que necessite de varias pessoas editando ao mesmo tempo e que podem dar erro, ai talvez o melhor seja a tradicional.
 
@@ -672,7 +670,7 @@ O estudo de caso II foi necessário para se fazer uma análise qualitativa das abo
 
 A partir dessas observações surgiu a ideia de fazer dois vídeos: um apresentando o CoMDD e o outro apresentando o Eclipse+SVN. Esses vídeos seriam transmitidos para desenvolvedores da indústria, preferencialmente, e seriam acompanhados de um questionário. Assim tería-se, além de um estudo qualitativo, um estudo quantitativo. Esse foi o princípio de formação do estudo de caso 3. 
 
-\subsection{Estudo de caso III}
+\subsection{Estudo de caso III - EC-IN}
 \label{estudo_de_caso_iii}
 Os objetivos do terceiro estudo de caso são os mesmos dos objetivos do segundo estudo de caso: avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. Entretanto, enquanto o segundo estudo de caso teve um caráter qualitativo, o terceiro estudo de caso tem um caráter mais quantitativo. A avaliação também consiste na coleta de opinião por parte destes usuários. 
 
@@ -693,7 +691,7 @@ Foram apresentados dois vídeos para cada participante. Um vídeo do CoMDD realiza
 
 No Apêndice \ref{apendice_questionario_experimento_3} está o email enviado com a explicação do que era para ser feito, bem como todas as perguntas feitas aos participantes.
 
-\subsubsection{Resultados e Conclusões do Estudo de Caso III}
+\subsubsection{Resultados do EC-IN}
 Quando os participantes foram questionados que tipo de colaboração eles tinham/tiveram na sua empresa ou na sua equipe de desenvolvimento, ou seja, como eles colaboram na resolução de problemas, foram definidos 9 itens a partir das respostas e que assim as classificariam\footnote{A análise dos resultados foi feita a partir da leitura e interpretação das respostas subjetivas, de modo que possibilitasse o agrupamento dos dados e assim extrair uma possível informação. Pox exemplo, dada a pergunta "Que tipo de colaboração você tem/teve na sua empresa ou na sua equipe de desenvolvimento. Ou seja, como vocês colaboram na resolução de problemas?" um participante respondeu: "Nas empresas que trabalhei não havia nenhuma metodologia definida de engenharia de software. Nós programávamos individualmente nas máquinas e assim a colaboração geralmente eram em conversas informais".
 
 Mas nao foi subentendido nada de uma resposta, ou seja, se o participante citasse divisão de tarefas, mas nao citasse reuniões ou diálogos ou mencionasse que havia conversas entre os líderes e desenvolvedores, a gente nao colocava reuniões, mas apenas divisão de tarefas.}:
@@ -758,7 +756,7 @@ Quando os participantes foram questionados se o CoMDD seria capaz de suprir suas
 
 Ainda, quando os participantes foram questionados sobre se usariam o CoMDD para desenvolver usando modelos, o qual é o propósito do CoMDD e não desenvolver código-fonte, 86\% dos participantes disseram que usariam; 72\% dos participantes acham o CoMDD uma abordagem mais fácil e simples de usar e levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, 84\% dos participantes acham que o CoMDD traria produtividade no desenvolvimento de sofware em uma equipe.
 
-\subsubsection{Opiniões dos Participantes e Obersvações do Pesquisador}
+\subsubsection{Opiniões dos Participantes}
 Serão apresentadas algumas opniões dos participantes, onde cada item é de um participante selecionado:
 
 \begin{itemize}
@@ -799,42 +797,22 @@ Serão apresentadas algumas opniões dos participantes, onde cada item é de um par
 %Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
 
 
-\section{Trabalhos Relacionados}
-\label{trabalhosRelacionados} 
+\section{CoMDD vs Ferramentas Existentes}
+\label{comdd_vs_ferramentas_existentes} 
 %%Atenção: quando for publicar eu tenho que ler estes trabalhos melhor e também ler os trabalhos da minha quali.
-
-\subsection*{Adessowiki}
-Os trabalhos de Lotufo et al \cite{Lotufo2009} e de Machado et al. \cite{Machado2011} apresentam o Adessowiki\footnote{http://www.adessowiki.org}, um ambiente colaborativo para desenvolvimento, documentação, ensino e repositório de algoritmos científicos, com foco na área de processamento de imagens. Este ambiente está sendo usado desde 2008 como um ambiente educacional e como uma ferramenta colaborativa para escrita de artigos e outros textos científicos.  %Uma página típica do Adessowiki contém um texto, um código e uma imagem gerada por este código.
-
-Segundo os autores, o que torna o Adessowiki especial em relação às outras wikis e aplicações Web é sua capaciadade de incluir pedaços de código em \textit{Python} ou C++ que são executados no servidor quando as páginas wiki são renderizadas. Desta forma, os resultados deste código podem fazer parte de textos científicos, em forma de figuras, textos e tabelas. %juntar com o parágrafo de baixo
-
-O principal objetivo deste ambiente é desenvolver colaborativamente algoritmos numéricos. As páginas do Adessowiki permitem a inserção de código, o qual é executado quando a página é renderizada, incorporando figuras, textos e tabelas, gerando um documento científico.
-
-Em relação ao ensino, o Adessowiki pode, como wiki, servir para registrar informações do curso como notas, exercídios e etc; como um ambiente de programação, serve 
-de plataforma para atividades de programação solicitadas pelo profesor, uma vez que o código pode se inserido e os resultados visualizados nas páginas wiki.
-
-O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no desenvolvimento de código (produto final do CoMDD), entretanto a principal diferença entre as abordagens está no foco dado por cada uma. Enquanto o Adessowiki tem mais o caráter de ensino, de pesquisa científica, de produção de textos científicos, e se limita à área de processamento de imagem e computação gráfica; o CoMDD foca no desenvolvimento de sistemas de software usando modelos, incentivando a colaboração de desenvolvedores ou não e com o intuito de ser uma espécie de substituto à IDEs e versionadores instalados localmente.
-
-Ainda, o método usado pelo CoMDD está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende
-
-\subsection*{Galaxy Wiki}
-O Galaxy Wiki permite, em uma Wiki, que desenvolvedores não só possam navegar, criar, modificar e deletar código fonte, como também compilar, executar e debugar programas Java, e ainda colaborativamente.
-
-Os autores desenvolveram um plugin para o Eclipse de modo que o Eclipse acessa as páginas de projeto, de classes e de bibliotecas armazenadas no Galaxy Wiki e convertem em projetos e arquivos Java e JARs, respectivamente, integrando assim o Galaxy Wiki e o Eclipse.
-
-%Além da semelhança de desenvolver código usando uma wiki, o trabalho de \cite{Xiao2007} cita sobre engenharia de software orientada a páginas. Embora este trabalho apenas lance como proposta futura, o trabalho de Xiao et al., permite que um programador possa reusar outra código fonte apenas referenciando -- Page Oriented Software Engineering: We are trying to figure out an environment on the premise of programming in wiki. It contains freely expandable collection of interlinked source code, and each of them is easily editable and usable by any users with a Web browser. More specifically, a programmer can manipulate his source code via wiki pages, and reuse other programmers' source code by reference corresponding wiki pages.
-
-Xiao et al \cite{Xiao2007} levantam alguns problemas no contexto de desenvolvimento em uma wiki, como: é difícil entender código-fonte porque a documentação é descontínua, é difícil experimentar funcionalidades rapidamente sem nada instalado localmente e é difícil reusar uma biblioteca simplesmentea cessando uma página HTML.
-
-O CoMDD se difere do Galaxy Wiki por trazer a ideia de MDD ao invés do uso de Java. Assim, com o uso de modelos, tem-se mais incentivo à colaboração. Além do que Xiao et al., não destacam as vantagens do Galaxy Wiki em relação à uma IDE associada à um sistema de versionamento, como este trabalho faz.
-
 
 
 %Ver trabalhos da Christiane M. Neuwirth, como por exemplo: Computer Support for Distributed Collaborative Writing: A Coordination Science Perspective
-
-
 %A web-based collaborative metamodeling environment with secure remote model access
 
+\subsection*{Galaxy Wiki}
+O trabalho do CoMDD e do Galaxy Wiki estão muito próximos, uma vez que ambos trabalham se atentam para o uso de wikis que forneçam o suporte necessário e independente para que desenvolvedores possam programar. Contudo, a principal diferença entre as abordagens está na natureza do CoMDD. Usar modelos ao invés de linguagens de programação tem com o intuito, além de aumentar a produtividade do desenvolvimento\footnote{Neste caso está se referindo que uma abordagem na wiki usando modelos é mais produtiva do que uma mesma abordagem na wiki mas usando linguagens de programação. Ver vantagens do MDD na Seção \ref{}}, permitir que não desenvolvedores possam colaborar. Embora os próprios autores do Galaxy Wiki citem essa como uma possível vantagem do Galaxy Wiki, nota-se ao longo do artigo que este não é um dos focos principais. 
+
+No caso do CoMDD ele foi projetado e pensado como um dos seus objetivos o de ser acessível por não desenvolvedores e este é um dos motivos de uso de MDD no lugar de Java, por exemplo. 
+
+O principal diferencial é que enquanto o Galaxy Wiki permite o desenvolvimento de código em java e a integração com o Eclipse, o CoMDD trabalha em um nível de abstração maior e não permite a integração com IDEs.
+
+Este trabalho apresentou um ambiente baseado em uma wiki, na qual programadores podem colaborativamente escrever códigos-fonte, construir projetos, executar programas e debugar defeitos.
 
 \subsection*{Cloud 9 IDE}
 O Cloud 9 IDE\footnote{http://c9.io} é uma IDE on line. Ele permite as mesmas coisas que uma IDE normalmente tem, como edição de código-fonte com \textit{syntaxe highlight}, compilação, debug, versionamente de código usando Github\footnote{https://github.com/} e outros. Ainda é um projeto open-source que o CoMDD pode usar para melhorar.
@@ -851,6 +829,8 @@ Então, pode-se dizer que não foi encontrado uma ferramenta que permitisse o dese
 
 
 
-%Trabalhos da Quali!!!!!????
+\section{Considerações Finais}
+Este capítulo apresentou o CoMDD como uma abordagem colaborativa de desenvolvimento orientada a modelos, na qual foi implementada usando uma wiki e uma DSL. Também foram apresentadas a arquitetura do CoMDD e suas funcionalidades. O CoMDD foi avaliado por três estudos de caso, sendo dois deles comparativos com uma abordagem tradicional, definida pelo uso do Eclipse com o plugin SVN. Por fim, o CoMDD foi comparado com abordagens e ferramentas existentes, como: AdessoWiki, GalaxyWiki, Cloud 9 IDE etc, sendo ressaltados seus diferencias positivos e suas limitações.
 
+No capítulo a seguir serão apresentadas as conclusões dos estudos de caso, as conclusões do trabalho de forma geral, os trabalhos futuros, as lições aprendidades e as atividades e resultados paralelos realizadas pelo aluno de mestrado e que não estavam diretamente ligada à pesquisa realizada.
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -32,6 +32,18 @@ D=40&md5=01413c76e574b96a0cc8d16043574d64}
   models - industrial experience and requirements.\ \ \ \capitalize\bblin{}:
   \textit{Model-Based Systems Engineering, 2009. MBSE '09. International
   Conference on}, 2009, \bblpp{} 60--68.
+
+\bibitem[{Cesar(????)}]{Cesar}
+\textsc{Cesar, A. M. R. V.~C.}\ \ \  M'etodo do estudo de caso (case studies)
+  ou m'etodo do caso (teaching cases)? uma an'alise dos dois mÃ©todos no ensino
+  e pesquisa em administrac~ao.\ \ \ ????
+\newline Disponível em:
+  \url{http://www.google.com.br/url?sa=t&rct=j&q=M%C3%A9todo+do+Estudo+de+Caso%
++%28Case+Studies%29+ou+M%C3%A9todo+do+Caso+%28Teaching+Cases%29%3F+Uma+an%C3%A%
+1lise+dos+dois+m%C3%A9todos+no+Ensino+e+Pesquisa+em+Administra%C3%A7%C3%A3o.+&%
+source=web&cd=1&ved=0CCYQFjAA&url=http%3A%2F%2Fwww.mackenzie.br%2Ffileadmin%2F%
+Graduacao%2FCCSA%2Fremac%2Fjul_dez_05%2F06.pdf&ei=wfQ6T57ZKpTsggec55mZCw&usg=A%
+FQjCNEQy0Ztyvn51BZqfreVy71EFKuzAA}
 
 \bibitem[{van Deursen \bbletal{}(2000)van Deursen, Klint e
   Visser}]{Deursen2000}
@@ -149,6 +161,12 @@ VybmFsX0ZsYXNoUmVhZGVyP3htbGlkPTAtMzIxLTE5NDQyLVgvdmlpJmltYWdlcGFnZT12aWk=}
 \textsc{Mellor, S.~J.; Clark, A.~N.; Futagami, T.}\ \ \  Guest editors'
   introduction: Model-driven development.\ \ \ \textit{IEEE Software},
   \bblvol{}~20, \bblpp{}~14--18, 2003.
+
+\bibitem[{Runeson e H\"{o}st(2009)}]{Runeson2009}
+\textsc{Runeson, P.; H\"{o}st, M.}\ \ \  Guidelines for conducting and
+  reporting case study research in software engineering.\ \ \ \textit{Empirical
+  Softw. Engg.}, \bblvol{}~14, \bblpp{}~131--164, 2009.
+\newline Disponível em: \url{http://dl.acm.org/citation.cfm?id=1519313.1519324}
 
 \bibitem[{S\'anchez \bbletal{}(2009)S\'anchez, Moreira, Fuentes, ao~Ara\'ujo e
   Magno}]{Sanchez2009}
