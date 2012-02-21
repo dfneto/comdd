@@ -1,0 +1,895 @@
+%wikis para desenvolvimento: como foi mostrado nos trabalhos de Xiao, entretanto o comdd foca mais num desenvolvimento colaborativo realizado por mais de uma pessoa.
+
+\newpage
+
+\chapter{A Abordagem CoMDD}
+\label{desenvolvimento}
+O Capítulo \ref{introducao} mostrou que uma forma de se trabalhar colaborativamente com MDD é usando uma IDE associada a um sistema de versionamento, entretanto, esta abordagem exige dos usuários que instalem e configurem os programas necessários, bem como entendam o todo o processo de check in/check out e ainda como a ferramenta de versionamento usada funciona. 
+
+Um outro problema apresentado está relacionado a manter a documentação atualizada. Geralmente, o que ocorre, é que a documentação usada para desenvolver o software fica desatualizada em relação ao código-fonte \cite{Lucredio2009, Xiao2007}. É um desafio para equipes de desenvolvimento, manter o código-fonte e documentação sincronizados ao longo de todo o ciclo de vida do desenvolvimento, mas que compensa \cite{Xiao2007}.
+
+Entre esses e outros motivos, foi idealizado o CoMDD, o qual será apresentado neste capítulo e que objetiva tentar resolver os problemas apresentados no Capítulo \ref{introducao} e que alguns foram citados acima.
+
+Este capítulo descreve a abordagem desenvolvida neste trabalho, cita suas funcionalidades e relata três estudos de caso desenvolvidos para tentar evidenciar que a hipótese de pesquisa é verdadeira. Também discute os resultados e as lições aprendidas dos estudos de caso bem como as limitações da abordagem e da implementação. 
+
+\section{CoMDD - \textit{Collaborative Model Driven Development}}
+O CoMDD é uma abordagem desenvolvida que consiste no apoio ao desenvolvimento colaborativo orientado a modelos, em que a colaboração é referente à edição colaborativa de modelos. O CoMDD pode ser pensado nos seguintes cenários: seja mais de uma pessoa editando o mesmo modelo (em uma política \textit{pessimistic}), ou várias pessoas editando vários modelos, de forma que cada modelo tenha apenas uma pessoa e que esses modelos sejam dependentes.
+
+A Figura \ref{fig:comdd_um_modelo} ilustra duas pessoas editando um mesmo modelo. Um exemplo disso é quando dois desenvolvedores estão desenvolvendo um sistema, ou parte dele, e usando as mesmas classes. Este caso é mais comum em classes da base de um sistema, ou seja, classes que fazem parte da estrutura do sistema. 
+
+A Figura \ref{fig:comdd_varios_modelos} ilustra três pessoas editando diferentes modelos, mas que são dependentes entre si. Este caso é não exclui o caso da Figura \ref{fig:comdd_um_modelo}. Um exemplo é quando em um projeto, cada desenvolvedor é responsável por implementar um conjunto de classes, mas que essas classes dependem de outras, que são implementadas por outros desenvolvedores.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=10cm]{imagens/comdd_um_modelo.png}
+	\caption{Duas pessoas editando o mesmo modelo.}
+	\label{fig:comdd_um_modelo}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comdd_com_varios_modelos.png}
+	\caption{Três pessoas editando diferentes modelos que dependem entre si.} 
+	\label{fig:comdd_varios_modelos}
+\end{figure}
+
+A implementação da abordagem CoMDD realizada neste trabalho, para evidenciar a hipótese, consiste no uso de uma DSL como abordagem de MDD e de uma wiki para promover a colaboração e suporte da DSL. 
+
+O desenvolvimento de software baseado em wikis é encorajado pelo fato de desenvolvedores trabalharem no mesmo projeto e, muitas vezes, estarem localizados em diferentes locais e pela observação de que as ferramentas on-line têm tido uma importância cada vez maior na comunicação e coordenação dessas equipes distribuídas \cite{Xiao2007}.
+
+A DSL permite a edição de modelos e geração de código-fonte, usando templates, em uma wiki. A wiki serve tanto como ferramenta de suporte a utilização da DSL, quanto ferramenta colaborativa, pois possibilita o trabalho em equipe e o versionamento de modelos. 
+
+A DSL definida neste trabalho visa especificar modelos no domínio de robôs móveis autônomos. No Apêndice \ref{apendice_gramatica} é apresentada a gramática da DSL. Esta DSL foi desenvolvida em colaboração com o Laboratório de Robótica Móvel (LRM) da Universidade de São Paulo, a partir de um conjunto de códigos-fonte que o LRM já possuía. O primeiro passo foi a definição de quais códigos-fonte a DSL iria atender, pois mesmo o domínio de robótica móvel autônoma é amplo e por isso foi necessário especificar ainda mais. Em seguida, foram identificadas semelhanças entre os códigos e por fim foram verificadas as partes variáveis e as partes fixas, de modo que foi possível definir um metamodelo para a DSL e um conjunto de transformações. 
+
+A seguir são descritos os recursos desenvolvidos no CoMD, considerando a DSL definida. As interações disponibilizadas apresentam as principais funcionalidades relativas às tarefas dos desenvolvedores.
+
+A Figura \ref{fig:edicao_salva} ilustra um modelo sendo editado (passo 1), depois ele sendo salvo (passo 2) e depois, a Figura \ref{fig:geracao} mostra a geração de código-fonte (passo 3). 
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/edicao_salva.png}
+	\caption{Edição e Armazenamento de Modelos.} 
+	\label{fig:edicao_salva}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/geracao.png}
+	\caption{Geração de Código-Fonte.} 
+	\label{fig:geracao}
+\end{figure}
+
+A Figura \ref{fig:comdd_wiki_like} ilustra um modelo referenciando outras páginas que podem ser editadas enquanto outra pessoa cria essas páginas. Por exemplo, uma pessoa cria o modelo na página da Figura \ref{fig:comdd_wiki_like} e cria um link ainda não existente, por exemplo "[[main]]". Os colchetes "[[]]" indicam uma referência para um link, que quando a página é salva ficam identificados por um ponto de interrogação, o que significa que a página do link ainda não foi criada. Assim, outro desenvolvedor pode criar a página "Main" que depende do modelo da página principal\footnote{Caso a implementação do CoMDD permitisse a edição de diferentes modelos este trabalho se tornaria extenso e seria difícil avaliar essa funcionalidade, portanto, a implementação desta funcionalidade ficou para trabalhos futuros}.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comdd_wiki_like.png}
+	\caption{Edição de diferentes modelos dependentes entre si.} 
+	\label{fig:comdd_wiki_like}
+\end{figure}
+
+De forma geral, a implementação do CoMDD permite:
+
+\begin{enumerate}
+	\item \textbf{Edição de modelos:} criar ou alterar modelos de acordo com o metamodelo definido\footnote{O metamodelo pode ser alterado na wiki, assim como as transformações, mas a princípio está sendo definido fora da wiki e esta funcionalidade ainda não foi implementada.}. Os modelos são editados na wiki e serão a entrada do transformador;
+	\item \textbf{Transformação de modelos em código-fonte:} o transformador, que funciona na wiki, gera o código-fonte de acordo com o modelo de entrada;% e apresentar erros de sintaxe\footnote{Na atual versão do CoMDD, o transformador não retorna os erros sintáticos e sim os ignora. O transformador então retorna o código-fonte da parte dos modelos válidas}
+	\item \textbf{Colaboração:} a wiki permite que mais desenvolvedores possam editar o mesmo modelo usando uma política \textit{pessimistic};
+	\item \textbf{Versionamento de modelos:} a wiki armazena um histórico dos modelos com a possibilidade de comparar as versões e retornar à edições anteriores;
+	\item \textbf{Controle de acesso por grupos}: a wiki permite criar um grupo com permissão de edição de modelos e outro com permissão de apenas visualização, por exemplo;
+	\item \textbf{Comentários}: há dois tipos de comentários. Um é inserido em cada versão alterada e o outro é inserido na página editada. A figura \ref{fig:comentarios_pagina_editada} ilustra comentários feitos na página de edição do modelo, ou seja, na mesma página em que o usuário está editando o modelo ele pode deixar um comentário no final da página. A figura \ref{fig:comentarios_especificos} ilustra comentários específicos para cada versão da página.
+\end{enumerate}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comentarios_na_pagina_de_edicao.png}
+	\caption{Comentários feitos na página de edição} 
+	\label{fig:comentarios_pagina_editada}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/comentarios_especificos.png}
+	\caption{Comentários feitos para cada versão da página} 
+	\label{fig:comentarios_especificos}
+\end{figure}
+
+
+
+%No apêndice \ref{apendice_implementacao} estão os detalhes da implementação como: código-fonte, como fazer o plugin para a Xwiki e afins.
+
+\subsection*{Processo Realizado na wiki}
+
+A Figura \ref{fig:geracao_de_codigo} ilustra o processo de edição e transformação dos modelos realizados na wiki. Um desenvolvedor edita um modelo (passo 1). Este modelo deve estar de acordo com o metamodelo (passo 2). É o metamodelo que define a estrutura do modelo, ou seja, é ele quem define, por exemplo, o que é um círculo e se vem antes ou depois do quadrado. Se o modelo estiver de acordo com o metamodelo, então são aplicadas transformações (passo 3) que geram o código-fonte (passo 4). Embora não esteja ilustrado na figura, todo este processo, no CoMDD, ocorre na própria wiki.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/geracao_de_codigo.jpg}
+	\caption{Processo de edição de modelos e geração de código-fonte realizado na wiki.} 
+	\label{fig:geracao_de_codigo}
+\end{figure}
+
+
+%Possíveis de serem implementadas: 
+%	Merge (ver como a wikipedia faz e um plugin)
+%	Bate papo dentro da wiki
+%	Highlight com javascript
+%	wiki como ide: ver outras características de uma ide
+%	Metametamodelagem: é possível alterar a propria gramatica, bem como as transformações ainda pela propria wiki, mas isso seria um script
+%	Falar da edição de subartefatos: numa wiki é muito simples voce criar uma pagina dentro de outra [[]]
+
+%\subsection*{Vantagens}
+%O CoMDD tem as seguintes vantagens devido ao uso de uma wiki e de MDD:
+%\begin{enumerate}
+%	\item \textbf{Produtividade:}
+%	\item \textbf{DDS:}
+%	\item \textbf{Comunicação}
+%	\item \textbf{Funciona na web e não precisa de programas instalados localmente}
+%\end{enumerate}
+
+O CoMDD pode ser visto em: \url{http://143.107.183.158:8008/xwiki/bin/view/Main/}.
+
+\section{Arquitetura do CoMDD}
+\label{arquitetura}
+O CoMDD foi implementado usando o ANTLR\footnote{http://www.antlr.org}, no qual foi definido o metamodelo e as transformações; e a wiki utilizada foi a Xwiki\footnote{http://www.xwiki.org}. A Figura \ref{fig:arquitetura} ilustra a arquitetura do CoMDD, na qual o desenvolvedor interage com modelos, que são processados e transformados em código-fonte pelo transformador. O transformador precisa da definição do metamodelo para validar o modelo e poder gerar o código-fonte. E tanto a modelagem, quanto as transformações, são realizadas na wiki.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=11cm]{imagens/arquitetura.png}
+	\caption{Arquitetura do CoMDD.} 
+	\label{fig:arquitetura}
+\end{figure}
+
+A Figura \ref{fig:arquitetura_implementada} apresenta a arquitetura de implementação do CoMDD. Para desenvolver o metamodelo da DSL foi usado o ANTLR e para definir os \textit{templates} das transformações foi usado o \textit{String Template}\footnote{http://www.stringtemplate.org/}. A wiki usada foi a Xwiki.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=15cm]{imagens/arquitetura_implementada.png}
+	\caption{Arquitetura implementada para o CoMDD.} 
+	\label{fig:arquitetura_implementada}
+\end{figure}
+
+\section{Método}
+\label{metodo}
+A aceitação de estudos empíricos na engenharia de software está crescendo, pois a pesquisa analítica não é o suficiente para investigar a real complexidade entre humanos e sua interação com a tecnologia \cite{Runeson2009}. Deste forma, este trabalho realiza como método de pesquisa a elaboração e execução de estudos de caso.
+
+Segundo Runenson e Höst (2009), um estudo de caso é um método empírico com o intuito de investigar um fenômeno em um contexto. Estudo de caso, em geral, é definido como uma abordagem qualitativa para coleta de dados a cerca de um fenômeno a ser investigado. O estudo de caso deve ter três fases distintas: o desenvolvimento de um protocolo que norteie o estudo; coleta e análise dos dados e a interpretação desses dados. 
+
+Foram realizados três estudos de caso: EC-ND (Estudo de Caso dos Não Desenvolvedores), EC-PG (Estudo de Caso dos Pós Graduandos) e EC-IN (Estudo de Caso de Indústria)\footnote{Nas respectivas seções de cada estudo de caso será apresentado o perfil dos participantes, sendo ND, PG e IN generalizações com o intuito de facilitar a referência aos estudos de caso.}. 
+
+O EC-ND tinha o intuito de avaliar o CoMDD por não desenvolvedores e com um grau de escolaridade mediano\footnote{Não faz-se aqui uma análise da escolaridade nacional, tampouco deseja-se diminuir ou inferiorizar o nível de escolaridade dos participantes. Classificou-se como mediano pois os participantes já haviam concluído a maior parte do ensino médio, entretanto ainda não haviam feito graduação.}. Desta forma foi possível avaliar o nível de aceitação por não desenvolvedores.
+
+O EC-PG tinha a intenção de avaliar o CoMDD por alunos de pós graduação em ciências da computação, e em formação também em ciências da computação, e que já tivessem uma experiência mínima de um ano na indústria\footnote{Neste trabalho, o termo indústria se refere à indústria de desenvolvimento de software.}.  Desta forma, os resultados do EC-PG teriam uma visão intermediária entre academia e indústria.
+
+Por fim, o EC-IN, tinha o objetivo de avaliar o CoMDD principalmente, mas não essencialmente, por desenvolvedores e com experiência de desenvolvimento de software. Desta maneira, os resultados do EC-IN teriam uma visão que refletisse maior as necessidades e interesses da indústria.
+
+Assim, este trabalho realizou três estudos de caso com o intuito de evidenciar a \textbf{hipótese de que é possível usar uma wiki para desenvolver um sistema colaborativamente usando MDD}. 
+
+\subsection{Estudo de Caso I - EC-ND}
+\label{estudo_de_caso_i}
+O objetivo do primeiro estudo de caso foi avaliar o CoMDD por pessoas que não possuíam experiência em desenvolvimento de software. A avaliação consistia em verificar como participantes jovens do ensino médio, sem conhecimentos de programação e sem conhecimentos do domínio, conseguiriam entender os conceitos e a linguagem do CoMDD. 
+
+\subsubsection{Descrição dos participantes}
+Os participantes deste estudo de caso eram alunos de pré-iniciação científica do Laboratório de Robótica Móvel da Universidade de São Paulo. Eles tinham entre 16 e 17 anos e todos haviam concluído o segundo ano do ensino colegial. Já tinham programado para o robô SRV\footnote{\url{http://www.surveyor.com/SRV_info.html}} com o intuito educacional, usando uma API própria e simples. Não possuíam conceitos de algoritmos ou de programação orientada a objetos.
+
+\subsubsection{Instruções e Problema Apresentado}
+Foram formadas duas equipes com dois integrantes cada uma delas. Cada equipe ficava em um único computador, ou seja, eram dois computadores com duas pessoas em cada um dos computadores. A distribuição foi definida dessa forma para estimular a comunicação e facilitar a resolução do problema. Estima-se que se fosse uma pessoa por computador o experimento iria durar o dobro do tempo, se tornando inviável de conseguir pessoas para participar.
+
+Antes de passar o comando, foram lidos, junto com os participantes, dois textos, o primeiro explicando o que é o CoMDD (ver \textit{Texto I: O que é o CoMDD?} no Apêndice \ref{apendice_textos}) e o segundo texto explicando como usar a DSL criada para o estudo de caso (ver \textit{Texto II: Como programar para o CoMDD} no Apêndice \ref{apendice_texto2_como_programar_para_o_comdd}).
+
+Após a leitura, o seguinte comando foi passado:
+
+\begin{center}
+ \fbox{
+ \parbox{15cm}{
+\sf
+ O código é de um robô que ao receber uma lista de coordenadas deve ser capaz de passar por elas. Seu algoritmo de funcionamento é o seguinte: 
+ \vspace{5mm}
+
+ Os sensores devem ler a informação 
+
+ O robô recebe a próxima coordenada 
+
+ O robô processa a informação 
+
+ O robô recebe uma regra a aplicar 
+
+ O robô anda 
+ \vspace{5mm}
+ 
+ Esse algoritmo deve ficar sendo executado eternamente, até o robô ser desligado. 
+
+ Agora você deve a partir do algoritmo e das explicações no site ser capaz de escrever um código usando a linguagem do CoMDD. 
+ \vspace{5mm}
+ 
+ Requisitos: 
+
+ O robô deve ser da plataforma pionner 
+
+ O robô deve usar os pacotes de localização e o do player 
+
+ O robô deve usar um gps e uma bússola 
+
+ O robô seguir um conjunto de coordenadas 
+\normalfont
+} } 
+\end{center}
+
+O tempo entre o momento que o pesquisador começou a falar com os participantes até o final do experimento foi de aproximadamente 2h45. Este tempo inclui a instrução do pesquisador aos participantes, a resolução do problema e a avaliação feita pelos participantes.
+
+\subsubsection{Resultados}
+\label{resposta_correta_do_modelo}
+A resposta correta é a seguinte:
+
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+\sf
+	plataforma pionner 
+
+	robo david 
+
+	adicionar includes 
+
+	adicionar defines 
+
+	importar pacote player; 
+
+	importar pacote localizacao; 
+
+	criarSensor gps 
+
+	criarSensor bussola 
+
+	\hspace{5mm} int main() \{ 
+
+	\hspace{5mm}\hspace{5mm} gps.ligar();
+
+	\hspace{5mm}\hspace{5mm} bussola.ligar(); 
+
+	\hspace{5mm}\hspace{5mm} carregarListaCoordenadas(); 
+
+	\hspace{5mm}\hspace{5mm} inicializarPlayer(); 
+
+	\hspace{5mm}\hspace{5mm} while(true) \{ 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} bussola.ler(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} gps.ler(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} receberCoordenada();
+ 
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} processaInfo(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} defineRegraSeguirMultiplasCoordenadas(); 
+
+	\hspace{5mm}\hspace{5mm}\hspace{5mm} andar(); 
+
+	\hspace{5mm}\hspace{5mm} \} 
+
+	\hspace{5mm} \} 
+\normalfont
+}}
+\end{center}
+
+\paragraph{Resultados da equipe A}
+A equipe A apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original:
+
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+\sf
+	plataforma pioneer 
+
+	robo MLJ123 
+
+	adicionar defines 
+
+	adicionar includes 
+
+	adicionar while 
+
+	\vspace{5mm}
+	importar pacote player; 
+
+	importar pacote localizacao; 
+
+	\vspace{5mm}
+	criarSensor gps 
+
+	criarSensor bussola 
+
+	\vspace{5mm}
+	int main() \{ 
+
+	\hspace{5mm}       << 
+
+	\hspace{5mm}       gps.ligar(); 
+
+	\hspace{5mm}       bussola.ligar(); 
+
+	\hspace{5mm}       carregarListaCoordenadas(); 
+
+	\hspace{5mm}       inicializarPlayer(); 
+
+	\hspace{1mm} while(true) \{ 
+
+	\hspace{3,5mm}       gps.ler(); 
+
+	\hspace{5mm}	   bussola.ler(); 
+
+	\hspace{5mm}	carregarListaCoordenadas(); 
+
+	\hspace{5mm}	receberCoordenada(); 
+
+	\hspace{5mm}	processaInfo(); 
+
+	\hspace{5mm}	defineRegraSeguirMultiplasCoordenadas(); 
+
+	\hspace{5mm}	andar();             
+
+	\hspace{5mm}        \} 
+
+	\hspace{5mm}        >> 
+
+	\}
+\normalfont
+}}
+\end{center}
+
+\paragraph{Resultado da equipe B}
+A equipe B apresentou a seguinte resposta, observando que a identação apresentada é proporcional à original:
+
+\begin{center}
+\fbox{
+ \parbox{10cm}{
+\sf
+plataforma pioneer 
+
+importar pacote player; 
+
+importar pacote localizacao; 
+
+criarSensor gps 
+
+criarSensor bússola 
+
+carregarListaCoordenadas(); 
+
+int main() \{ 
+
+<<Inicializações 
+
+Loop 
+
+Funções 
+
+>> 
+
+\}
+	
+\normalfont
+}}
+\end{center}
+
+\subsubsection{Opiniões dos participantes}
+\textit{Prós:} A linguagem é fácil de entender e o fato de ser em português facilita.
+
+\textit{Contras:} Foi mais complicado entender as instruções do experimento; ficou confusa a função \textit{carregarListaCoordenadas()}.
+
+\subsubsection{Observações do EC-ND}
+A seguir as observações do primeiro estudo de caso realizado:
+
+\begin{enumerate}
+	\item O experimento foi transmitido a distância, via vídeo conferência e com a ajuda de um aluno de doutorado do LRM que acompanhou os participantes e auxiliou o grupo A, enquanto o pesquisador auxiliava o grupo B. Não pode-se precisar quanto foi o auxílio que o grupo A recebeu;
+	\item Os participantes tinham dificuldade ou preguiça de lerem o texto que ensinava como programar para o CoMDD (\ref{apendice_texto2_como_programar_para_o_comdd})
+	\item Durante todo o experimento, o grupo B teve suporte via vídeo conferência, enquanto que o grupo A teve suporte via \textit{instant messanger} e o auxílio de um aluno de doutorado do LRM que estava no local; 
+	\item O grupo A leu uma segunda vez o texto II;
+	\item O grupo A teve melhores resultados que o grupo B. Os resultados do grupo A são considerados como corretos, enquanto que os do grupo B estão errados.
+	\item Os grupos, principalmente o grupo B, tinham o hábito de perguntarem constantemente se o que faziam estava certo;
+	\item Os participantes copiavam do texto \ref{apendice_texto2_como_programar_para_o_comdd} e colavam na página de edição
+\end{enumerate}
+
+\subsubsection{Lições aprendidas}
+Como aprendizado do EC-ND é necessário planejar melhor em dois aspectos:
+\begin{enumerate}
+	\item Organizar melhor a infra-estrutura: verificar quantos computadores serão necessários; se a comunicação for on-line, preparar os softwares necessários e orientar bem uma pessoa que possa ajudar e que esteja presente com os participantes. No caso deste experimento houve um mal planejamento da infra-estrutura e da orientação ao ajudante; 
+	\item Para um experimento deste tipo o ideal é evitar ajudar os participantes após passar o problema. Dessa forma, tem-se uma visão mais real de como os não desenvolvedores se comportariam com o CoMDD. Os participantes estiveram muito dependentes do pesquisador e estima-se quatro hipóteses não excludentes que expliquem essa dependência: (i) relativa baixa instrução dos participantes, (ii) ruídos provocados pela distância, (iii) mal planejamento ou instrução por parte do pesquisador e/ou (iv) a disposição do pesquisador para tirar dúvidas.
+\end{enumerate}
+
+%-----------------------------------
+%--------Estudo de Caso-------------
+%-----------------------------------
+\subsection{Estudo de Caso II - EC-PG}
+\label{estudo_de_caso_ii}
+O objetivo do segundo estudo de caso foi avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. A avaliação consiste na coleta de opinião por parte destes usuários. Neste caso, a abordagem tradicional é definida pelo uso do Eclipse com o plugin SVN instalado e será referenciada por "Eclipse+SVN". 
+
+Para realizar este estudo de caso foi implementado para o Eclipse, a mesma linguagem usada no CoMDD. O Eclipse possui dois projetos: o Xtext\footnote{http://www.eclipse.org/Xtext/}, usado para definir a linguagem e o Xpand\footnote{http://wiki.eclipse.org/Xpand} usado para definir as transformações.
+
+\subsubsection{Descrição dos participantes}
+Todos os quatro participantes são formados em Ciências da Computação, atuaram na indústria desenvolvendo sistemas e estão cursando mestrado ou doutorado na Universidade de São Paulo em Ciências da Computação.
+
+\subsubsection{Instruções e Problema Apresentado}
+\label{instrucoes_comuns}
+Os quatro integrantes foram divididos em duas equipes: equipe A (usando o CoMDD) e equipe B (usando Eclipse+SVN). Ambos integrantes de cada equipe estavam em locais (mais especificamente cidades) diferentes na hora do experimento. A equipe A realizou o experimento em um dia diferente da equipe B. O experimento foi apresentado aos participantes por um software de conferência por voz.
+
+Antes de passar o comando todos os grupos receberam instruções comuns e instruções específicas. As instruções comuns foram:
+\begin{enumerate}
+\item Ler o texto base. O texto base da equipe A é o \textit{Texto I: O que é o CoMDD?} (ver Apêndice \ref{apendice_texto1_o_que_e_comdd}) e da equipe B é o \textit{Texto IB: Instalação do Eclipse+SVN e importação da DSL} (ver Apêndice \ref{apendice+texto1b_instalacao});
+\item Ler o \textit{Texto II: Como programar para o CoMDD} (ver Apêndice \ref{apendice_texto2_como_programar_para_o_comdd});
+\item Pode-se comentar na edição do modelo usando "//";
+\item A função carregarListaCoordenadas() já está configurada para a lista de coordenadas, desta forma vocês não devem se preocupar em passar um lista de coordenadas, apenas chamar a função;
+\item O desenvolvimento é feito em turnos e em cada turno apenas um desenvolvedor pode trabalhar no código (editá-lo), para evitar conflitos e \textit{merges}. Cada turno tem 3 minutos para desenvolver e mais 2 minuto para comentar no CoMDD (equipe A) ou fazer o \textit{commit} (equipe B). Por ex: 
+
+0'-3': O desenvolvedor 1 começa programando enquanto o desenvolvedor 2 fica esperando (enquanto isso os desenvolvedores podem se comunicar via email ou gtalk);
+
+3'01s - 5': o desenvolvedor 1 tem de salvar suas alterações e comentar o código caso ache necessário;
+
+5'01s - 6': ninguém faz nada para que o servidor atualize os dados;
+
+6'01s-9': o desenvolvedor 2 assume o comando de edição do código e o desenvolvedor 1 fica aguardando ou conversando via e-mail ou gtalk com o desenvolvedor 2 caso este precise;
+
+9'01s-11': o desenvolvedor 2 tem de salvar suas alterações e comentar o código caso ache necessário;
+
+11'01s-14': o ciclo se repete
+\end{enumerate}
+
+O seguinte comando foi passado:
+
+\begin{center}
+ \fbox{
+ \parbox{15cm}{
+\sf
+O código é de um robô que ao receber uma lista de coordenadas deve ser capaz de passar por elas. Seu algoritmo de funcionamento é o seguinte: 
+ \vspace{5mm}
+
+ Os sensores devem ler a informação 
+
+ O robô recebe a próxima coordenada 
+
+ O robô processa a informação 
+
+ O robô recebe uma regra a aplicar, de acordo com os requisitos 
+
+ O robô atua no ambiente  
+\vspace{5mm}
+ 
+ Esse algoritmo deve ficar sendo executado eternamente, até o robô ser desligado. 
+
+ Agora vocês devem a partir do algoritmo e das explicações no site serem capazes de escrever um código usando a linguagem do CoMDD.  
+ \vspace{5mm}
+ 
+ Requisitos: 
+
+ O robô deve ser da plataforma pionner----------------------------------------------------- Dev1 
+
+ O nome do robô deve ser uma concatenação dos nomes dos desenvolvedores------- Dev2 
+
+ O robô deve usar os pacotes de localização------------------------------------------------ Dev1 
+
+ O robô deve usar os pacotes do player------------------------------------------------------ Dev2 
+
+ O robô deve usar um gps---------------------------------------------------------------------- Dev1 
+
+ O robô deve usar uma bússola---------------------------------------------------------------- Dev2 
+
+ O robô seguir um conjunto de coordenadas--------------------------------------- Dev1 + Dev2
+\normalfont
+} } 
+\end{center}
+
+\subsubsection{Equipe A: CoMDD}
+Além das instruções comuns apresentadas na Seção \ref{instrucoes_comuns}, para equipe A foram apresentadas as seguintes instruções:
+\begin{enumerate}
+\item Pode-se usar todas as funcionalidades da wiki como comentários, histórico e comparação de versões\footnote{Um exemplo de edição normal (sem ser usando a DSL) foi apresentado para que os participantes pudessem saber como e onde editar, comentar e comparar versões.};
+\item Dar preferência para comunicação que a própria wiki fornece: os comentários, caso contrário usar um mensageiro instantâneo ou o e-mail e depois fornecer o log para o pesquisador.
+\end{enumerate}
+
+
+\subsubsection{Equipe B: Eclipse+SVN}
+Além das instruções comuns apresentadas na Seção \ref{instrucoes_comuns}, para equipe B foram apresentadas as seguintes instruções:
+\begin{enumerate}
+\item Pode-se usar todas as funcionalidades do plugin SVN como check-in check-out, comentários, histórico e comparação de versões\footnote{Os participantes já conheciam o plugin.};
+\item Dar preferência para comunicação que o próprio SVN fornece: os comentários, caso contrário usar um instant messanger ou o e-mail e depois fornecer o log para o pesquisador
+\item Não usar as funções comuns de uma IDE como highlight, auto-complete e etc\footnote{Assim as equipes ficam mais iguais, uma vez que no CoMDD essas funcionalidades não foram implementadas.}\footnote{O Eclipse tem um ambiente que não usa as funções citadas.}
+\end{enumerate}
+
+
+\subsubsection{Resultados}
+A resposta correta é a mesma apresentada na seção \ref{resposta_correta_do_modelo}.
+
+\paragraph{Resultados da Equipe A}
+O pesquisador acompanhou a equipe e foi responsável por avisar quando um desenvolvedor podia editar ou devia esperar, para evitar conflitos de edição, contudo o tempo apresentado nas instruções não foi rígido. A equipe A apresentou a seguinte resposta:
+
+\begin{center}
+\fbox{
+ \parbox{15cm}{
+\sf
+//O robô deve ser da plataforma pionner - Danilo
+
+plataforma pionner
+
+\vspace{5mm}
+//O nome do robê deve ser uma concatenação dos nomes dos desenvolvedores - Davi
+
+robo davnilo
+
+\vspace{5mm}
+//O robô deve usar os pacotes de localização - Danilo
+
+importar pacote localizacao
+
+\vspace{5mm}
+//O robô deve usar os pacotes do player - Davi
+
+importar pacote player;
+
+\vspace{5mm}
+//O robô deve usar um gps - Danilo
+
+criarSensor gps
+
+\vspace{5mm}
+//O robô deve usar uma bússola- Davi
+
+criarSensor bussola
+
+\vspace{5mm}
+//função principal do código
+
+int main() \{
+
+bussola.ligar();
+
+gps.ligar();
+
+\vspace{5mm}
+//O robô seguir um conjunto de coordenadas - Danilo + Davi
+
+while(true) \{
+
+bussola.ler(); 
+
+gps.ler();
+
+receberCoordenada();
+
+processaInfo();
+
+defineRegraSeguir(); 
+
+defineRegraNaoBater();
+
+andar();
+
+\}
+
+\}
+\normalfont
+}}
+\end{center}
+
+A Figura \ref{fig:conversa_grupo_a} registra a comunicação realizada pelo grupo. O grupo usou os comentários da página de edição e não usou os comentários de versões. Observando a Figura \ref{fig:conversa_grupo_a} pode-se dizer que o grupo usou esse comentário como um mensageira instantâneo. 
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/conversa_grupo_a.png}
+	\caption{Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2} 
+	\label{fig:conversa_grupo_a}
+\end{figure}
+
+
+%Em um momento eu indiquei que o modelo tinha erros e ainda assim, no final ainda faltou algumas coisas no modelo.
+%O danilo teve uma duvida e eu sugeri ele ler a api ou perguntar para a dupla dele, mas perguntaram menos do que no estudo de caso 1
+%Sugeri para eles conversarem entre si e lerem a API
+%O tempo não era muito rígido, mas apenas uma pessoa editava por vez durante um turno.
+
+\paragraph{Resultados da Equipe B}
+O pesquisador acompanhou a equipe e foi responsável por avisar quando um desenvolvedor podia editar ou devia esperar, para evitar conflitos de edição, contudo o tempo apresentado nas instruções não foi rígido. A equipe B apresentou a seguinte resposta:
+
+\begin{center}
+\fbox{
+ \parbox{15cm}{
+// Definindo a plataforma do robo como pioneer
+
+plataforma pioneer
+
+\vspace{5mm}
+// Define o nome do robo como uma concatenacao dos nomes dos desenvolvedores
+
+robo filipeAlexandre
+
+\vspace{5mm}
+adicionar includes
+
+adicionar defines
+
+\vspace{5mm}
+importar pacote localizacao;
+
+importar pacote player;
+
+\vspace{5mm}
+criarSensor gps
+
+criarSensor bussola
+
+\vspace{5mm}
+int main() \{
+
+\vspace{5mm}
+    \hspace{5mm} // Ligar o GPS
+
+    \hspace{5mm} gps.ligar();
+    
+\vspace{5mm}
+    \hspace{5mm} // Ligar Bussola
+
+    \hspace{5mm} bussola.ligar();
+
+\vspace{5mm}    
+    \hspace{5mm} // Carrega lista de coordernadas e inicializa Player
+
+    \hspace{5mm} carregarListaCoordenadas();
+
+    \hspace{5mm} inicializarPlayer();
+
+\vspace{5mm}    
+    \hspace{5mm} // Define que robo ira seguir um conjungo de coordenadas
+
+    \hspace{5mm} defineRegraSeguirMultiplasCoordenadas();
+
+\vspace{5mm}    
+    \hspace{5mm} // Loop
+
+    \hspace{5mm} while(true) \{
+
+        \hspace{5mm}\hspace{5mm} // Le os dados atuais
+
+        \hspace{5mm}\hspace{5mm} gps.ler();
+
+        \hspace{5mm}\hspace{5mm} bussola.ler();
+
+\vspace{5mm}        
+        \hspace{5mm}\hspace{5mm} // Processa informacoes
+
+        \hspace{5mm}\hspace{5mm} processaInfo();
+
+        \hspace{5mm}\hspace{5mm} receberCoordenada();
+
+
+\vspace{5mm}        
+        \hspace{5mm}\hspace{5mm} andar();
+
+    \hspace{5mm} \}
+
+\}
+
+}}
+\end{center}
+
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/conversa_grupo_b.png}
+	\caption{Log da conversa entre o desenvolvedor 1 e o desenvolvedor 2} 
+	\label{fig:conversa_grupo_b}
+\end{figure}
+
+
+A Figura \ref{fig:conversa_grupo_b} registra a comunicação realizada pelo grupo. O grupo usou os comentários do check-in do SVN, e não usaram como um mensageiro instantâneo e quando estavam acabando usaram um \textit{intant messanger}. O log da conversa é apresentado no Apêndice \ref{apendice_log}.
+
+%O grillo e o michetti perguntou se sempre vai ter que adicionar defines, includes, robo michetti, plataforma pioneer
+%Eles pensaram que era um requisito por turno, mas esclareci que não.
+%O tempo foi mais rigido e eles conversaram pouco pelo skype, até que os instruí para que usassem algum instant messanger ao invés de uma voice conference.
+
+Depois do experimento, a equipe B foi apresentada ao CoMDD e então foi questionada pelo pesquisador.
+
+\subsubsection{Opiniões dos Participantes e Observações do Pesquisador}
+Serão apresentadas as opiniões dos participantes juntamente com as observações do pesquisador.
+
+\paragraph{Equipe A}
+Quando os participantes da equipe A foram questionados sobre a \textit{linguagem} usada, eles responderam que precisava melhorar aspectos pontuais como deixar toda em inglês ou em português, mas que era fácil de aprender. Em relação aos \textit{comentários} que a wiki propicia eles são úteis mas sentiram falta de um mensageiro instantâneo.
+
+De uma maneira geral, a equipe gostou da abordagem do CoMDD principalmente pela facilidade de edição, flexibilidade e independência de softwares instalados. Eles acham a necessidade de instalar programas como IDEs e SVNs algo trabalhoso. Entretanto sentiram falta do processo de compilação, sendo esta a maior barreira apontada pela equipe A para usar o CoMDD.
+
+A equipe A usou os comentários da página de edição, mas não os comentários de versionamento e comentaram no modelo. A comparação de modelos não foi necessária.
+
+No apêndice \ref{apendice_questionarios} é apresentado o questionário apresentado à Equipe A, com as respostas coletadas pelo pesquisador. 
+
+\paragraph{Equipe B}
+Quando os participantes da equipe B foram questionados sobre a \textit{linguagem} usada, eles responderam que era fácil e simples, com poucos comandos e com uma curva de aprendizagem rápida, mas que a parte dos \textit{includes} estava confusa. Em relação aos \textit{comentários} que o SVN propicia eles não foram úteis pois o problema apresentado era simples e por isso apenas os comentários no código e o diálogo no \textit{instant messanger} era o suficiente.
+
+De uma maneira geral, a equipe aprovaria o uso do CoMDD para um projeto de pequeno porte e apontaram como a "familiaridade" a maior barreira para usar o CoMDD, pois os desenvolvedores estão acostumados com o uso de IDEs e SVNs.
+
+A equipe B usou o check-in, check-out e comentaram no modelo. A comparação de modelos não foi necessária. 
+
+No apêndice \ref{apendice_questionarios} é apresentado o questionário apresentado à Equipe B, com as respostas coletadas pelo pesquisador. 
+
+\subsubsection{Observações do EC-PG}
+A seguir algumas observações do segundo estudo de caso realizado:
+\begin{enumerate}
+\item Os comentários ao longo do modelo foram importantes para permitir que duas pessoas editassem a mesma classe, podendo separar as atividades de cada um;
+
+\item A equipe B usou um mensageiro instantâneo quando estavam terminando de resolver o problema para concluírem se já haviam terminado de resolver o problema ou não;
+
+\item Com a wiki foi mais fácil e simples dos participantes colaborarem.
+
+%\item Para atender um determinado dominio, a wiki é o suficiente, para coisas simples, para algo mais complexo e que necessite de varias pessoas editando ao mesmo tempo e que podem dar erro, ai talvez o melhor seja a tradicional.
+\end{enumerate}
+
+\subsubsection{Lições aprendidas}
+O EC-PG possibilitou uma análise qualitativa inicial das abordagens, contudo foi necessário um esforço grande para reunir pessoas que estivessem dispostas a realizar um experimento que durasse em torno de 2 ou 3h. O experimento exigiu e um esforço ainda maior para realizar os experimentos, pois para isso o pesquisador teve que além de preparar o experimento, acompanhar cada uma das equipes durante a execução. 
+
+A partir dessas observações surgiu a ideia de fazer dois vídeos: um apresentando o CoMDD e o outro apresentando o Eclipse+SVN. Esses vídeos seriam transmitidos para desenvolvedores da indústria, preferencialmente, e seriam acompanhados de um questionário. Assim, além de um estudo qualitativo, seria possível um estudo quantitativo. Esse foi o princípio de formação do estudo de caso 3, descrito a seguir. 
+
+\subsection{Estudo de caso III - EC-IN}
+\label{estudo_de_caso_iii}
+Os objetivos do terceiro estudo de caso são os mesmos dos objetivos do segundo estudo de caso: avaliar comparativamente, entre desenvolvedores, o CoMDD com a abordagem tradicional. Entretanto, enquanto o segundo estudo de caso teve um caráter qualitativo, o terceiro estudo de caso tem um caráter mais quantitativo. A avaliação também consiste na coleta de opinião por parte destes usuários. 
+
+\subsubsection{Descrição dos participantes}
+O EC-IN foi respondido por 48 pessoas, sendo 92\% delas eram formadas em algum curso de computação, 81\% já fizeram ou faziam mestrado/doutorado, 98\% já desenvolveu sistemas em equipe e 92\% já trabalharam ou trabalham em empresas. 79\% dos participantes já trabalharam ou trabalhavam com uma IDE associada a um programa de versionamento. A média de experiência em anos por participante é de 8.37 anos por participante e a moda é de 8 anos. O gráfico \ref{grafico:experiencia_programacao} apresenta o número de pessoas pelo tempo em que elas programam na medida de tempo em anos.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/experiencia_programacao.png}
+	\caption{Experiência em programação dos participantes em anos por quantidade de participantes.} 
+	\label{grafico:experiencia_programacao}
+\end{figure}
+
+
+\subsubsection{Instruções e Problema Apresentado}
+\label{instrucoes_comuns}
+Foram apresentados dois vídeos para cada participante. Um vídeo do CoMDD realizando as atividades de edição de modelos com comentário da versão de alteração, comentário na página de edição, comparação entre modelos, retorno para uma versão anterior do modelo e geração de código\footnote{\url{http://vimeo.com/36209527}}. No outro vídeo foram feitas as mesmas atividades mas no contexto do Eclipse+SVN\footnote{\url{http://vimeo.com/36206167}}. Por fim, foi apresentado um questionário.
+
+No Apêndice \ref{apendice_questionario_experimento_3} está o email enviado com a explicação do que era para ser feito, bem como todas as perguntas feitas aos participantes.
+
+\subsubsection{Resultados do EC-IN}
+Quando os participantes foram questionados que tipo de colaboração eles tinham/tiveram na sua empresa ou na sua equipe de desenvolvimento, ou seja, como eles colaboram na resolução de problemas, foram definidos 9 itens a partir das respostas e que assim as classificariam\footnote{A análise dos resultados foi feita a partir da leitura e interpretação das respostas subjetivas, de modo que possibilitasse o agrupamento dos dados e assim extrair uma possível informação. Pox exemplo, dada a pergunta "Que tipo de colaboração você tem/teve na sua empresa ou na sua equipe de desenvolvimento. Ou seja, como vocês colaboram na resolução de problemas?" um participante respondeu: "Nas empresas que trabalhei não havia nenhuma metodologia definida de engenharia de software. Nós programávamos individualmente nas máquinas e assim a colaboração geralmente eram em conversas informais".
+
+Mas nao foi subentendido nada de uma resposta, ou seja, se o participante citasse divisão de tarefas, mas nao citasse reuniões ou diálogos ou mencionasse que havia conversas entre os líderes e desenvolvedores, a gente nao colocava reuniões, mas apenas divisão de tarefas.}:
+
+\begin{enumerate}
+	\item Reuniões:são discussões ou conversas, informais ou não, para solucionar um problema, esclarecer uma dúvida ou distribuir tarefas;
+	\item Divisão de tarefas: quando há um planejamento do que será feito pela equipe ou por um gerente e então cada membro é responsável por uma tarefa;
+	\item Sistema de versionamento: quando mencionavam algum programa de versionamento;
+	\item Email: ou lista de email;
+	\item Bugger tracker ou issue tracker;
+	\item Quadro branco;
+	\item Programação/Revisão em pares;
+	\item wiki;
+	\item Skype.
+\end{enumerate}
+
+Estas foram as palavras e/ou expressões mais citadas pelos participantes. Desta forma, levantou-se o gráfico apresentado na Figura \ref{grafico:formas_colaboracao}:
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/formas_colaboracao.png}
+	\caption{Formas de Colaboração Citadas.} 
+	\label{grafico:formas_colaboracao}
+\end{figure}
+
+Quando os participantes foram questionados quais funcionalidades de uma ferramenta de versionamento eles achavam mais importante e/ou quais funcionalidades eles mais usavam, foram levantadas as 6 funcionalidades\footnote{Apenas 25 participantes citaram check-in e check-out e por isso essa funcionalidade foir descartada, pois, provavelmente os participantes acharam que esta funcionalidade já estava implicita, visto que dificilmente alguém que compara versões não irá fazer check-in ou não tenha feitocheck-out} (ver Figura \ref{grafico:funcionalidades_versionamento}):
+
+\begin{enumerate}
+	\item Rollback: capacidade de reverter um artefato para uma versão anterior;
+	\item Histórico: ou log de versões, com o intuito de controlar alterações, engloba todas as informações de um commit, como data, autor, comentário etc;
+	\item Comparação de versões;
+	\item Mesclagem ou resolução automática de conflitos;
+	\item Criação de branchs;
+	\item Integração com outras ferramentas, como IDEs, por exemplo.
+\end{enumerate}
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=15cm]{imagens/funcionalidades_versionamento.png}
+	\caption{Principais e Mais Usadas Funcionalidades de um Sistema de Versionamento Citadas.} 
+	\label{grafico:funcionalidades_versionamento}
+\end{figure}
+
+Quando os participantes foram questionados se usariam o CoMDD ou não, algumas respostas foram expressamente sim ou não, entretanto outras tiveram que ser interpretadas se o participante usaria ou não, desta forma, 42,22\% (19 de 45 respostas válidas) usariam o CoMDD, com ou sem restrições para seu uso, mas usariam e 35,55\% não usariam, com ou sem restrições de uso (16 de 45). Ou seja, entre os 42,22\% que disseram que usariam o CoMDD, alguns deles disseram que precisava melhorar em alguns aspectos, assim como, entre os 35,55\% dos que disseram que não usariam o CoMDD, disseram que não usariam por alguns aspectos.
+
+Esses aspectos foram definidos como as barreiras para uso do CoMDD. A Figura \ref{grafico:principais_barreiras} apresenta essas barreiras citadas pelos participantes.
+
+\begin{figure}[ht]
+	\centering
+		\includegraphics[width=15cm]{imagens/principais_barreiras.png}
+	\caption{Principais Barreiras para o uso do CoMDD Citadas.} 
+	\label{grafico:principais_barreiras}
+\end{figure}
+
+
+Quando os participantes foram questionados se o CoMDD seria capaz de suprir suas necessidades em termos de ferramenta de versionamento, 74\% dos participantes disseram que sim; e 72\% dos participantes afirmaram que levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, ele atende aos propósitos que o Eclipse+SVN traz em termos de desenvolvimento de software e compartilhamento. Se o CoMDD tivesse \textit{syntax highligth} e \textit{auto complete}, 77\% dos participantes o usariam e 12\% usariam, mas insatisfeitos em termos de versionamento, o que indica que \textit{syntax highligth} e \textit{auto complete} são elementos muito importantes nas IDEs.
+
+Dentre os participantes, 84\% dos participantes não viam como uma barreira ter que instalar softwares nas máquinas para desenvolver, entretanto, quando questionados se isso seria uma barreira para um não desenvolvedor, 86\% disseram que sim.
+
+Quando os participantes foram questionados se usariam o CoMDD para desenvolver usando modelos, o qual é o propósito do CoMDD e não desenvolver código-fonte, 86\% dos participantes disseram que usariam; 72\% dos participantes acham o CoMDD uma abordagem mais fácil e simples de usar e levando em consideração que o CoMDD é um protótipo e não uma ferramenta de produção, 84\% dos participantes acham que o CoMDD traria produtividade no desenvolvimento de sofware em uma equipe.
+
+\subsubsection{Opiniões dos Participantes}
+Serão apresentadas algumas opiniões dos participantes, sendo que cada item é de um participante selecionado:
+
+\begin{itemize}
+% \item Os screencasts poderiam ser acompanhadas de uma explicação breve da finalidade do código sendo editado, assim ficaria mais fácil para quem responde o questionário entender o tipo de código que se espera gerar com a ferramenta, mesmo que para isso eles precisassem ficar um pouquinho mais longos. Tipo 4 minutos em vez de 3. Para mim isso não foi um problema pois eu já havia recebido uma explicação presencial antes.
+
+ \item "Talvez aumentaria a produtividade de equipes formadas por desenvolvedores com pouca experiência que não utilizam todos os recursos das ferramentas já disponíveis";
+
+ \item "Acredito que a ferramenta não seja adequada/ideal para o desenvolvimento de sistemas em geral, mas com algumas melhorias poderia ser muito útil na área de ensino de programação, no desenvolvimento em pares (eg. XP), desenvolvimento de exemplos/snippets e na resolução de alguns bugs mais chatos por uma equipe. No caso de equipes separadas geográficamente, os ganhos seriam ainda maiores. O motivo é que desenvolvedores costumam possuir gosto muito variado pelas ferramentas, e dificilmente uma equipe completa vai se sentir a vontade utilizando uma única ferramenta para o desenvolvimento, fazendo a produtividade cair. Mesmo dentro de uma mesma ferramenta ou ambiente, é muito comum um alto grau de customização pessoal, que não seria possível nesse caso";
+
+ \item "Acho mais proveitoso incorporar o CoMDD a uma IDE do que fazer com que ele se comporte como uma";
+
+ \item "Parabéns pelo trabalho e principalmente pela implementação e pela preocupação em saber o que os desenvolvedores pensam sobre a sua abordagem. Com certeza enriquece muito um trabalho de pesquisa. Mesmo que seja um protótipo, você consegue provar que muito da teoria pode ser aplicada";
+
+ \item "O seu trabalho tem tudo a ver com um dos itens do manifesto ágil: Indivíduos e interação entre eles mais que processos e ferramentas. Mesmo utilizando uma ferramenta de ES vc consegue de diversas formas promover a colaboração entre os desenvolvedores o que é muito importante";
+
+ \item "Usabilidade bastante agradável o que facilita na aceitação de uma nova ferramenta";
+
+% \item "Respondi não à pergunta anterior porque não ficou claro como a ferramenta poderia aumentar a produtividade em relação às outras IDEs. No máximo, seria equivalente, uma vez que todas as funcionalidades fossem finalizadas para um ambiente de produção";
+
+ \item "Se a equipe for muito grande, talvez a wiki não seja adequada para o desenvolvimento. Como a wiki se comporta quando mais de um usuário tenta alterar os mesmo código ao mesmo tempo?";
+
+ \item "Acho que a comparação entre o CoMDD e o Eclipse/SVN não é justa. Cada uma tem suas vantagens e desvantagens. SVN e Eclipse já vem sendo usados com sucesso há muito tempo, e não precisam de melhorias, pois já fazem muito bem aquilo a que se propõem. Já o uso de uma wiki pode ser uma tendência futura. Talvez com a evolução do software em nuvem leve a uma aplicação tão poderosa quanto o Eclipse. Outra questão que não entendi muito bem é essa parte da geração de código. Os vídeos não explicam isso direito, nem no CoMDD e nem no Eclipse/SVN".
+\end{itemize}
+
+
+
+%\subsubsection{Conclusões e Observações do Estudo de Caso III}
+%A seguir as conclusões e observações do segundo estudo de caso realizado:
+%\begin{enumerate}
+%\item 
+%\end{enumerate}
+
+%\subsubsection{Lições aprendidas}
+ 
+
+%Já meio que falei parte disso: Se o CoMDD tivesse \textit{syntax highligth} e \textit{auto complete}, 77\% dos participantes o usariam e 12\% usariam, mas insatisfeitos em termos de versionamento, o que indica que ......highlight, auto complete sao coisas simples de se acrescentar, mas o mais importante é observar que esses foram os principais empecilhos de uso do CoMDD, ou seja, se as pessoas tivessem essas funcionalidades implementadas numa wiki possivelmente usariam o comdd. -> Talvez venha concluir isso
+
+%Escopo do trabalho/ou experimento: Este trabalho foca principalmente em sistemas de pequeno porte, no caso foi testado para uma classe e duas pessoas, mas acredita-se que para algo em torno disso a abordagem funcione também.
+
+
+\section{CoMDD vs Ferramentas Existentes}
+\label{comdd_vs_ferramentas_existentes} 
+\subsection*{Adessowiki}
+O Adessowiki é um trabalho muito interessante e relacionado com o CoMDD. O Adessowiki é implementado em uma wiki e permite a edição colaborativa de páginas que irão gerar um texto científico. Este processo é semelhante ao CoMDD, quando desenvolvedores podem editar colaborativamente páginas wiki, as quais irão gerar um código-fonte.
+
+O Adessowiki se assemelha ao CoMDD por ser uma wiki para edição colaborativa no desenvolvimento de textos científicos, e que no CoMDD é código-fonte, entretanto a principal diferença entre as abordagens está no foco dado por cada uma. 
+
+Enquanto o Adessowiki tem mais o caráter de ensino, de pesquisa científica, de produção de textos científicos, e se limita à área de processamento de imagem e computação gráfica; o CoMDD foca no desenvolvimento de sistemas de software usando modelos, incentivando a colaboração de desenvolvedores ou não e com o intuito de ser uma espécie de substituto à IDEs e versionadores instalados localmente. Outra diferença é que o Adessowiki usa \textit{Python} ou C++, enquanto que o CoMDD usa modelos.
+
+Ainda, o método usado pelo CoMDD está na comparação entre a abordagem CoMDD e a tradicional, enquanto que os autores do Adessowiki apresentam os casos de uso que o ambiente atende.
+
+
+
+%O Adessowiki é usado principalmente no apoio ao ensino de disciplinas relacionadas à Computação Gráfica. O CoMDD também permite o apoio ao ensino de disciplinas de linguagens de programção ou de DSLs. Entretanto, o caráter de auxílio ao ensino é melhor tratado e apresentado no Adessowiki.
+
+%Por fim, o CoMDD se difere do Adessowiki pois o CoMDD usa modelos para gerar código, enquanto o Adessowiki usa \textit{Python} ou C++. %Mas a principal diferença está no foco dado por cada uma das abordagens. O foco do Adessowiki está no ensino ou na redação de textos científicos, enquanto que o CoMDD se preocupa no desenvolvimento colaborativo de softwares e se preocupa com questões relativas à versionamento de modelos e edição/documentação colaborativa.
+
+
+\subsection*{Galaxy wiki}
+\label{galaxy}
+O Galaxy wiki apresentou um ambiente baseado em uma wiki, na qual programadores podem colaborativamente escrever códigos, construir projetos, executar programas e debugar defeitos. O Galaxy wiki foi apresentado por Xiao et al. em 2007 e desde então não foram encontradas outras referências sua.
+
+O trabalho do CoMDD e do Galaxy wiki estão muito próximos, uma vez que ambos trabalham se atentam para o uso de wikis que forneçam o suporte necessário e independente para que desenvolvedores possam programar. Contudo, a principal diferença entre as abordagens está na natureza do CoMDD. Usar modelos ao invés de linguagens de programação tem com o intuito, além de aumentar a produtividade do desenvolvimento\footnote{Neste caso está se referindo que uma abordagem na wiki usando modelos é mais produtiva do que uma mesma abordagem na wiki mas usando linguagens de programação. Ver vantagens do MDD na Seção \ref{vantagens_mdd}}, permitir que não desenvolvedores possam colaborar. Embora os próprios autores do Galaxy wiki citem essa como uma possível vantagem do Galaxy wiki, nota-se ao longo do artigo que este não é o foco. 
+
+Um dos objetivos pensados e projetados no CoMDD é tornar o desenvolvimento de software o mais acessível possível para usuários não desenvolvedores. Este é um dos motivos de uso de MDD no lugar de Java, por exemplo. Assim, o principal diferencial, entre as abordagens, é que enquanto o Galaxy wiki permite o desenvolvimento de código em java e a integração com o Eclipse, o CoMDD trabalha em um nível de abstração mais elevado e não permite a integração com IDEs. 
+
+\subsection*{Cloud 9 IDE}
+O Cloud 9 tem um aspecto central de permitir o desenvolvimento em Javascript na web, de forma que os desenvolvedores tenham os mesmos recursos que teriam localmente. O Cloud 9 IDE parece ser uma ferramenta de desenvolvimento robusta e completa em termos de funcionalidades de IDE e de versionamento usando GitHub. 
+
+Quanto aos aspectos de tornar o desenvolvimento feito na web, o Cloud 9 IDE e o CoMDD são parecidos, entretanto, suas abordagens são distintas. O CoMDD trabalha com modelos, enquanto que o Cloud 9 permite apenas a programação em Javascript e HTML5. O CoMDD usa uma wiki como suporte de desenvolvimento, enquanto que o Cloud 9 é uma aplicação web desenvolvida especificamente para a programação. O CoMDD estimula a colaboração por não desenvolvedores e por fim ainda aborda o versionamento de modelos de maneira mais simples.
+
+O CoMDD ainda pode agregar de algumas funcionalidades do Cloud 9, pois ele é de código aberto.
+
+%http://www.contexteditor.org/ --> soluação para o hightlithg
+
+%\subsection*{Google Docs e Ferramentas de Edição Concorrente em Tempo Real}
+%Parte do CoMDD, a qual não foi implementada, levanta a questão de edição concorrente em tempo real, o que significa que duas ou mais pessoas podem digitar, ao mesmo tempo, o mesmo documento, e visualizar as alterações em tempo real do documento alterado. Um exemplo de ferramenta assim é o Google Docs\footnote{https://docs.google.com}, mas ainda há outras, como: o Thoughtslinger\footnote{http://www.thoughtslinger.com/}, o Zoho\footnote{https://writer.zoho.com/}, o Moondedit\footnote{http://moonedit.com/} e o Notapipte\footnote{http://notapipe.net/}. Entretanto, todos com exceção do último, são para edição de documentos de texto e não para modelos ou linguagens de programação com o foco de desenvolvimento de software. O Notapipe permite editar um texto com syntax highlight, mas ainda é um texto e não pode ser compilado ou executado na web.
+
+%Então, pode-se dizer que não foi encontrado uma ferramenta que permitisse o desenvolvimento de software concorrente e em tempo real.
+
+
+
+\section{Considerações Finais}
+Este capítulo apresentou o CoMDD como uma abordagem colaborativa de desenvolvimento orientada a modelos, na qual foi implementada usando uma wiki e uma DSL. Também foram apresentadas a arquitetura do CoMDD e suas funcionalidades. O CoMDD foi avaliado por três estudos de caso, sendo dois deles comparativos com uma abordagem tradicional, definida pelo uso do Eclipse com o plugin SVN. Por fim, o CoMDD foi comparado com abordagens e ferramentas existentes, como: Adessowiki, Galaxywiki, Cloud 9 IDE etc, sendo ressaltados seus diferencias positivos e suas limitações.
+
+No capítulo a seguir serão apresentadas as conclusões dos estudos de caso, as conclusões do trabalho de forma geral, os trabalhos futuros, as lições aprendidades e as atividades e resultados paralelos realizadas pelo aluno de mestrado e que não estavam diretamente ligada à pesquisa realizada.
+
