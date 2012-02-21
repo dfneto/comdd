@@ -1,0 +1,233 @@
+\newpage
+
+\chapter{Revisão Bibliográfica}
+\label{revisaoBibliografica}
+Este capítulo possui dois objetivos essenciais: o primeiro é o de fornecer os principais conceitos necessários para o entendimento da abordagem apresentada ao longo do trabalho, o CoMDD. O segundo objetivo é apresentar os trabalhos relacionados com o CoMDD, para que, após a abordagem ser definida, possa-se fazer uma análise crítica desses trabalhos e do CoMDD.
+
+Serão apresentados nas seções seguintes a definição e vantagens de MDD, e o conceito de metamodelagem, dado que metamodelagem é um dos principais conceitos de MDD; a definição de DSL e de \textit{template}, que são a abordagem de MDD e de geração de código, usadas, respectivamentes, neste trabalho; a definição de colaboração e dos
+quadrantes de colaboração como foco nas wikis e o principio de funcionamento dos sistemas de versionamento.
+
+Por fim, o capítulo apresenta os principais trabalhos relacionados com o CoMDD, mostrando que o CoMDD, embora possua trabalhos semelhantes, é uma abordagem inédita na literatura pesquisada.
+
+\section{Desenvolvimento Orientado a Modelos}
+\label{mdd} %copiei a parte de mdd da qualificação
+O Desenvolvimento Orientado a Modelos (\textit{Model-Driven Development} - MDD) é uma abordagem da Engenharia de Software que consiste na utilização de modelos para elevar o nível de abstração, na qual os desenvolvedores criam e evoluem o software. Sua intenção é tanto simplificar (tornar mais fácil) quanto formalizar (padronizando, de forma que a automação seja possível) atividades e tarefas que formam o ciclo de vida do software \cite{Hailpern2006}; ou numa definição mais singela: o MDD é a simples noção de construir um modelo de um sistema e depois transformá-lo em algo real \cite{Mellor2003}.
+
+Uma outra definição semelhante é a de que o MDD é uma abordagem de desenvolvimento, integração e interoperabilidade de sistemas de tecnologia da informação. Ela se refere ao uso sistemático de modelos e de transformações de modelos como artefatos primários, durante todo o ciclo de vida do software. O MDD eleva o nível de abstração em que os desenvolvedores produzem softwares, simplificando e formalizando as diversas atividades e tarefas que compõem o processo de desenvolvimento de software \cite{Sanchez2009}, 
+%MDD eleva o nível de abstração do desenvolvimento de software 
+expressando o que um computador deve fazer por meio de modelos, que escondem detalhes de implementação \cite{Meijler2005}.
+
+O que caracteriza o MDD são os modelos como foco primário do desenvolvimento de software, ao invés das linguagens de programação. Os modelos são usados para descrever vários aspectos do software e para automatizar a geração de código. A principal vantagem disto é poder expressar modelos usando conceitos menos vinculados a detalhes de implementação, além do fato de modelos serem mais próximos do domínio do problema. Isto torna os modelos mais fáceis de se especificar, entender e manter, do que abordagens que não usam modelos. E em alguns casos, ainda é possível os especialistas do domínio produzirem os sistemas ao invés dos especialistas da tecnologia de implementação \cite{Selic2003, Sriplakich2006}.
+
+As Figuras \ref{fig:processo_convencional} e \ref{fig:processo_mdd} mostram a diferença fundamental que distingue o desenvolvimento tradicional do MDD. Na Figura \ref{fig:processo_convencional} um engenheiro de software está elicitando os requisitos, modelando com base nesses requisitos e por fim implementando com base nos modelos. Na Figura \ref{fig:processo_mdd} o um engenheiro de software está elicitando os requisitos, modelando com base nesses requisitos e os modelos servindo de base para geração de código automática.
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/desTrad.jpg}
+	\caption{Processo convencional de desenvolvimento de software \cite{Lucredio2009}}.
+	\label{fig:processo_convencional}
+\end{figure}
+
+\begin{figure}
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/desMDD.jpg}
+	\caption{Processo de desenvolvimento de software orientado a modelos \cite{Lucredio2009}}.
+	\label{fig:processo_mdd}
+\end{figure}
+
+\subsection*{As Vantagens do MDD}
+\label{vantagens_mdd}
+%Segundo \citep{Kleppe2003,Lucredio2009
+Segundo Kleppe et al. (2003) e Lucrédio (2009) o MDD apresenta benefícios como: 
+
+\begin{itemize}
+\item Produtividade: fatores como redução de atividades repetitivas e manuais e o aumento da possibilidade de reúso, podem contribuir para o aumento da produtividade no processo de desenvolvimento;
+\item Portabilidade e Interoperabilidade: como o modelo é independente de plataforma, um mesmo modelo pode ser transformado em código para diferentes plataformas;
+\item Corretude: o MDD evita que os desenvolvedores exerçam atividades repetitivas e manuais para gerar código; dessa maneira, evita-se também alguns erros como: geradores de código não introduzem erros acidentais, como o de digitação, por exemplo;
+\item Manutenção: alterações no código relativas à manutenção podem requerer o mesmo esforço produzido durante o desenvolvimento;
+\item Documentação: modelos são o artefato principal do processo de desenvolvimento e por isso não se desatualizam, pois o código é gerado a partir deles e com isso a documentação se mantém também sempre atualizada;
+\item Comunicação: modelos são mais fáceis de entender do que código-fonte, assim isso facilita a comunicação entre os desenvolvedores, os \textit{stakeholders} e demais envolvidos.
+\end{itemize}
+
+Entretanto, o MDD possui desvantagens como aumento da rigidez, pois o código-fonte gerado não é acessível pelo desenvolvedor; aumento da complexidade, dado que é necessário o estudo de modelagem, metamodelagem, geradores de código etc e construir transformadores e metamodelos não é uma tarefa trivial; perda de desempenho, pois nas transformações eventualmente irão códigos desnecessários para uma determinada aplicação e que são necessários para outra, por exemplo, etc.
+
+%??Uma criança pode programar usando uma wiki mas nao usando eclipse e svn, mesmo que no eclipse seja modelos. A crianca é do dominio e o desenvolvedor o especialista// nivel da solução: java, c .... nivel do problema: UML, p ex //
+
+Analisando tais definições de MDD e suas vantagens apresentadas, pode-se concluir que MDD é um conceito bem definido, pois diferentes autores apresentam as mesmas idéias de que MDD é uma elevação no nível de abstração do desenvolvimento de software, no qual o modelo passa de um artefato auxiliar para uma desempenhar um papel fundamental no processo de desenvolvimento. Em virtude dessa elevação na abstração, muitos problemas relativos a portabilidade, interoperabilidade, corretude, manutenção e documentação, são reduzidos nesta abordagem. %Contudo, é fato que mesmo o MDD com tantos benefícios, inclusive o aumento de produtividade, ainda está longe de ser a solução para todos os problemas relativos ao desenvolvimento de software.
+
+A seguir é descrito o conceito de metamodelagem, o qual é um conceito chave para o MDD e sintetiza o potencial da tarefa de modelagem.
+
+%\subsection*{Metamodelagem, Sintaxe Abstrata e Sintaxe Concreta}
+\subsection*{Metamodelagem}
+A metamodelagem é um dos principais aspectos do MDD. É necessário criar um metamodelo do conhecimento para o MDD lidar com alguns desafios, como: a construir uma DSL; validar modelos; realizar transformações de modelo; gerar código e integrar ferramentas de modelagem a um domínio \cite{Stahl2006}.
+
+Um metamodelo descreve a estrutura de um modelo. De maneira abstrata, o metamodelo define os construtores de uma linguagem de modelagem e seus relacionamentos, bem como as constantes e regras de modelagem; contudo ele não descreve a sintaxe concreta da linguagem. Metamodelos e modelos têm um relacionamento de classe e instância, ou seja, cada modelo é uma instância de um metamodelo \cite{Stahl2006}.
+
+%?falta sobre sintaxes... > Ver material do lucreio
+
+\section{Definição de DSL e de \textit{templates}}
+\label{dsl}
+Uma DSL (\textit{Domain-Specific Language}) é uma linguagem de programação ou uma linguagem de especificação, que oferece, através de notações e abstrações, poder expressivo focado em um problema de um domínio particular, e geralmente restrito a este domínio. Embora seja uma linguagem específica e não forneça uma solução geral para muitas áreas, ela provê uma solução muito melhor para um domínio particular \cite{Deursen2000} quando comparada com uma linguagem de propósito geral, como a UML, por exemplo. 
+
+A DSL é uma das abordagens do MDD, havendo outras como a da OMG (\textit{Object Management Group}), a MDA, por exemplo. É importante ressaltar que as DSLs podem ser textuais ou gráficas, como por exemplo a SQL é uma DSL textual para banco de dados e o Labview é uma DSL gráfica, usada na engenharia elétrica, para medições e automações. 
+
+Para o desenvolvimento do gerador de código foi usado \textit{templates} para auxilar nas transformações. Um \textit{template} possui uma estrutura pré-definida, mas com partes em aberto, dado que esses pontos serão preenchidos de acordo com as variáveis especificadas pelo desenvolvedor \cite{Lucredio2009}.
+
+A Figura \ref{fig:templates} ilustra uma transformação baseada em \textit{templates}. O objetivo neste exemplo é gerar uma página html com campos definidos por um formulário, assim, é mais fácil para um não desenvolvedor definir campos do que criar uma página html. O arquivo de entrada possui as variáveis que serão preenchidas pelo usuário. Este arquivo servirá de entrada ao transformador, o qual usa um \textit{template} para estruturar o código final. No \textit{template} estão as transformações e nas transformações têm espaços que serão preenchidos de acordo com as variáveis definidas pelo usuário (na edição do arquivo de entrada) e que farão parte do código-fonte gerado. O transformador processa então o arquivo e o \textit{template} e gera o código-fonte final.
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/templates.png}
+	\caption{Geração de Código Usando \textit{Templates} de Lucrédio (2009).}
+	\label{fig:templates}
+\end{figure}
+
+%1-Código-fonte é mais complicado de ser desenvolvido por mais de uma pessoa, logo é também menos reutilizável. Só o especialista consegue fazer e nao o cara do dominio. -> falar mal do desenvolvimento tradicional // 2- Modelos são mais colaborativos, simples, genéricos e reusáveis (nao falar em reuso pra nao criar uma expectativa errada pro leitor) e permitem que não especialistas possam desenvolver/acompanhar; alem de poder-se checar por conformidade os modelos
+
+%\section{O Processo Tradicional de Versionamento Usando o SVN}
+%Praticamente cada abordagem implementa de uma forma sua própria ferramenta e com isso seus conceitos diferem entre si, algumas vezes, como mencionado no Capítulo \ref{introducao}. A Figura XXX apresenta os conceitos referentes ao SVN, a qual ilustra um ... 
+%Mostrar como funciona numa figura um svn.
+
+
+\section{Colaboração}
+\label{colaboracao}
+Colaboração significa duas ou mais pessoas trabalhando juntas para compartilhar e trocar dados, informações e conhecimento \cite{McQuay2004}. A colaboração é uma atividade que tem sido evidenciada cada vez mais com o aumento da complexidade do desenvolvimento de sistemas, pois para se desenvolver um sistema robusto e complexo uma só pessoa dificilmente é o suficiente. Assim, o desenvolvimento e a manutenção de softwares complexos requerem a colaboração de diversos desenvolvedores \cite{Sriplakich2006}. 
+
+A colaboração tem duas dimensões: tempo e espaço \cite{Rama2006}. O tempo pode ser síncrono ou assíncrono. O espaço pode ser distribuído ou compartilhado. A Figura \ref{fig:quadrantes} ilustra os quadrantes que a colaboração pode assumir.
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/quadrantes.jpeg}
+	\caption{Quadrantes da Colaboração \cite{Rama2006}.}
+	\label{fig:quadrantes}
+\end{figure}
+
+Uma reunião presencial é exemplo de colaboração do \emph{primeiro quadrante}, pois as pessoas estão compartilhando o mesmo tempo e espaço. Duas pessoas que trabalham no mesmo código-fonte e no mesmo computador (logo, na mesma sala), só que em turnos diferentes, é um tipo de colaboração se enquadra no \emph{segundo quadrante}, pois elas estão compartilhando o mesmo espaço (computador, sala, código-fonte) em horários diferentes. Uma ligação de telefone ou vídeo conferência, são exemplos de colaboração de \emph{terceiro quadrante}, pois estão compartilhando o mesmo tempo em locais distintos. Um e-mail é um exemplo de colaboração de \emph{quarto quadrante}, uma vez que estão em tempo e locais diferentes.
+
+%By Renata:
+Neste trabalho, o tópico de colaboração foi estudado pois a abordagem proposta, CoMDD, explora o tipo de colaboração existente nos quarto e segundo quadrantes, especialmente. Ao decidirmos utilizar wikis como apoio à modelagem, a colaboração é prioritariamente incentivada, pois em tempos diferentes os desenvolvedores podem trabalhar sobre o mesmo projeto em desenvolvimento.
+
+%Estamos falando de edição de modelos colaborativa, documentação colaborativa e versionamento de modelos.
+
+\section{Sistemas de Versionamento}
+Segundo Pressman \cite{Pressman2006}, gestão de configuração ou SCM - \textit{Software Configuration Management}, é uma atividade aplicada ao longo de todo o processo de desenvolvimento do software. A essência desta atividade está em gerenciar/controlar as modificações e por isso possui quatro atividades: identificar quais modificações foram realizadas, controlar essas modificações, garantir que as modificações sejam implementadas e por fim, permitir que os demais interessados nas modificações tenham conhecimento sobre estas. Em suma, gestão de configuração consiste em um conjunto de atividades que acompanham e auxiliam o projeto de software, durante todas as fases de desenvolvimento, desde o projeto e elicitação de requisitos, até quando o software é retirado de operação.
+
+%A gestão de configuração tem as seguintes ....
+
+Este trabalho considera controle de versão como uma das atividades colaborativas, dado que mais desenvolvedores trabalham constantemente no mesmo código-fonte ou projeto. Pressman (2006) define controle de versão como sendo um conjunto de procedimentos e ferramentas parar gerenciar diferentes versões de artefatos que são criados durante todo o processo de software.
+
+Atualmente, existem vários sistemas de controle de versão, ou sistemas de versionamento, como por exemplo o SVN\footnote{http://subversion.org} e o GIT\footnote{http://git.org} A Figura \ref{fig:versionamento} ilustra dois desenvolvedores trabalhando no mesmo código-fonte. Ambos desenvolvedores solicitam a última versão do código-fonte ao servidor (passo 1), o qual envia a última versão (v1.0) aos dois desenvolvedores (passo 2 - \textit{check out}). Após o desenvolvedor da esquerda realizar suas alterações, ele submete sua nova versão (v1.1) ao servidor. Em outro momento, o desenvolvedor da direita resolve submeter suas alterações (v1.1), entretanto ocorre um conflito, pois a versão "v1.1" já foi submetida pelo desenvolvedor da esquerda.
+
+\begin{figure}[!ht]
+	\centering
+		\includegraphics[width=0.9\textwidth]{imagens/versionamento.png}
+	\caption{Versionamento de um Arquivo}
+	\label{fig:versionamento}
+\end{figure}
+
+Este cenário representa um versionamento que adota uma política \textit{otimistic}, na qual dois desenvolvedores podem trabalhar ao mesmo tempo sobre o mesmo artefato e depois devem realizar a mesclagem dos artefatos para evitar conflitos \cite{Sarma2003} como o apresentado na Figura \ref{fig:versionamento}. Entretanto, assegurar a integridade e consistência de artefatos versionados em um ambiente que suporte acesso concorrente é um problema difícil \cite{Zhang2007}. Portanto, para evitar os conflitos de edição e \textit{merge} adotou-se no CoMDD uma abordagem \textit{pessimistic}, ou seja, uma política em que o artefato é bloqueado quando já está sendo editado por outra pessoa. 
+
+Aplicando política \textit{pessimistic}, conflitos de edição são evitados e com isso desenvolvedores não gastarão tempo ou esforços resolvendo conflitos. Ainda, a política \textit{pessimistic} pode ajudar na comunicação, pois os desenvolvedores saberiam quando outra pessoa estaria modificando o mesmo artefato, incentivando a comunicação entre os desenvolvedores com os mesmos interesses \cite{Sarma2003}. 
+
+\section{wiki}
+\label{wiki}
+%juntar essa seção com a ontogonia
+As wikis são consideradas sistemas de computador que tornam fácil a edição de páginas web por qualquer pessoa. Elas também são vistas como uma filosofia em relação à forma como os usuários devem editar páginas web \cite{Louridas2006}. Em sua essência, a wiki é uma página web, ou um conjunto de páginas web, editável. Ela permite que qualquer pessoa possa, facilmente, adicionar ou revisar o conteúdo por meio de, praticamente, qualquer navegador web \cite{Jang2006}.
+
+As wikis ganham muita aceitação pelos usuários e são utilizadas no meio acadêmico e na indústria. Elas se mostram uma opção no mundo das ferramentas colaborativas e ganham cada vez mais espaço no setor privado, se tornando uma tecnologia reveladora para apoiar a colaboração dentro e entre empresas \cite{Majchrzak2006, Tetard2009,Jang2006}.
+
+Sua natureza é essencialmente colaborativa e a qualidade do seu conteúdo melhora à medida que as pessoas contribuem. Todos usuários habilitados podem editar uma wiki e revisar seu conteúdo, de maneira irrestrita e democrática. Desta maneira, a wiki enfatiza velocidade e flexibilidade ao invés de controle restrito e o fato da wiki ser fácil de implementar e de entender é, provavelmente, a chave para sua popularidade \cite{Tetard2009,Abeti2009,Mehta2009}.
+
+Além da colaboração, simplicidade, facilidade e do suporte à edição colaborativa do conteúdo como sendo uma das principais funcionalidades da wiki \cite{Tetard2009}, as wikis são as plataformas eleitas pela engenharia de requisitos, uma vez que permitem que diversos \textit{stakeholders} distribuídos, compartilhem a definição do sistema; além do que as wikis têm controle de versão de páginas, gerenciamento de alterações de conteúdo, comunicação entre usuários por meio de fóruns e \textit{chats} \cite{Abeti2009}.
+
+O que as torna especiais não é apenas a facilidade de contribuição, mas também seus recursos \cite{Mehta2009}, como: 
+\begin{itemize}
+
+ \item Simples sintaxe de marcação;
+ \item Criação de links simples ou automáticos, mesmo quando a página de destino ainda é inexistente;
+ \item Controle de acesso total de usuários e páginas;
+ \item Histórico completo das revisões, com possibilidade de reverter a qualquer momento; 
+ \item Muitas wikis não precisam de banco de dados, o que as deixa portáveis;
+ \item Categorizar páginas para melhor organização;
+ \item Customizáveis.
+
+\end{itemize}
+
+A colaboração que a wiki oferece permite muitos trabalhos científicos em um leque amplo de áreas, como pode-se notar em trabalhos que usam a wiki para gerenciar conhecimento \cite{Jing2008} e requisitos \cite{Abeti2009, Ferreira2009}, auxiliar o ensino e aprendizado \cite{Elrufaie2005, Tetard2009, Minocha2007, Lotufo2009, Machado2011}, compartilhar informações, entre outros.
+
+Rames et al. \cite{KhalidRamesAl-asmari2006} apresentam um estudo de wikis para o desenvolvimento de software distribuído. Segundo os autores, para suportar a \textit{comunicação e coordenação} de grupos distribuídos de desenvolvimento, alguns mecanismos são usados, como: viagens, telefonemas, emails, vídeo conferências, softwares de gerenciamento de projeto on-line e software de gerenciamento de conteúdo. Os autores então realizaram um experimento no qual envolve cinco \textit{stakeholders}, três desenvolvedores, um cliente primário e um mentor, de modo que as dez pessoas trabalharam no mesmo projeto, mas distribuídas. A principal conclusão dos autores sobre o trabalho é que as wikis, comparadas a outros métodos de comunicação, são fáceis de usar, confiáveis e de baixo custo e portanto são ferramentas ideais para o desenvolvimento de software distribuído.
+
+Ainda na pesquisa das wikis para a área de desenvolvimento de software, as wikis têm aprimorado o suporte a atividades específicas do desenvolvimento de software, como por exemplo, documentação, em que há um estudo para manter a documentação e o código-fonte sincronizados \cite{Aguiar2005}; e revisão de código-fonte, bug tracking e teste funcional \cite{Xiao2007}. Outro exemplo desses suportes são as wikis Trac\footnote{http://trac.edgewall.org/} e Twiki\footnote{http://twiki.org/
+}. A Trac um sistema de \textit{issue tracking} para o gerenciamento de desenvolvimento de software, que permite a criação de bugs, atividades etc em páginas wiki. A Twiki auxilia no gerenciamento de projetos de eXtreme Programming. 
+
+Embora o uso de wikis seja diversificado, apenas o trabalho de Xiao et al. \cite{Xiao2007} sugere o uso de wikis para o desenvolvimento de software. A proposta de CoMDD explora intensamente o potencial de wiki para suporte à modelagem, com base em uma DSL definida. Entretanto, esses trabalhos (Galaxy wiki e CoMDD) diferem entre si pelo foco e resultados de cada um serem diferentes, como será visto na Seção \ref{galaxy}.
+
+Atualmente, existem centenas de wikis desenvolvidas, como: Mediawiki\footnote{http://www.mediawiki.org/wiki/Mediawiki}, Dokuwiki\footnote{http://www.dokuwiki.org/dokuwiki}, Xwiki\footnote{http://www.xwiki.org/xwiki/bin/view/Main/webHome}, entre outras. A wiki usada neste trabalho é a Xwiki, por ser implementada em Java.
+
+%---> Mostrar o funcionamento de uma wiki e comparar com a figura anterior do svn
+
+De fato, as wikis são os sistemas que melhor se encaixam na simplicidade e facilidade para o CoMDD, ou seja, são sistemas aceitos tanto pela academia quanto pela indústria no que diz respeito à troca de conhecimento de maneira simples e rápida. Este é o motivo do uso de uma wiki no CoMDD. 
+
+Uma outra possibilidade para suprir a colaboração na web seria por meio de, por exemplo, os \textit{Content Management System} - CMS. Os CMSs são ferramentas para desenvolver sites e que possibilitam criar uma hierarquia de permissões, na qual se pode ter um administrador geral, editores de seções, editores de páginas e etc \cite{Mehta2009}.
+
+A princípio, os CMSs poderiam também suportar uma DSL, entretanto pode-se dizer que criar e editar conteúdos em CMSs requer um procedimento mais sofisticado e, geralmente, mais restrito do que em wikis. As wikis são mais abertas e têm menos rigor no controle de permissão, diferentemente dos CMSs, em que cada usuário tem permissões específicas de acesso para determinadas páginas e permissões de ações. Enquanto o controle de permissão em CMSs é mais completo, as wikis são projetadas para serem fáceis e rápidas de editar. As wikis também são mais fáceis de \textit{linkar} páginas por usuários finais, além de permitirem que usuários não técnicos gerenciem e acessem o conteúdo de maneira mais fácil do que nos CMSs \cite{Zimmerly2009}. 
+
+Abeti et al. \cite{Abeti2009} também comparam as wikis com os CMSs. Eles afirmam que as wikis são mais fáceis de aprender pelos %\textit{stakeholders}
+usuários, pois basta saber editar uma página; enquanto que nos CMSs deve-se conhecer a base do CMS. Nas wikis, as páginas não têm estrutura e são o conceito central para gerenciamento de conteúdo; enquanto que nos CMSs as páginas são estruturadas e possuem uma hierarquia de páginas, seções, itens etc, além da estrutura do site de um CMS ser gerenciada por um administrador.
+
+As wikis focam na velocidade, flexibilidade, colaboração e compartilhamento de conteúdo; ao invés do controle restrito de acesso e edição \cite{Abeti2009}.
+
+
+%%Atenção: quando for publicar eu tenho que ler estes trabalhos melhor e também ler os trabalhos da minha quali.
+%Ver trabalhos da Christiane M. Neuwirth, como por exemplo: Computer Support for Distributed Collaborative Writing: A Coordination Science Perspective
+%A web-based collaborative metamodeling environment with secure remote model access
+\section{Trabalhos Relacionados}
+Nesta seção, são descritos trabalhos relacionados à proposta do CoMDD, que foram encontradas na literatura. O objetivo desse levantamento foi o de pesquisar as características que poderiam ser adotados no CoMDD, bem como identificar o diferencial da proposta desenvolvida.
+
+\subsection*{Adessowiki}
+Os trabalhos de Lotufo et al. \cite{Lotufo2009} e de Machado et al. \cite{Machado2011} apresentam o Adessowiki\footnote{http://www.adessowiki.org}, um ambiente colaborativo para desenvolvimento, documentação, ensino e repositório de algoritmos científicos, com foco na área de processamento de imagens. Este ambiente está sendo usado desde 2008 como um ambiente educacional, pela Unicamp. O Adessowiki também é uma ferramenta colaborativa para escrita de artigos e outros textos científicos. Ele foi resultado de uma projeto entre a Unicamp e o Centro de Tecnologia de Informação (CTI) Renato Archer.
+
+Segundo os autores, o que torna o Adessowiki especial em relação às outras wikis e aplicações web é sua capacidade de incluir pedaços de código em \textit{Python} ou C++ que são executados no servidor quando as páginas wiki são renderizadas. Desta forma, os resultados deste código podem fazer parte de textos científicos, em forma de figuras, textos e tabelas. %juntar com o parágrafo de baixo
+
+O principal objetivo deste ambiente é desenvolver colaborativamente algoritmos numéricos. As páginas do Adessowiki permitem a inserção de código, o qual é executado quando a página é renderizada, incorporando figuras, textos e tabelas, gerando um documento científico.
+
+Em relação ao ensino, o Adessowiki pode, como wiki, servir para registrar informações do curso como notas, exercícios e etc; como um ambiente de programação, serve 
+de plataforma para atividades de programação solicitadas pelo professor, uma vez que o código pode se inserido e os resultados visualizados nas páginas wiki.
+
+\subsection*{Galaxy wiki}
+Xiao et al. desenvolveram o Galaxy wiki, uma wiki que permite que desenvolvedores possam criar, modificar e deletar código-fonte, como também compilar, executar e debugar programas Java, e ainda colaborativamente, da mesma forma como é feito no Eclipse.
+
+Como complemento do Galaxy wiki, os autores desenvolveram um plugin para o Eclipse de modo que o Eclipse acessa as páginas de projeto, de classes e de bibliotecas armazenadas no Galaxy wiki e convertem em projetos e arquivos Java e JARs, respectivamente, integrando assim o Galaxy wiki e o Eclipse.
+
+Xiao et al. ainda apresentam alguns problemas do uso de IDEs, como: 
+\begin{enumerate}
+\item É difícil entender código-fonte seguindo a documentação, pois a documentação, geralmente, é descontinuada a medida que o código-fonte é desenvolvido;
+\item É difícil experimentar funcionalidades rapidamente sem nenhum software instalado localmente;
+\item É difícil reusar uma biblioteca simplesmente acessando uma página HTML. 
+\end{enumerate}
+
+Além da semelhança de desenvolver sistemas usando uma wiki, o trabalho de Xiao et al. (2007) destaca a engenharia de software orientada a páginas. Em seu trabalho, é possível que um programador possa reusar um código-fonte apenas referenciando uma página.
+
+\subsection*{WikiReq}
+Outro trabalho relativo a colaboração em modelagem de software, é o trabalho de Abeti et al. (2009), no qual eles apresentam a WikiReq. Eles desenvolvem seu trabalho em uma plataforma wiki no contexto de gerenciamento de requisitos para \emph{Business Process Reengineering} (BPR). Eles propõem um \emph{framework} BPR que formalize o conhecimento empresarial por meio de um conjunto de modelos conectados com os requisitos do software e que também possibilite uma automação parcial da implementação do sistema. Esse \emph{framework} provê uma wiki, denominada de \emph{wiki for Requirements (WikiReq)}, baseada na plataforma \emph{Semantic Mediawiki}. % (SMW).
+
+Para representação do conhecimento, os autores combinam os benefícios de três notações: Si*, diagramas de Casos de Uso em UML e \emph{Business Process Management Notation} (BPMN). Através da notação Si*, os \emph{stakeholders} podem definir seus conhecimentos sobre \emph{Business Process} (BP) e sobre os requisitos do negócio dentro da WikiReq; os diagramas de casos de uso são intuitivos e são os diagramas mais usados por \emph{stakeholders} e a notação BPMN é uma notação de BP fácil de compreender por todas as empresas interessadas \cite{Abeti2009}.
+
+Para a automação da implementação parcial do sistema, a WikiReq exporta para o Eclipse um conjunto de modelos que são conectados a BMPN e modelos de caso de uso em UML, por meio de um conjunto de plugins.
+
+A partir do início do levantamento de requisitos e dos BPs da empresa adquiridos pelos \emph{stakeholders}, combinar as funcionalidades da wiki com a modelagem MDA é uma tarefa fundamental para manter a rastreabilidade entre artefatos de sistemas e requisitos. As funcionalidades do MDA automatizam parcialmente o gerenciamento do conhecimento por meio das transformações de modelos \cite{Abeti2009}. 
+
+\subsection*{Cloud 9 IDE}
+O Cloud 9 IDE\footnote{http://c9.io} é uma IDE para Javascript e que funciona na web. Ele incorpora o desenvolvimento como um serviço (SAAS) e seu código é aberto. O Cloud 9 permite, basicamente, as mesmas coisas que uma IDE normalmente permite fazer, como edição de código-fonte com \textit{syntaxe highlight}, compilação, debug, versionamente de código usando Github\footnote{https://github.com/} e outros. o Cloud 9 também possibilita o gerenciamento de projetos e ainda tem um mensageiro de comunicação incorporado, permitindo que os desenvolvedoras possam se comunicar em tempo real.
+
+As tecnologias usadas para desenvolver o Cloud 9 são basicamente HTML 5 e Ajax. Segundo seus desenvolvedores, as prioridades do sistema estão entre: facilidade para desenvolvimento para programadores de Javascript, integração entre um repositório local e remoto, teste e \textit{deploy} do projeto desenvolvido para nuvem e suporte a \textit{debug}.
+
+\section{Considerações Finais}
+Este capítulo apresentou os principais conceitos necessários para o entendimento deste trabalho, como: MDD, DSL, wikis, sistema de versionamento e política \textit{otimistic} e \textit{pessimistic}. Este capítulo também apresentou os principais trabalhos relacionados e que utilizam wikis para desenvolvimento de software e modelagem. 
+
+Este trabalho apresenta essencialmente uma abordagem para que desenvolvedores sejam capazes de utilizar MDD de uma forma mais colaborativa do que a forma usada tradicionalmente. Portanto, foi muito importante o estudo de quais as abordagens existentes para MDD, sendo a DSL a abordagem escolhida. Em termos de colaboração, foi necessário conceituar o tipo de colaboração a qual o CoMDD pretende atender. Também estudamos sobre possíveis plataformas para implementar o CoMDD e a wiki foi escolhida essencialmente pelo seu caráter colaborativo e simplicidade de uso, o que estimula mais a colaboração do que ferramentas como CMSs, por exemplo. 
+
+O próximo capítulo apresenta o desenvolvimento do trabalho, o qual define a abordagem CoMDD, apresenta o método de pesquisa e por fim faz um comparativo entre o CoMDD e as abordagens existentes citadas neste capítulo.
+
+
+

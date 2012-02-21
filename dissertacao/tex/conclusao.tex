@@ -1,0 +1,202 @@
+%Um dos resultados deste trabalho é apontar uma tendência dos desenvolvedores a aceitarem uma IDE que funciona em uma wiki e com modelos. Desta forma, pode-se dizer, que para o caso apresentado, o comdd teve aceitação de X\%.
+\newpage
+
+\chapter{Conclusão}
+\label{conclusao}
+Este trabalho apresentou uma abordagem colaborativa orientada a modelos. O CoMDD objetiva simplificar o processo de desenvolvimento de software a partir do uso de uma DSL e de uma wiki. Assim, desenvolvedores e não desenvolvedores teriam mais liberdade para colaborar, uma vez que bastaria ter conhecimentos de como editar uma página na wiki e do funcionamento da DSL.
+
+O CoMDD se diferencia essencialmente das outras abordagens por inserir o MDD em uma wiki, algo não encontrado na literatura. Neste capítulo serão apresentadas as conclusões dos estudos de caso, as conclusões e contribuições do trabalho. Também são apresentadas as limitações do trabalho e por fim as atividades e resultados realizados pelo aluno ao longo do mestrado.
+
+
+\section{Conclusões dos Estudos de Caso}
+As seguintes conclusões foram extraídas do EC-ND:
+\begin{enumerate}
+	\item Ao observar as equipes, estima-se a necessidade de pelo menos duas horas adicionais para que elas aprendessem a usar e instalar o Eclipse e SVN;
+	\item Apenas um dos grupos conseguiu atingir o resultado esperado;	
+	\item Era esperado que os participantes, mesmo sem conhecimento de programação, teriam mais facilidade em aprender a linguagem.
+\end{enumerate}
+
+As seguintes conclusões foram extraídas do EC-PG:
+\begin{enumerate}
+	\item Ambas equipes conseguiram chegar na resposta correta, entretanto a equipe A com menos esforços por não precisarem instalar ferramentas locais;
+	\item A equipe A usou os comentários da página de edição para se comunicarem como se fosse um \textit{instant messanger}. Através desses comentários cada integrante da equipe estava ciente do que o outro estava fazendo e puderam compartilhar conhecimento para resolver a tarefa, compartilhando dúvidas e conclusões. Essa comunicação ficou registrada na página do modelo, o que pode ser útil para documentação;
+	\item Um ponto positivo do SVN é que ele "obriga" que o usuário comente ao fazer o check-in, entretanto a leitura dos comentários da wiki é mais simples;
+	\item Para o problema dado, desconsiderando os recursos de uma IDE, os quatro participantes das duas equipes usariam o CoMDD no lugar do Eclipse+SVN;
+	\item Os quatro participantes das duas equipes concordaram que o CoMDD é melhor para usuários não desenvolvedores do que o Eclipse+SVN.
+\end{enumerate}
+
+Por fim, a partir do EC-IN foram extraídas as seguintes conclusões:
+\begin{enumerate}
+	\item Os sistemas de versionamento são mais usados do que wikis para colaborar, contudo, acredita-se que se uma wiki é usada para desenvolvimento, ela será muito mais usada para compartilhar e versionar artefatos de implementação;
+	\item Ver o histórico e comparar códigos são as tarefas mais usadas em versionadores, funcionalidades que o CoMDD atende;
+	\item Os usuários ainda sentem falta de um ambiente mais estilo de IDE, por isso que as principais barreiras para o uso do CoMDD estão relacionadas a funcionalidades de uma IDE, assim, a medida que essas funcionalidades são implementadas na wiki, como por exemplo \textit{syntax highlight}, a aceitação e uso do CoMDD tende a aumentar;
+	\item Dado que é um protótipo, os desenvolvedores acreditam que o CoMDD atenderia às suas necessidades em termos de IDE e de versionamento, e o CoMDD seria mais útil ainda aos não desenvolvedores interessados em participar do projeto.
+\end{enumerate} 
+
+A Tabela \ref{tabela_resumo} apresenta um resumo das principais conclusões de cada estudo de caso.
+
+\begin{document}
+
+\begin{table} % aqui começa o ambiente tabela
+
+\centering
+
+\caption{Principais Resultados dos Estudos de Caso} % igual ao ambiente figura
+
+\begin{tabular}{p{30mm}p{40mm}p{40mm}p{40mm}}
+
+\hline
+
+Estudo de Caso & Perfil dos Participantes & Resultado & Aceitação \\ 
+
+\hline
+\hline
+
+EC - ND & Alunos do ensino médio & Apenas um grupo conseguiu chegar no resultado esperado & 100\% dos participantes afirmaram ter gostado da ferramenta \\
+EC - PG & Alunos de pós-graduação em Ciências da Computação e com experiência na indústria & Todas as equipes chegaram igualgemente no resultado esperado, contudo a equipe que usou o CoMDD consegui de maneira mais satisfatória & 100\% gostaram da abordagem, contudo ainda se sentem mais seguros no Eclipse+SVN \\
+EC - IN & Com média de 8 anos de experiência em desenvolvimento e 81\% já fizeram ou faziam mestrado/doutorado & Levantamento de dados como: barreiras para usar o CoMDD; principais funcionalidades das IDEs e dos versionadores, usadas & 84\% usariam o CoMDD mas que precisava melhorar \\
+
+\hline
+\end{tabular}
+\label{tabela_resumo}
+\end{table}
+
+
+\section{Conclusões}
+\label{}
+Este trabalho apresentou uma proposta para contornar os problemas apresentados na Seção \ref{problema}, o CoMDD. O CoMDD é uma abordagem que defende o uso do MDD colaborativo, da forma mais simples possível, de modo que maximize a colaboração por desenvolvedores e/ou por não desenvolvedores. No caso foi usado uma wiki, mas poderia ser outra plataforma web de simples uso e que promovesse velocidade e colaboração. Com as atuais tecnologias, a wiki é a que melhor se encaixa nesse perfil. 
+
+O CoMDD permite a modelagem colaborativa por vários usuários; a geração de código-fonte desses modelos; fornece um sistema de versionamento de modelos, permitindo também o \textit{rollback} e a comparação de modelos; e permite também a documentação colaborativa. Essas são as funcionalidades essenciais do CoMDD.
+
+Entre as vantagens do CoMDD, pode-se citar:
+\begin{enumerate}
+	\item \textit{Possibilidade de aumento de produtividade:} pelo fato do CoMDD usar essencialmente MDD e MDD é uma abordagem produtiva, acredita-se que o CoMDD também possa trazer os mesmos benefícios do MDD, como a produtividade, por exemplo;
+	\item \textit{Estímulo a colaboração:} o uso de modelos e de wiki torna o CoMDD uma abordagem atraente para não desenvolvedores e a simplicidade e velocidade para comentar, compartilhar, editar etc faz com que o CoMDD seja uma abordagem que estimule a colaboração;
+	\item \textit{Versionamento simplificado:} o sistema de versionamento do CoMDD é simples, de modo que os usuários têm acesso às outras versões e mudanças de maneira fácil;
+	\item \textit{Independência de softwares locais:} tudo no CoMDD funciona na web, então só é necessário um navegador instalado localmente;
+	\item \textit{Uso Pedagógico:} o CoMDD também pode ser útil para o ensino, pois nele pode-se ter desde o material de aula à execução dos excercícios, ou seja, o aluno é encorajado a programar e logo testar o resultado do exercício.
+\end{enumerate}
+
+Em relação aos estudos de caso, o EC-ND (Seção \ref{estudo_de_caso_i}), o CoMDD mostrou-se acessível à usuários não desenvolvedores. Com o EC-PG, (Seção \ref{estudo_de_caso_ii}), o CoMDD mostrou-se capaz de atingir os mesmo resultados que a abordagem Eclipse+SVN e por fim, o EC-IN mostrou pontos em que o CoMDD precisa melhorar, mas também mostrou que o CoMDD foi aceitável pela comunidade de desenvolvedores participantes do estudo de caso.
+
+Também é possível concluir que, para os estudos de caso, o uso do CoMDD mostrou-se mais fácil que o uso do Eclipse+SVN, principalmente por não desenvolvedores. Portanto, pode ser interessante adotar o CoMDD quando não desenvolvedores tiverem que participar do desenvolvimento.
+
+O CoMDD exige menos conhecimentos para colaborar do que são exigidos em um sistema de versionamento e ainda o tempo necessário para atualizar um modelo é menor.
+%É interessante para projetos menores, que tem a interedependencia entre suas classes nao muito grande, com poucas classes e que estas dependem pouco entre si, mas que necessitam fortemente da colaboração de várias pessoas, e se torna mais interessante quando essa pessoas nao sao desenvolvedoras. 
+
+É importante ressaltar que este trabalho, bem como os ECs realizados, não pode generalizar suas conclusões para qualquer cenário ou domínio. Por isso, todas as conclusões apresentadas aqui são para o domínio e cenário definidos nos ECs. Entretanto, acredita-se que os resultados obtidos nesses estudos são indicadores positivos de que a abordagem pode ser válida também para outros domínios/cenários.
+
+Fazendo uma análisa geral, pode-se dizer que o CoMDD teve uma aceitação de 84\% para resolver problemas usando DSLs em uma wiki, contra 16\% que ainda usariam o Eclipse+SVN para também resolver problemas usando DSLs. 
+
+Ainda, as wikis precisam evoluir com funcionalidades de IDE para que possam, de fato, serem usadas como ferramentas de desenvolvimento e não se limitarem à ferramentas de documentação e afins.
+
+Este trabalho está longe de criar um ambiente de desenvolvimento tão robusto e avançado quanto hoje são as IDES e os sistemas de versionamento, tampouco substituir as demais ferramentas de suporte à colaboração. Até porque essas ferramentas já atingiram um grau de maturidade que as torna usáveis em produção. Este trabalho objetivou sim, mostrar que o alinhamento de duas tecnologias aparentemente não interligáveis é possível e benéfico, além de motivar novos estudos na área. 
+
+Os estudos de caso serviram para evidenciar que é possível ter uma abordagem que integre o MDD à uma wiki e serviram também para mostrar que o CoMDD é aceito como um possível substituto de abordagens tradicionais desde que traga algumas funcionalidades das IDEs.
+
+Assim, o MDD agrega um ganho de produtividade no desenvolvimento de software e as wikis incentivam a colaboração devido sua simplicidade de edição e tornam o processo de colaborar/editar mais ágil. Portanto, conclui-se que com o CoMDD pode-se ter ganhos de produtividade e maior colaboração entre desenvolvedores e não desenvolvedores. %Entretanto, esta conclusão não foi evidenciada pelos estudos de caso e sim pelo método dedutivo. As premissas são os benefícios do MDD e os benefícios da wiki. A conclusão é de que o CoMDD herda os benefícios do MDD e da wiki. 
+
+%modelos possibilitam mais comunicação principalmente por nao especialistas;
+
+
+\section{Contribuições}
+\label{}
+A principal contribuição deste trabalho é evidenciar que o uso de MDD associado a uma wiki é possível para resolver determinados problemas da mesma forma que é possível usando uma IDE e um sistema de versionamento. E que usando essa abordagem a equipe pode ter ganhos de produtividade e intensificar a colaboração da equipe, principalmente por não desenvolvedores.
+
+O CoMDD permite a edição de modelos, geração de código-fonte e a colaboração entre desenvolvedores e interessados sem a necessidade de ferramentas/ambientes individuais instalados nas estações de trabalho.
+
+Por fim, este trabalho incentiva o uso de aplicações web ao invés de aplicações locais, permitindo que uma pessoa possa trabalhar de qualquer computador.
+
+Quando não é necessário ferramentas locais para se criar ou editar modelos, ganha-se em termos de velocidade e colaboração, pois menor tempo é necessário para uma pessoa começar a contribuir. Quando se facilita o processo de desenvolvimento/colaboração com o uso de uma wiki no lugar de uma IDE/sistema de versionamento, mais pessoas podem colaborar. Com o uso de modelos de alto nível no lugar de linguagens de programação, mais fácil torna-se o entendimento de não desenvolvedores e consequentemente mais eles podem participar.
+
+%É só pensar no contrario para ver que é verdadeiro, pois se o desenvolvedor precisar do dobro de tempo para instalar um svn/ide e os mesmos forem 3 vezes mais dificeis de serem usados temos com isso menos pessoas nao desenvolvedoras participando. Talvez para o desenvolvedor nao importe o quanto seja dificil usar um svn e o quanto isso va demandar tempo no desenvovlimento de software ( na realidade isso importa pq vai atingir diretamente na produtividade), mas para o nao desenvolvedor isso importa muito -> posso colocar uma pergunta assim no questionario dos videos.
+
+O CoMDD ainda pode ser útil para ensinar programação, uma vez que não é necessário programas locais e o próprio CoMDD pode compilar/simular, mas para isso a ferramenta precisa ser melhor integrada.
+
+A abordagem definida no CoMDD permite um sincronismo entre modelos e documentação.
+
+%MDD e tudo na web: mais produtividade //
+%Modelos e wiki: aproximação maior de todos os envolvidos no processo, e com isso softwares mais próximos dos que o cliente precisa.
+
+
+\section{Trabalhos Futuros}
+\label{trabalhos_futuros}
+Algumas perguntas foram levantadas no decorrer deste trabalho e espera respondê-las em trabalhos futuros. São elas:
+
+\begin{enumerate}
+ \item Pode-se dizer que a wiki comportou-se bem com o MDD, contudo como ela se comportaria com uma abordagem tradicional orientada a código? Ou seja, como seria programar em Java, por exemplo, em uma wiki? E será que um código-fonte seria tão colaborativo quanto um modelo?
+
+ \item As equipes do segundo estudo de caso foram de dois integrantes apenas, como o CoMDD se comportaria com equipes maiores e com mais pessoas compartilhando o mesmo artefato?
+
+ \item O código-gerado pelo modelo foi validado por um especialista do domínio que ajudou e acompanhou a criação da DSL usada no CoMDD, contudo, como validar os modelos ao invés do código-fonte, de forma que garanta que o código-fonte gerado está correto e de forma que permita o retorno de erros aos desenvolvedores? -- Acho que essa é uma questão mais de implementação.
+
+ \item Nesta abordagem as transformações e o metamodelo foram definidos fora da wiki, entretanto poderiam ser definidos pela própria wiki. Quais benefícios a edição colaborativa das transformações e dos metamodelos traria no desenvolvimento de software?
+
+ \item A abordagem do CoMDD implementada e avaliada contou com o desenvolvimento colaborativo seguindo uma abordagem \textit{pessimistic}, contudo como a abordagem comportaria-se caso tivesse outras formas de colaboração como: i. Edição concorrente e merge de modelos (adotando a abordagem \textit{otimistic}; ii. Edição em tempo real estilo google docs; iii. Edição de outros artefatos que fossem dependentes\footnote{Pode-se criar facilmente links de uma página para outra na wiki};
+
+ \item Como seria o nível de aceitação caso o CoMDD tivesse funcionalidades mais próximas de uma IDE, como: \textit{highligth}, auto-complet e link entre palavras, de forma que ao clicar em um método é apresentado a definição dele, por exemplo?
+
+\item O EC-PG mostrou-se bem sucessido, entretanto para que outros casos o CoMDD pode ser útil? 
+
+\item Estudo de estratégias \textit{otimistic} ou até mesmo na adoção de ambas como propõe o trabalho de Prudêncio et al.(2012).
+ 
+\end{enumerate}
+
+\section{Limitações do Trabalho}
+
+O CoMDD pode ser útil no desenvolvimento de algoritmos, contudo isso não foi testado.
+
+O ideal seria agregar funcionalidades de uma IDE às wikis, permitir o desenvolvimento simultâneo e a edição em tempo real que hoje tem o google docs. Dessa forma o CoMDD teria mais chances de vigorar na comunidade de desenvolvedores.
+% Mas a ideia de que quando voce edita um arquivo esta editando diretamente no servidor e portanto a cópia final simplifica (talvez agiliza tbm) o trabalho evitando conflitos de mege (afirmação forte). As wikis nunca foram pensadas para esse fim e por isso podem melhorar para este propósito. 
+
+Em relação ao domínio, espera-se que para qualquer domínio o CoMDD possa ser interessante assim como foi para os estudos de caso.
+
+O CoMDD não apresentava erros de sintaxe, o que deixava os desenvolvedores do EC-PG relativamente desorientados.
+
+A abordagem \textit{pessimistic} possui suas desvantagens, como deixar um desenvolvedor ocioso por esperar a permissão para editar um arquivo que está sendo editado por outro desenvolvedor (Collins-Sussman et al., 2004). 
+%"In contrast, the pessimistic policy has some disadvantages. First, locks can cause an unnecessary serialization over the development process. Sometimes different developers can independently modify different parts of the same CI, but using a lock-based approach that is not possible. In addition, locks can cause a false sense of security (Collins-Sussman et al., 2004). Developers may think that their work will not be affected by the work of other developers due to the
+%locks. However, sometimes CIs rely on other CIs that can be modified by other developers. This situation leads to indirect conflicts (Sarma et al., 2003). \cite{Prudencio2012} Assim, um trabalho futuro seria no estudo de estratégias otimísticas ou até mesmo na adoção de ambas como propõe o trabalho de Prudencio et al. \cite{Prudencio2012}.
+
+A DSL foi projetada para que fosse simples de forma que pessoas pudessem compreendê-la facilmente. Do contrário seria mais difícil realizar um estudo de caso. Entretanto, entende-se que uma DSL mais robusta e que atendesse mais casos estaria mais próxima da realidade. %Podia ter me preocupado em fazer uma dsl mais complexa para que mais pessoas pudessem trabalharem juntas, ou seja, necessitasse mais do trabalho colaborativo. Contudo mais difícil fica de realizar um experimento
+
+Em relação ao domínio escolhido: o código gerado não podia ser testado uma vez que precisava ser inserido no robô, assim se o desenvolvedor pudesse simular o código gerado seria uma informação de retorno importante. Ainda, o cerne do domínio de robótica móvel autônoma são os algoritmos que tornam os robôs autônomos, entretanto a colaboração foi mais na definição dos sensores e atuadores que estes robôs usam, portanto a abordagem seria mais interessante para desenvolverem um algoritmo, só que para isso seria melhor uma edição concorrente estilo google docs. Assim, entende-se que o domínio escolhido foi beneficiado pelo uso de uma DSL, mas não pelo uso da colaboração.
+
+
+
+%\section{Lições aprendidas}
+%Uma sugestão é pensar bem no experimento antes de implementar. Acredita-se que teríamos implementado menos e teríamos sido mais diretos até mesmo nos estudos de caso se já soubéssemos exatamente o que estávamos avaliando e que resultados gostaríamos de alcançar.
+
+%Pesquisa orientada à teste. Assim como existe desenvolvimento de software orientado a teste onde voce primeiro pensa que testes vai fazer, é mto importante voce pensar em como vai provar sua proposta/hipótese. Uma vez uma mulher no WTD do SBSC me falou isso: como vc vai provar? Na época nao dei mta importancia, mas hoje vejo que é a primeira questao logo depois da hipótese. Aí fica mais facil ate em saber o que vai implementar. Pode ir mais direto! É sempre cruscial ter a visão do todo antes de fazer as partes. Ia fazendo as partes achando que no futuro tudo ia se encaixar. Bom, se encaixou, mas poderia ter sido mais rapido se fosse mais direto e soubesse de tudo antes... Assim foi no estagio da alemanha. Ficava pensando: mas como isso que eu vou fazer se encaixa no projeto maior que o daniel tá?! Pensei que depois ia se integrar e que de alguma forma aquilo que tava fazendo ia ter alguma utilidade, mas vi que nem ele sabia como se integrava as coisas. Nem ele tinha a visão geral. Essa é a diferença do cara que vai ser sempre um desenvolvedor e de um gerente de projeto/orientador. Este último tem a visão do todo. E o bom orientador/gerente, além da visão do todo, sabe mto bem do específico, das partes.
+
+%Mostre seu trabalho pra todo mundo! Durante o mestrado, na concepção das ideias! Aí as pessoas vao fazer perguntas que te farao pensar. Foi assim que conversando com o artur pensei em algo que nem o lucredio tinha pensado antes! E saiba explicar por mais complexo que seja o que vc faz para qualquer pessoa! É sua tarefa saber simplificar e nao do ouvinte saber entender conceitos complexos. O Artur e outros já diziam: se algo está complexo de mais é pq ta fazendo errado. Quebre em partes menores então! Essa é a filosofia linux: quebre em pedaços tao pequenos a ponto de serem simples de fazer, nao importa o quanto dificil e complexo o problema seja no começo.
+
+%o proprio rafael e o danilo me deram boas dicas mas ja era no final do trabalho :P
+
+%e sempre faça questionarios com perguntas que vc quer responder no seu trabalho. o lance do exp 3 que to fazendo parece ser mto bom!
+
+%Uma lição aprendida: pesquisa de opinião como questionários ou entrevistas devem ser muito bem planejadas para nao ter-se viés e manter a neutralidade e imparcialidade.
+
+%cuidado com o que vc lê. Há muito lixo e artigos publicados que nao tem referencias ou dao ideias sem fundamento.... estao em ingles e "bons congressos"
+
+\section{Atividades e Resultados Paralelos}
+A seguir são listadas as atividades e resultados realizados durante o período do mestrado do aluno e que não se relacionam necessariamente com o trabalho de pesquisa:
+
+\begin{enumerate}
+\item Participação no projeto de desenvolvimento de um sistema de gerenciamento de projetos científicos durante o período de março de 2011 à junho de 2011, no qual o trabalho com ferramentas de versionamento ajudaram na definição dos estudos de caso;
+\item Estágio realizado, como bolsista da BAYLAT\footnote{http://www.baylat.org/}, na \textit{Technische Universität München}\footnote{http://portal.mytum.de/welcome/} e no instituto de pesquisa aplicada Fortiss\footnote{http://www.fortiss.org/} Munique - Alemanha, sob supervisão do professor Bernhard Schätz e do pesquisador Dr. Daniel Ratiu, no desenvolvimento de uma DSL para prédios inteligentes, usando a ferramenta MPS da Jetbrains\footnote{http://www.jetbrains.com/}, durante o período de agosto de 2011 à novembro de 2011;
+\item  FERNANDES, D.N. ; FROTA, P. C. ; FORTES, R. P. M. . Uma Abordagem Distribuída para o Desenvolvimento Orientado a Modelos. In: V Workshop de Desenvolvimento Distribuído de Software, 2011, São Paulo. Uma Abordagem Distribuída para o Desenvolvimento Orientado a Modelos, 2011;
+\item  FERNANDES, D.N. ; FORTES, R. P. M. . CoMDD: uma Abordagem Colaborativa para Auxiliar o Desenvolvimento Orientado a Modelos em Sistemas Embarcados. 2010. (Apresentação de Trabalho/Simpósio);
+\item WATANABE, W. M. ; FERNANDES, D.N. ; BITTAR, T. J. ; FORTES, R. P. M. . WCAG Conformance approach based on Model-Driven Development and webML. In: SIGDOC - ACM International Conference on Design of Communication, 2010, São Carlos. Proceeding of 28th SIGDOC 2010, 2010. v. 1. p. 167-174;
+\item OLIVEIRA, R. R. ; SANCHEZ, R. V. V. ; FERNANDES, D.N. ; FROTA, P. C. ; FORTES, R. P. M. . Notificação de wiki por meio de Mensageiros Instantâneos via bot reforçando a colaboração na web. In: XVII Simpósio Brasileiro de Sistemas Multimídia e web webMedia, 2011, Florianópolis. Anais do webmedia 2011, 2011. v. 1. p. 1-7;
+\item BITTAR, T. J. ; LOBATO, L. L. ; FORTES, R. P. M. ; FERNANDES, D.N. . Accessible organizational elements in wikis with model-driven development. In: 28th Sigdoc - ACM International Conference on Design of Communication, 2010, São Carlos. Proceedings of the 28th Sigdoc. New York : ACM, 2010. v. 1. p. 49-56;
+\item BITTAR, T. J. ; FERNANDES, D.N. ; LOBATO, L. L. ; LUCREDIO, D. ; FORTES, R. P. M. . Definição de metamodelos para web incorporando boas práticas de acessibilidade e usabilidade. In: XXXVI Conferência Latino-Americana de Informática - CLEI 2010, 2010, Assunção. Anais do CLEI 2010, 2010;
+\item PESSIN, G. ; OSÓRIO, F. S. ; DIAS, M. A. ; FERNANDES, D.N. . Avaliação de Técnicas de Otimização Aplicadas à Formação e Atuação de Grupos Robóticos. In: III Workshop on Computational Intelligence, 2010, Porto Alegre. Joint Conference 2010 Workshop Proceedings (SBIA/SBRN/JRI), 2010. p. 494-499;
+\item BITTAR, T. J. ; LOBATO, L. L. ; FERNANDES, D.N. ; FORTES, R. P. M. . Apoio à colaboração em wikis a partir de modelagem gráfica visando ganhos na arquitetura da informação e acessibilidade. In: Simpósio Brasileiro de Sistemas Colaborativos II, 2010, Belo Horizonte. Anais do Simpósio Brasileiro de Sistemas Colaborativos II. Washington DC : IEEE Computer Society Press, 2010. v. 2. p. 12-15;
+\item SANCHEZ, R. V. V. ; OLIVEIRA, R. R. ; FERNANDES, D.N. ; FORTES, R. P. M. ; PIMENTEL, M. G. C. . Services Mobile: Incorporando serviços da web 2.0 aos dispositivos móveis mediante o uso de informações de contexto. In: XVII Simpósio Brasileiro de Sistemas Multimídia e web webMedia, 2011, 2011, Florianópolis. Anais do webmedia 2011, 2011. v. 1. p. 1-4;
+\item FERNANDES, D.N. ; PEZUTTI, E. B. S. ; FORTES, R. P. M. . Conteúdo RSS para Dispositivos Móveis. In: webmedia - Simpósio Brasileiro de Sistemas Multimídia e web (15. : 2009 : Fortaleza, CE)., 2009, Fortaleza. Anais webmedia 2009: XV Simpósio Brasileiro de Sistemas Multimídia e web, 2009. v. 2.
+\item Parceria com o LRM e participação no Instituto Nacional de Ciência e Tecnologia em Sistemas Embarcados Críticos (INCT-SEC);
+\item Curso \textit{Introduction to Product Line Enginnering} ministrado pela \textit{Fraunhofer Institute for Experimental Software Engineering};
+\item Outros cursos sobre DSLs e MDD os quais o aluno participou ao longo de eventos e congressos durante o mestrado.
+\end{enumerate}
+
+
